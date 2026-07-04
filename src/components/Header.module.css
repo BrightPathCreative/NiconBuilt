@@ -71,17 +71,14 @@
   position: relative;
 }
 
-.dropdownTrigger {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: none;
-  border: none;
-  font: inherit;
-  font-weight: 500;
-  color: var(--color-primary);
-  cursor: pointer;
-  padding: 0;
+/* Invisible bridge so the menu stays open when moving the cursor down */
+.dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 14px;
 }
 
 .dropdownMenu {
@@ -98,14 +95,39 @@
   box-shadow: 0 20px 40px -28px rgba(0, 0, 0, 0.25);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transform: translateY(-4px);
-  transition: opacity var(--duration-fast), transform var(--duration-fast);
+  transition: opacity var(--duration-fast), transform var(--duration-fast), visibility var(--duration-fast);
 }
 
 .dropdownOpen {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateY(0);
+}
+
+.dropdownTrigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: 500;
+  color: var(--color-primary);
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (min-width: 961px) {
+  .dropdown:hover .dropdownMenu,
+  .dropdown:focus-within .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
 }
 
 .dropdownMenu a {
@@ -164,15 +186,24 @@
     border-bottom: 1px solid var(--color-border);
   }
 
+  .dropdown::after {
+    display: none;
+  }
+
   .dropdownMenu {
     position: static;
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
     transform: none;
     box-shadow: none;
     border: none;
     display: none;
     padding-left: 16px;
+  }
+
+  .dropdown:hover .dropdownMenu {
+    display: none;
   }
 
   .dropdownOpen {
