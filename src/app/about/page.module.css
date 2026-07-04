@@ -1,0 +1,53 @@
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 48px;
+  align-items: start;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-muted-alt);
+}
+
+.portrait {
+  border-radius: var(--radius-card);
+  width: 100%;
+  height: auto;
+}
+
+.promiseList {
+  margin-top: 24px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.credentials {
+  margin-top: 24px;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.serviceLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.serviceLinks a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 16px 20px;
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+@media (max-width: 768px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+}

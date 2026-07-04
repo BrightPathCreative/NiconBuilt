@@ -1,0 +1,129 @@
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  align-items: start;
+  margin-top: 32px;
+}
+
+.portrait img {
+  border-radius: var(--radius-card);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.viewAll {
+  font-weight: 600;
+  color: var(--color-text-muted-alt);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 2px;
+  white-space: nowrap;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.serviceCard {
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--duration-fast);
+}
+
+.serviceCard:hover {
+  border-color: var(--color-accent);
+}
+
+.serviceImage {
+  height: 132px;
+  overflow: hidden;
+}
+
+.serviceImage img {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+}
+
+.serviceBody {
+  padding: 20px 24px 22px;
+}
+
+.serviceBody h3 {
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.serviceBody p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-text);
+  margin: 0 0 8px;
+}
+
+.serviceSub {
+  font-size: 12px !important;
+  color: var(--color-text-muted) !important;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.5px;
+}
+
+.reviewMeta {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 32px 0 24px;
+}
+
+.review {
+  padding: 28px;
+}
+
+.review p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+
+.review footer {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 14px;
+}
+
+.areas {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-text-muted-alt);
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHead {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

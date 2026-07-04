@@ -1,0 +1,39 @@
+.intro {
+  font-size: 17px;
+  margin-top: 16px;
+}
+
+.rating {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: var(--color-star-gold);
+  margin-top: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.review {
+  padding: 28px;
+  margin: 0;
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.review p {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.review footer {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}

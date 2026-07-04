@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --color-primary: #1a1a1a;
+  --color-secondary: #141414;
+  --color-accent: oklch(0.7 0.12 65);
+  --color-background: #edebe7;
+  --color-surface: #faf9f7;
+  --color-text: #57544b;
+  --color-text-muted: #78746a;
+  --color-border: #eae7e0;
+  --color-surface-alt: #fcfbf9;
+  --color-surface-white: #fff;
+  --color-tone-band: #f3f1ec;
+  --color-border-alt: #e4e0d9;
+  --color-border-strong: #d8d3ca;
+  --color-text-muted-alt: #6b675e;
+  --color-text-muted-light: #8c877e;
+  --color-footer-border: #2a2a28;
+  --color-footer-text: #8e897e;
+  --color-footer-links: #a8a39a;
+  --color-accent-label: oklch(0.62 0.12 55);
+  --color-accent-eyebrow-on-dark: oklch(0.82 0.09 70);
+  --color-star-gold: #e8a33d;
+  --color-badge-before-bg: rgba(0, 0, 0, 0.62);
+  --max-width: 1280px;
+  --section-x: 48px;
+  --section-y: 64px;
+  --radius-button: 8px;
+  --radius-card: 12px;
+  --radius-panel: 14px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 500ms;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Archivo", sans-serif;
+  color: var(--color-primary);
+  margin: 0 0 0.75em;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 12px 20px;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.eyebrow {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--color-accent-label);
+  margin-bottom: 12px;
+}
+
+.eyebrow--dark {
+  color: var(--color-accent-eyebrow-on-dark);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: var(--radius-button);
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border-strong);
+}
+
+.card {
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.section {
+  padding: var(--section-y) 0;
+}
+
+.section--tone {
+  background: var(--color-tone-band);
+}
+
+.section--surface {
+  background: var(--color-surface);
+}
+
+.prose {
+  max-width: 72ch;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-x: 24px;
+    --section-y: 48px;
+  }
+}

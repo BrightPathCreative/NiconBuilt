@@ -1,0 +1,26 @@
+# 301 Redirect reference — generated from WordPress sitemap + pattern rules
+# Implemented in src/lib/redirects.ts (next.config.ts on Vercel)
+# Test with Screaming Frog before DNS cutover
+
+old_path,new_path,rule
+/work/,/our-work/,portfolio rename
+/portfolio-items/,/our-work/,portfolio rename
+/guarantees/,/about/,content merge
+/team/,/about/,content merge
+/build-areas/,/home-renovations-melbourne/,hub redirect
+/builders-[suburb]/,/heritage-renovations-[suburb]/ or /home-renovations-melbourne/,suburb map
+/home-builders-[suburb]/,/heritage-renovations-[suburb]/ or /home-renovations-melbourne/,suburb map
+/multi-unit-builders-[suburb]/,/new-builds-melbourne/,service redirect
+/townhouse-builders-[suburb]/,/new-builds-melbourne/,service redirect
+/custom-home-builders-*,/home-renovations-melbourne/,city page
+/heritage-home-builders-*,/heritage-renovations-melbourne/,city page
+/design-build-*,/new-builds-melbourne/,city page
+/unbounce-pages/*,/,removed landing pages
+/custom-home-builders-thank-you/,/thank-you/,form redirect
+/[removed-blog-slug]/,/,blog removal
+/[kept-blog-slug]/,/blog/[slug]/,blog migration
+
+# /services/ — Option A: new Services Overview lives at /services/ (same slug as old WP page)
+# No redirect needed — old and new URLs match
+
+# Direct matches (no redirect): /, /about/, /contact/, /testimonials/, /privacy-policy/

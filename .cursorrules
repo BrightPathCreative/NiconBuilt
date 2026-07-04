@@ -1,0 +1,64 @@
+# PROJECT IDENTITY
+Client: Nicon Built (legal entity: Nicon Built Pty Ltd)
+Industry: Heritage renovation & custom building — 7 services: Heritage Renovations and Restorations, Heritage Home Extensions, Kitchen Renovations, Bathroom Renovations, Home Renovations and Extensions, Trades and Maintenance, New Builds (kept on site, not the main focus)
+Site purpose: Quote requests via contact form / phone, routed through GoHighLevel (GHL). This is a MIGRATION of an existing WordPress site (niconbuilt.com.au), not a new build.
+Site feel: Direct, plain-spoken, confident — short sentences, no fluff, no hype. Confirmed from the approved copy itself.
+
+# DESIGN — NON-NEGOTIABLES
+Visual system only comes from Concept 1b ("The Showcase") — see docs/content-notes.md for the CSS variable block, typography, and layout rules. Content/IA comes from Nicon_Built_Copy_v7_Approved.md in /reference, NOT from Concept 1b's "12 trades" wireframe content.
+Palette: use only CSS variables defined in docs/content-notes.md
+Typography: Archivo (headings) + Barlow (body) + JetBrains Mono (labels/eyebrows) per docs/content-notes.md
+Buttons: rounded, 8px border-radius
+Images: WebP with fallback, explicit width/height on every image (prevents CLS), lazy-load below the fold, preload the homepage hero specifically (current mobile LCP is 17.4s on the old site — this is the single highest-priority performance fix)
+Every image is currently a placeholder pending Nick's real photography — see content/image-manifest.md
+
+# COPY RULES
+Use verbatim copy from docs/copy/*.md — do not paraphrase or rewrite
+Kitchen Renovations and Bathroom Renovations pages are now client-approved (confirmed by Sara) — build them the same as any other page, no special hold needed
+Testimonials page publishes 8 reviews, not 9 — the Johnny Andrianakis review has been removed per Sara's decision. Schema aggregateRating still uses reviewCount 9 (the real live Google total) — see docs/seo.md
+Never invent a specific dollar figure, project count, or credential beyond what's written in the approved copy
+Never use the "12 everyday trades" framing from the old Concept 1b wireframe — that positioning has been superseded
+
+# TECHNICAL STANDARDS (from the Technical Developer Brief)
+Semantic HTML5 — one H1 per page, heading hierarchy enforced, never skip levels
+Custom-coded — NOT WordPress, no page builders (this is a hand-coded Next.js build, which satisfies that requirement)
+Schema: LocalBusiness (site-wide), FAQPage (every service page + homepage + FAQ page), BreadcrumbList (every non-home page) — see docs/seo.md for exact JSON-LD
+Performance targets: PageSpeed 90+ mobile & desktop, LCP < 2.5s, FCP < 1.8s, CLS < 0.1, INP < 200ms, TTFB < 800ms
+Accessibility: WCAG 2.1 AA minimum. 4.5:1 colour contrast on all text/button combos (the OLD site's "Learn More" button disappearing against the dark hero image is the specific failure being fixed — do not repeat it). ARIA landmarks on every page, ARIA labels on icon-only buttons, visible focus states, skip-to-content link, real <label> elements on every form field (placeholder text is not a substitute), minimum 16px body font, links distinguishable without relying on colour alone, prefers-reduced-motion respected
+All forms POST to a GHL webhook — never mailto: links. Form submit redirects to /thank-you/ (noindex, nofollow, excluded from sitemap.xml)
+robots.txt disallows /thank-you and points to the sitemap
+
+# ASSET NAMING
+[page]-[descriptor]-[number].webp — e.g. home-hero-bg.webp, about-nick-portrait.webp, kitchen-renovations-page-01.webp. Full list in content/image-manifest.md.
+
+# BUILD ORDER
+1. Global layout (header, footer, nav — nav is: Home | Services (dropdown, 7 items) | Our Work | About | Contact)
+2. Design tokens & global CSS (from docs/content-notes.md)
+3. Home page
+4. Services Overview + all 7 individual service pages
+5. About
+6. Contact + GHL form wiring
+7. Our Work (blocked until photography arrives)
+8. Testimonials (blocked on which reviews to publish — see docs/brief.md)
+9. FAQ
+10. Location pages (5 chosen: Brighton, Armadale, Malvern, Albert Park, Elwood — see docs/sitemap.md) — copy still needs writing for each
+11. Legal pages (Privacy Policy) + 404 + Thank You
+12. llms.txt, robots.txt, sitemap.xml
+13. Favicons + OG image
+14. GA4 + Search Console wiring
+15. 301 redirect implementation — # TODO: Sara has confirmed this happens later in the build, once ready; full 38-page mapping still needed from the pattern rules in docs/sitemap.md
+16. Performance audit — this is CRITICAL given the current 36/100 mobile PageSpeed score
+17. Accessibility audit (WCAG 2.1 AA)
+18. Blog migration (~10 posts, exact list still TBD)
+19. Final placeholder check
+
+# NEVER DO
+Never publish 0407699454 anywhere — it's Nick's personal mobile, explicitly a placeholder in the source brief, to be replaced site-wide by the GHL lead-gen number
+Never touch or modify the Microsoft 365 email DNS/MX records during the domain switch
+Never implement redirects in JavaScript — .htaccess/nginx only, and never create redirect chains (A to B to C)
+Never use placeholder copy — all copy must come from docs/copy/
+Never deploy with unresolved placeholders ([CRM NUMBER], [LICENCE NUMBER] etc.)
+Never add dependencies not listed in the approved tech stack
+Never ship a page with alt="" on a non-decorative image
+Never invent which blog posts survive or exact location-page copy beyond the 5 chosen suburbs (Brighton, Armadale, Malvern, Albert Park, Elwood) — write their copy following the same voice as the approved pages, but flag it as new drafting, not verbatim client copy
+Photography comes from the Google Drive "Images" folder Sara is supplying directly to Cursor: https://drive.google.com/drive/folders/1tC88MT4d7ThYa5It5OFBC90yoW8vnEG7 — check there before treating any image slot as unresolved

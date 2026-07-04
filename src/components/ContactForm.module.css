@@ -1,0 +1,66 @@
+.form {
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border-alt);
+  border-radius: var(--radius-panel);
+  padding: 24px 26px;
+  box-shadow: 0 20px 40px -28px rgba(0, 0, 0, 0.15);
+}
+
+.compact {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.field label {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.field input,
+.field textarea {
+  padding: 12px 14px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-button);
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  color: var(--color-primary);
+  background: var(--color-surface-alt);
+  width: 100%;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form .btn {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.error {
+  color: #9b2c2c;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
