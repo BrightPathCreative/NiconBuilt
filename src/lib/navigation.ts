@@ -1,4 +1,4 @@
-export const services = [
+export const buildingServices = [
   {
     title: "Heritage Renovations and Restorations",
     slug: "/heritage-renovations-melbourne/",
@@ -35,6 +35,22 @@ export const services = [
     shortTitle: "New Builds",
   },
 ] as const;
+
+export const tradeServices = [
+  { title: "Painting Melbourne", slug: "/painting-melbourne/", shortTitle: "Painting" },
+  { title: "Plastering Melbourne", slug: "/plastering-melbourne/", shortTitle: "Plastering" },
+  { title: "Tiling Melbourne", slug: "/tiling-melbourne/", shortTitle: "Tiling" },
+  { title: "Plumbing Maintenance Melbourne", slug: "/plumbing-maintenance-melbourne/", shortTitle: "Plumbing" },
+  { title: "Brickwork Repairs Melbourne", slug: "/brickwork-repairs-melbourne/", shortTitle: "Brickwork" },
+  { title: "Roofing Melbourne", slug: "/roofing-melbourne/", shortTitle: "Roofing" },
+  { title: "Caulking Melbourne", slug: "/caulking-melbourne/", shortTitle: "Caulking" },
+  { title: "Fixture Replacements Melbourne", slug: "/fixture-replacements-melbourne/", shortTitle: "Fixtures" },
+  { title: "Minor Structural Repairs Melbourne", slug: "/minor-structural-repairs-melbourne/", shortTitle: "Structural Repairs" },
+  { title: "General Repairs Melbourne", slug: "/general-repairs-melbourne/", shortTitle: "General Repairs" },
+] as const;
+
+/** All service pages — building + trade */
+export const services = [...buildingServices, ...tradeServices] as const;
 
 export const locationPages = [
   { suburb: "Brighton", slug: "/heritage-renovations-brighton/" },

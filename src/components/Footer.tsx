@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { services, footerNav, locationPages } from "@/lib/navigation";
+import { buildingServices, tradeServices, footerNav, locationPages } from "@/lib/navigation";
 import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./Footer.module.css";
 
@@ -21,14 +21,25 @@ export function Footer() {
           </div>
           <p className={styles.tagline}>{siteConfig.tagline}</p>
           <p className={styles.rating}>
-            {siteConfig.stats.rating} ★ · {siteConfig.stats.reviewCount} Google Reviews
+            {siteConfig.stats.rating} ★ · Google Reviews
           </p>
         </div>
 
         <div>
-          <h2 className={styles.colTitle}>Services</h2>
+          <h2 className={styles.colTitle}>Building Services</h2>
           <ul className={styles.links}>
-            {services.map((s) => (
+            {buildingServices.map((s) => (
+              <li key={s.slug}>
+                <Link href={s.slug}>{s.shortTitle}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className={styles.colTitle}>Trade Services</h2>
+          <ul className={styles.links}>
+            {tradeServices.map((s) => (
               <li key={s.slug}>
                 <Link href={s.slug}>{s.shortTitle}</Link>
               </li>
@@ -45,10 +56,7 @@ export function Footer() {
               </li>
             ))}
           </ul>
-        </div>
-
-        <div>
-          <h2 className={styles.colTitle}>Contact</h2>
+          <h3 className={styles.subTitle}>Contact</h3>
           <address className={styles.contact}>
             {phone ? (
               <a href={phoneHref(phone)}>{formatPhoneDisplay(phone)}</a>

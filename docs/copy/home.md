@@ -19,7 +19,7 @@ Heritage properties require specialised knowledge, traditional skills, and a dee
 
 From major structural renovations and extensions to kitchen updates and routine maintenance, you get dedicated, personal project management from day one. Your keys stay in safe hands.
 
-*5.0 Stars | 9 Google Reviews | 30+ Years Experience | VBA Licensed Builder*
+*5.0 Stars | Google Reviews | 30+ Years Experience | VBA Licensed Builder*
 
 ## Stats strip
 30+ Years Experience — 5.0 Google Rating — 200+ Projects Completed — Fully Insured

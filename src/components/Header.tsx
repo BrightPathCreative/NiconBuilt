@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { services, mainNav } from "@/lib/navigation";
+import { buildingServices, tradeServices, mainNav } from "@/lib/navigation";
 import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./Header.module.css";
 
@@ -77,10 +77,23 @@ export function Header() {
                   All Services
                 </Link>
               </li>
-              {services.map((s) => (
+              <li className={styles.dropdownLabel} aria-hidden="true">
+                Building Services
+              </li>
+              {buildingServices.map((s) => (
                 <li key={s.slug}>
                   <Link href={s.slug} onClick={closeServicesMenu}>
                     {s.title}
+                  </Link>
+                </li>
+              ))}
+              <li className={styles.dropdownLabel} aria-hidden="true">
+                Trade Services
+              </li>
+              {tradeServices.map((s) => (
+                <li key={s.slug}>
+                  <Link href={s.slug} onClick={closeServicesMenu}>
+                    {s.shortTitle}
                   </Link>
                 </li>
               ))}
