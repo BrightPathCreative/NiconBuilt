@@ -120,16 +120,6 @@
   padding: 0;
 }
 
-@media (min-width: 961px) {
-  .dropdown:hover .dropdownMenu,
-  .dropdown:focus-within .dropdownMenu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0);
-  }
-}
-
 .dropdownMenu a {
   display: block;
   padding: 10px 20px;
@@ -200,10 +190,6 @@
     border: none;
     display: none;
     padding-left: 16px;
-  }
-
-  .dropdown:hover .dropdownMenu {
-    display: none;
   }
 
   .dropdownOpen {

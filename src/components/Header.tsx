@@ -11,6 +11,11 @@ export function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const phone = siteConfig.phone;
 
+  const closeServicesMenu = () => {
+    setServicesOpen(false);
+    setMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
@@ -68,13 +73,13 @@ export function Header() {
             </button>
             <ul className={`${styles.dropdownMenu} ${servicesOpen ? styles.dropdownOpen : ""}`}>
               <li>
-                <Link href="/services/" onClick={() => setMenuOpen(false)}>
+                <Link href="/services/" onClick={closeServicesMenu}>
                   All Services
                 </Link>
               </li>
               {services.map((s) => (
                 <li key={s.slug}>
-                  <Link href={s.slug} onClick={() => setMenuOpen(false)}>
+                  <Link href={s.slug} onClick={closeServicesMenu}>
                     {s.title}
                   </Link>
                 </li>
