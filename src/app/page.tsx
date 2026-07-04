@@ -36,11 +36,12 @@ export default function HomePage() {
       <link rel="preload" as="image" href={images.homeHero} />
 
       <Hero
+        eyebrow="Building Quality, Maintaining Excellence"
         title={copy.headline ?? ""}
         description={heroParagraphs}
         trustLine={copy.heroTrust}
         image={images.homeHero}
-        imageAlt="Heritage home renovation Port Melbourne by Nicon Built"
+        imageAlt="Home services and renovations in Melbourne by Nicon Built"
         showForm
         showTrust
         priority

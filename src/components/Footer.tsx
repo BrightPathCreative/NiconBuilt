@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { buildingServices, tradeServices, footerNav, locationPages } from "@/lib/navigation";
+import { homeServices, projectServices, footerNav, locationPages } from "@/lib/navigation";
 import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./Footer.module.css";
 
@@ -26,9 +26,9 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className={styles.colTitle}>Building Services</h2>
-          <ul className={styles.links}>
-            {buildingServices.map((s) => (
+          <h2 className={styles.colTitle}>Home Services</h2>
+          <ul className={`${styles.links} ${styles.linksSplit}`}>
+            {homeServices.map((s) => (
               <li key={s.slug}>
                 <Link href={s.slug}>{s.shortTitle}</Link>
               </li>
@@ -37,9 +37,9 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className={styles.colTitle}>Trade Services</h2>
+          <h2 className={styles.colTitle}>Renovations &amp; Builds</h2>
           <ul className={styles.links}>
-            {tradeServices.map((s) => (
+            {projectServices.map((s) => (
               <li key={s.slug}>
                 <Link href={s.slug}>{s.shortTitle}</Link>
               </li>
@@ -64,7 +64,10 @@ export function Footer() {
             <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
             <span>{siteConfig.address.full}</span>
           </address>
-          <h3 className={styles.subTitle}>Service areas</h3>
+        </div>
+
+        <div>
+          <h2 className={styles.colTitle}>Service areas</h2>
           <ul className={styles.links}>
             {locationPages.map((loc) => (
               <li key={loc.slug}>

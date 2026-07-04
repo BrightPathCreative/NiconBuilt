@@ -1,18 +1,18 @@
 ---
 File: docs/copy/heritage-renovations-restorations.md
-Status: DRAFT — verbatim from Nicon_Built_Copy_v7_Approved.md, client-approved
+Status: DRAFT — verbatim from Nicon_Built_Copy_v8_Approved.md
 Page: Heritage Renovations and Restorations
 URL slug: /heritage-renovations-melbourne/
 Word count target: N/A — fixed approved copy
-Last updated: 2026-07-04
+Last updated: 2026-07-05
 ---
 
-SEO targets: heritage renovation builder Melbourne, Victorian home renovation Melbourne, heritage home restoration Melbourne
+SEO targets: heritage renovation builder Melbourne, Victorian home renovation Melbourne
 
-⚠️ Images: hero-bg (full-width, same style as homepage) + a page image (period home exterior or restoration detail) — both to be supplied by Nick.
+⚠️ Image: Heritage renovation. Period home exterior or restoration detail — to be supplied by Nick.
 
 ## Headline
-Heritage Renovation Builder Melbourne | Victorian, Edwardian and Federation Homes
+Heritage Renovation and Restoration Melbourne | Victorian, Edwardian and Federation Homes
 
 30 years of heritage building experience across Melbourne's inner south. Every project managed personally. VBA licensed, fully insured, Port Melbourne.
 
@@ -29,17 +29,12 @@ Most of our heritage work is in Armadale, Malvern, Albert Park, Brighton, Elwood
 
 ## FAQs
 
-**What makes heritage renovation different?**
-Heritage renovation is a specialist field. It's not simply updating an older home. It means working with buildings that carry historical significance and strict planning controls. Victorian, Edwardian, and Federation homes were constructed using materials and techniques that are no longer commonly used today, such as lime mortars, clinker brickwork, solid hardwood flooring, decorative plasterwork, and period joinery. Working with these elements requires experience and a deep understanding of traditional construction methods. Using modern substitutes in the wrong places can compromise both the integrity of the home and compliance with heritage overlay requirements. Poor decisions can lead to structural issues, non-compliant work, and damage that is difficult to reverse.
+**What makes heritage renovation different?** Heritage renovation is a specialist field. It's not simply updating an older home. It means working with buildings that carry historical significance and strict planning controls. Victorian, Edwardian, and Federation homes were constructed using materials and techniques that are no longer commonly used today. Using modern substitutes in the wrong places can compromise both the integrity of the home and compliance with heritage overlay requirements.
 
-**How do you approach heritage projects?**
-With over 30 years of experience in Melbourne's period homes, we approach every project with careful assessment before any work begins. Heritage overlay requirements are reviewed in detail, and the existing building is assessed on-site to identify potential challenges early. This includes comparing existing conditions with architectural drawings, as older homes often contain variations that only become clear once work is underway. We plan for these realities upfront, ensuring there are no surprises later in the process.
+**How do you approach heritage projects?** With over 30 years of experience in Melbourne's period homes, we approach every project with careful assessment before any work begins. Heritage overlay requirements are reviewed in detail, and the existing building is assessed on-site to identify potential challenges early. We plan for these realities upfront, ensuring there are no surprises later in the process.
 
-**How is the work managed?**
-Each project is managed end-to-end by a single point of responsibility. This ensures clear communication, consistent workmanship, and accountability throughout the build. We work with a long-established network of specialist suppliers to source period-appropriate materials that are often not available through standard channels. All heritage permit requirements are managed throughout the process to ensure compliance from start to finish.
+**How is the work managed?** Each project is managed end-to-end by a single point of responsibility. We work with a long-established network of specialist suppliers to source period-appropriate materials. All heritage permit requirements are managed throughout the process to ensure compliance from start to finish.
 
-**What size projects do you take on?**
-Heritage renovation projects typically range from internal restorations starting from approximately $100,000 through to full heritage extensions in the $1M to $1.5M range, depending on scope and complexity.
+**What size projects do you take on?** Heritage renovation projects typically range from internal restorations starting from approximately $100,000 through to full heritage extensions in the $1M to $1.5M range, depending on scope and complexity.
 
-**Where do you work?**
-Most heritage projects are undertaken in Melbourne's inner south and bayside suburbs, including Armadale, Malvern, Albert Park, Brighton, Elwood, South Yarra, Caulfield, Elsternwick, Camberwell, Hawthorn, and Kew.
+**Where do you work?** Most heritage projects are undertaken in Melbourne's inner south and bayside suburbs, including Armadale, Malvern, Albert Park, Brighton, Elwood, South Yarra, Caulfield, Elsternwick, Camberwell, Hawthorn, and Kew.

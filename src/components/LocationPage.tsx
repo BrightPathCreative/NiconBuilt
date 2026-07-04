@@ -14,11 +14,11 @@ type Props = {
 };
 
 export function LocationPage({ suburb, slug }: Props) {
-  const copy = loadCopy("heritage-renovations-restorations");
+  const copy = loadCopy("property-maintenance");
   const breadcrumbs = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services/" },
-    { name: `Heritage Renovations ${suburb}`, href: slug },
+    { name: `Home Services ${suburb}`, href: slug },
   ];
 
   return (
@@ -32,16 +32,16 @@ export function LocationPage({ suburb, slug }: Props) {
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "center" }}>
             <div>
-              <p className="eyebrow">Heritage Renovations · {suburb}</p>
-              <h1>Heritage Renovation Builder in {suburb} | Nicon Built</h1>
+              <p className="eyebrow">Home Services · {suburb}</p>
+              <h1>Home Services in {suburb} | Nicon Built Melbourne</h1>
               {copy.subheadline ? <p>{copy.subheadline}</p> : null}
-              {copy.paragraphs.map((p) => (
+              {copy.paragraphs.slice(0, 3).map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>
               ))}
             </div>
             <Image
-              src={images.heritageRenovations}
-              alt={`Heritage renovation in ${suburb} by Nicon Built`}
+              src={images.tradesMaintenance}
+              alt={`Home services in ${suburb} by Nicon Built`}
               width={640}
               height={420}
               style={{ borderRadius: "12px", width: "100%", height: "auto" }}
@@ -51,7 +51,7 @@ export function LocationPage({ suburb, slug }: Props) {
       </section>
 
       <FaqSection faqs={copy.faqs} />
-      <ServiceLinks currentSlug="/heritage-renovations-melbourne/" />
+      <ServiceLinks currentSlug="/property-maintenance-melbourne/" />
       <QuoteCTA />
     </>
   );

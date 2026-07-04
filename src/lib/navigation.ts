@@ -1,56 +1,15 @@
-export const buildingServices = [
-  {
-    title: "Heritage Renovations and Restorations",
-    slug: "/heritage-renovations-melbourne/",
-    shortTitle: "Heritage Renovations",
-  },
-  {
-    title: "Heritage Home Extensions",
-    slug: "/heritage-home-extensions-melbourne/",
-    shortTitle: "Heritage Extensions",
-  },
-  {
-    title: "Kitchen Renovations",
-    slug: "/kitchen-renovations-melbourne/",
-    shortTitle: "Kitchen Renovations",
-  },
-  {
-    title: "Bathroom Renovations",
-    slug: "/bathroom-renovations-melbourne/",
-    shortTitle: "Bathroom Renovations",
-  },
-  {
-    title: "Home Renovations and Extensions",
-    slug: "/home-renovations-melbourne/",
-    shortTitle: "Home Renovations",
-  },
-  {
-    title: "Trades and Maintenance",
-    slug: "/home-maintenance-melbourne/",
-    shortTitle: "Trades & Maintenance",
-  },
-  {
-    title: "New Builds",
-    slug: "/new-builds-melbourne/",
-    shortTitle: "New Builds",
-  },
-] as const;
+import { HOME_SERVICES, PROJECT_SERVICES, SERVICE_PAGES } from "./service-page-config";
 
-export const tradeServices = [
-  { title: "Painting Melbourne", slug: "/painting-melbourne/", shortTitle: "Painting" },
-  { title: "Plastering Melbourne", slug: "/plastering-melbourne/", shortTitle: "Plastering" },
-  { title: "Tiling Melbourne", slug: "/tiling-melbourne/", shortTitle: "Tiling" },
-  { title: "Plumbing Maintenance Melbourne", slug: "/plumbing-maintenance-melbourne/", shortTitle: "Plumbing" },
-  { title: "Brickwork Repairs Melbourne", slug: "/brickwork-repairs-melbourne/", shortTitle: "Brickwork" },
-  { title: "Roofing Melbourne", slug: "/roofing-melbourne/", shortTitle: "Roofing" },
-  { title: "Caulking Melbourne", slug: "/caulking-melbourne/", shortTitle: "Caulking" },
-  { title: "Fixture Replacements Melbourne", slug: "/fixture-replacements-melbourne/", shortTitle: "Fixtures" },
-  { title: "Minor Structural Repairs Melbourne", slug: "/minor-structural-repairs-melbourne/", shortTitle: "Structural Repairs" },
-  { title: "General Repairs Melbourne", slug: "/general-repairs-melbourne/", shortTitle: "General Repairs" },
-] as const;
+export { SERVICE_PAGES as services };
 
-/** All service pages — building + trade */
-export const services = [...buildingServices, ...tradeServices] as const;
+export const homeServices = HOME_SERVICES;
+export const projectServices = PROJECT_SERVICES;
+
+/** @deprecated Use homeServices — kept for imports during migration */
+export const buildingServices = SERVICE_PAGES;
+
+/** Footer trade column now maps to home service pages */
+export const tradeServices = HOME_SERVICES;
 
 export const locationPages = [
   { suburb: "Brighton", slug: "/heritage-renovations-brighton/" },

@@ -3,9 +3,10 @@ import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { QuoteCTA } from "@/components/QuoteCTA";
-import { loadCopy, getSectionParagraphs, serviceTileSlugs, serviceImageKeys } from "@/lib/copy";
+import { loadCopy, getSectionParagraphs, serviceImageKeys } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
+import { SERVICE_PAGES } from "@/lib/service-page-config";
 import { images } from "@/lib/images";
 import styles from "./page.module.css";
 
@@ -14,16 +15,6 @@ export const metadata = buildMetadata({ ...pageMeta.services, path: "/services/"
 const breadcrumbs = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services/" },
-];
-
-const summaryTitles = [
-  "Heritage Renovations and Restorations",
-  "Heritage Home Extensions",
-  "Kitchen Renovations",
-  "Bathroom Renovations",
-  "Home Renovations and Extensions",
-  "Trades and Maintenance",
-  "New Builds",
 ];
 
 export default function ServicesPage() {
@@ -52,23 +43,22 @@ export default function ServicesPage() {
       <section className="section section--tone">
         <div className="container">
           <div className={styles.grid}>
-            {summaryTitles.map((title, i) => {
-              const paragraphs = getSectionParagraphs(copy, title);
-              const slug = serviceTileSlugs[title];
+            {SERVICE_PAGES.map((service, i) => {
+              const paragraphs = getSectionParagraphs(copy, service.tileTitle);
               const imageKey = serviceImageKeys[i];
 
               return (
-                <Link key={title} href={slug} className={`card ${styles.card}`}>
+                <Link key={service.slug} href={service.slug} className={`card ${styles.card}`}>
                   <div className={styles.imageWrap}>
                     <Image
                       src={images[imageKey]}
-                      alt={`${title} Melbourne by Nicon Built`}
+                      alt={`${service.tileTitle} Melbourne by Nicon Built`}
                       width={400}
                       height={180}
                     />
                   </div>
                   <div className={styles.body}>
-                    <h2>{title}</h2>
+                    <h2>{service.tileTitle}</h2>
                     {paragraphs.map((p) => (
                       <p key={p.slice(0, 40)}>{p}</p>
                     ))}

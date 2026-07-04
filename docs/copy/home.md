@@ -1,62 +1,73 @@
 ---
 File: docs/copy/home.md
-Status: DRAFT — verbatim from Nicon_Built_Copy_v7_Approved.md (client-approved except items flagged below)
+Status: DRAFT — verbatim from Nicon_Built_Copy_v8_Approved.md
 Page: Home
 URL slug: /
 Word count target: N/A — fixed approved copy
-Last updated: 2026-07-04
+Last updated: 2026-07-05
 ---
 
 ## Tagline
 Building Quality, Maintaining Excellence
 
 ## Hero
-⚠️ Hero image: heritage home exterior or renovation in progress — to be supplied by Nick via WhatsApp (label: hero-bg). Must be preloaded per the Core Web Vitals spec in docs/seo.md.
+⚠️ Hero image: On-site work in progress. Kitchen, bathroom, or trade work — to be supplied by Nick via WhatsApp (label: hero-bg).
 
-**H1:** Heritage Renovation Builder Melbourne | Victorian, Edwardian and Federation Homes
+**H1:** Everyday Trades, Done Right.
 
-Heritage properties require specialised knowledge, traditional skills, and a deep respect for local history. Nicon Built brings over 30 years of hands-on heritage restoration and renovation experience to Melbourne homes.
+One reliable Melbourne team for the everyday trades around the home.
 
-From major structural renovations and extensions to kitchen updates and routine maintenance, you get dedicated, personal project management from day one. Your keys stay in safe hands.
+Plumbing, electrical, tiling, painting, carpentry. Kitchen and bathroom renovations. Extensions and new builds. Whatever your home needs, Nick Kafkalas and his team handle it properly, start to finish. VBA licensed. Fully insured. Based in Port Melbourne since 1990.
 
-*5.0 Stars | Google Reviews | 30+ Years Experience | VBA Licensed Builder*
+*5.0 Stars | 9 Google Reviews | 30+ Years Experience | VBA Licensed Builder*
 
 ## Stats strip
 30+ Years Experience — 5.0 Google Rating — 200+ Projects Completed — Fully Insured
 
-✅ Resolved — Sara has confirmed "200+ Projects Completed" as final, no change needed.
-
 ## About snapshot
-At Nicon Built, we believe every project deserves the highest standard of workmanship, whether it's a new construction project, structural remedial works, ongoing maintenance, or an emergency repair.
+Nick Kafkalas has been building and coordinating trades across Melbourne's inner south since 1990. Before starting Nicon Built, he worked on some of Melbourne's largest construction projects. The Bolte Bridge. The Burnley Tunnel. The State Library. That kind of experience shapes how you approach every job, no matter the size.
 
-With over 30 years of industry experience, we provide reliable construction and maintenance solutions for residential builds and home services. Our team is committed to delivering quality outcomes, clear communication, and dependable service from project commencement through to completion.
+Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, you deal with Nick and his team directly. One call. One point of contact. Everything managed properly from the first conversation to the final clean-up.
 
-## Service tiles (7 — each links to its own page)
+## Service tiles (12 — each links to its own page)
 
-1. **Heritage Renovations and Restorations** — From Victorian terraces to Edwardian and Federation homes, we specialise in restoring Melbourne's architectural heritage. With more than 30 years of experience, we combine traditional craftsmanship, period-correct materials, and heritage overlay expertise to deliver exceptional results.
-   Sub: Victorian restorations · Edwardian renovation · Federation conservation · Heritage overlay compliance · Period material matching
-
-2. **Heritage Home Extensions** — Period home extensions require a specialised approach. From heritage overlays and architectural detailing to quality craftsmanship and modern functionality, every element must work in harmony with the original home. We create extensions that look authentic, perform beautifully, and stand the test of time.
-   Sub: Period-accurate additions · Heritage compliant design · Council permit management · Material matching
-
-3. **Kitchen Renovations** — In older Melbourne homes, kitchen renovations often reveal more than meets the eye. That's why you need a licensed builder who can coordinate every trade, manage structural challenges with confidence, and deliver a kitchen that blends character, functionality, and everyday enjoyment.
+1. **Kitchen Renovations** — A kitchen renovation done properly needs a licensed builder coordinating every trade, in the right order. That's exactly what we do.
    Sub: Full kitchen renovations · Layout reconfigurations · Structural alterations · Period home kitchens
 
-4. **Bathroom Renovations** — Bathroom renovations require careful coordination of multiple trades working in the correct sequence. We manage everything, from waterproofing and plumbing to plastering and tiling, delivering a smooth process and a high-quality result without the stress of coordinating trades yourself.
+2. **Bathroom Renovations** — Waterproofing before tiling. Plumbing before fixtures. Every trade in the right sequence, held to the right standard. Nick manages the whole job.
    Sub: Full bathroom renovations · Ensuite upgrades · Waterproofing · Tiling and fixtures · Period home bathrooms
 
-5. **Home Renovations and Extensions** — With plans approved and permits secured, we take full responsibility for bringing your project to life. One experienced builder manages every trade, every stage, and every detail, ensuring a smooth construction process and a quality handover.
+3. **Carpentry and Joinery** — Decking, doors, cabinetry, custom shelving, pergolas, and period joinery. Built to last and finished properly.
+   Sub: Decking and pergolas · Doors and frames · Custom cabinetry · Skirting and architraves · Period joinery
+
+4. **Painting and Plastering** — The finish depends on what's underneath it. We repair the plaster properly first, then paint. Interior and exterior, across Melbourne's inner south.
+   Sub: Interior and exterior painting · Plaster repairs · Cornice work · Heritage plasterwork · Full replasters
+
+5. **Tiling** — Kitchens, bathrooms, laundries, alfresco areas. Every tile laid properly, every joint consistent, waterproofed where required.
+   Sub: Kitchen tiling · Bathroom tiling · Outdoor and alfresco · Feature walls · Period tile matching
+
+6. **Plumbing** — New installations, hot water systems, repairs, and plumbing coordination across renovation projects. Done to code, signed off properly.
+   Sub: Kitchen and bathroom plumbing · Hot water systems · Tap and fixture installation · Pipe repairs · Drainage
+
+7. **Electrical** — Lighting, power points, switchboard upgrades, and electrical coordination within renovations. Carried out by licensed electricians.
+   Sub: Lighting installation · Power points · Switchboard upgrades · Outdoor electrical · Renovation coordination
+
+8. **Property Maintenance** — Whatever needs doing around the home, we coordinate every trade so you don't have to. One call, one team, everything managed.
+   Sub: General repairs · Trade coordination · Planned maintenance · Emergency repairs · End-to-end management
+
+9. **Heritage Renovations and Restorations** — Victorian, Edwardian, and Federation homes restored properly, with period materials and 30 years of heritage experience.
+   Sub: Victorian restorations · Edwardian renovation · Federation conservation · Heritage overlay compliance · Period material matching
+
+10. **Heritage Home Extensions** — Extending a period home the right way. Heritage overlay compliant, period materials, new work that looks like it was always there.
+   Sub: Period-accurate additions · Heritage compliant design · Council permit management · Material matching
+
+11. **Home Renovations and Extensions** — Plans approved, permits sorted. One builder manages every trade, every stage, and every detail through to handover.
    Sub: Home extensions · Room additions · Open-plan conversions · Structural alterations · Dual-occupancy additions
 
-6. **Trades and Maintenance** — Property maintenance shouldn't require managing multiple phone numbers and unreliable schedules. We provide a single, fully managed solution for all your trade requirements, whether resolving a critical emergency or executing planned upgrades. Our network of qualified tradespeople ensures quality craftsmanship and complete transparency from day one.
-   From painting and plastering to plumbing, tiling, brickwork, roofing, and caulking, we coordinate every trade required to complete your project efficiently. Whether it's routine maintenance, reactive repairs, or planned upgrades, you deal with one trusted team instead of managing multiple contractors.
-   Sub: Painting and plastering · Tiling · Plumbing maintenance · Minor structural repairs · Trade coordination
-
-7. **New Builds** — As Melbourne's trusted experts in bespoke custom builds and high-yield dual-occupancy projects, we understand how to maximise the unique potential of your land. We balance architectural brilliance with strict construction precision to deliver premium multi-dwelling residences that elevate the local streetscape. Bring us your approved town planning permits or architectural concepts. Our dedicated team ensures your project is built properly, on schedule, and to a flawless specification.
+12. **New Builds** — Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. The person who quotes the job runs the build.
    Sub: Architect-designed homes · Dual-occupancy builds · Design and build · Boutique builder packages
 
 ## Top 3 Google reviews (homepage)
-⚠️ Confirm these three are the ones to feature — all 9 appear on the Testimonials page.
 
 - 5★ Vicki (6 years ago): "From the start of the renovation it was a stress-free experience. Top quality service throughout and nothing was ever too hard. Dealing directly with the builders gave us the peace of mind we needed as first-time renovators. Would highly recommend Nicon Built to anyone thinking of renovating or building."
 - 5★ Costas: "Professional, reliable and most importantly on time and on budget. They pay attention to the detail in the overall build and the pride extends to keeping a tidy site as well. I've built two houses through Nick and his team and would recommend them to anybody looking for a dependable builder."

@@ -31,7 +31,7 @@ export function buildMetadata({
           url: "https://niconbuilt.com.au/images/og-image.webp",
           width: 1200,
           height: 630,
-          alt: "Heritage home renovation Melbourne by Nicon Built",
+          alt: "Home services and renovations Melbourne by Nicon Built",
         },
       ],
     },
@@ -39,33 +39,23 @@ export function buildMetadata({
   };
 }
 
-/** SEO titles and descriptions from docs/seo.md */
+/** SEO titles and descriptions — aligned with v8 copy */
 export const pageMeta: Record<string, { title: string; description: string }> =
   {
     home: {
-      title: "Heritage Renovation & Custom Builder Melbourne | Nicon Built",
+      title: "Home Services & Renovation Builder Melbourne | Nicon Built",
       description:
-        "Heritage renovation builder in Melbourne with 30+ years experience. Victorian, Edwardian and Federation homes, extensions, kitchens, bathrooms and maintenance.",
+        "Everyday trades, kitchen and bathroom renovations, extensions and new builds across Melbourne's inner south. One reliable team, managed personally by Nick Kafkalas since 1990.",
     },
     about: {
-      title: "About Nicon Built | Nick Kafkalas, Melbourne Builder",
+      title: "About Nicon Built | Melbourne Home Services & Renovation Builder",
       description:
-        "Nick Kafkalas has personally run Nicon Built since 1990. VBA licensed and fully insured, with 30+ years building and renovating Melbourne's inner south.",
+        "Nick Kafkalas has personally run Nicon Built since 1990. VBA licensed and fully insured, coordinating trades, renovations and extensions across Melbourne's inner south.",
     },
     services: {
-      title: "Building and Renovation Services Melbourne | Nicon Built",
+      title: "Home Services and Renovation Builder Melbourne | Nicon Built",
       description:
-        "Heritage renovations, extensions, kitchens, bathrooms, maintenance and new builds across Melbourne's inner south. Every job run personally by Nick Kafkalas.",
-    },
-    "heritage-renovations-melbourne": {
-      title: "Heritage Home Renovations Melbourne | Nicon Built Builder",
-      description:
-        "Heritage renovation specialists for Victorian, Edwardian and Federation homes across Melbourne's inner south. 30+ years experience, VBA licensed builder.",
-    },
-    "heritage-home-extensions-melbourne": {
-      title: "Heritage Home Extensions Melbourne | Nicon Built Builder",
-      description:
-        "Heritage-compliant home extensions across Melbourne's inner south. Period-accurate materials and council permits fully managed, 30+ years of experience.",
+        "Plumbing, electrical, tiling, painting, carpentry, kitchen and bathroom renovations, property maintenance, heritage work and new builds. Every job run personally by Nick Kafkalas.",
     },
     "kitchen-renovations-melbourne": {
       title: "Kitchen Renovations Melbourne | Nicon Built Builder",
@@ -77,40 +67,75 @@ export const pageMeta: Record<string, { title: string; description: string }> =
       description:
         "Bathroom renovations across Melbourne's inner south, managed trade by trade in the right order: waterproofing, tiling, plumbing, electrical and fixtures.",
     },
+    "carpentry-and-joinery-melbourne": {
+      title: "Carpentry and Joinery Melbourne | Nicon Built",
+      description:
+        "Decking, pergolas, doors, custom cabinetry and period joinery across Melbourne's inner south. Built properly and finished to last.",
+    },
+    "painting-and-plastering-melbourne": {
+      title: "Painting and Plastering Melbourne | Nicon Built",
+      description:
+        "Interior and exterior painting with plaster repairs done properly first. Period homes and newer builds across Melbourne's inner south.",
+    },
+    "tiling-melbourne": {
+      title: "Tiling Melbourne | Kitchens, Bathrooms and Outdoor | Nicon Built",
+      description:
+        "Kitchen, bathroom, laundry and outdoor tiling across Melbourne's inner south. Waterproofed where required, every joint consistent.",
+    },
+    "plumbing-melbourne": {
+      title: "Plumbing Melbourne | Residential Plumbing | Nicon Built",
+      description:
+        "Residential plumbing, hot water systems, repairs and renovation coordination across Melbourne's inner south. Done to code, every time.",
+    },
+    "electrical-melbourne": {
+      title: "Electrical Services Melbourne | Nicon Built",
+      description:
+        "Lighting, power points, switchboard upgrades and electrical coordination within renovations. Licensed electricians across Melbourne's inner south.",
+    },
+    "property-maintenance-melbourne": {
+      title: "Property Maintenance Melbourne | Home Maintenance | Nicon Built",
+      description:
+        "One trusted team for home maintenance and trade coordination across Melbourne's inner south. Licensed builder, no job too small.",
+    },
+    "heritage-renovations-melbourne": {
+      title: "Heritage Renovation and Restoration Melbourne | Nicon Built",
+      description:
+        "Heritage renovation specialists for Victorian, Edwardian and Federation homes across Melbourne's inner south. 30+ years experience, VBA licensed builder.",
+    },
+    "heritage-home-extensions-melbourne": {
+      title: "Heritage Home Extensions Melbourne | Nicon Built Builder",
+      description:
+        "Heritage-compliant home extensions across Melbourne's inner south. Period-accurate materials and council permits fully managed, 30+ years of experience.",
+    },
     "home-renovations-melbourne": {
       title: "Home Renovations & Extensions Melbourne | Nicon Built",
       description:
         "Home renovations and extensions across Melbourne's inner south. Plans and permits sorted? Nick Kafkalas runs the build from start to finish, no handoffs.",
     },
-    "home-maintenance-melbourne": {
-      title: "Home Maintenance & Trade Services Melbourne | Nicon Built",
-      description:
-        "One trusted team for all your trade and maintenance needs across Melbourne's inner south. Licensed builder, 30-year trade network, and no job too small.",
-    },
     "new-builds-melbourne": {
-      title: "New Builds & Dual Occupancy Melbourne | Nicon Built",
+      title: "Custom Home Builder Melbourne | New Builds & Dual Occupancy | Nicon Built",
       description:
         "Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. Architect-designed or design-and-build, run personally by Nick Kafkalas.",
     },
     "our-work": {
-      title: "Our Work | Renovations & Builds Melbourne | Nicon Built",
+      title: "Our Work | Home Services & Renovations Melbourne | Nicon Built",
       description:
-        "A look through completed heritage restorations, renovations, extensions and new builds across Melbourne's inner south and bayside suburbs, by Nicon Built.",
+        "Completed kitchen and bathroom renovations, trade work, home extensions, heritage restorations and new builds across Melbourne's inner south by Nicon Built.",
     },
     testimonials: {
-      title: "Client Reviews | Nicon Built Melbourne Heritage Builder",
+      title: "Client Reviews | Nicon Built Melbourne",
       description:
-        "Read what Nicon Built clients say about working with Nick Kafkalas: 5.0 stars and 9 Google reviews across 30+ years of heritage renovation and building.",
+        "Read what Nicon Built clients say about working with Nick Kafkalas: 5.0 stars and 9 Google reviews across 30+ years of building across Melbourne's inner south.",
     },
     contact: {
-      title: "Contact Nicon Built | Melbourne Heritage & Renovation Builder",
+      title: "Contact Nicon Built | Melbourne Home Services & Renovation Builder",
       description:
-        "Get a free, no-obligation quote from Nicon Built today. Nick usually replies the same day, serving Melbourne's inner south and bayside suburbs since 1990.",
+        "Get in touch with Nicon Built today. Nick usually replies the same day, serving Melbourne's inner south and bayside suburbs since 1990.",
     },
     faq: {
-      title: "Frequently Asked Questions | Nicon Built Melbourne Builder",
+      title: "Frequently Asked Questions | Nicon Built Melbourne",
       description:
-        "Answers to common questions about heritage renovations, extensions, kitchen and bathroom renovations, trades and maintenance across Melbourne's inner south.",
+        "Answers to common questions about home services, trades, kitchen and bathroom renovations, extensions and heritage work across Melbourne's inner south.",
     },
     "privacy-policy": {
       title: "Privacy Policy | Nicon Built",
@@ -124,7 +149,7 @@ export const pageMeta: Record<string, { title: string; description: string }> =
 
 export function locationMeta(suburb: string) {
   return {
-    title: `Heritage Renovations in ${suburb} | Nicon Built`,
-    description: `Heritage renovations and building services in ${suburb}, Melbourne. 30+ years experience, VBA licensed builder. Get a free quote from Nicon Built today.`,
+    title: `Home Services in ${suburb} | Nicon Built Melbourne`,
+    description: `Home services, renovations and building in ${suburb}, Melbourne. 30+ years experience, VBA licensed builder. Get in touch with Nicon Built today.`,
   };
 }

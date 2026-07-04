@@ -1,13 +1,7 @@
 import { createServicePage } from "@/lib/service-pages";
+import { getServicePage } from "@/lib/service-page-config";
 
-const { metadata, Page } = createServicePage({
-  copySlug: "bathroom-renovations",
-  metaKey: "bathroom-renovations-melbourne",
-  slug: "/bathroom-renovations-melbourne/",
-  breadcrumbName: "Bathroom Renovations Melbourne",
-  imageKey: "bathroomRenovations",
-  imageAlt: "Bathroom renovation in Melbourne by Nicon Built",
-});
+const { metadata, Page } = createServicePage(getServicePage("bathroom-renovations-melbourne"));
 
 export { metadata };
 export default Page;

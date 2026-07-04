@@ -17,11 +17,11 @@ type Props = {
 };
 
 export function Hero({
-  eyebrow = "Heritage Builder · Melbourne",
+  eyebrow = "Home Services · Melbourne",
   title,
   description,
   image,
-  imageAlt = "Heritage home renovation Melbourne by Nicon Built",
+  imageAlt = "Home services and renovations Melbourne by Nicon Built",
   showForm = false,
   showTrust = false,
   trustLine,

@@ -1,15 +1,15 @@
 ---
 File: docs/copy/new-builds.md
-Status: DRAFT — verbatim from Nicon_Built_Copy_v7_Approved.md, client-approved. Kept on the site but explicitly not the main focus per the source doc.
+Status: DRAFT — verbatim from Nicon_Built_Copy_v8_Approved.md
 Page: New Builds
 URL slug: /new-builds-melbourne/
 Word count target: N/A — fixed approved copy
-Last updated: 2026-07-04
+Last updated: 2026-07-05
 ---
 
 SEO targets: custom home builder Melbourne, new home builder Melbourne inner south, dual occupancy builder Melbourne
 
-⚠️ Image: completed new build or dual occupancy project — to be supplied by Nick.
+⚠️ Image: Completed new build or dual occupancy — to be supplied by Nick.
 
 ## Headline
 Custom Home Builder Melbourne | New Builds and Dual Occupancy | Inner South
@@ -25,14 +25,10 @@ We've built custom architect-designed homes, dual-occupancy duplexes, and multi-
 
 ## FAQs
 
-**Do you offer design and build?**
-Yes. If you're at the early stages and want the design and build managed together, we can do that. If you've already got an architect and completed drawings, we work from those directly.
+**Do you offer design and build?** Yes. If you're at the early stages and want the design and build managed together, we can do that. If you've already got an architect and completed drawings, we work from those directly.
 
-**What types of builds have you done?**
-Custom architect-designed family homes, double-storey duplexes, and multi-dwelling residential builds across Melbourne's inner south since 1990. One standout was the double-storey duplex at 116a The Avenue, Spotswood, which was cited by hockingstuart Yarraville as the best new build they'd sold in the area.
+**What types of builds have you done?** Custom architect-designed family homes, double-storey duplexes, and multi-dwelling residential builds across Melbourne's inner south since 1990. One standout was the double-storey duplex at 116a The Avenue, Spotswood, which was cited by hockingstuart Yarraville as the best new build they'd sold in the area.
 
-**How do you keep jobs on time and on budget?**
-Nick manages the trade schedule, material procurement, inspection sequence, and client communication personally. There's no management layer between the decisions being made on site and the person accountable for the outcome. That removes a big source of delays and cost blowouts.
+**How do you keep jobs on time and on budget?** Nick manages the trade schedule, material procurement, inspection sequence, and client communication personally. There's no management layer between the decisions being made on site and the person accountable for the outcome. That removes a big source of delays and cost blowouts.
 
-**What's the difference between you and a volume builder?**
-A volume builder sells pre-designed templates with standard materials and limited say for the client. We build to a specific brief: your architect's design, your material choices, your site. And Nick personally runs every build from the first meeting to handover.
+**What's the difference between you and a volume builder?** A volume builder sells pre-designed templates with standard materials and limited say for the client. We build to a specific brief: your architect's design, your material choices, your site. And Nick personally runs every build from the first meeting to handover.

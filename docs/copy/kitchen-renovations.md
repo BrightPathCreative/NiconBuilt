@@ -1,15 +1,15 @@
 ---
 File: docs/copy/kitchen-renovations.md
-Status: ✅ APPROVED — Sara has confirmed this page, follow the copy as drafted (previously flagged NEW in the source doc, now cleared).
+Status: DRAFT — verbatim from Nicon_Built_Copy_v8_Approved.md
 Page: Kitchen Renovations
 URL slug: /kitchen-renovations-melbourne/
 Word count target: N/A — fixed approved copy
-Last updated: 2026-07-04
+Last updated: 2026-07-05
 ---
 
 SEO targets: kitchen renovations Melbourne, kitchen renovation builder Melbourne, kitchen reno inner south Melbourne
 
-⚠️ Image: completed kitchen renovation — to be supplied by Nick.
+⚠️ Image: Completed kitchen renovation — to be supplied by Nick.
 
 ## Headline
 Kitchen Renovations Melbourne | Licensed Builder | Inner South and Bayside
@@ -38,15 +38,10 @@ You brief Nick on what you want. He assesses the space, gives you a straight quo
 
 ## FAQs
 
+**Do I need a licensed builder for a kitchen renovation?** For straightforward kitchen updates, a builder's licence isn't always required. But most meaningful kitchen renovations involve structural work, plumbing relocation, or electrical changes that do require a licensed builder. Nick manages the full scope, so whatever the job involves, it's covered.
 
-**Do I need a licensed builder for a kitchen renovation?**
-For straightforward kitchen updates, a builder's licence isn't always required. But most meaningful kitchen renovations involve structural work, plumbing relocation, or electrical changes that do require a licensed builder. Nick manages the full scope, so whatever the job involves, it's covered.
+**How do you manage all the different trades?** Nick coordinates every trade himself. Plumbers, electricians, tilers, plasterers, cabinet makers, painters. All from a trusted network built up over 30 years. You brief Nick once and he handles the rest.
 
-**How do you manage all the different trades?**
-Nick coordinates every trade himself. Plumbers, electricians, tilers, plasterers, cabinet makers, painters. All from a trusted network built up over 30 years. You brief Nick once and he handles the rest.
+**How long does a kitchen renovation take?** A full kitchen renovation typically takes four to eight weeks from start to finish depending on scope and whether structural changes are required. Nick gives you a realistic timeline when he provides the quote.
 
-**How long does a kitchen renovation take?**
-A full kitchen renovation typically takes four to eight weeks from start to finish depending on scope and whether structural changes are required. Nick gives you a realistic timeline when he provides the quote.
-
-**Do you do kitchen renovations in period homes?**
-Yes. Period homes are a specialist focus. Nick has 30 years of experience working inside Melbourne's inner-south heritage housing stock and understands what to look for before the job starts.
+**Do you do kitchen renovations in period homes?** Yes. Period homes are a specialist focus. Nick has 30 years of experience working inside Melbourne's inner-south heritage housing stock and understands what to look for before the job starts.

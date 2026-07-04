@@ -1,18 +1,16 @@
 ---
 File: docs/copy/testimonials.md
-Status: ✅ APPROVED — verbatim from Nicon_Built_Copy_v7_Approved.md, minus the Johnny Andrianakis review which Sara has confirmed removing
+Status: DRAFT — verbatim from Nicon_Built_Copy_v8_Approved.md
 Page: Testimonials
 URL slug: /testimonials/
 Word count target: N/A — fixed approved copy
-Last updated: 2026-07-04
+Last updated: 2026-07-05
 ---
 
 ## Headline
-Client Reviews | Nicon Built Melbourne | Heritage and Renovation Builder
+Client Reviews | Nicon Built Melbourne
 
 Don't just take our word for it. Here's what our clients have to say.
-
-✅ Resolved: the Johnny Andrianakis review (originally flagged as the one associated with a former staff member, Callum) has been removed per Sara's instruction. The remaining 8 reviews below are approved for publishing.
 
 ## Reviews to publish (8)
 
@@ -31,5 +29,3 @@ Don't just take our word for it. Here's what our clients have to say.
 7. 5★ Helen Stephanou (4 years ago): "Nick from Nicon Built is extremely honest and approachable. Building a house can be overwhelming and very stressful but Nick's genuine and professional approach has made everything so much easier! Would recommend above and beyond!"
 
 8. 5★ Mary Katsianos (5 years ago): "Very professional. An incredible team. I would highly recommend."
-
-⚠️ Note for `docs/seo.md`'s `aggregateRating` schema: keep `reviewCount: 9` there since that should reflect the real, live Google Business Profile total — it's independent of how many reviews this page chooses to feature (8).

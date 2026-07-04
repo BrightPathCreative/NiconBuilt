@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { buildingServices } from "@/lib/navigation";
+import { services } from "@/lib/navigation";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { JsonLd } from "./JsonLd";
 import { FaqSection } from "./FaqSection";
@@ -101,7 +101,7 @@ export function ServicePageLayout({
 }
 
 export function ServiceLinks({ currentSlug }: { currentSlug: string }) {
-  const others = buildingServices.filter((s) => s.slug !== currentSlug).slice(0, 3);
+  const others = services.filter((s) => s.slug !== currentSlug).slice(0, 3);
 
   return (
     <section className="section section--tone">
@@ -111,7 +111,7 @@ export function ServiceLinks({ currentSlug }: { currentSlug: string }) {
         <div className={styles.relatedGrid}>
           {others.map((s) => (
             <Link key={s.slug} href={s.slug} className={`card ${styles.relatedCard}`}>
-              <span>{s.title}</span>
+              <span>{s.shortTitle}</span>
               <span aria-hidden="true">→</span>
             </Link>
           ))}

@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { SERVICE_PAGES } from "./service-page-config";
 
 const COPY_DIR = path.join(process.cwd(), "docs", "copy");
 
@@ -279,6 +280,7 @@ export function loadCopy(slug: string): ParsedCopy {
   };
 }
 
+
 export function getSection(copy: ParsedCopy, title: string): string | undefined {
   return copy.sections.find((s) => s.title === title || s.title.startsWith(title))?.content;
 }
@@ -302,22 +304,8 @@ export function getSectionParagraphs(copy: ParsedCopy, title: string): string[] 
 }
 
 /** Map service tile title to nav slug */
-export const serviceTileSlugs: Record<string, string> = {
-  "Heritage Renovations and Restorations": "/heritage-renovations-melbourne/",
-  "Heritage Home Extensions": "/heritage-home-extensions-melbourne/",
-  "Kitchen Renovations": "/kitchen-renovations-melbourne/",
-  "Bathroom Renovations": "/bathroom-renovations-melbourne/",
-  "Home Renovations and Extensions": "/home-renovations-melbourne/",
-  "Trades and Maintenance": "/home-maintenance-melbourne/",
-  "New Builds": "/new-builds-melbourne/",
-};
+export const serviceTileSlugs: Record<string, string> = Object.fromEntries(
+  SERVICE_PAGES.map((page) => [page.tileTitle, page.slug])
+);
 
-export const serviceImageKeys = [
-  "heritageRenovations",
-  "heritageExtensions",
-  "kitchenRenovations",
-  "bathroomRenovations",
-  "homeRenovations",
-  "tradesMaintenance",
-  "newBuilds",
-] as const;
+export const serviceImageKeys = SERVICE_PAGES.map((page) => page.imageKey);

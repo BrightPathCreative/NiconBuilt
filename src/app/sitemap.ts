@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site";
-import { buildingServices, tradeServices, locationPages } from "@/lib/navigation";
+import { SERVICE_PAGES } from "@/lib/service-page-config";
+import { locationPages } from "@/lib/navigation";
 import { blogPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -24,17 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: path === "" ? 1 : 0.8,
     })),
-    ...buildingServices.map((s) => ({
+    ...SERVICE_PAGES.map((s) => ({
       url: `${base}${s.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
-    })),
-    ...tradeServices.map((s) => ({
-      url: `${base}${s.slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
     })),
     ...locationPages.map((l) => ({
       url: `${base}${l.slug}`,

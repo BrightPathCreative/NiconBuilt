@@ -49,6 +49,28 @@ export const redirects: {
 
   // Old blog posts at root → /blog/ or homepage
   ...generateBlogRedirects(),
+
+  // v8 service slug consolidation
+  { source: "/home-maintenance-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/home-maintenance-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/plumbing-maintenance-melbourne", destination: "/plumbing-melbourne/", permanent: true },
+  { source: "/plumbing-maintenance-melbourne/", destination: "/plumbing-melbourne/", permanent: true },
+  { source: "/painting-melbourne", destination: "/painting-and-plastering-melbourne/", permanent: true },
+  { source: "/painting-melbourne/", destination: "/painting-and-plastering-melbourne/", permanent: true },
+  { source: "/plastering-melbourne", destination: "/painting-and-plastering-melbourne/", permanent: true },
+  { source: "/plastering-melbourne/", destination: "/painting-and-plastering-melbourne/", permanent: true },
+  { source: "/general-repairs-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/general-repairs-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/minor-structural-repairs-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/minor-structural-repairs-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/fixture-replacements-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/fixture-replacements-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/caulking-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/caulking-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/brickwork-repairs-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/brickwork-repairs-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/roofing-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/roofing-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
 ];
 
 function suburbSlugFromPath(pathname: string): string | null {
