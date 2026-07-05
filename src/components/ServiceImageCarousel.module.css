@@ -1,0 +1,194 @@
+.heroCarousel {
+  position: relative;
+}
+
+.heroStage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow:
+    0 24px 48px rgba(26, 26, 26, 0.08),
+    0 2px 8px rgba(26, 26, 26, 0.04);
+}
+
+.heroSlide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  transform: scale(1.03);
+  transition:
+    opacity 900ms var(--ease-out),
+    transform 1200ms var(--ease-out);
+}
+
+.heroSlideActive {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.heroSlide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroShade {
+  position: absolute;
+  inset: auto 0 0;
+  height: 42%;
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.42), transparent);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.heroDots {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.heroDot {
+  width: 28px;
+  height: 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-border-strong);
+  cursor: pointer;
+  transition:
+    width var(--duration-fast),
+    background var(--duration-fast);
+}
+
+.heroDotActive {
+  width: 44px;
+  background: var(--color-accent);
+}
+
+.heroCaption {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+.marqueeSection {
+  padding: 56px 0 64px;
+  background:
+    linear-gradient(180deg, var(--color-tone-band) 0%, var(--color-background) 100%);
+  border-block: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.marqueeHeader {
+  max-width: var(--max-width);
+  margin: 0 auto 28px;
+  padding-inline: var(--section-x);
+}
+
+.marqueeTitle {
+  margin-bottom: 0;
+  max-width: 18ch;
+}
+
+.marqueeViewport {
+  position: relative;
+}
+
+.marqueeFadeLeft,
+.marqueeFadeRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: min(120px, 12vw);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marqueeFadeLeft {
+  left: 0;
+  background: linear-gradient(to right, var(--color-tone-band), transparent);
+}
+
+.marqueeFadeRight {
+  right: 0;
+  background: linear-gradient(to left, var(--color-background), transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 18px;
+  width: max-content;
+  animation: marqueeScroll 48s linear infinite;
+  padding-inline: var(--section-x);
+}
+
+.marqueeViewport:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+
+.marqueeCard {
+  margin: 0;
+  flex: 0 0 auto;
+  width: clamp(240px, 28vw, 360px);
+  aspect-ratio: 3 / 2;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-white);
+  box-shadow: 0 10px 28px rgba(26, 26, 26, 0.06);
+}
+
+.marqueeCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-out);
+}
+
+.marqueeViewport:hover .marqueeCard:hover img {
+  transform: scale(1.04);
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marqueeSection {
+    padding: 40px 0 48px;
+  }
+
+  .marqueeTrack {
+    animation-duration: 36s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroSlide {
+    transition: none;
+  }
+
+  .marqueeTrack {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    padding-inline: 24px;
+  }
+
+  .marqueeFadeLeft,
+  .marqueeFadeRight {
+    display: none;
+  }
+}

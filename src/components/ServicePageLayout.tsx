@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/lib/navigation";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -8,6 +7,11 @@ import { QuoteCTA } from "./QuoteCTA";
 import type { BreadcrumbItem } from "@/lib/schema";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import type { FaqItem } from "@/lib/copy";
+import type { CarouselSlide } from "@/lib/service-carousel";
+import {
+  ServiceHeroCarousel,
+  ServiceMarqueeCarousel,
+} from "./ServiceImageCarousel";
 import styles from "./ServicePageLayout.module.css";
 
 type Props = {
@@ -19,6 +23,7 @@ type Props = {
   bulletsTitle?: string;
   image?: string;
   imageAlt?: string;
+  carouselSlides?: CarouselSlide[];
   faqs?: FaqItem[];
   children?: React.ReactNode;
 };
@@ -32,9 +37,16 @@ export function ServicePageLayout({
   bulletsTitle = "What's included",
   image,
   imageAlt,
+  carouselSlides = [],
   faqs = [],
   children,
 }: Props) {
+  const slides =
+    carouselSlides.length > 0
+      ? carouselSlides
+      : image
+        ? [{ src: image, alt: imageAlt || headline }]
+        : [];
   return (
     <>
       <JsonLd
@@ -59,14 +71,16 @@ export function ServicePageLayout({
                 </p>
               ))}
             </div>
-            {image ? (
-              <div className={styles.heroImage}>
-                <Image src={image} alt={imageAlt || headline} width={640} height={420} />
-              </div>
+            {slides.length ? (
+              <ServiceHeroCarousel slides={slides} label={`${headline} gallery`} />
             ) : null}
           </div>
         </div>
       </section>
+
+      {slides.length > 1 ? (
+        <ServiceMarqueeCarousel slides={slides} label={`${headline} project work`} />
+      ) : null}
 
       {paragraphs.length > 2 ? (
         <section className="section section--surface">

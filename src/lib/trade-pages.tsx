@@ -1,6 +1,6 @@
 import { ServicePageLayout } from "@/components/ServicePageLayout";
 import { buildMetadata } from "@/lib/metadata";
-import { images } from "@/lib/images";
+import { getTradeCarouselSlides } from "@/lib/service-carousel";
 import type { TradeService } from "./trades";
 import { tradeServices } from "./trades";
 
@@ -25,8 +25,7 @@ export function createTradePage(trade: TradeService) {
           paragraphs={trade.paragraphs}
           bullets={trade.bullets}
           bulletsTitle="What we handle"
-          image={images.tradesMaintenance}
-          imageAlt={`${trade.shortTitle} services Melbourne by Nicon Built`}
+          carouselSlides={getTradeCarouselSlides(trade.slug)}
           faqs={trade.faqs}
         />
       );

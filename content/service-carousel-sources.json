@@ -1,0 +1,638 @@
+{
+  "service": {
+    "kitchen-renovations-melbourne": [
+      {
+        "file": "nicon-built-white-shaker-kitchen-island-vaulted-ceiling-heritage.jpg",
+        "alt": "White shaker kitchen with vaulted ceiling — Nicon Built"
+      },
+      {
+        "file": "nicon-built-navy-kitchen-marble-benchtop-gold-tapware-pendants.jpg",
+        "alt": "Navy kitchen with marble benchtop and gold tapware — Nicon Built"
+      },
+      {
+        "file": "nicon-built-navy-kitchen-bosch-ovens-marble-splashback-pool-view.jpg",
+        "alt": "Navy kitchen with marble splashback and pool view — Nicon Built"
+      },
+      {
+        "file": "nicon-built-white-galley-kitchen-gold-tapware-timber-floors.jpg",
+        "alt": "White galley kitchen with timber floors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-kitchen-vaulted-ceiling-barn-door-pool-view.jpg",
+        "alt": "Heritage kitchen with vaulted ceiling and barn door — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-kitchen-marble-island-crystal-pendants-heritage.jpg",
+        "alt": "Open-plan kitchen with marble island and crystal pendants — Nicon Built"
+      },
+      {
+        "file": "nicon-built-kitchen-white-shaker-island-gable-window-garden-view.jpg",
+        "alt": "Shaker kitchen island with gable window — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-kitchen-island-hexagonal-splashback.webp",
+        "alt": "Modern white kitchen with hexagonal splashback — Nicon Built"
+      }
+    ],
+    "bathroom-renovations-melbourne": [
+      {
+        "file": "nicon-built-luxury-bathroom-freestanding-bath-skylight-gold-tapware.jpg",
+        "alt": "Luxury bathroom with freestanding bath and skylight — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-bathroom-marble-tiles-freestanding-bath-timber-vanity.jpg",
+        "alt": "Modern bathroom with marble tiles and timber vanity — Nicon Built"
+      },
+      {
+        "file": "nicon-built-luxury-bathroom-double-vanity-arched-mirrors-gold-tapware.jpg",
+        "alt": "Double vanity bathroom with arched mirrors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "White bathroom with glass shower and vessel basin — Nicon Built"
+      },
+      {
+        "file": "nicon-built-kitchen-dining-penny-round-splashback-pendant-lights.jpg",
+        "alt": "Penny-round tiled splashback detail — Nicon Built"
+      },
+      {
+        "file": "nicon-built-master-bedroom-timber-panel-headboard-gold-lights.jpg",
+        "alt": "Ensuite-adjacent bedroom with refined finishes — Nicon Built"
+      }
+    ],
+    "carpentry-and-joinery-melbourne": [
+      {
+        "file": "nicon-built-builder-on-site-pergola-construction-weatherboard.jpeg",
+        "alt": "Pergola construction on heritage weatherboard home — Nicon Built"
+      },
+      {
+        "file": "nicon-built-timber-staircase-glass-balustrade-geometric-chandelier.jpg",
+        "alt": "Custom timber staircase with glass balustrade — Nicon Built"
+      },
+      {
+        "file": "nicon-built-timber-staircase-glass-balustrade-marble-kitchen-island.webp",
+        "alt": "Timber staircase and joinery in open-plan renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-indoor-outdoor-living-timber-deck-bbq-bifold-doors.jpg",
+        "alt": "Timber deck and outdoor joinery with bifold doors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-home-extension-verandah-fretwork-dusk.jpg",
+        "alt": "Heritage verandah fretwork and carpentry detail — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-living-timber-staircase-glass-balustrade-kitchen.jpg",
+        "alt": "Timber staircase leading to renovated living space — Nicon Built"
+      }
+    ],
+    "painting-and-plastering-melbourne": [
+      {
+        "file": "nicon-built-builder-painting-pergola-on-site-construction.jpg",
+        "alt": "Builder painting pergola on site — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-bedroom-vj-panelling-gold-mirror.jpg",
+        "alt": "Heritage bedroom with VJ panelling and plaster finishes — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-living-herringbone-floors-open-plan.jpg",
+        "alt": "Heritage living room with restored plaster and herringbone floors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-boucle-sofa-velvet-armchair-artwork.webp",
+        "alt": "Freshly finished living room with refined paintwork — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-dining-vaulted-ceiling-globe-pendants-timber.jpg",
+        "alt": "Heritage dining room with restored ceiling and walls — Nicon Built"
+      },
+      {
+        "file": "nicon-built-victorian-terrace-verandah-checkerboard-tiles-entry.jpg",
+        "alt": "Victorian terrace entry with restored exterior paint — Nicon Built"
+      }
+    ],
+    "tiling-melbourne": [
+      {
+        "file": "nicon-built-modern-bathroom-marble-tiles-freestanding-bath-timber-vanity.jpg",
+        "alt": "Marble bathroom tiling — Nicon Built"
+      },
+      {
+        "file": "nicon-built-kitchen-dining-penny-round-splashback-pendant-lights.jpg",
+        "alt": "Penny-round kitchen splashback tiling — Nicon Built"
+      },
+      {
+        "file": "nicon-built-luxury-bathroom-double-vanity-arched-mirrors-gold-tapware.jpg",
+        "alt": "Tiled bathroom with double vanity — Nicon Built"
+      },
+      {
+        "file": "nicon-built-victorian-terrace-verandah-checkerboard-tiles-entry.jpg",
+        "alt": "Checkerboard tiled terrace entry — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "Tiled shower and bathroom floor — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-kitchen-turquoise-splashback-island-bench.jpeg",
+        "alt": "Feature splashback tiling in kitchen renovation — Nicon Built"
+      }
+    ],
+    "plumbing-melbourne": [
+      {
+        "file": "nicon-built-luxury-bathroom-freestanding-bath-skylight-gold-tapware.jpg",
+        "alt": "Plumbing and fixtures in luxury bathroom renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "Glass shower and basin plumbing installation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-white-kitchen-island-bench-led-lighting-gold-tapware.jpg",
+        "alt": "Kitchen sink and tapware installation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-navy-kitchen-marble-benchtop-gold-tapware-pendants.jpg",
+        "alt": "Kitchen plumbing and gold tapware — Nicon Built"
+      },
+      {
+        "file": "nicon-built-white-galley-kitchen-gold-tapware-timber-floors.jpg",
+        "alt": "Galley kitchen plumbing relocation — Nicon Built"
+      }
+    ],
+    "electrical-melbourne": [
+      {
+        "file": "nicon-built-heritage-dining-vaulted-ceiling-globe-pendants-timber.jpg",
+        "alt": "Pendant lighting installation in heritage dining room — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-kitchen-marble-island-crystal-pendants-heritage.jpg",
+        "alt": "Crystal pendant lights over kitchen island — Nicon Built"
+      },
+      {
+        "file": "nicon-built-kitchen-dining-penny-round-splashback-pendant-lights.jpg",
+        "alt": "Kitchen dining pendants and lighting — Nicon Built"
+      },
+      {
+        "file": "nicon-built-timber-staircase-glass-balustrade-geometric-chandelier.jpg",
+        "alt": "Statement chandelier and stair lighting — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-linear-fireplace-built-in-cabinetry.jpg",
+        "alt": "Living room lighting and built-in electrical — Nicon Built"
+      },
+      {
+        "file": "nicon-built-white-minimalist-kitchen-red-pendant-lights-townhouse.jpg",
+        "alt": "Feature pendant lighting in townhouse kitchen — Nicon Built"
+      }
+    ],
+    "property-maintenance-melbourne": [
+      {
+        "file": "nicon-built-builder-on-site-pergola-construction-weatherboard.jpeg",
+        "alt": "Builder on site for property maintenance — Nicon Built"
+      },
+      {
+        "file": "nicon-built-builder-painting-pergola-on-site-construction.jpg",
+        "alt": "On-site painting and maintenance work — Nicon Built"
+      },
+      {
+        "file": "nicon-built-grey-weatherboard-heritage-cottage-green-door-exterior.jpg",
+        "alt": "Heritage cottage exterior maintenance — Nicon Built"
+      },
+      {
+        "file": "nicon-built-rear-extension-bifold-doors-deck-heritage-renovation.jpg",
+        "alt": "Deck and door maintenance on heritage home — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-renovation-bifold-doors-timber-deck-brick.jpg",
+        "alt": "Timber deck and brick upkeep — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-sliding-doors-courtyard-garden.jpg",
+        "alt": "Courtyard doors and general home upkeep — Nicon Built"
+      }
+    ],
+    "pest-control-melbourne": [
+      {
+        "file": "nicon-built-grey-weatherboard-heritage-cottage-green-door-exterior.jpg",
+        "alt": "Heritage weatherboard home exterior — Nicon Built"
+      },
+      {
+        "file": "nicon-built-grey-weatherboard-cottage-white-picket-fence-heritage.webp",
+        "alt": "Weatherboard cottage with picket fence — Nicon Built"
+      },
+      {
+        "file": "nicon-built-red-brick-heritage-home-arched-entry-manicured-lawn.jpg",
+        "alt": "Red brick heritage home exterior — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-style-weatherboard-home-green-door-verandah-dusk.jpg",
+        "alt": "Weatherboard home with subfloor and verandah — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-weatherboard-cottage-white-picket-fence-melbourne.jpg",
+        "alt": "Period weatherboard cottage Melbourne — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-brick-home-courtyard-bluestone-paving-bifold-doors.jpg",
+        "alt": "Heritage brick home courtyard — Nicon Built"
+      }
+    ],
+    "cleaning-melbourne": [
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "Spotless white bathroom after renovation clean — Nicon Built"
+      },
+      {
+        "file": "nicon-built-luxury-bathroom-freestanding-bath-skylight-gold-tapware.jpg",
+        "alt": "Finished bathroom ready for handover — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-boucle-sofa-velvet-armchair-artwork.webp",
+        "alt": "Clean living room after end-of-job clean — Nicon Built"
+      },
+      {
+        "file": "nicon-built-master-bedroom-timber-panel-headboard-gold-lights.jpg",
+        "alt": "Freshly cleaned bedroom interior — Nicon Built"
+      },
+      {
+        "file": "nicon-built-white-shaker-kitchen-island-vaulted-ceiling-heritage.jpg",
+        "alt": "Kitchen gleaming after post-renovation clean — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-sliding-doors-outdoor-dining.webp",
+        "alt": "Open living space after bond clean — Nicon Built"
+      }
+    ],
+    "roofing-melbourne": [
+      {
+        "file": "nicon-built-heritage-cottage-facade-gabled-roof-restored-melbourne.jpg",
+        "alt": "Restored gabled roof on heritage cottage — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-cottage-double-gable-wide-angle-melbourne.jpg",
+        "alt": "Double gable heritage cottage roofline — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-cottage-facade-composite-portfolio-image.jpg",
+        "alt": "Heritage cottage facade and roof restoration — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-style-weatherboard-home-green-door-verandah-dusk.jpg",
+        "alt": "Weatherboard home roof and verandah at dusk — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-weatherboard-home-dusk-verandah-green-door.webp",
+        "alt": "Period home roof and verandah detail — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-weatherboard-cottage-white-picket-fence-melbourne.jpg",
+        "alt": "Weatherboard cottage with restored roof — Nicon Built"
+      }
+    ],
+    "heritage-renovations-melbourne": [
+      {
+        "file": "nicon-built-red-brick-heritage-home-arched-entry-manicured-lawn.jpg",
+        "alt": "Red brick heritage home restoration — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-renovation-facade-white-picket-fence-entry-path.jpg",
+        "alt": "Heritage facade with white picket fence — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-weatherboard-cottage-white-picket-fence-melbourne.jpg",
+        "alt": "Weatherboard cottage heritage restoration — Nicon Built"
+      },
+      {
+        "file": "nicon-built-victorian-terrace-verandah-checkerboard-tiles-entry.jpg",
+        "alt": "Victorian terrace verandah restoration — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-bedroom-vj-panelling-gold-mirror.jpg",
+        "alt": "Heritage bedroom with VJ panelling restored — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-living-room-velvet-armchair-artwork-courtyard.jpg",
+        "alt": "Heritage living room overlooking courtyard — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-living-herringbone-floors-open-plan.jpg",
+        "alt": "Heritage living with herringbone floors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-renovation-bifold-doors-timber-deck-brick.jpg",
+        "alt": "Heritage renovation with bifold doors and deck — Nicon Built"
+      }
+    ],
+    "heritage-home-extensions-melbourne": [
+      {
+        "file": "nicon-built-heritage-home-extension-verandah-fretwork-dusk.jpg",
+        "alt": "Heritage home extension with verandah fretwork — Nicon Built"
+      },
+      {
+        "file": "nicon-built-two-storey-extension-pergola-outdoor-dining-dusk.jpg",
+        "alt": "Two-storey heritage extension with pergola — Nicon Built"
+      },
+      {
+        "file": "nicon-built-rear-extension-bifold-doors-deck-heritage-renovation.jpg",
+        "alt": "Rear extension with bifold doors on heritage home — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-extension-pool-glass-fence-timber-deck.jpg",
+        "alt": "Modern rear extension with pool and deck — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-brick-home-courtyard-bluestone-paving-bifold-doors.jpg",
+        "alt": "Heritage brick home with courtyard extension — Nicon Built"
+      },
+      {
+        "file": "nicon-built-indoor-outdoor-entertaining-bifold-doors-fireplace-dusk.jpg",
+        "alt": "Indoor-outdoor extension with fireplace — Nicon Built"
+      },
+      {
+        "file": "nicon-built-aerial-modern-extension-pool-solar-panels-ground-view.jpg",
+        "alt": "Aerial view of heritage home extension — Nicon Built"
+      }
+    ],
+    "home-renovations-melbourne": [
+      {
+        "file": "nicon-built-rear-extension-bifold-doors-deck-heritage-renovation.jpg",
+        "alt": "Rear extension and deck renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-kitchen-dining-outdoor-deck-heritage.jpg",
+        "alt": "Open-plan kitchen opening to outdoor deck — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-living-kitchen-island-dining-heritage-renovation.jpg",
+        "alt": "Open-plan living and kitchen renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-living-room-fireplace-artwork-brick-courtyard-view.webp",
+        "alt": "Renovated living room with courtyard view — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-curved-sofa-courtyard-sliding-doors.jpg",
+        "alt": "Modern living room with courtyard sliding doors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-living-floating-staircase-polished-concrete.jpg",
+        "alt": "Open-plan living with floating staircase — Nicon Built"
+      },
+      {
+        "file": "nicon-built-indoor-outdoor-living-timber-deck-bbq-bifold-doors.jpg",
+        "alt": "Indoor-outdoor living renovation — Nicon Built"
+      }
+    ],
+    "new-builds-melbourne": [
+      {
+        "file": "nicon-built-modern-two-storey-new-home-white-render-landscaped.jpg",
+        "alt": "Modern two-storey new home — Nicon Built"
+      },
+      {
+        "file": "nicon-built-contemporary-two-storey-home-white-render-charcoal.webp",
+        "alt": "Contemporary two-storey home with charcoal accents — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-duplex-dark-cladding-timber-balcony-glass.jpg",
+        "alt": "Modern duplex with timber balcony — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-townhouse-white-render-charcoal-cladding-dusk.png",
+        "alt": "Townhouse new build at dusk — Nicon Built"
+      },
+      {
+        "file": "nicon-built-architectural-home-rammed-earth-timber-cladding-dusk.webp",
+        "alt": "Architectural home with rammed earth and timber — Nicon Built"
+      },
+      {
+        "file": "nicon-built-covered-alfresco-dining-brick-pillars-pool-garden.webp",
+        "alt": "New build with alfresco and pool — Nicon Built"
+      },
+      {
+        "file": "nicon-built-waterfront-architectural-home-curved-glass-golden-hour.jpg",
+        "alt": "Architectural waterfront home at golden hour — Nicon Built"
+      }
+    ]
+  },
+  "trade": {
+    "painting-melbourne": [
+      {
+        "file": "nicon-built-builder-painting-pergola-on-site-construction.jpg",
+        "alt": "Builder painting pergola on site — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-bedroom-vj-panelling-gold-mirror.jpg",
+        "alt": "Heritage bedroom with VJ panelling and plaster finishes — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-living-herringbone-floors-open-plan.jpg",
+        "alt": "Heritage living room with restored plaster and herringbone floors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-boucle-sofa-velvet-armchair-artwork.webp",
+        "alt": "Freshly finished living room with refined paintwork — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-dining-vaulted-ceiling-globe-pendants-timber.jpg",
+        "alt": "Heritage dining room with restored ceiling and walls — Nicon Built"
+      },
+      {
+        "file": "nicon-built-victorian-terrace-verandah-checkerboard-tiles-entry.jpg",
+        "alt": "Victorian terrace entry with restored exterior paint — Nicon Built"
+      }
+    ],
+    "plastering-melbourne": [
+      {
+        "file": "nicon-built-builder-painting-pergola-on-site-construction.jpg",
+        "alt": "Builder painting pergola on site — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-bedroom-vj-panelling-gold-mirror.jpg",
+        "alt": "Heritage bedroom with VJ panelling and plaster finishes — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-living-herringbone-floors-open-plan.jpg",
+        "alt": "Heritage living room with restored plaster and herringbone floors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-boucle-sofa-velvet-armchair-artwork.webp",
+        "alt": "Freshly finished living room with refined paintwork — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-dining-vaulted-ceiling-globe-pendants-timber.jpg",
+        "alt": "Heritage dining room with restored ceiling and walls — Nicon Built"
+      },
+      {
+        "file": "nicon-built-victorian-terrace-verandah-checkerboard-tiles-entry.jpg",
+        "alt": "Victorian terrace entry with restored exterior paint — Nicon Built"
+      }
+    ],
+    "plumbing-maintenance-melbourne": [
+      {
+        "file": "nicon-built-luxury-bathroom-freestanding-bath-skylight-gold-tapware.jpg",
+        "alt": "Plumbing and fixtures in luxury bathroom renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "Glass shower and basin plumbing installation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-white-kitchen-island-bench-led-lighting-gold-tapware.jpg",
+        "alt": "Kitchen sink and tapware installation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-navy-kitchen-marble-benchtop-gold-tapware-pendants.jpg",
+        "alt": "Kitchen plumbing and gold tapware — Nicon Built"
+      },
+      {
+        "file": "nicon-built-white-galley-kitchen-gold-tapware-timber-floors.jpg",
+        "alt": "Galley kitchen plumbing relocation — Nicon Built"
+      }
+    ],
+    "tiling-melbourne": [
+      {
+        "file": "nicon-built-modern-bathroom-marble-tiles-freestanding-bath-timber-vanity.jpg",
+        "alt": "Marble bathroom tiling — Nicon Built"
+      },
+      {
+        "file": "nicon-built-kitchen-dining-penny-round-splashback-pendant-lights.jpg",
+        "alt": "Penny-round kitchen splashback tiling — Nicon Built"
+      },
+      {
+        "file": "nicon-built-luxury-bathroom-double-vanity-arched-mirrors-gold-tapware.jpg",
+        "alt": "Tiled bathroom with double vanity — Nicon Built"
+      },
+      {
+        "file": "nicon-built-victorian-terrace-verandah-checkerboard-tiles-entry.jpg",
+        "alt": "Checkerboard tiled terrace entry — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "Tiled shower and bathroom floor — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-kitchen-turquoise-splashback-island-bench.jpeg",
+        "alt": "Feature splashback tiling in kitchen renovation — Nicon Built"
+      }
+    ],
+    "brickwork-repairs-melbourne": [
+      {
+        "file": "nicon-built-red-brick-heritage-home-arched-entry-manicured-lawn.jpg",
+        "alt": "Red brick heritage home — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-brick-home-courtyard-bluestone-paving-bifold-doors.jpg",
+        "alt": "Heritage brick courtyard — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-renovation-bifold-doors-timber-deck-brick.jpg",
+        "alt": "Brick and timber deck renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-living-room-fireplace-artwork-brick-courtyard-view.webp",
+        "alt": "Brick fireplace and courtyard — Nicon Built"
+      },
+      {
+        "file": "nicon-built-covered-alfresco-dining-brick-pillars-pool-garden.webp",
+        "alt": "Brick pillar alfresco structure — Nicon Built"
+      }
+    ],
+    "caulking-melbourne": [
+      {
+        "file": "nicon-built-luxury-bathroom-freestanding-bath-skylight-gold-tapware.jpg",
+        "alt": "Luxury bathroom with freestanding bath and skylight — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-bathroom-marble-tiles-freestanding-bath-timber-vanity.jpg",
+        "alt": "Modern bathroom with marble tiles and timber vanity — Nicon Built"
+      },
+      {
+        "file": "nicon-built-luxury-bathroom-double-vanity-arched-mirrors-gold-tapware.jpg",
+        "alt": "Double vanity bathroom with arched mirrors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "White bathroom with glass shower and vessel basin — Nicon Built"
+      },
+      {
+        "file": "nicon-built-kitchen-dining-penny-round-splashback-pendant-lights.jpg",
+        "alt": "Penny-round tiled splashback detail — Nicon Built"
+      }
+    ],
+    "fixture-replacements-melbourne": [
+      {
+        "file": "nicon-built-luxury-bathroom-freestanding-bath-skylight-gold-tapware.jpg",
+        "alt": "Luxury bathroom with freestanding bath and skylight — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-bathroom-marble-tiles-freestanding-bath-timber-vanity.jpg",
+        "alt": "Modern bathroom with marble tiles and timber vanity — Nicon Built"
+      },
+      {
+        "file": "nicon-built-luxury-bathroom-double-vanity-arched-mirrors-gold-tapware.jpg",
+        "alt": "Double vanity bathroom with arched mirrors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+        "alt": "White bathroom with glass shower and vessel basin — Nicon Built"
+      },
+      {
+        "file": "nicon-built-kitchen-dining-penny-round-splashback-pendant-lights.jpg",
+        "alt": "Penny-round tiled splashback detail — Nicon Built"
+      },
+      {
+        "file": "nicon-built-master-bedroom-timber-panel-headboard-gold-lights.jpg",
+        "alt": "Ensuite-adjacent bedroom with refined finishes — Nicon Built"
+      }
+    ],
+    "minor-structural-repairs-melbourne": [
+      {
+        "file": "nicon-built-rear-extension-bifold-doors-deck-heritage-renovation.jpg",
+        "alt": "Rear extension and deck renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-kitchen-dining-outdoor-deck-heritage.jpg",
+        "alt": "Open-plan kitchen opening to outdoor deck — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-living-kitchen-island-dining-heritage-renovation.jpg",
+        "alt": "Open-plan living and kitchen renovation — Nicon Built"
+      },
+      {
+        "file": "nicon-built-living-room-fireplace-artwork-brick-courtyard-view.webp",
+        "alt": "Renovated living room with courtyard view — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-curved-sofa-courtyard-sliding-doors.jpg",
+        "alt": "Modern living room with courtyard sliding doors — Nicon Built"
+      }
+    ],
+    "general-repairs-melbourne": [
+      {
+        "file": "nicon-built-builder-on-site-pergola-construction-weatherboard.jpeg",
+        "alt": "Builder on site for property maintenance — Nicon Built"
+      },
+      {
+        "file": "nicon-built-builder-painting-pergola-on-site-construction.jpg",
+        "alt": "On-site painting and maintenance work — Nicon Built"
+      },
+      {
+        "file": "nicon-built-grey-weatherboard-heritage-cottage-green-door-exterior.jpg",
+        "alt": "Heritage cottage exterior maintenance — Nicon Built"
+      },
+      {
+        "file": "nicon-built-rear-extension-bifold-doors-deck-heritage-renovation.jpg",
+        "alt": "Deck and door maintenance on heritage home — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-renovation-bifold-doors-timber-deck-brick.jpg",
+        "alt": "Timber deck and brick upkeep — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-living-room-sliding-doors-courtyard-garden.jpg",
+        "alt": "Courtyard doors and general home upkeep — Nicon Built"
+      }
+    ]
+  }
+}

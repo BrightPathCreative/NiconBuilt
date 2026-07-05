@@ -2,6 +2,12 @@ import fs from "fs";
 import path from "path";
 import sharp from "sharp";
 
+const carouselData = JSON.parse(
+  fs.readFileSync(path.resolve(process.cwd(), "content/service-carousel-sources.json"), "utf-8")
+);
+const SERVICE_CAROUSEL_SOURCES = carouselData.service;
+const TRADE_CAROUSEL_SOURCES = carouselData.trade;
+
 const ASSETS_DIR = path.resolve(
   process.cwd(),
   "../05 Assets & Branding/Images"
@@ -11,6 +17,7 @@ const LOGO_DIR = path.resolve(
   "../05 Assets & Branding/Logo & Branding information"
 );
 const OUT_DIR = path.resolve(process.cwd(), "public/images");
+const CAROUSEL_OUT_DIR = path.join(OUT_DIR, "service-carousel");
 
 /** Image slot → source filename mapping */
 const IMAGE_MAP = {
@@ -68,6 +75,7 @@ async function optimizeImage(srcPath, destPath, options = {}) {
 
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
+  fs.mkdirSync(CAROUSEL_OUT_DIR, { recursive: true });
   fs.mkdirSync(path.join(process.cwd(), "public"), { recursive: true });
 
   for (const [slot, filename] of Object.entries(IMAGE_MAP)) {
@@ -95,6 +103,24 @@ async function main() {
     });
     console.log(`✓ ${slot}.webp`);
     i++;
+  }
+
+  const carouselSets = { ...SERVICE_CAROUSEL_SOURCES, ...TRADE_CAROUSEL_SOURCES };
+  for (const [slug, items] of Object.entries(carouselSets)) {
+    for (let index = 0; index < items.length; index++) {
+      const item = items[index];
+      const src = path.join(ASSETS_DIR, item.file);
+      if (!fs.existsSync(src)) {
+        console.warn(`Missing carousel source for ${slug}: ${item.file}`);
+        continue;
+      }
+      const dest = path.join(
+        CAROUSEL_OUT_DIR,
+        `${slug}-${String(index + 1).padStart(2, "0")}.webp`
+      );
+      await optimizeImage(src, dest, { width: 1400, quality: 80 });
+      console.log(`✓ service-carousel/${slug}-${String(index + 1).padStart(2, "0")}.webp`);
+    }
   }
 
   const heroSrc = path.join(ASSETS_DIR, IMAGE_MAP["home-hero-bg"]);

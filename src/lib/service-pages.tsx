@@ -1,7 +1,7 @@
 import { ServicePageLayout, ServiceLinks } from "@/components/ServicePageLayout";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
-import { images } from "@/lib/images";
+import { getServiceCarouselSlides } from "@/lib/service-carousel";
 import type { ServicePageConfig } from "./service-page-config";
 import { SERVICE_PAGES } from "./service-page-config";
 
@@ -23,8 +23,7 @@ export function createServicePage(config: ServicePageConfig) {
           subheadline={copy.subheadline}
           paragraphs={copy.paragraphs}
           bullets={copy.bullets}
-          image={images[config.imageKey]}
-          imageAlt={config.imageAlt}
+          carouselSlides={getServiceCarouselSlides(config.metaKey)}
           faqs={copy.faqs}
         >
           <ServiceLinks currentSlug={config.slug} />
