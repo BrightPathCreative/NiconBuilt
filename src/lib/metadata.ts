@@ -97,6 +97,21 @@ export const pageMeta: Record<string, { title: string; description: string }> =
       description:
         "One trusted team for home maintenance and trade coordination across Melbourne's inner south. Licensed builder, no job too small.",
     },
+    "pest-control-melbourne": {
+      title: "Pest Control Melbourne | Inspections & Treatments | Nicon Built",
+      description:
+        "Pest inspections and treatments across Melbourne's inner south, coordinated by a licensed builder. Termites, rodents, and general pest control.",
+    },
+    "cleaning-melbourne": {
+      title: "Cleaning Melbourne | End-of-Job & Bond Cleans | Nicon Built",
+      description:
+        "End-of-job, bond, and regular cleaning across Melbourne's inner south. Coordinated after renovations or as a standalone service.",
+    },
+    "roofing-melbourne": {
+      title: "Roofing Melbourne | Repairs & Maintenance | Nicon Built",
+      description:
+        "Roof repairs and maintenance across Melbourne's inner south. Tile and metal roofs, heritage homes, leak investigation and gutter coordination.",
+    },
     "heritage-renovations-melbourne": {
       title: "Heritage Renovation and Restoration Melbourne | Nicon Built",
       description:

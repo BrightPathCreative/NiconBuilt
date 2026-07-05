@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { services, mainNav } from "@/lib/navigation";
+import { headerNav, services } from "@/lib/navigation";
 import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./Header.module.css";
 
@@ -46,37 +46,35 @@ export function Header() {
           className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}
           aria-label="Primary"
         >
-          {mainNav.map((item) =>
-            item.label === "Home" ? (
-              <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>
-                {item.label}
-              </Link>
-            ) : null
-          )}
-
           <div
             className={styles.dropdown}
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            <button
-              type="button"
-              className={styles.dropdownTrigger}
-              aria-expanded={servicesOpen}
-              aria-haspopup="true"
-              onClick={() => setServicesOpen(!servicesOpen)}
-            >
-              Services
-              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
-                <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" />
-              </svg>
-            </button>
+            <div className={styles.dropdownHead}>
+              <Link
+                href="/services/"
+                className={styles.servicesLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                Services
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </Link>
+              <button
+                type="button"
+                className={styles.dropdownToggle}
+                aria-expanded={servicesOpen}
+                aria-label={servicesOpen ? "Hide services menu" : "Show services menu"}
+                onClick={() => setServicesOpen(!servicesOpen)}
+              >
+                <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </button>
+            </div>
             <ul className={`${styles.dropdownMenu} ${servicesOpen ? styles.dropdownOpen : ""}`}>
-              <li>
-                <Link href="/services/" onClick={closeServicesMenu}>
-                  All Services
-                </Link>
-              </li>
               {services.map((s) => (
                 <li key={s.slug}>
                   <Link href={s.slug} onClick={closeServicesMenu}>
@@ -87,13 +85,11 @@ export function Header() {
             </ul>
           </div>
 
-          {mainNav
-            .filter((item) => item.label !== "Home")
-            .map((item) => (
-              <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>
-                {item.label}
-              </Link>
-            ))}
+          {headerNav.map((item) => (
+            <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>
+              {item.label}
+            </Link>
+          ))}
 
           <div className={styles.actions}>
             {phone ? (

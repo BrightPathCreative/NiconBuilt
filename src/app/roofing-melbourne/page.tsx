@@ -1,8 +1,7 @@
-import { createTradePage } from "@/lib/trade-pages";
-import { getTradeBySlug } from "@/lib/trade-pages";
+import { createServicePage } from "@/lib/service-pages";
+import { getServicePage } from "@/lib/service-page-config";
 
-const trade = getTradeBySlug("/roofing-melbourne/")!;
-const { metadata, Page } = createTradePage(trade);
+const { metadata, Page } = createServicePage(getServicePage("roofing-melbourne"));
 
 export { metadata };
 export default Page;

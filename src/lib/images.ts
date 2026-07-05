@@ -8,6 +8,9 @@ export const images = {
   bathroomRenovations: "/images/bathroom-renovations-page-01.webp",
   homeRenovations: "/images/home-renovations-page-01.webp",
   tradesMaintenance: "/images/trades-maintenance-page-01.webp",
+  pestControl: "/images/pest-control-page-01.webp",
+  cleaning: "/images/cleaning-page-01.webp",
+  roofing: "/images/roofing-page-01.webp",
   newBuilds: "/images/new-builds-page-01.webp",
   serviceAreaMap: "/images/service-area-map.webp",
   ogImage: "/images/og-image.webp",
@@ -24,5 +27,8 @@ export type ServiceImageKey = keyof Pick<
   | "bathroomRenovations"
   | "homeRenovations"
   | "tradesMaintenance"
+  | "pestControl"
+  | "cleaning"
+  | "roofing"
   | "newBuilds"
 >;

@@ -1,24 +1,23 @@
 import Link from "next/link";
 import { homeServices, projectServices, footerNav, locationPages } from "@/lib/navigation";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
+import { siteConfig } from "@/lib/site";
 import styles from "./Footer.module.css";
 
 export function Footer() {
-  const phone = siteConfig.phone;
   const licence = siteConfig.vbaLicence;
 
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.grid}`}>
-        <div>
-          <div className={styles.brand}>
+        <div className={styles.brandCol}>
+          <Link href="/" className={styles.brandLink} aria-label="Nicon Built home">
             <span className={styles.logoText}>
               Nicon
               <br />
               Built
             </span>
             <span className={styles.logoBar} aria-hidden="true" />
-          </div>
+          </Link>
           <p className={styles.tagline}>{siteConfig.tagline}</p>
           <p className={styles.rating}>
             {siteConfig.stats.rating} ★ · Google Reviews
@@ -56,14 +55,9 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <h3 className={styles.subTitle}>Contact</h3>
-          <address className={styles.contact}>
-            {phone ? (
-              <a href={phoneHref(phone)}>{formatPhoneDisplay(phone)}</a>
-            ) : null}
-            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-            <span>{siteConfig.address.full}</span>
-          </address>
+          <Link href="/contact/" className={`btn btn-accent ${styles.cta}`}>
+            Get a free quote
+          </Link>
         </div>
 
         <div>

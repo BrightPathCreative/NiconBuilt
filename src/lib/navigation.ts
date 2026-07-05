@@ -19,10 +19,14 @@ export const locationPages = [
   { suburb: "Elwood", slug: "/heritage-renovations-elwood/" },
 ] as const;
 
-export const mainNav = [
-  { label: "Home", href: "/" },
+export const headerNav = [
   { label: "Our Work", href: "/our-work/" },
   { label: "About", href: "/about/" },
+] as const;
+
+export const mainNav = [
+  { label: "Home", href: "/" },
+  ...headerNav,
   { label: "Contact", href: "/contact/" },
 ] as const;
 

@@ -13,7 +13,7 @@ Home Services and Renovation Builder Melbourne | Trades, Renovations and Extensi
 Every job run personally by Nick Kafkalas. VBA licensed, fully insured, Port Melbourne.
 
 ## Intro
-Whatever your home needs, we handle it. Everyday trades like plumbing, electrical, tiling, painting, and carpentry. Kitchen and bathroom renovations. Full extensions and new builds. Heritage restoration for Melbourne's period homes.
+Whatever your home needs, we handle it. Everyday trades like plumbing, electrical, tiling, painting, and carpentry. Pest control, cleaning, and roofing. Kitchen and bathroom renovations. Full extensions and new builds. Heritage restoration for Melbourne's period homes.
 
 We've been working across Melbourne's inner south and bayside suburbs for over 30 years. Every job is managed by the same team, held to the same standard, and delivered with clear communication throughout. You brief us once. We handle the rest.
 
@@ -40,6 +40,15 @@ Lighting, power points, switchboard upgrades, and outdoor electrical. Carried ou
 
 ### Property Maintenance
 Whatever needs doing around the home, we coordinate every trade so you don't have to. Scheduling, sequencing, quality. One call, one team, done properly.
+
+### Pest Control
+Termites, rodents, and general pests in Melbourne's older homes need prompt, licensed attention. Inspections and treatments are coordinated through Nick's trusted network, with follow-up managed properly.
+
+### Cleaning
+End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The build isn't finished until the home is ready to live in.
+
+### Roofing
+Leaks, damaged tiles, worn flashings, and gutter issues need prompt attention before they cause damage inside. Repairs across tile, metal, and period-style roofing, including heritage homes.
 
 ### Heritage Renovations and Restorations
 Heritage restoration is at the heart of what we do. We specialise in Victorian, Edwardian, and Federation homes, combining over 30 years of experience with a deep understanding of traditional building methods and materials. Our goal is to preserve the integrity of your home while delivering a result that stands the test of time.

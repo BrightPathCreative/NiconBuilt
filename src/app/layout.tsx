@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { BackToTop } from "@/components/BackToTop";
 import { localBusinessSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <BackToTop />
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics />
       </body>

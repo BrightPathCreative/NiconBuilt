@@ -70,16 +70,8 @@
 }
 
 .formWrap {
-  max-width: 420px;
+  max-width: 480px;
   justify-self: end;
-}
-
-.formTitle {
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--color-primary);
-  margin-bottom: 14px;
 }
 
 .orCall {

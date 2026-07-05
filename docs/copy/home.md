@@ -17,19 +17,19 @@ Building Quality, Maintaining Excellence
 
 One reliable Melbourne team for the everyday trades around the home.
 
-Plumbing, electrical, tiling, painting, carpentry. Kitchen and bathroom renovations. Extensions and new builds. Whatever your home needs, Nick Kafkalas and his team handle it properly, start to finish. VBA licensed. Fully insured. Based in Port Melbourne since 1990.
+Plumbing, electrical, tiling, painting, carpentry, roofing, pest control, and cleaning. Kitchen and bathroom renovations. Extensions and new builds. Whatever your home needs, Nick Kafkalas and his team handle it properly, start to finish. VBA licensed. Fully insured. Based in Port Melbourne since 1990.
 
 *5.0 Stars | 9 Google Reviews | 30+ Years Experience | VBA Licensed Builder*
 
 ## Stats strip
-30+ Years Experience — 5.0 Google Rating — 200+ Projects Completed — Fully Insured
+30+ Years Experience — 5.0 ⭐ Google Rating — 200+ Projects Completed — Fully Insured
 
 ## About snapshot
 Nick Kafkalas has been building and coordinating trades across Melbourne's inner south since 1990. Before starting Nicon Built, he worked on some of Melbourne's largest construction projects. The Bolte Bridge. The Burnley Tunnel. The State Library. That kind of experience shapes how you approach every job, no matter the size.
 
 Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, you deal with Nick and his team directly. One call. One point of contact. Everything managed properly from the first conversation to the final clean-up.
 
-## Service tiles (12 — each links to its own page)
+## Service tiles (15 — each links to its own page)
 
 1. **Kitchen Renovations** — A kitchen renovation done properly needs a licensed builder coordinating every trade, in the right order. That's exactly what we do.
    Sub: Full kitchen renovations · Layout reconfigurations · Structural alterations · Period home kitchens
@@ -55,16 +55,25 @@ Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, 
 8. **Property Maintenance** — Whatever needs doing around the home, we coordinate every trade so you don't have to. One call, one team, everything managed.
    Sub: General repairs · Trade coordination · Planned maintenance · Emergency repairs · End-to-end management
 
-9. **Heritage Renovations and Restorations** — Victorian, Edwardian, and Federation homes restored properly, with period materials and 30 years of heritage experience.
+9. **Pest Control** — Inspections and treatments for termites, rodents, and general pests. Licensed technicians, coordinated through one trusted team.
+   Sub: Termite inspections · General pest treatments · Rodent control · Pre-purchase inspections · Follow-up monitoring
+
+10. **Cleaning** — End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The job isn't finished until the home is ready to live in.
+   Sub: End-of-job cleaning · Bond and end-of-lease cleans · Regular scheduled cleaning · Post-construction cleans
+
+11. **Roofing** — Leaks, damaged tiles, worn flashings, and gutter issues. Prompt attention before roof problems cause damage inside the home.
+   Sub: Roof leak repairs · Tile and metal roofing · Flashing and valley repairs · Heritage roof restoration · Gutter coordination
+
+12. **Heritage Renovations and Restorations** — Victorian, Edwardian, and Federation homes restored properly, with period materials and 30 years of heritage experience.
    Sub: Victorian restorations · Edwardian renovation · Federation conservation · Heritage overlay compliance · Period material matching
 
-10. **Heritage Home Extensions** — Extending a period home the right way. Heritage overlay compliant, period materials, new work that looks like it was always there.
+13. **Heritage Home Extensions** — Extending a period home the right way. Heritage overlay compliant, period materials, new work that looks like it was always there.
    Sub: Period-accurate additions · Heritage compliant design · Council permit management · Material matching
 
-11. **Home Renovations and Extensions** — Plans approved, permits sorted. One builder manages every trade, every stage, and every detail through to handover.
+14. **Home Renovations and Extensions** — Plans approved, permits sorted. One builder manages every trade, every stage, and every detail through to handover.
    Sub: Home extensions · Room additions · Open-plan conversions · Structural alterations · Dual-occupancy additions
 
-12. **New Builds** — Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. The person who quotes the job runs the build.
+15. **New Builds** — Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. The person who quotes the job runs the build.
    Sub: Architect-designed homes · Dual-occupancy builds · Design and build · Boutique builder packages
 
 ## Top 3 Google reviews (homepage)

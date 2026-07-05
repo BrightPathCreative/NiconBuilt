@@ -13,7 +13,9 @@ Required per the Technical Developer Brief: fires after every contact-form submi
 Thanks — we've got your enquiry
 
 ## Body
-Nick will be in touch shortly, usually the same day. In the meantime, feel free to look through our recent work.
+Your message has been sent to Nick. He'll be in touch shortly, usually the same day, to discuss your project and next steps.
+
+In the meantime, feel free to look through our recent work.
 
 ## Primary link
 See our work → /our-work/

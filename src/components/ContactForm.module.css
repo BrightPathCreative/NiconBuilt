@@ -6,6 +6,19 @@
   box-shadow: 0 20px 40px -28px rgba(0, 0, 0, 0.15);
 }
 
+.title {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-primary);
+  margin: 0 0 16px;
+}
+
+.compact .title {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
 .compact {
   padding: 20px;
 }
@@ -32,7 +45,8 @@
 }
 
 .field input,
-.field textarea {
+.field textarea,
+.field select {
   padding: 12px 14px;
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-button);
@@ -41,6 +55,15 @@
   color: var(--color-primary);
   background: var(--color-surface-alt);
   width: 100%;
+}
+
+.field select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23141414' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
 }
 
 .field textarea {

@@ -39,11 +39,9 @@ export default function HomePage() {
         eyebrow="Building Quality, Maintaining Excellence"
         title={copy.headline ?? ""}
         description={heroParagraphs}
-        trustLine={copy.heroTrust}
         image={images.homeHero}
         imageAlt="Home services and renovations in Melbourne by Nicon Built"
         showForm
-        showTrust
         priority
       />
 

@@ -5,7 +5,7 @@ export function StatsStrip() {
   const copy = loadCopy("home");
   const stats = copy.statsStrip ?? [
     "30+ Years Experience",
-    "5.0 Google Rating",
+    "5.0 ⭐ Google Rating",
     "200+ Projects Completed",
     "Fully Insured",
   ];

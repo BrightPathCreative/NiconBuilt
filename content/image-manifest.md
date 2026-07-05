@@ -23,6 +23,9 @@ Sara is supplying a Google Drive folder ("Images") directly to Cursor rather tha
 | `bathroom-renovations-page-01` | Bathroom Renovations | Completed bathroom renovation |
 | `home-renovations-page-01` | Home Renovations and Extensions | Extension/renovation in progress or completed |
 | `trades-maintenance-page-01` | Trades and Maintenance | Trades on site — painting, tiling, or maintenance in progress |
+| `pest-control-page-01` | Pest Control | Heritage home exterior — property inspection context |
+| `cleaning-page-01` | Cleaning | Completed bathroom — clean finished interior |
+| `roofing-page-01` | Roofing | Heritage cottage with restored gabled roof |
 | `new-builds-page-01` | New Builds | Completed new build or dual-occupancy project |
 | `our-work-gallery-*` | Our Work | Full project gallery. **No photos featuring Callum or John**, per Nick's instruction |
 | `og-image` | Homepage (+ ideally one per major service page) | 1200×630 |

@@ -38,7 +38,7 @@ No job is too small. A single bathroom retile, a plaster repair, an interior rep
 
 ## FAQs
 
-**What kinds of maintenance work do you handle?** Painting, tiling, plumbing maintenance, electrical repairs, brickwork, plastering, carpentry, roofing, caulking, and general repairs throughout the home. As a licensed builder, Nick can also take on work requiring a building permit, including minor structural repairs that a handyman isn't qualified to do.
+**What kinds of maintenance work do you handle?** Painting, tiling, plumbing maintenance, electrical repairs, brickwork, plastering, carpentry, roofing, pest control, cleaning, caulking, and general repairs throughout the home. As a licensed builder, Nick can also take on work requiring a building permit, including minor structural repairs that a handyman isn't qualified to do.
 
 **What's the difference between you and a handyman?** Licensing, network, and quality control. Nick is a VBA licensed builder with public liability insurance, which means he can manage permit-required work. He has a 30-year sub-trade network, so the right qualified trade does each job. And every trade is held to his standard throughout.
 

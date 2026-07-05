@@ -11,7 +11,7 @@ export type ServicePageConfig = {
   imageAlt: string;
 };
 
-/** All 12 service pages — order matches home.md service tiles */
+/** All 15 service pages — order matches home.md service tiles */
 export const SERVICE_PAGES: ServicePageConfig[] = [
   {
     copySlug: "kitchen-renovations",
@@ -94,6 +94,36 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     imageAlt: "Property maintenance in Melbourne by Nicon Built",
   },
   {
+    copySlug: "pest-control",
+    metaKey: "pest-control-melbourne",
+    slug: "/pest-control-melbourne/",
+    tileTitle: "Pest Control",
+    shortTitle: "Pest Control",
+    breadcrumbName: "Pest Control Melbourne",
+    imageKey: "pestControl",
+    imageAlt: "Pest control services in Melbourne by Nicon Built",
+  },
+  {
+    copySlug: "cleaning",
+    metaKey: "cleaning-melbourne",
+    slug: "/cleaning-melbourne/",
+    tileTitle: "Cleaning",
+    shortTitle: "Cleaning",
+    breadcrumbName: "Cleaning Melbourne",
+    imageKey: "cleaning",
+    imageAlt: "Professional cleaning services in Melbourne by Nicon Built",
+  },
+  {
+    copySlug: "roofing",
+    metaKey: "roofing-melbourne",
+    slug: "/roofing-melbourne/",
+    tileTitle: "Roofing",
+    shortTitle: "Roofing",
+    breadcrumbName: "Roofing Melbourne",
+    imageKey: "roofing",
+    imageAlt: "Roofing repairs and maintenance in Melbourne by Nicon Built",
+  },
+  {
     copySlug: "heritage-renovations-restorations",
     metaKey: "heritage-renovations-melbourne",
     slug: "/heritage-renovations-melbourne/",
@@ -135,8 +165,8 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
   },
 ];
 
-export const HOME_SERVICES = SERVICE_PAGES.slice(0, 8);
-export const PROJECT_SERVICES = SERVICE_PAGES.slice(8);
+export const HOME_SERVICES = SERVICE_PAGES.slice(0, 11);
+export const PROJECT_SERVICES = SERVICE_PAGES.slice(11);
 
 export function getServicePage(metaKey: string): ServicePageConfig {
   const page = SERVICE_PAGES.find((p) => p.metaKey === metaKey);

@@ -4,11 +4,27 @@ import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./ContactForm.module.css";
 
+const SERVICE_OPTIONS = [
+  "Kitchen Renovation",
+  "Bathroom Renovation",
+  "Carpentry and Joinery",
+  "Painting and Plastering",
+  "Tiling, Plumbing and Roofing",
+  "Electrical",
+  "Property Maintenance",
+  "Pest Control",
+  "Cleaning",
+  "Renovation or Extension",
+  "New Build",
+  "Other",
+] as const;
+
 type Props = {
   compact?: boolean;
+  showTitle?: boolean;
 };
 
-export function ContactForm({ compact = false }: Props) {
+export function ContactForm({ compact = false, showTitle = true }: Props) {
   const router = useRouter();
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -26,10 +42,13 @@ export function ContactForm({ compact = false }: Props) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: data.get("name"),
+          firstName: data.get("firstName"),
+          lastName: data.get("lastName"),
           phone: data.get("phone"),
+          email: data.get("email"),
+          serviceType: data.get("serviceType"),
           suburb: data.get("suburb"),
-          message: data.get("message"),
+          project: data.get("project"),
         }),
       });
 
@@ -53,41 +72,74 @@ export function ContactForm({ compact = false }: Props) {
       onSubmit={handleSubmit}
       noValidate
     >
+      {showTitle ? <h2 className={styles.title}>Get in Touch</h2> : null}
+
       <div className={styles.grid}>
         <div className={styles.field}>
-          <label htmlFor="name">Name</label>
-          <input id="name" name="name" type="text" required autoComplete="name" />
+          <label htmlFor="firstName">First Name</label>
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            required
+            autoComplete="given-name"
+          />
         </div>
         <div className={styles.field}>
-          <label htmlFor="suburb">Suburb</label>
-          <input id="suburb" name="suburb" type="text" required />
+          <label htmlFor="lastName">Last Name</label>
+          <input
+            id="lastName"
+            name="lastName"
+            type="text"
+            required
+            autoComplete="family-name"
+          />
         </div>
       </div>
+
       <div className={styles.grid}>
         <div className={styles.field}>
-          <label htmlFor="phone">Phone</label>
+          <label htmlFor="phone">Phone Number</label>
           <input id="phone" name="phone" type="tel" required autoComplete="tel" />
         </div>
-        {!compact ? (
-          <div className={styles.field}>
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" rows={compact ? 2 : 4} required />
-          </div>
-        ) : null}
-      </div>
-      {compact ? (
         <div className={styles.field}>
-          <label htmlFor="message-compact">Message</label>
-          <textarea id="message-compact" name="message" rows={3} required />
+          <label htmlFor="email">Email Address</label>
+          <input id="email" name="email" type="email" required autoComplete="email" />
         </div>
-      ) : null}
+      </div>
+
+      <div className={styles.field}>
+        <label htmlFor="serviceType">What do you need help with?</label>
+        <select id="serviceType" name="serviceType" required defaultValue="">
+          <option value="" disabled>
+            Select a service
+          </option>
+          {SERVICE_OPTIONS.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className={styles.field}>
+        <label htmlFor="suburb">Your suburb</label>
+        <input id="suburb" name="suburb" type="text" required autoComplete="address-level2" />
+      </div>
+
+      <div className={styles.field}>
+        <label htmlFor="project">Tell us about your project</label>
+        <textarea id="project" name="project" rows={compact ? 3 : 4} />
+      </div>
+
       {errorMsg ? (
         <p className={styles.error} role="alert">
           {errorMsg}
         </p>
       ) : null}
+
       <button type="submit" className="btn btn-primary" disabled={status === "loading"}>
-        {status === "loading" ? "Sending…" : "Request my quote →"}
+        {status === "loading" ? "Sending…" : "Send My Enquiry"}
       </button>
     </form>
   );

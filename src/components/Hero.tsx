@@ -75,7 +75,6 @@ export function Hero({
 
         {showForm ? (
           <div className={styles.formWrap}>
-            <p className={styles.formTitle}>Get a free quote</p>
             <ContactForm compact />
             {phone ? (
               <p className={styles.orCall}>

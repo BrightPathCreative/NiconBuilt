@@ -4,10 +4,10 @@ import { siteConfig } from "@/lib/site";
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, phone, suburb, message } = body;
+    const { firstName, lastName, phone, email, serviceType, suburb, project } = body;
 
-    if (!name || !phone || !suburb || !message) {
-      return NextResponse.json({ error: "All fields are required." }, { status: 400 });
+    if (!firstName || !lastName || !phone || !email || !serviceType || !suburb) {
+      return NextResponse.json({ error: "Please fill in all required fields." }, { status: 400 });
     }
 
     const webhook = siteConfig.ghlWebhook;
@@ -17,10 +17,14 @@ export async function POST(request: Request) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name,
+          firstName,
+          lastName,
+          name: `${firstName} ${lastName}`.trim(),
           phone,
+          email,
+          serviceType,
           suburb,
-          message,
+          project: project || "",
           source: "niconbuilt.com.au",
           submittedAt: new Date().toISOString(),
         }),

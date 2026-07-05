@@ -30,6 +30,12 @@ const IMAGE_MAP = {
     "nicon-built-rear-extension-bifold-doors-deck-heritage-renovation.jpg",
   "trades-maintenance-page-01":
     "nicon-built-builder-on-site-pergola-construction-weatherboard.jpeg",
+  "pest-control-page-01":
+    "nicon-built-grey-weatherboard-heritage-cottage-green-door-exterior.jpg",
+  "cleaning-page-01":
+    "nicon-built-modern-white-bathroom-glass-shower-vessel-basin.jpg",
+  "roofing-page-01":
+    "nicon-built-heritage-cottage-facade-gabled-roof-restored-melbourne.jpg",
   "new-builds-page-01":
     "nicon-built-modern-two-storey-new-home-white-render-landscaped.jpg",
   "service-area-map":

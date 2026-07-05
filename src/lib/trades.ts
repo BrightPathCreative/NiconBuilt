@@ -206,43 +206,6 @@ export const tradeServices: TradeService[] = [
     ],
   },
   {
-    title: "Roofing Melbourne",
-    shortTitle: "Roofing",
-    slug: "/roofing-melbourne/",
-    metaKey: "roofing-melbourne",
-    breadcrumbName: "Roofing Melbourne",
-    headline: "Roofing Melbourne | Repairs & Maintenance | Nicon Built",
-    subheadline: "Roof repairs and maintenance, fully coordinated.",
-    paragraphs: [
-      "Leaks, damaged tiles, worn flashings, or gutter issues — roofing problems need prompt attention before they cause damage inside the home.",
-      sharedIntro,
-      "Nick coordinates qualified roofers from his trusted network and manages access, sequencing, and quality on every job.",
-    ],
-    bullets: [
-      "Roof leak investigation and repair",
-      "Tile and metal roof repairs",
-      "Flashing and valley repairs",
-      "Gutter maintenance and replacement coordination",
-      "Period-style roofing materials for heritage homes",
-    ],
-    faqs: [
-      {
-        question: "Do you handle both tile and metal roofs?",
-        answer:
-          "Yes. Repairs across tile, metal, and period-style roofing, coordinated through Nick's trusted trade network.",
-      },
-      {
-        question: "Can roofing be part of a larger maintenance scope?",
-        answer:
-          "Absolutely. Roofing is often combined with gutter work, exterior painting, or general property maintenance in a single coordinated project.",
-      },
-      {
-        question: "What areas do you cover?",
-        answer: sharedAreas,
-      },
-    ],
-  },
-  {
     title: "Caulking Melbourne",
     shortTitle: "Caulking",
     slug: "/caulking-melbourne/",

@@ -69,8 +69,6 @@ export const redirects: {
   { source: "/caulking-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
   { source: "/brickwork-repairs-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
   { source: "/brickwork-repairs-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
-  { source: "/roofing-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
-  { source: "/roofing-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
 ];
 
 function suburbSlugFromPath(pathname: string): string | null {
