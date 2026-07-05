@@ -74,15 +74,16 @@
   justify-self: end;
 }
 
-.orCall {
-  text-align: center;
+.formActions {
+  display: flex;
+  justify-content: center;
   margin-top: 12px;
-  font-size: 14px;
-  color: var(--color-text-muted);
 }
 
-.orCall a {
-  font-weight: 700;
+.callBtn {
+  width: 100%;
+  text-align: center;
+  border-color: var(--color-border);
   color: var(--color-primary);
 }
 

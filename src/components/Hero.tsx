@@ -77,10 +77,11 @@ export function Hero({
           <div className={styles.formWrap}>
             <ContactForm compact />
             {phone ? (
-              <p className={styles.orCall}>
-                or{" "}
-                <a href={phoneHref(phone)}>{formatPhoneDisplay(phone)}</a>
-              </p>
+              <div className={styles.formActions}>
+                <a href={phoneHref(phone)} className={`btn btn-outline ${styles.callBtn}`}>
+                  Call {formatPhoneDisplay(phone)}
+                </a>
+              </div>
             ) : null}
           </div>
         ) : null}

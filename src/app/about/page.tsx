@@ -26,9 +26,13 @@ const sectionTitles = [
 
 export default function AboutPage() {
   const copy = loadCopy("about");
-  const promiseItems = getSectionParagraphs(copy, "Our Promise").flatMap((block) =>
-    block.split("\n").filter((l) => l.startsWith("- ")).map((l) => l.replace(/^-\s*/, ""))
-  );
+  const promiseBlock = getSectionParagraphs(copy, "Our Promise").join("\n");
+  const promiseItems = promiseBlock
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean)
+    .filter((l) => !l.endsWith(":") && !/here's what you can count on/i.test(l))
+    .map((l) => l.replace(/^-\s*/, ""));
 
   const introParagraphs = getSectionParagraphs(copy, "Headline").slice(1);
 

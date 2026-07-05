@@ -138,7 +138,7 @@ export const tradeServices: TradeService[] = [
     metaKey: "plumbing-maintenance-melbourne",
     breadcrumbName: "Plumbing Maintenance Melbourne",
     headline: "Plumbing Maintenance Melbourne | Repairs & Upgrades | Nicon Built",
-    subheadline: "Plumbing maintenance and repairs, managed by a licensed builder.",
+    subheadline: "Plumbing maintenance and repairs. Carried out by licensed plumbers, coordinated by Nicon Built.",
     paragraphs: [
       "Leaking taps, slow drains, fixture upgrades, or plumbing that needs attention before other trades can start — plumbing maintenance needs someone who understands how it fits into the bigger picture.",
       sharedIntro,

@@ -10,7 +10,7 @@ Last updated: 2026-07-05
 ⚠️ Image: Photo of Nick Kafkalas on site — to be supplied (label: nick-portrait).
 
 ## Headline
-About Nicon Built | Melbourne Builder for Home Services, Renovations and Extensions
+About Nicon Built
 
 Reliable trades. Proper renovations. One team you can actually count on.
 

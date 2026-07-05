@@ -2,20 +2,11 @@
 
 import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { SERVICE_PAGES } from "@/lib/service-page-config";
 import styles from "./ContactForm.module.css";
 
 const SERVICE_OPTIONS = [
-  "Kitchen Renovation",
-  "Bathroom Renovation",
-  "Carpentry and Joinery",
-  "Painting and Plastering",
-  "Tiling, Plumbing and Roofing",
-  "Electrical",
-  "Property Maintenance",
-  "Pest Control",
-  "Cleaning",
-  "Renovation or Extension",
-  "New Build",
+  ...SERVICE_PAGES.map((page) => page.tileTitle),
   "Other",
 ] as const;
 

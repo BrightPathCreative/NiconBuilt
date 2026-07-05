@@ -16,7 +16,8 @@ export function buildMetadata({
   const url = `https://niconbuilt.com.au${path === "/" ? "/" : path}`;
 
   return {
-    title,
+    // pageMeta titles are complete SEO strings — bypass layout template to avoid doubled "| Nicon Built"
+    title: { absolute: title },
     description,
     ...(noIndex ? { robots: { index: false, follow: false } } : {}),
     openGraph: {
@@ -48,7 +49,7 @@ export const pageMeta: Record<string, { title: string; description: string }> =
         "Everyday trades, kitchen and bathroom renovations, extensions and new builds across Melbourne's inner south. One reliable team, managed personally by Nick Kafkalas since 1990.",
     },
     about: {
-      title: "About Nicon Built | Melbourne Home Services & Renovation Builder",
+      title: "About Nicon Built | Melbourne Home Services & Renovation Builder | Nicon Built",
       description:
         "Nick Kafkalas has personally run Nicon Built since 1990. VBA licensed and fully insured, coordinating trades, renovations and extensions across Melbourne's inner south.",
     },
@@ -58,7 +59,8 @@ export const pageMeta: Record<string, { title: string; description: string }> =
         "Plumbing, electrical, tiling, painting, carpentry, kitchen and bathroom renovations, property maintenance, heritage work and new builds. Every job run personally by Nick Kafkalas.",
     },
     "kitchen-renovations-melbourne": {
-      title: "Kitchen Renovations Melbourne | Nicon Built Builder",
+      title:
+        "Kitchen Renovations Melbourne | Licensed Builder | Inner South and Bayside | Nicon Built",
       description:
         "Kitchen renovations across Melbourne's inner south, managed start to finish by a licensed builder. Structural, plumbing, tiling and cabinetry coordinated.",
     },
@@ -143,7 +145,7 @@ export const pageMeta: Record<string, { title: string; description: string }> =
         "Read what Nicon Built clients say about working with Nick Kafkalas: 5.0 stars and 9 Google reviews across 30+ years of building across Melbourne's inner south.",
     },
     contact: {
-      title: "Contact Nicon Built | Melbourne Home Services & Renovation Builder",
+      title: "Contact Nicon Built | Melbourne Home Services & Renovation Builder | Nicon Built",
       description:
         "Get in touch with Nicon Built today. Nick usually replies the same day, serving Melbourne's inner south and bayside suburbs since 1990.",
     },

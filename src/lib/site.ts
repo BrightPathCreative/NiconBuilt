@@ -18,7 +18,8 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_PRIMARY_PHONE?.trim() ||
     process.env.NEXT_PUBLIC_DEV_PHONE?.trim() ||
     "",
-  vbaLicence: process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "",
+  vbaLicence:
+    process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "CDB-U 62648",
   gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "",
   ghlWebhook: process.env.GHL_WEBHOOK_URL?.trim() || "",
   stats: {

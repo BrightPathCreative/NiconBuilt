@@ -131,11 +131,18 @@ function parseReviews(content: string): Review[] {
 }
 
 function extractAuthor(meta: string): string {
-  const afterStar = meta.replace(/^5★\s*/, "").trim();
+  const withoutTimestamp = meta.replace(/\s*\([^)]*\)\s*$/, "").trim();
+  const afterStar = withoutTimestamp.replace(/^5★\s*/, "").trim();
   const paren = afterStar.indexOf("(");
   if (paren > 0) return afterStar.slice(0, paren).trim();
   if (afterStar.includes(",")) return afterStar.split(",")[0].trim();
   return afterStar;
+}
+
+/** Strip relative timestamps and author names — display stars only in review UI */
+export function formatReviewMeta(meta: string): string {
+  const starMatch = meta.match(/^(\d★)/);
+  return starMatch ? starMatch[1] : "5★";
 }
 
 export function loadCopy(slug: string): ParsedCopy {

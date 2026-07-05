@@ -1,7 +1,7 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { QuoteCTA } from "@/components/QuoteCTA";
-import { loadCopy } from "@/lib/copy";
+import { loadCopy, formatReviewMeta } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
@@ -57,7 +57,7 @@ export default function TestimonialsPage() {
               <p className={styles.featuredQuote}>{featured.quote}</p>
               <footer className={styles.featuredFooter}>
                 <span className={styles.featuredAuthor}>{featured.author}</span>
-                <span className={styles.featuredMeta}>{featured.meta}</span>
+                <span className={styles.featuredMeta}>{formatReviewMeta(featured.meta)}</span>
               </footer>
             </blockquote>
           </div>
@@ -78,7 +78,7 @@ export default function TestimonialsPage() {
                 <p className={styles.quote}>&ldquo;{review.quote}&rdquo;</p>
                 <footer className={styles.reviewFooter}>
                   <span className={styles.author}>{review.author}</span>
-                  <span className={styles.meta}>{review.meta}</span>
+                  <span className={styles.meta}>{formatReviewMeta(review.meta)}</span>
                 </footer>
               </blockquote>
             ))}

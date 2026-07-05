@@ -8,8 +8,10 @@ import {
   loadCopy,
   serviceTileSlugs,
   serviceImageKeys,
+  formatReviewMeta,
 } from "@/lib/copy";
 import { images } from "@/lib/images";
+import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./page.module.css";
 
 export const metadata = buildMetadata({
@@ -19,6 +21,7 @@ export const metadata = buildMetadata({
 
 export default function HomePage() {
   const copy = loadCopy("home");
+  const phone = siteConfig.phone;
   const heroParagraphs = copy.sections
     .find((s) => s.title === "Hero")
     ?.content.split("\n")
@@ -65,6 +68,16 @@ export default function HomePage() {
               />
             </div>
           </div>
+          <div className={styles.inlineCta}>
+            <Link href="/contact/" className="btn btn-accent">
+              Get a free quote
+            </Link>
+            {phone ? (
+              <a href={phoneHref(phone)} className="btn btn-outline">
+                Call {formatPhoneDisplay(phone)}
+              </a>
+            ) : null}
+          </div>
         </div>
       </section>
 
@@ -106,6 +119,14 @@ export default function HomePage() {
               );
             })}
           </div>
+          <div className={styles.inlineCta}>
+            <Link href="/contact/" className="btn btn-accent">
+              Request a quote
+            </Link>
+            <Link href="/services/" className="btn btn-outline">
+              Browse all services
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -115,7 +136,7 @@ export default function HomePage() {
           <div className={styles.reviewGrid}>
             {copy.reviews.map((review) => (
               <blockquote key={review.author} className={`card ${styles.review}`}>
-                <p className={styles.reviewMeta}>{review.meta}</p>
+                <p className={styles.reviewMeta}>{formatReviewMeta(review.meta)}</p>
                 <p>&ldquo;{review.quote}&rdquo;</p>
                 <footer>— {review.author}</footer>
               </blockquote>
@@ -131,6 +152,16 @@ export default function HomePage() {
         <div className="container">
           <h2>Service areas</h2>
           <p className={styles.areas}>{copy.serviceAreas}</p>
+          <div className={styles.inlineCta}>
+            <Link href="/contact/" className="btn btn-accent">
+              Get a free quote
+            </Link>
+            {phone ? (
+              <a href={phoneHref(phone)} className="btn btn-outline">
+                Call {formatPhoneDisplay(phone)}
+              </a>
+            ) : null}
+          </div>
         </div>
       </section>
 

@@ -46,16 +46,16 @@ Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, 
 5. **Tiling** — Kitchens, bathrooms, laundries, alfresco areas. Every tile laid properly, every joint consistent, waterproofed where required.
    Sub: Kitchen tiling · Bathroom tiling · Outdoor and alfresco · Feature walls · Period tile matching
 
-6. **Plumbing** — New installations, hot water systems, repairs, and plumbing coordination across renovation projects. Done to code, signed off properly.
+6. **Plumbing** — New installations, hot water systems, repairs, and plumbing coordination across renovation projects. Carried out by licensed plumbers, coordinated by Nicon Built.
    Sub: Kitchen and bathroom plumbing · Hot water systems · Tap and fixture installation · Pipe repairs · Drainage
 
-7. **Electrical** — Lighting, power points, switchboard upgrades, and electrical coordination within renovations. Carried out by licensed electricians.
+7. **Electrical** — Lighting, power points, switchboard upgrades, and electrical coordination within renovations. Carried out by licensed electricians, coordinated by Nicon Built.
    Sub: Lighting installation · Power points · Switchboard upgrades · Outdoor electrical · Renovation coordination
 
 8. **Property Maintenance** — Whatever needs doing around the home, we coordinate every trade so you don't have to. One call, one team, everything managed.
    Sub: General repairs · Trade coordination · Planned maintenance · Emergency repairs · End-to-end management
 
-9. **Pest Control** — Inspections and treatments for termites, rodents, and general pests. Licensed technicians, coordinated through one trusted team.
+9. **Pest Control** — Inspections and treatments for termites, rodents, and general pests. Carried out by licensed pest technicians, coordinated by Nicon Built.
    Sub: Termite inspections · General pest treatments · Rodent control · Pre-purchase inspections · Follow-up monitoring
 
 10. **Cleaning** — End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The job isn't finished until the home is ready to live in.
@@ -78,9 +78,9 @@ Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, 
 
 ## Top 3 Google reviews (homepage)
 
-- 5★ Vicki (6 years ago): "From the start of the renovation it was a stress-free experience. Top quality service throughout and nothing was ever too hard. Dealing directly with the builders gave us the peace of mind we needed as first-time renovators. Would highly recommend Nicon Built to anyone thinking of renovating or building."
+- 5★ Vicki: "From the start of the renovation it was a stress-free experience. Top quality service throughout and nothing was ever too hard. Dealing directly with the builders gave us the peace of mind we needed as first-time renovators. Would highly recommend Nicon Built to anyone thinking of renovating or building."
 - 5★ Costas: "Professional, reliable and most importantly on time and on budget. They pay attention to the detail in the overall build and the pride extends to keeping a tidy site as well. I've built two houses through Nick and his team and would recommend them to anybody looking for a dependable builder."
-- 5★ James O'Carroll (2 years ago): "Their professionalism, communication, and transparency throughout the whole process made it so easy to deal with them, and their meticulous attention to detail is visible in every room. We highly recommend their services."
+- 5★ James O'Carroll: "Their professionalism, communication, and transparency throughout the whole process made it so easy to deal with them, and their meticulous attention to detail is visible in every room. We highly recommend their services."
 
 ## Service areas
 Port Melbourne · Albert Park · Middle Park · South Melbourne · Elwood · St Kilda · Brighton · Hampton · Sandringham · Beaumaris · Armadale · Malvern · South Yarra · Williamstown · Moorabbin · Bentleigh · Caulfield · Elsternwick · Camberwell · Hawthorn · Kew

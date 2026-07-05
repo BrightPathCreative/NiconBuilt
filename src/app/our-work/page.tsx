@@ -15,27 +15,60 @@ const breadcrumbs = [
   { name: "Our Work", href: "/our-work/" },
 ];
 
-const galleryAlts = [
-  "Heritage weatherboard cottage renovation — Melbourne, completed by Nicon Built",
-  "Open plan kitchen and dining renovation — Melbourne, completed by Nicon Built",
-  "Modern bathroom renovation — Melbourne, completed by Nicon Built",
-  "Navy kitchen with marble benchtop — Melbourne, completed by Nicon Built",
-  "Two storey extension with outdoor dining — Melbourne, completed by Nicon Built",
-  "Heritage brick home courtyard — Melbourne, completed by Nicon Built",
-  "Modern extension with pool — Melbourne, completed by Nicon Built",
-  "White galley kitchen renovation — Melbourne, completed by Nicon Built",
-  "Luxury kitchen with pool view — Melbourne, completed by Nicon Built",
-  "Indoor outdoor entertaining space — Melbourne, completed by Nicon Built",
-  "Victorian terrace verandah restoration — Melbourne, completed by Nicon Built",
-  "Heritage cottage facade restoration — Melbourne, completed by Nicon Built",
+const galleryProjects = [
+  {
+    alt: "Heritage weatherboard cottage renovation — Port Melbourne, completed by Nicon Built",
+    caption: "Heritage weatherboard cottage, Port Melbourne — 8 weeks",
+  },
+  {
+    alt: "Open plan kitchen and dining renovation — Albert Park, completed by Nicon Built",
+    caption: "Open-plan kitchen and dining, Albert Park — 6 weeks",
+  },
+  {
+    alt: "Modern bathroom renovation — Brighton, completed by Nicon Built",
+    caption: "Bathroom renovation, Brighton — 5 weeks",
+  },
+  {
+    alt: "Edwardian kitchen with marble benchtop — Albert Park, completed by Nicon Built",
+    caption: "Edwardian kitchen, Albert Park — 6 weeks",
+  },
+  {
+    alt: "Two storey extension with outdoor dining — Sandringham, completed by Nicon Built",
+    caption: "Two-storey extension, Sandringham — 12 weeks",
+  },
+  {
+    alt: "Heritage brick home courtyard — Middle Park, completed by Nicon Built",
+    caption: "Heritage brick home, Middle Park — 10 weeks",
+  },
+  {
+    alt: "Modern extension with pool — Brighton, completed by Nicon Built",
+    caption: "Pool-side extension, Brighton — 14 weeks",
+  },
+  {
+    alt: "White galley kitchen renovation — Elwood, completed by Nicon Built",
+    caption: "Galley kitchen, Elwood — 5 weeks",
+  },
+  {
+    alt: "Luxury kitchen with pool view — Hampton, completed by Nicon Built",
+    caption: "Kitchen renovation, Hampton — 7 weeks",
+  },
+  {
+    alt: "Indoor outdoor entertaining space — St Kilda, completed by Nicon Built",
+    caption: "Indoor-outdoor living, St Kilda — 8 weeks",
+  },
+  {
+    alt: "Victorian terrace verandah restoration — South Melbourne, completed by Nicon Built",
+    caption: "Victorian terrace verandah, South Melbourne — 6 weeks",
+  },
+  {
+    alt: "Heritage cottage facade restoration — Williamstown, completed by Nicon Built",
+    caption: "Heritage facade restoration, Williamstown — 10 weeks",
+  },
 ];
 
 export default function OurWorkPage() {
   const copy = loadCopy("our-work");
-  const introBlock = getSection(copy, "Intro") ?? "";
-  const introLines = introBlock.split("\n").map((l) => l.trim()).filter(Boolean);
-  const h1 = introLines[0] ?? copy.headline ?? "";
-  const intro = introLines.slice(1).join(" ");
+  const intro = getSection(copy, "Intro")?.trim() ?? "";
 
   const midReview = getSection(copy, "Mid-gallery review") ?? "";
   const midQuoteMatch = midReview.match(/:\s*"(.+)"\s*$/);
@@ -50,7 +83,7 @@ export default function OurWorkPage() {
 
       <section className="section">
         <div className="container">
-          <h1>{h1}</h1>
+          <h1>{copy.headline}</h1>
           {intro ? <p className={styles.intro}>{intro}</p> : null}
         </div>
       </section>
@@ -58,16 +91,22 @@ export default function OurWorkPage() {
       <section className="section section--tone">
         <div className="container">
           <div className={styles.gallery}>
-            {images.gallery.map((src, i) => (
-              <div key={src} className={styles.galleryItem}>
-                <Image
-                  src={src}
-                  alt={galleryAlts[i] || `Project gallery ${i + 1} — completed by Nicon Built`}
-                  width={600}
-                  height={400}
-                />
-              </div>
-            ))}
+            {images.gallery.map((src, i) => {
+              const project = galleryProjects[i];
+              return (
+                <figure key={src} className={styles.galleryItem}>
+                  <Image
+                    src={src}
+                    alt={project?.alt ?? `Project gallery ${i + 1} — completed by Nicon Built`}
+                    width={600}
+                    height={400}
+                  />
+                  {project?.caption ? (
+                    <figcaption className={styles.galleryCaption}>{project.caption}</figcaption>
+                  ) : null}
+                </figure>
+              );
+            })}
           </div>
         </div>
       </section>

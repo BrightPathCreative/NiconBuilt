@@ -14,7 +14,7 @@ SEO targets: electrician Melbourne, electrical services Melbourne, residential e
 ## Headline
 Electrical Services Melbourne | Residential Electrical | Inner South and Bayside
 
-Lighting, power points, switchboard upgrades, and electrical coordination within renovation projects. Carried out by licensed electricians.
+Lighting, power points, switchboard upgrades, and electrical coordination within renovation projects. Carried out by licensed electricians, coordinated by Nicon Built.
 
 ## Page copy
 Electrical work touches almost everything in a home. Lighting, power points, switchboards, appliances, outdoor areas. When it's done well, you don't think about it. When it's not, you're chasing problems for years.

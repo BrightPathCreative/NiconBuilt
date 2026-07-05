@@ -33,16 +33,16 @@ A clean finish depends on what's underneath the paint. We repair the plaster fir
 Kitchens, bathrooms, laundries, outdoor areas. Every tile laid consistently, waterproofed where required. The difference between good tiling and average tiling is obvious to anyone, even if they can't say exactly why.
 
 ### Plumbing
-New installations, hot water systems, pipe repairs, and plumbing coordination within renovation projects. Done to code and signed off properly every time.
+New installations, hot water systems, pipe repairs, and plumbing coordination within renovation projects. Carried out by licensed plumbers, coordinated by Nicon Built.
 
 ### Electrical
-Lighting, power points, switchboard upgrades, and outdoor electrical. Carried out by licensed electricians and coordinated within any renovation or home project.
+Lighting, power points, switchboard upgrades, and outdoor electrical. Carried out by licensed electricians, coordinated by Nicon Built.
 
 ### Property Maintenance
 Whatever needs doing around the home, we coordinate every trade so you don't have to. Scheduling, sequencing, quality. One call, one team, done properly.
 
 ### Pest Control
-Termites, rodents, and general pests in Melbourne's older homes need prompt, licensed attention. Inspections and treatments are coordinated through Nick's trusted network, with follow-up managed properly.
+Termites, rodents, and general pests in Melbourne's older homes need prompt, licensed attention. Carried out by licensed pest technicians, coordinated by Nicon Built.
 
 ### Cleaning
 End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The build isn't finished until the home is ready to live in.

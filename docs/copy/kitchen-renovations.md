@@ -12,7 +12,7 @@ SEO targets: kitchen renovations Melbourne, kitchen renovation builder Melbourne
 ⚠️ Image: Completed kitchen renovation — to be supplied by Nick.
 
 ## Headline
-Kitchen Renovations Melbourne | Licensed Builder | Inner South and Bayside
+Kitchen Renovations Across Melbourne's Inner South
 
 A kitchen renovation in an older Melbourne home is a building job, not just a fit-out. Nick Kafkalas manages every trade on every kitchen job across Melbourne's inner south and bayside suburbs.
 
