@@ -31,8 +31,24 @@ Sara is supplying a Google Drive folder ("Images") directly to Cursor rather tha
 | `og-image` | Homepage (+ ideally one per major service page) | 1200×630 |
 | `favicon` set | Site-wide | favicon.ico, icon.png (512×512), apple-icon.png (180×180) |
 | Affiliation logos | Footer, About | MBAV, AIB, HIA, BEA — 4 logos |
+| `blog/[slug]` | Blog index card, homepage "Recent articles" card, and post hero | One per post in `content/blog/`, see list below. Optional — posts render fine without one until supplied |
 
 All are ⚠️ PENDING — Sara's "Images" Drive folder should cover these; Cursor should check it against this list and flag anything still actually missing once reviewed.
+
+### Blog images (8 slots, all pending)
+
+Save to `public/images/blog/[slug].webp` and add `image: /images/blog/[slug].webp` to the post's frontmatter once supplied (see `content/blog/README.md`).
+
+| Slug | Post |
+|---|---|
+| `build-your-home-efficiently-and-affordably-with-nicon-built` | Build Your Home Efficiently and Affordably with Nicon Built |
+| `how-to-keep-your-build-within-budget` | How to Keep Your Build Within Budget |
+| `the-keys-to-a-successful-modern-heritage-extension` | The Keys to a Successful Modern Heritage Extension |
+| `understanding-prime-cost-and-provisional-sum` | Understanding Prime Cost and Provisional Sum |
+| `top-building-tips-from-an-architectural-builder` | Top Building Tips From An Architectural Builder |
+| `fabulous-at-40-why-experience-matters-in-building` | Fabulous at 40: Why Experience Matters in Building |
+| `the-importance-of-collaboration-in-building` | The Importance of Collaboration in Building |
+| `how-to-design-for-a-narrow-block` | How to Design for a Narrow Block |
 
 ## Archived — not currently used
 

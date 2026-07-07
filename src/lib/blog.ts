@@ -6,7 +6,8 @@ const BLOG_DIR = path.join(process.cwd(), "content", "blog");
 export type BlogBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
-  | { type: "h3"; text: string };
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] };
 
 export type BlogPost = {
   slug: string;
@@ -14,6 +15,8 @@ export type BlogPost = {
   excerpt: string;
   date: string;
   dateIso: string;
+  image?: string;
+  imageAlt?: string;
   blocks: BlogBlock[];
 };
 
@@ -22,6 +25,8 @@ type BlogFrontmatter = {
   excerpt: string;
   date: string;
   published?: boolean;
+  image?: string;
+  imageAlt?: string;
 };
 
 function parseFrontmatter(raw: string): { meta: BlogFrontmatter; body: string } {
@@ -66,12 +71,18 @@ function formatDisplayDate(isoDate: string): string {
   });
 }
 
-function parseBody(body: string): BlogBlock[] {
+function parseBody(rawBody: string): BlogBlock[] {
   const blocks: BlogBlock[] = [];
+  const body = rawBody.replace(/\r\n?/g, "\n");
 
   for (const chunk of body.split(/\n\n+/)) {
     const text = chunk.trim();
     if (!text) continue;
+
+    if (text.startsWith("#### ")) {
+      blocks.push({ type: "h3", text: text.replace(/^####\s+/, "") });
+      continue;
+    }
 
     if (text.startsWith("### ")) {
       blocks.push({ type: "h3", text: text.replace(/^###\s+/, "") });
@@ -80,6 +91,15 @@ function parseBody(body: string): BlogBlock[] {
 
     if (text.startsWith("## ")) {
       blocks.push({ type: "h2", text: text.replace(/^##\s+/, "") });
+      continue;
+    }
+
+    const lines = text.split(/\r?\n/).map((line) => line.trim());
+    if (lines.length > 0 && lines.every((line) => /^[-*]\s+/.test(line))) {
+      blocks.push({
+        type: "ul",
+        items: lines.map((line) => line.replace(/^[-*]\s+/, "")),
+      });
       continue;
     }
 
@@ -110,6 +130,8 @@ function loadBlogPostFromFile(filename: string): BlogPost | null {
       excerpt: meta.excerpt,
       dateIso,
       date: formatDisplayDate(dateIso),
+      image: meta.image,
+      imageAlt: meta.imageAlt,
       blocks: parseBody(body),
     };
   } catch {

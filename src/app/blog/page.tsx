@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
@@ -37,10 +38,23 @@ export default function BlogIndexPage() {
           <div className={styles.grid}>
             {blogPosts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}/`} className={`card ${styles.card}`}>
-                <p className={styles.date}>{post.date}</p>
-                <h2 className={styles.title}>{post.title}</h2>
-                <p className={styles.excerpt}>{post.excerpt}</p>
-                <span className={styles.readMore}>Read article →</span>
+                {post.image ? (
+                  <div className={styles.thumb}>
+                    <Image
+                      src={post.image}
+                      alt={post.imageAlt ?? post.title}
+                      fill
+                      sizes="(max-width: 960px) 100vw, 33vw"
+                      className={styles.thumbImg}
+                    />
+                  </div>
+                ) : null}
+                <div className={styles.cardBody}>
+                  <p className={styles.date}>{post.date}</p>
+                  <h2 className={styles.title}>{post.title}</h2>
+                  <p className={styles.excerpt}>{post.excerpt}</p>
+                  <span className={styles.readMore}>Read article →</span>
+                </div>
               </Link>
             ))}
           </div>

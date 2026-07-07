@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -6,6 +7,7 @@ import { QuoteCTA } from "@/components/QuoteCTA";
 import { buildMetadata } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
 import { getBlogPost } from "@/lib/blog";
+import { renderInline } from "@/lib/inline-markdown";
 import styles from "./page.module.css";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -48,10 +50,30 @@ export default async function BlogPostPage({ params }: Props) {
         <div className={`container ${styles.article}`}>
           <p className={styles.date}>{post.date}</p>
           <h1>{post.title}</h1>
+          {post.image ? (
+            <div className={styles.heroImage}>
+              <Image
+                src={post.image}
+                alt={post.imageAlt ?? post.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 720px"
+                className={styles.heroImageEl}
+                priority
+              />
+            </div>
+          ) : null}
           {post.blocks.map((block) => {
             if (block.type === "h2") return <h2 key={block.text}>{block.text}</h2>;
             if (block.type === "h3") return <h3 key={block.text}>{block.text}</h3>;
-            return <p key={block.text.slice(0, 40)}>{block.text}</p>;
+            if (block.type === "ul")
+              return (
+                <ul key={block.items[0]?.slice(0, 40)}>
+                  {block.items.map((item) => (
+                    <li key={item.slice(0, 40)}>{renderInline(item)}</li>
+                  ))}
+                </ul>
+              );
+            return <p key={block.text.slice(0, 40)}>{renderInline(block.text)}</p>;
           })}
           <div className={styles.links}>
             <Link href="/contact/">Get a free quote</Link>

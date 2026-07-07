@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getRecentBlogPosts } from "@/lib/blog";
 import styles from "./RecentArticles.module.css";
@@ -22,10 +23,23 @@ export function RecentArticles() {
         <div className={styles.grid}>
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}/`} className={`card ${styles.card}`}>
-              <p className={styles.date}>{post.date}</p>
-              <h3 className={styles.title}>{post.title}</h3>
-              <p className={styles.excerpt}>{post.excerpt}</p>
-              <span className={styles.readMore}>Read article →</span>
+              {post.image ? (
+                <div className={styles.thumb}>
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt ?? post.title}
+                    fill
+                    sizes="(max-width: 960px) 100vw, 33vw"
+                    className={styles.thumbImg}
+                  />
+                </div>
+              ) : null}
+              <div className={styles.cardBody}>
+                <p className={styles.date}>{post.date}</p>
+                <h3 className={styles.title}>{post.title}</h3>
+                <p className={styles.excerpt}>{post.excerpt}</p>
+                <span className={styles.readMore}>Read article →</span>
+              </div>
             </Link>
           ))}
         </div>

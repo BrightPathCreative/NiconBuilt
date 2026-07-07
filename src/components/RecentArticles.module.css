@@ -28,7 +28,6 @@
 .card {
   display: flex;
   flex-direction: column;
-  padding: 28px;
   text-decoration: none;
   color: inherit;
   min-height: 100%;
@@ -37,6 +36,24 @@
 
 .card:hover {
   border-color: var(--color-accent);
+}
+
+.thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--color-tone-band);
+}
+
+.thumbImg {
+  object-fit: cover;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 28px;
 }
 
 .date {

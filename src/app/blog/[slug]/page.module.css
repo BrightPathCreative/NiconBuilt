@@ -11,6 +11,30 @@
   color: var(--color-accent-label);
 }
 
+.heroImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 24px 0 32px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background: var(--color-tone-band);
+}
+
+.heroImageEl {
+  object-fit: cover;
+}
+
+.article ul {
+  margin: 0 0 1em;
+  padding-left: 22px;
+}
+
+.article li {
+  margin-bottom: 0.4em;
+  line-height: 1.6;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
