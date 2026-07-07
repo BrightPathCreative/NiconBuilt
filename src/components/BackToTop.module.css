@@ -70,6 +70,7 @@
 @media (max-width: 768px) {
   .button {
     right: 16px;
-    bottom: 16px;
+    /* Sits above the fixed StickyCallBar (~64px + safe-area) so they don't overlap. */
+    bottom: calc(80px + env(safe-area-inset-bottom));
   }
 }

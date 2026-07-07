@@ -5,7 +5,8 @@
   --color-background: #edebe7;
   --color-surface: #faf9f7;
   --color-text: #57544b;
-  --color-text-muted: #78746a;
+  /* Darkened from #78746a (3.92:1) — failed WCAG AA on breadcrumbs/captions. Now ~4.65:1. */
+  --color-text-muted: #6c685f;
   --color-border: #eae7e0;
   --color-surface-alt: #fcfbf9;
   --color-surface-white: #fff;
@@ -13,11 +14,16 @@
   --color-border-alt: #e4e0d9;
   --color-border-strong: #d8d3ca;
   --color-text-muted-alt: #6b675e;
-  --color-text-muted-light: #8c877e;
+  /* Darkened from #8c877e (3.0:1) — failed WCAG AA on breadcrumb links. Now ~4.65:1.
+     Necessarily close to --color-text-muted now; there's little headroom for two
+     distinct "very light" greys that both clear 4.5:1 on this background. */
+  --color-text-muted-light: #6c6861;
   --color-footer-border: #2a2a28;
   --color-footer-text: #8e897e;
   --color-footer-links: #a8a39a;
-  --color-accent-label: oklch(0.62 0.12 55);
+  /* Darkened from oklch(0.62 0.12 55) — that value failed WCAG AA (3.18:1)
+     against the page background for small/bold eyebrow text. This hits ~5.3:1. */
+  --color-accent-label: oklch(0.5 0.12 55);
   --color-accent-eyebrow-on-dark: oklch(0.82 0.09 70);
   --color-star-gold: #e8a33d;
   --color-badge-before-bg: rgba(0, 0, 0, 0.62);
@@ -50,6 +56,13 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 768px) {
+  /* Keeps footer content clear of the fixed StickyCallBar. */
+  body {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom));
+  }
 }
 
 h1,

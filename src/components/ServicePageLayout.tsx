@@ -11,10 +11,8 @@ import type { BreadcrumbItem } from "@/lib/schema";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import type { FaqItem } from "@/lib/copy";
 import type { CarouselSlide } from "@/lib/service-carousel";
-import {
-  ServiceHeroCarousel,
-  ServiceMarqueeCarousel,
-} from "./ServiceImageCarousel";
+import { ServiceHeroCarousel } from "./ServiceImageCarousel";
+import { ServiceMarqueeCarousel } from "./ServiceMarquee";
 import styles from "./ServicePageLayout.module.css";
 
 type Props = {

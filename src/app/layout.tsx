@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { BackToTop } from "@/components/BackToTop";
+import { StickyCallBar } from "@/components/StickyCallBar";
 import { localBusinessSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 import { fontVariables } from "@/lib/fonts";
@@ -36,6 +37,7 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
         <Footer />
         <BackToTop />
+        <StickyCallBar />
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics />
       </body>

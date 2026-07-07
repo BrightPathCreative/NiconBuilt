@@ -83,6 +83,13 @@
     linear-gradient(180deg, var(--color-tone-band) 0%, var(--color-background) 100%);
   border-block: 1px solid var(--color-border);
   overflow: hidden;
+  /* Skips layout/style/paint work for this section (16 duplicated images
+     driving a CSS marquee) until it's about to scroll into view — the browser
+     otherwise has to lay out and paint it up front even though it's often
+     below the fold on load. contain-intrinsic-size reserves roughly the right
+     height so there's no layout shift once it's rendered for real. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
 }
 
 .marqueeHeader {
