@@ -35,20 +35,22 @@ Sara is supplying a Google Drive folder ("Images") directly to Cursor rather tha
 
 All are ⚠️ PENDING — Sara's "Images" Drive folder should cover these; Cursor should check it against this list and flag anything still actually missing once reviewed.
 
-### Blog images (8 slots, all pending)
+### Blog images (8/8 resolved)
 
-Save to `public/images/blog/[slug].webp` and add `image: /images/blog/[slug].webp` to the post's frontmatter once supplied (see `content/blog/README.md`).
+Saved to `public/images/blog/[slug].webp`, with `image`/`imageAlt` set in each post's frontmatter.
 
-| Slug | Post |
-|---|---|
-| `build-your-home-efficiently-and-affordably-with-nicon-built` | Build Your Home Efficiently and Affordably with Nicon Built |
-| `how-to-keep-your-build-within-budget` | How to Keep Your Build Within Budget |
-| `the-keys-to-a-successful-modern-heritage-extension` | The Keys to a Successful Modern Heritage Extension |
-| `understanding-prime-cost-and-provisional-sum` | Understanding Prime Cost and Provisional Sum |
-| `top-building-tips-from-an-architectural-builder` | Top Building Tips From An Architectural Builder |
-| `fabulous-at-40-why-experience-matters-in-building` | Fabulous at 40: Why Experience Matters in Building |
-| `the-importance-of-collaboration-in-building` | The Importance of Collaboration in Building |
-| `how-to-design-for-a-narrow-block` | How to Design for a Narrow Block |
+| Slug | Post | Source |
+|---|---|---|
+| `build-your-home-efficiently-and-affordably-with-nicon-built` | Build Your Home Efficiently and Affordably with Nicon Built | Supplied (`Blogs/Blog Images/`) |
+| `how-to-keep-your-build-within-budget` | How to Keep Your Build Within Budget | Supplied (`Blogs/Blog Images/`) |
+| `the-keys-to-a-successful-modern-heritage-extension` | The Keys to a Successful Modern Heritage Extension | Supplied (`Blogs/Blog Images/`) |
+| `understanding-prime-cost-and-provisional-sum` | Understanding Prime Cost and Provisional Sum | Chosen from library (no supplied image): `nicon-built-open-plan-kitchen-gable-window-wall-natural-light.jpg` |
+| `top-building-tips-from-an-architectural-builder` | Top Building Tips From An Architectural Builder | Supplied (`Blogs/Blog Images/`) |
+| `fabulous-at-40-why-experience-matters-in-building` | Fabulous at 40: Why Experience Matters in Building | Chosen from library (no supplied image): `nicon-built-modern-kitchen-marble-benchtop-timber-staircase-heritage.jpg` |
+| `the-importance-of-collaboration-in-building` | The Importance of Collaboration in Building | Supplied (`Blogs/Blog Images/`) |
+| `how-to-design-for-a-narrow-block` | How to Design for a Narrow Block | Supplied (`Blogs/Blog Images/`) |
+
+The two library photos above were previously unused anywhere else on the site (not in `IMAGE_MAP`, `GALLERY_SOURCES`, or `service-carousel-sources.json` in `scripts/optimize-images.mjs`) — cross-checked before selecting, so no image is duplicated across two different contexts. Generated via `scripts/process-blog-images.mjs`.
 
 ## Archived — not currently used
 

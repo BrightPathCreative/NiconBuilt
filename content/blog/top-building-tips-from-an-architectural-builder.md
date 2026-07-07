@@ -3,6 +3,8 @@ title: Top Building Tips From An Architectural Builder
 excerpt: Five practical tips for anyone designing and building a new home, from organising your brief to choosing an experienced team.
 date: 2022-07-22
 published: true
+image: /images/blog/top-building-tips-from-an-architectural-builder.webp
+imageAlt: New weatherboard-style home build at dusk — Nicon Built
 ---
 
 When you're designing and building a new home, it's easy to become overwhelmed by *everything* that needs to be done. It's a massive emotional and financial investment, and trying to be across every detail may result in the exact opposite.

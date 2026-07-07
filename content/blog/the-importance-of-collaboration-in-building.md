@@ -3,6 +3,8 @@ title: The Importance of Collaboration in Building
 excerpt: Why collaboration between architect, designer and builder — and clear communication with clients — delivers better building outcomes.
 date: 2023-02-02
 published: true
+image: /images/blog/the-importance-of-collaboration-in-building.webp
+imageAlt: Nicon Built team on site coordinating a build
 ---
 
 We've been offering architectural and building services for over 40 years now, and the learning never ends.

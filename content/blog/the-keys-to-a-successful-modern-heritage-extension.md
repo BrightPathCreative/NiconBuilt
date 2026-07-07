@@ -3,6 +3,8 @@ title: The Keys to a Successful Modern Heritage Extension
 excerpt: What it takes to extend a heritage home well — balancing preservation, council regulations and modern living needs.
 date: 2021-08-19
 published: true
+image: /images/blog/the-keys-to-a-successful-modern-heritage-extension.webp
+imageAlt: Modern ensuite bathroom addition with gold tapware — Nicon Built
 ---
 
 Extending heritage homes requires careful planning, and a team of experts dedicated to ensuring existing structures are respected. Our goal? To address present living needs in ways that complement and celebrate the architectural beauty of the past.

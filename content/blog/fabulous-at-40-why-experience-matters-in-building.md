@@ -3,6 +3,8 @@ title: "Fabulous at 40: Why Experience Matters in Building"
 excerpt: After 40+ years in the industry, here are the rules we live by — from listening closely to clients to keeping every build on budget.
 date: 2022-11-20
 published: true
+image: /images/blog/fabulous-at-40-why-experience-matters-in-building.webp
+imageAlt: Heritage staircase and modern kitchen renovation — Nicon Built
 ---
 
 *With 40+ years' building experience, we've seen everything!*

@@ -3,6 +3,8 @@ title: How to Keep Your Build Within Budget
 excerpt: Practical ways to avoid budget blow-outs — from engaging a builder early to steering clear of free quotes and late-stage variations.
 date: 2020-08-18
 published: true
+image: /images/blog/how-to-keep-your-build-within-budget.webp
+imageAlt: Renovated bedroom with built-in study nook — Nicon Built
 ---
 
 If you're thinking of building or renovating, you've probably heard many a horror story — countless accounts of people who blew out their building budget during construction, or worse, were caught out by an untrustworthy builder or a sly building contract. The good news is this situation can be avoided.
