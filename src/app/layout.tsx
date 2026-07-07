@@ -6,6 +6,7 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { BackToTop } from "@/components/BackToTop";
 import { localBusinessSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
+import { fontVariables } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -26,11 +27,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-AU">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
+    <html lang="en-AU" className={fontVariables}>
       <body>
         <a href="#main-content" className="skip-link">
           Skip to content

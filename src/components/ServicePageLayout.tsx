@@ -1,9 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/lib/navigation";
+import { images } from "@/lib/images";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { JsonLd } from "./JsonLd";
 import { FaqSection } from "./FaqSection";
 import { QuoteCTA } from "./QuoteCTA";
+import { QuickEnquiry } from "./QuickEnquiry";
 import type { BreadcrumbItem } from "@/lib/schema";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import type { FaqItem } from "@/lib/copy";
@@ -26,6 +29,16 @@ type Props = {
   carouselSlides?: CarouselSlide[];
   faqs?: FaqItem[];
   children?: React.ReactNode;
+  /**
+   * Where the embedded quick-enquiry form sits on the page:
+   * - "top" (default): right after the hero — best for trade/maintenance
+   *   pages, where searches tend to be higher-intent and lower-consideration.
+   * - "bottom": after the gallery/"what's included" content — for bigger
+   *   project pages (heritage, kitchen/bathroom renos, new builds) where the
+   *   photo gallery should stay the dominant first impression.
+   * - "none": skip the embedded form (falls back to the QuoteCTA band only).
+   */
+  enquiryFormPlacement?: "top" | "bottom" | "none";
 };
 
 export function ServicePageLayout({
@@ -40,6 +53,7 @@ export function ServicePageLayout({
   carouselSlides = [],
   faqs = [],
   children,
+  enquiryFormPlacement = "top",
 }: Props) {
   const slides =
     carouselSlides.length > 0
@@ -47,6 +61,8 @@ export function ServicePageLayout({
       : image
         ? [{ src: image, alt: imageAlt || headline }]
         : [];
+  // Reuse a different project photo than the hero for visual variety, falling back to the hero image if only one exists.
+  const includedImage = slides.length > 1 ? slides[1] : slides[0];
   return (
     <>
       <JsonLd
@@ -78,6 +94,8 @@ export function ServicePageLayout({
         </div>
       </section>
 
+      {enquiryFormPlacement === "top" ? <QuickEnquiry /> : null}
+
       {slides.length > 1 ? (
         <ServiceMarqueeCarousel slides={slides} label={`${headline} project work`} />
       ) : null}
@@ -95,15 +113,32 @@ export function ServicePageLayout({
       {bullets.length ? (
         <section className="section">
           <div className="container">
-            <h2>{bulletsTitle}</h2>
-            <ul className={styles.bulletList}>
-              {bullets.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            <div className={includedImage ? styles.includedGrid : undefined}>
+              {includedImage ? (
+                <div className={styles.includedImage}>
+                  <Image
+                    src={includedImage.src}
+                    alt={includedImage.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className={styles.includedImageEl}
+                  />
+                </div>
+              ) : null}
+              <div>
+                <h2>{bulletsTitle}</h2>
+                <ul className={styles.bulletList}>
+                  {bullets.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       ) : null}
+
+      {enquiryFormPlacement === "bottom" ? <QuickEnquiry /> : null}
 
       {children}
 
@@ -117,26 +152,50 @@ export function ServicePageLayout({
 export function ServiceLinks({ currentSlug }: { currentSlug: string }) {
   const others = services.filter((s) => s.slug !== currentSlug).slice(0, 3);
 
+  const cards = [
+    ...others.map((s) => ({
+      slug: s.slug,
+      label: s.shortTitle,
+      image: images[s.imageKey],
+      imageAlt: s.imageAlt,
+    })),
+    {
+      slug: "/our-work/",
+      label: "Our Work",
+      image: images.gallery[0],
+      imageAlt: "Recent renovation project by Nicon Built",
+    },
+    {
+      slug: "/contact/",
+      label: "Contact",
+      image: images.nickPortrait,
+      imageAlt: "Nick from Nicon Built",
+    },
+  ];
+
   return (
     <section className="section section--tone">
       <div className="container">
         <p className="eyebrow">Related services</p>
         <h2>Explore our other services</h2>
         <div className={styles.relatedGrid}>
-          {others.map((s) => (
-            <Link key={s.slug} href={s.slug} className={`card ${styles.relatedCard}`}>
-              <span>{s.shortTitle}</span>
-              <span aria-hidden="true">→</span>
+          {cards.map((c) => (
+            <Link key={c.slug} href={c.slug} className={`card ${styles.relatedCard}`}>
+              <div className={styles.relatedImage}>
+                <Image
+                  src={c.image}
+                  alt={c.imageAlt}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 240px"
+                  className={styles.relatedImageEl}
+                />
+              </div>
+              <div className={styles.relatedBody}>
+                <span>{c.label}</span>
+                <span aria-hidden="true">→</span>
+              </div>
             </Link>
           ))}
-          <Link href="/our-work/" className={`card ${styles.relatedCard}`}>
-            <span>Our Work</span>
-            <span aria-hidden="true">→</span>
-          </Link>
-          <Link href="/contact/" className={`card ${styles.relatedCard}`}>
-            <span>Contact</span>
-            <span aria-hidden="true">→</span>
-          </Link>
         </div>
       </div>
     </section>

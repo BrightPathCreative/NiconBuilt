@@ -7,7 +7,7 @@
 }
 
 .title {
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 700;
   font-size: 20px;
   color: var(--color-primary);
@@ -38,7 +38,7 @@
 }
 
 .field label {
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: var(--color-primary);
@@ -50,7 +50,7 @@
   padding: 12px 14px;
   border: 1px solid var(--color-border-strong);
   border-radius: var(--radius-button);
-  font-family: "Barlow", sans-serif;
+  font-family: var(--font-barlow), sans-serif;
   font-size: 15px;
   color: var(--color-primary);
   background: var(--color-surface-alt);

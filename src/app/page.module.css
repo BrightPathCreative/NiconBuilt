@@ -76,7 +76,7 @@
 .serviceSub {
   font-size: 12px !important;
   color: var(--color-text-muted) !important;
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-mono), monospace;
   letter-spacing: 0.5px;
 }
 
@@ -84,7 +84,7 @@
   font-size: 13px;
   color: var(--color-text-muted);
   margin-bottom: 12px;
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-mono), monospace;
 }
 
 .reviewGrid {

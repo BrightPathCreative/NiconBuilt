@@ -50,7 +50,7 @@
 }
 
 .trust {
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-mono), monospace;
   font-size: 12px;
   letter-spacing: 1px;
   color: var(--color-accent-eyebrow-on-dark);

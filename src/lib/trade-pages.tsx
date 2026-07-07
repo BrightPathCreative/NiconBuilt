@@ -27,6 +27,7 @@ export function createTradePage(trade: TradeService) {
           bulletsTitle="What we handle"
           carouselSlides={getTradeCarouselSlides(trade.slug)}
           faqs={trade.faqs}
+          enquiryFormPlacement="top"
         />
       );
     },

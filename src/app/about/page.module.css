@@ -1,8 +1,8 @@
 .heroGrid {
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: start;
+  align-items: center;
 }
 
 .intro {
@@ -11,10 +11,44 @@
   color: var(--color-text-muted-alt);
 }
 
-.portrait {
-  border-radius: var(--radius-card);
+.heroImage {
+  position: relative;
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.heroImageEl {
+  object-fit: cover;
+}
+
+.sectionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.sectionImage,
+.sectionImagePortrait {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.sectionImage {
+  aspect-ratio: 4 / 3;
+}
+
+.sectionImagePortrait {
+  aspect-ratio: 3 / 4;
+  max-width: 420px;
+}
+
+.sectionImageEl {
+  object-fit: cover;
 }
 
 .promiseList {
@@ -47,7 +81,12 @@
 }
 
 @media (max-width: 768px) {
-  .heroGrid {
+  .heroGrid,
+  .sectionGrid {
     grid-template-columns: 1fr;
+  }
+
+  .sectionImagePortrait {
+    max-width: 280px;
   }
 }

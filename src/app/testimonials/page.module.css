@@ -38,7 +38,7 @@
 }
 
 .ratingValue {
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 800;
   font-size: 22px;
   color: #fff;
@@ -52,7 +52,7 @@
 }
 
 .ratingLabel {
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: var(--color-star-gold);
@@ -72,7 +72,7 @@
   position: absolute;
   top: 20px;
   right: 32px;
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-size: 96px;
   font-weight: 900;
   line-height: 1;
@@ -96,7 +96,7 @@
 }
 
 .featuredAuthor {
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: var(--color-primary);
@@ -105,7 +105,7 @@
 .featuredMeta {
   font-size: 13px;
   color: var(--color-text-muted);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-mono), monospace;
 }
 
 .grid {
@@ -141,7 +141,7 @@
 }
 
 .author {
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: var(--color-primary);
@@ -150,7 +150,7 @@
 .meta {
   font-size: 12px;
   color: var(--color-text-muted);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-mono), monospace;
 }
 
 @media (max-width: 768px) {

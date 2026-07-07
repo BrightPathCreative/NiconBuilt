@@ -29,7 +29,7 @@
 
 .logoText {
   display: block;
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 900;
   font-size: 19px;
   letter-spacing: 0.5px;
@@ -54,7 +54,7 @@
 
 .rating {
   color: var(--color-star-gold);
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 700;
 }
 
@@ -63,7 +63,7 @@
   font-weight: 700;
   color: #fff;
   margin-bottom: 16px;
-  font-family: "Archivo", sans-serif;
+  font-family: var(--font-archivo), sans-serif;
 }
 
 .links {
