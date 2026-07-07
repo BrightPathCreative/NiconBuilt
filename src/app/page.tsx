@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { StatsStrip } from "@/components/StatsStrip";
 import { QuoteCTA } from "@/components/QuoteCTA";
+import { RecentArticles } from "@/components/RecentArticles";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import {
   loadCopy,
@@ -164,6 +165,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <RecentArticles />
 
       <QuoteCTA />
     </>

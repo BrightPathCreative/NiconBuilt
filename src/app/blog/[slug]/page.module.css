@@ -1,0 +1,30 @@
+.article {
+  max-width: 720px;
+}
+
+.date {
+  margin: 0 0 16px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent-label);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  font-size: 15px;
+}
+
+.links a {
+  font-weight: 600;
+}
+
+.links span {
+  color: var(--color-text-muted);
+}

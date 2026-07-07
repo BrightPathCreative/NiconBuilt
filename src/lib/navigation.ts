@@ -33,6 +33,7 @@ export const mainNav = [
 export const footerNav = [
   { label: "Services", href: "/services/" },
   { label: "Our Work", href: "/our-work/" },
+  { label: "Blog", href: "/blog/" },
   { label: "Testimonials", href: "/testimonials/" },
   { label: "FAQ", href: "/faq/" },
   { label: "About", href: "/about/" },

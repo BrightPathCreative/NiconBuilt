@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { QuoteCTA } from "@/components/QuoteCTA";
+import { buildMetadata } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
 import { getBlogPost } from "@/lib/blog";
+import styles from "./page.module.css";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -17,10 +19,11 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
-  return {
-    title: post.title,
+  return buildMetadata({
+    title: `${post.title} | Nicon Built Blog`,
     description: post.excerpt,
-  };
+    path: `/blog/${post.slug}/`,
+  });
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -42,27 +45,21 @@ export default async function BlogPostPage({ params }: Props) {
       </div>
 
       <article className="section">
-        <div className="container prose">
-          <p
-            style={{
-              fontFamily: "JetBrains Mono, monospace",
-              fontSize: "12px",
-              letterSpacing: "2px",
-              textTransform: "uppercase",
-              color: "var(--color-accent-label)",
-            }}
-          >
-            {post.date}
-          </p>
+        <div className={`container ${styles.article}`}>
+          <p className={styles.date}>{post.date}</p>
           <h1>{post.title}</h1>
-          {post.content.map((p) => (
-            <p key={p.slice(0, 30)}>{p}</p>
-          ))}
-          <p>
-            <Link href="/contact/">Get a free quote</Link> ·{" "}
-            <Link href="/heritage-renovations-melbourne/">Heritage renovations</Link> ·{" "}
+          {post.blocks.map((block) => {
+            if (block.type === "h2") return <h2 key={block.text}>{block.text}</h2>;
+            if (block.type === "h3") return <h3 key={block.text}>{block.text}</h3>;
+            return <p key={block.text.slice(0, 40)}>{block.text}</p>;
+          })}
+          <div className={styles.links}>
+            <Link href="/contact/">Get a free quote</Link>
+            <span aria-hidden="true">·</span>
+            <Link href="/heritage-renovations-melbourne/">Heritage renovations</Link>
+            <span aria-hidden="true">·</span>
             <Link href="/home-renovations-melbourne/">Home renovations</Link>
-          </p>
+          </div>
         </div>
       </article>
 
