@@ -39,6 +39,14 @@ const MAP = {
     dir: LIBRARY_DIR,
     file: "nicon-built-open-plan-kitchen-gable-window-wall-natural-light.jpg",
   },
+  "renovation-inspirations-before-and-after-success-project-port-melbourne": {
+    dir: LIBRARY_DIR,
+    file: "nicon-built-heritage-kitchen-vaulted-ceiling-wide-angle-pendants.jpg",
+  },
+  "should-i-renovate-or-build-new-nicon-built": {
+    dir: LIBRARY_DIR,
+    file: "nicon-built-modern-extension-pool-glass-fence-rear-elevation.jpg",
+  },
 };
 
 async function main() {

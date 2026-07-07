@@ -65,4 +65,4 @@ No code changes needed when swapping or adding posts — only edit or add files 
 
 ## Current slots
 
-The repo ships with **8 published posts**, each with a hero/thumbnail image in place.
+The repo ships with **10 published posts**, each with a hero/thumbnail image in place.

@@ -35,9 +35,9 @@ Sara is supplying a Google Drive folder ("Images") directly to Cursor rather tha
 
 All are ⚠️ PENDING — Sara's "Images" Drive folder should cover these; Cursor should check it against this list and flag anything still actually missing once reviewed.
 
-### Blog images (8/8 resolved)
+### Blog images (10/10 resolved)
 
-Saved to `public/images/blog/[slug].webp`, with `image`/`imageAlt` set in each post's frontmatter.
+Saved to `public/images/blog/[slug].webp`, with `image`/`imageAlt` set in each post's frontmatter. This covers all posts in `content/blog/`, including the 2 that predate the 8-article batch (Renovation Inspirations, Should I Renovate or Build New?) which had no supplied image either.
 
 | Slug | Post | Source |
 |---|---|---|
@@ -49,8 +49,10 @@ Saved to `public/images/blog/[slug].webp`, with `image`/`imageAlt` set in each p
 | `fabulous-at-40-why-experience-matters-in-building` | Why Experience Matters in Building | Chosen from library (no supplied image): `nicon-built-modern-kitchen-marble-benchtop-timber-staircase-heritage.jpg` |
 | `the-importance-of-collaboration-in-building` | The Importance of Collaboration in Building | Supplied (`Blogs/Blog Images/`) |
 | `how-to-design-for-a-narrow-block` | How to Design for a Narrow Block | Supplied (`Blogs/Blog Images/`) |
+| `renovation-inspirations-before-and-after-success-project-port-melbourne` | Renovation Inspirations: Before and After Success Project Port Melbourne | Chosen from library (no supplied image): `nicon-built-heritage-kitchen-vaulted-ceiling-wide-angle-pendants.jpg` |
+| `should-i-renovate-or-build-new-nicon-built` | Should I Renovate or Build New? | Chosen from library (no supplied image): `nicon-built-modern-extension-pool-glass-fence-rear-elevation.jpg` |
 
-The two library photos above were previously unused anywhere else on the site (not in `IMAGE_MAP`, `GALLERY_SOURCES`, or `service-carousel-sources.json` in `scripts/optimize-images.mjs`) — cross-checked before selecting, so no image is duplicated across two different contexts. Generated via `scripts/process-blog-images.mjs`.
+The 4 library photos above were previously unused anywhere else on the site (not in `IMAGE_MAP`, `GALLERY_SOURCES`, or `service-carousel-sources.json` in `scripts/optimize-images.mjs`) — cross-checked before selecting, so no image is duplicated across two different contexts. Generated via `scripts/process-blog-images.mjs`.
 
 ## Archived — not currently used
 
