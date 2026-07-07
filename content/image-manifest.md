@@ -46,7 +46,7 @@ Saved to `public/images/blog/[slug].webp`, with `image`/`imageAlt` set in each p
 | `the-keys-to-a-successful-modern-heritage-extension` | The Keys to a Successful Modern Heritage Extension | Supplied (`Blogs/Blog Images/`) |
 | `understanding-prime-cost-and-provisional-sum` | Understanding Prime Cost and Provisional Sum | Chosen from library (no supplied image): `nicon-built-open-plan-kitchen-gable-window-wall-natural-light.jpg` |
 | `top-building-tips-from-an-architectural-builder` | Top Building Tips From An Architectural Builder | Supplied (`Blogs/Blog Images/`) |
-| `fabulous-at-40-why-experience-matters-in-building` | Fabulous at 40: Why Experience Matters in Building | Chosen from library (no supplied image): `nicon-built-modern-kitchen-marble-benchtop-timber-staircase-heritage.jpg` |
+| `fabulous-at-40-why-experience-matters-in-building` | Why Experience Matters in Building | Chosen from library (no supplied image): `nicon-built-modern-kitchen-marble-benchtop-timber-staircase-heritage.jpg` |
 | `the-importance-of-collaboration-in-building` | The Importance of Collaboration in Building | Supplied (`Blogs/Blog Images/`) |
 | `how-to-design-for-a-narrow-block` | How to Design for a Narrow Block | Supplied (`Blogs/Blog Images/`) |
 
