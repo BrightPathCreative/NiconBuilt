@@ -8,7 +8,7 @@ Last updated: 2026-07-05
 SEO targets: cleaning Melbourne, end of lease cleaning Melbourne, post renovation cleaning inner south
 
 ## Headline
-Cleaning Melbourne | End-of-Job, Bond and Regular Cleans | Inner South and Bayside
+Cleaning Services Melbourne
 
 Professional cleaning after renovations, between tenancies, or on a regular schedule.
 

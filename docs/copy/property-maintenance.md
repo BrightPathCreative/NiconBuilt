@@ -12,7 +12,7 @@ SEO targets: property maintenance Melbourne, home maintenance Melbourne, trade c
 ⚠️ Image: Trade work in progress — to be supplied by Nick.
 
 ## Headline
-Property Maintenance Melbourne | Home Maintenance and Trade Coordination | Inner South and Bayside
+Property Maintenance Melbourne
 
 Whatever your home needs. One call, one team, everything managed.
 

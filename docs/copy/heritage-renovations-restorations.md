@@ -12,7 +12,7 @@ SEO targets: heritage renovation builder Melbourne, Victorian home renovation Me
 ⚠️ Image: Heritage renovation. Period home exterior or restoration detail — to be supplied by Nick.
 
 ## Headline
-Heritage Renovation and Restoration Melbourne | Victorian, Edwardian and Federation Homes
+Heritage Renovations Melbourne
 
 30 years of heritage building experience across Melbourne's inner south. Every project managed personally. VBA licensed, fully insured, Port Melbourne.
 

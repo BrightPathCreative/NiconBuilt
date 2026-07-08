@@ -12,7 +12,7 @@ SEO targets: carpentry Melbourne, carpenter Melbourne inner south, decking Melbo
 ⚠️ Image: Completed decking, custom cabinetry, or joinery detail — to be supplied by Nick.
 
 ## Headline
-Carpentry and Joinery Melbourne | Decking, Cabinetry, Doors and Joinery | Inner South and Bayside
+Carpentry and Joinery Melbourne
 
 Custom carpentry for Melbourne's inner south homes. Built properly and finished to last.
 

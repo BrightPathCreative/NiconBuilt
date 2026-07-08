@@ -12,7 +12,7 @@ SEO targets: tiler Melbourne, tiling Melbourne, bathroom tiling Melbourne inner 
 ⚠️ Image: Tiled bathroom or kitchen — to be supplied by Nick.
 
 ## Headline
-Tiling Melbourne | Kitchens, Bathrooms and Outdoor Areas | Inner South and Bayside
+Tiling Services Melbourne
 
 Every tile laid properly, every joint consistent. Waterproofed where required.
 

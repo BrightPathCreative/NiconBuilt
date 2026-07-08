@@ -12,7 +12,7 @@ SEO targets: bathroom renovations Melbourne, bathroom renovation builder Melbour
 ⚠️ Image: Completed bathroom renovation — to be supplied by Nick.
 
 ## Headline
-Bathroom Renovations Melbourne | Licensed Builder | Inner South and Bayside
+Bathroom Renovations Melbourne
 
 A bathroom renovation done properly means every trade in the right order. Nick Kafkalas manages the whole job across Melbourne's inner south and bayside suburbs.
 

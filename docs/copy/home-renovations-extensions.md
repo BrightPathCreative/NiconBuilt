@@ -12,7 +12,7 @@ SEO targets: home renovations Melbourne, home extensions Melbourne, renovation b
 ⚠️ Image: Home extension or renovation completed — to be supplied by Nick.
 
 ## Headline
-Home Renovation Builder Melbourne | Extensions, Structural Work and Full Renovations
+Home Renovations and Extensions Melbourne
 
 Plans sorted. Permits approved. Ready to build. We work with homeowners across Melbourne's inner south who need a builder they can actually rely on.
 

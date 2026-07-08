@@ -8,7 +8,7 @@ Last updated: 2026-07-05
 SEO targets: roofing Melbourne, roof repairs Melbourne, roof restoration inner south
 
 ## Headline
-Roofing Melbourne | Repairs, Restoration and Maintenance | Inner South and Bayside
+Roofing Services Melbourne
 
 Roof repairs and maintenance, coordinated by a licensed builder.
 

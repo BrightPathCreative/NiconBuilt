@@ -12,7 +12,7 @@ SEO targets: plumber Melbourne, plumbing Melbourne, residential plumber inner so
 ⚠️ Image: Plumbing installation or bathroom plumbing rough-in — to be supplied by Nick.
 
 ## Headline
-Plumbing Melbourne | Residential Plumbing Services | Inner South and Bayside
+Plumbing Services Melbourne
 
 New installations, repairs, and plumbing coordination across renovation projects. Carried out by licensed plumbers, coordinated by Nicon Built.
 

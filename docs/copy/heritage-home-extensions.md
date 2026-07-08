@@ -12,7 +12,7 @@ SEO targets: heritage home extensions Melbourne, period home extensions Melbourn
 ⚠️ Image: Heritage extension showing new addition alongside original building — to be supplied by Nick.
 
 ## Headline
-Heritage Home Extensions Melbourne | Period-Accurate Additions | Inner South
+Heritage Home Extensions Melbourne
 
 Extending a heritage home in Melbourne's inner south requires a specialist. Period materials, heritage overlay compliance, and 30 years of making new work look like it was always there.
 

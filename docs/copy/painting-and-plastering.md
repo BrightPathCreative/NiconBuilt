@@ -12,7 +12,7 @@ SEO targets: painter Melbourne, painting and plastering Melbourne, interior pain
 ⚠️ Image: Fresh interior paint finish or plaster repair in progress — to be supplied by Nick.
 
 ## Headline
-Painting and Plastering Melbourne | Interior and Exterior | Inner South and Bayside
+Painting and Plastering Melbourne
 
 A clean finish depends on what's underneath it. We repair the plaster properly first, then paint.
 

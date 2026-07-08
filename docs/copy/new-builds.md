@@ -12,7 +12,7 @@ SEO targets: custom home builder Melbourne, new home builder Melbourne inner sou
 ⚠️ Image: Completed new build or dual occupancy — to be supplied by Nick.
 
 ## Headline
-Custom Home Builder Melbourne | New Builds and Dual Occupancy | Inner South
+Custom Home Builder Melbourne
 
 Custom residential builds across Melbourne's inner south since 1990. Every build run personally by Nick from first quote through to handover.
 

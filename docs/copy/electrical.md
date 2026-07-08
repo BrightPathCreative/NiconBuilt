@@ -12,7 +12,7 @@ SEO targets: electrician Melbourne, electrical services Melbourne, residential e
 ⚠️ Image: Lighting installation or switchboard upgrade — to be supplied by Nick.
 
 ## Headline
-Electrical Services Melbourne | Residential Electrical | Inner South and Bayside
+Electrical Services Melbourne
 
 Lighting, power points, switchboard upgrades, and electrical coordination within renovation projects. Carried out by licensed electricians, coordinated by Nicon Built.
 

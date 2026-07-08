@@ -8,7 +8,7 @@ Last updated: 2026-07-05
 SEO targets: pest control Melbourne, pest inspections Melbourne, termite inspection inner south Melbourne
 
 ## Headline
-Pest Control Melbourne | Inspections and Treatments | Inner South and Bayside
+Pest Control Melbourne
 
 Licensed pest inspections and treatments. Carried out by licensed pest technicians, coordinated by Nicon Built.
 
