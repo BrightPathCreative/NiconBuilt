@@ -66,6 +66,16 @@ export function ServicePageLayout({
   // Reuse a different project photo than the hero for visual variety, falling back to the hero image if only one exists.
   const includedImage = slides.length > 1 ? slides[1] : slides[0];
   const isFormHero = enquiryFormPlacement === "top";
+  // Editorial copy layout: the first paragraph becomes a large lead
+  // statement, and the rest are paired with project photos in alternating
+  // rows — instead of one long unbroken prose chunk.
+  const [leadParagraph, ...restParagraphs] = paragraphs;
+  // Photos for the story rows: skip the hero (0) and "what's included" (1)
+  // slides, and hold the last slide back for the enquiry-band background.
+  const storyPool =
+    slides.length > 3 ? slides.slice(2, -1) : slides.length > 1 ? slides.slice(1) : slides;
+  const storyRows = buildStoryRows(restParagraphs, storyPool);
+  const enquiryImage = slides.length ? slides[slides.length - 1] : undefined;
   // Hero carries the H1 and one short supporting line only — the fuller
   // explanatory paragraphs get more room in the dedicated content section
   // below instead of being squeezed into the hero column.
@@ -111,11 +121,37 @@ export function ServicePageLayout({
         </section>
       )}
 
-      {paragraphs.length ? (
+      {leadParagraph || storyRows.length ? (
         <section className="section section--surface">
-          <div className="container prose">
-            {paragraphs.map((p, i) => (
-              <p key={i}>{p}</p>
+          <div className="container">
+            {leadParagraph ? (
+              <div className={styles.lead}>
+                <p className="eyebrow">Our approach</p>
+                <p className={styles.leadParagraph}>{leadParagraph}</p>
+              </div>
+            ) : null}
+            {storyRows.map((row, rowIndex) => (
+              <div
+                key={row.paragraphs[0]?.slice(0, 40) ?? rowIndex}
+                className={`${styles.storyRow} ${rowIndex % 2 === 1 ? styles.storyRowReverse : ""}`}
+              >
+                {row.image ? (
+                  <div className={styles.storyImage}>
+                    <Image
+                      src={row.image.src}
+                      alt={row.image.alt}
+                      fill
+                      sizes="(max-width: 900px) 100vw, 50vw"
+                      className={styles.storyImageEl}
+                    />
+                  </div>
+                ) : null}
+                <div className={styles.storyText}>
+                  {row.paragraphs.map((p) => (
+                    <p key={p.slice(0, 40)}>{p}</p>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </section>
@@ -153,7 +189,9 @@ export function ServicePageLayout({
         </section>
       ) : null}
 
-      {enquiryFormPlacement === "bottom" ? <QuickEnquiry /> : null}
+      {enquiryFormPlacement === "bottom" ? (
+        <QuickEnquiry image={enquiryImage?.src} imageAlt={enquiryImage?.alt} />
+      ) : null}
 
       {children}
 
@@ -162,6 +200,37 @@ export function ServicePageLayout({
       <QuoteCTA />
     </>
   );
+}
+
+type StoryRow = {
+  paragraphs: string[];
+  image?: CarouselSlide;
+};
+
+/**
+ * Pair the remaining copy paragraphs with project photos in alternating
+ * image/text rows. Paragraphs are grouped (max two per row) so each row has
+ * enough text to balance its photo, and rows never exceed the photos
+ * available — leftover paragraphs flow into the final row.
+ */
+function buildStoryRows(paragraphs: string[], pool: CarouselSlide[]): StoryRow[] {
+  if (!paragraphs.length) return [];
+  if (!pool.length) return [{ paragraphs }];
+
+  const rowCount = Math.min(Math.ceil(paragraphs.length / 2), pool.length);
+  const rows: StoryRow[] = [];
+  let cursor = 0;
+  for (let i = 0; i < rowCount; i++) {
+    const remainingRows = rowCount - i;
+    const remainingParagraphs = paragraphs.length - cursor;
+    const take = Math.ceil(remainingParagraphs / remainingRows);
+    rows.push({
+      paragraphs: paragraphs.slice(cursor, cursor + take),
+      image: pool[i % pool.length],
+    });
+    cursor += take;
+  }
+  return rows;
 }
 
 export function ServiceLinks({ currentSlug }: { currentSlug: string }) {
