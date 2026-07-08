@@ -36,6 +36,15 @@
   padding: 80px 0;
 }
 
+/* Side-by-side hero with form: give the form column enough width that the
+   GHL iframe clears its ~649px mobile threshold (otherwise fields stack in
+   one column). Pair with the compact-form CSS in GHL custom CSS. */
+.contentWithForm {
+  width: min(100% - 2rem, 1320px);
+  grid-template-columns: minmax(240px, 1fr) minmax(680px, 720px);
+  gap: 40px;
+}
+
 .text h1 {
   color: #fff;
   margin-bottom: 20px;
@@ -76,7 +85,8 @@
 }
 
 .formWrap {
-  max-width: 480px;
+  width: 100%;
+  min-width: 0;
   justify-self: end;
 }
 
@@ -93,6 +103,19 @@
   color: var(--color-primary);
 }
 
+@media (max-width: 1080px) {
+  .contentWithForm {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .formWrap {
+    justify-self: stretch;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
@@ -101,6 +124,5 @@
 
   .formWrap {
     justify-self: stretch;
-    max-width: none;
   }
 }

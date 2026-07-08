@@ -15,7 +15,7 @@ function PhoneIcon() {
   );
 }
 
-/** Click-to-call CTA — renders nothing until NEXT_PUBLIC_PRIMARY_PHONE is set. */
+/** Click-to-call CTA. Uses tel: when NEXT_PUBLIC_PRIMARY_PHONE is set; otherwise links to /contact/. */
 export function CallButton({
   className = "btn btn-outline",
   prefix = "Call",
@@ -23,17 +23,22 @@ export function CallButton({
   icon = false,
 }: Props) {
   const phone = siteConfig.phone;
-  if (!phone) return null;
 
-  const label = showNumber
-    ? prefix
-      ? `${prefix} ${formatPhoneDisplay(phone)}`
-      : formatPhoneDisplay(phone)
-    : prefix;
+  const label = phone
+    ? showNumber
+      ? prefix
+        ? `${prefix} ${formatPhoneDisplay(phone)}`
+        : formatPhoneDisplay(phone)
+      : prefix
+    : prefix
+      ? `${prefix} us`
+      : "Call us";
+
+  const href = phone ? phoneHref(phone) : "/contact/";
 
   return (
     <a
-      href={phoneHref(phone)}
+      href={href}
       className={className}
       style={icon ? { display: "inline-flex", alignItems: "center", gap: "7px" } : undefined}
     >

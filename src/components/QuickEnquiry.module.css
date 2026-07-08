@@ -5,8 +5,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: minmax(240px, 1fr) minmax(680px, 720px);
+  gap: 40px;
   align-items: center;
 }
 
@@ -27,16 +27,18 @@
 }
 
 .formWrap {
-  max-width: 480px;
+  width: 100%;
+  min-width: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
   .formWrap {
-    max-width: none;
+    max-width: 720px;
+    margin-inline: auto;
   }
 }

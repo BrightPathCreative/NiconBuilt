@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { CallButton } from "@/components/CallButton";
-import { siteConfig } from "@/lib/site";
 import styles from "./StickyCallBar.module.css";
 
 /**
@@ -10,8 +9,6 @@ import styles from "./StickyCallBar.module.css";
  * thumb's reach no matter how far down a long service page someone scrolls.
  */
 export function StickyCallBar() {
-  if (!siteConfig.phone) return null;
-
   return (
     <div className={styles.bar} role="region" aria-label="Quick contact">
       <CallButton className={styles.call} icon />

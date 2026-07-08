@@ -43,7 +43,7 @@ export function Hero({
         <div className={styles.overlay} aria-hidden="true" />
       </div>
 
-      <div className={`container ${styles.content}`}>
+      <div className={`container ${styles.content} ${showForm ? styles.contentWithForm : ""}`}>
         <div className={styles.text}>
           <p className="eyebrow eyebrow--dark">{eyebrow}</p>
           <h1>{title}</h1>
