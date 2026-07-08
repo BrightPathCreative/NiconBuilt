@@ -19,6 +19,17 @@
   margin-bottom: 14px;
 }
 
+.subtitle {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin: -8px 0 18px;
+}
+
+.subtitle a {
+  color: var(--color-accent-label);
+}
+
 .compact {
   padding: 20px;
 }

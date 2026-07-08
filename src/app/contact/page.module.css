@@ -1,32 +1,201 @@
+.pageHead {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  padding: 72px 0;
+}
+
+.pageHeadBg {
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+}
+
+.pageHeadImage {
+  object-fit: cover;
+}
+
+.pageHeadOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 20, 0.82) 0%,
+    rgba(20, 20, 20, 0.55) 60%,
+    rgba(20, 20, 20, 0.4) 100%
+  );
+}
+
+.pageHeadContent {
+  position: relative;
+  z-index: 1;
+}
+
+.pageHeadContent h1 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
 .lead {
   font-size: 17px;
-  max-width: 65ch;
+  line-height: 1.6;
+  max-width: 60ch;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Form + sidebar layout */
+.contactSection {
+  border-block: 1px solid var(--color-border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.formCol {
+  min-width: 0;
+}
+
+.sideCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.sideHeading {
+  font-size: 24px;
   margin-bottom: 8px;
 }
 
-.ctas {
+.sideBody {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-muted-alt);
+  margin-bottom: 16px;
+  max-width: 44ch;
+}
+
+.callBtn {
+  display: inline-flex;
+}
+
+.callBlock {
+  margin-bottom: 8px;
+}
+
+.infoCard {
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border-alt);
+  border-radius: var(--radius-card);
+  padding: 22px 24px;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin: 0 0 12px;
+  color: var(--color-primary);
+}
+
+.cardTitle svg {
+  color: var(--color-accent-label);
+  flex-shrink: 0;
+}
+
+.cardBody {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-text-muted-alt);
+  margin: 0;
+}
+
+.cardBody a {
+  color: var(--color-accent-label);
+  font-weight: 600;
+}
+
+.hours {
+  margin: 0;
+}
+
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 15px;
+  padding: 4px 0;
+}
+
+.hoursRow dt {
+  color: var(--color-text-muted-alt);
+}
+
+.hoursRow dd {
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Service areas section */
+.areasIntro {
+  font-size: 17px;
+  max-width: 65ch;
+  margin-bottom: 20px;
+}
+
+.suburbs {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  gap: 8px;
+  max-width: 860px;
 }
 
-.ctas:empty {
-  display: none;
+.suburbs li {
+  padding: 7px 14px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 999px;
+  background: var(--color-surface-alt);
+  font-size: 14px;
+  color: var(--color-primary);
 }
 
-.areas {
-  margin-top: 32px;
-}
-
-.areas p {
+.areasNote {
   font-size: 15px;
   color: var(--color-text-muted);
-  line-height: 1.7;
+  margin-bottom: 28px;
 }
 
-.formWrap {
-  max-width: 640px;
-  margin-inline: auto;
+.mapWrap {
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+  border: 1px solid var(--color-border-alt);
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .pageHead {
+    min-height: 300px;
+    padding: 48px 0;
+  }
 }

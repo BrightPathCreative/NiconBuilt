@@ -15,9 +15,17 @@ const SERVICE_OPTIONS = [
 type Props = {
   compact?: boolean;
   showTitle?: boolean;
+  title?: string;
+  /** Short reassurance line rendered under the title (e.g. privacy note). */
+  subtitle?: React.ReactNode;
 };
 
-export function ContactForm({ compact = false, showTitle = true }: Props) {
+export function ContactForm({
+  compact = false,
+  showTitle = true,
+  title = "Get in Touch",
+  subtitle,
+}: Props) {
   const router = useRouter();
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -65,7 +73,8 @@ export function ContactForm({ compact = false, showTitle = true }: Props) {
       onSubmit={handleSubmit}
       noValidate
     >
-      {showTitle ? <h2 className={styles.title}>Get in Touch</h2> : null}
+      {showTitle ? <h2 className={styles.title}>{title}</h2> : null}
+      {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
 
       <div className={styles.grid}>
         <div className={styles.field}>
