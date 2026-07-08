@@ -74,27 +74,13 @@
   color: #fff;
 }
 
-.ctas:empty,
-.formActions:empty {
+.ctas:empty {
   display: none;
 }
 
 .formWrap {
   width: 100%;
   justify-self: end;
-}
-
-.formActions {
-  display: flex;
-  justify-content: center;
-  margin-top: 12px;
-}
-
-.callBtn {
-  width: 100%;
-  text-align: center;
-  border-color: var(--color-border);
-  color: var(--color-primary);
 }
 
 @media (max-width: 900px) {

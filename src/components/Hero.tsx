@@ -64,19 +64,12 @@ export function Hero({
               </Link>
               <CallButton className={`btn btn-outline ${styles.callOnDark}`} />
             </div>
-          ) : (
-            <div className={styles.ctas}>
-              <CallButton className={`btn btn-outline ${styles.callOnDark}`} />
-            </div>
-          )}
+          ) : null}
         </div>
 
         {showForm ? (
           <div className={styles.formWrap}>
             <ContactForm compact />
-            <div className={styles.formActions}>
-              <CallButton className={`btn btn-outline ${styles.callBtn}`} />
-            </div>
           </div>
         ) : null}
       </div>
