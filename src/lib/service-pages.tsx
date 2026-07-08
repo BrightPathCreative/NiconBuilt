@@ -6,20 +6,19 @@ import type { ServicePageConfig } from "./service-page-config";
 import { SERVICE_PAGES } from "./service-page-config";
 
 /**
- * Bigger-ticket project pages ($100k-$1.5M-scale renovations and builds).
- * These keep the photo gallery as the dominant first impression, so the
- * embedded quick-enquiry form sits lower on the page rather than in the hero.
- * Every other service page is treated as a trade/maintenance page, where the
- * form goes straight after the hero to capture higher-intent, lower-friction
- * enquiries.
+ * Bigger-ticket, professional-service project pages ($150k-$1.5M-scale
+ * renovations, extensions and new builds). These keep the photo gallery as
+ * the dominant first impression, so the embedded quick-enquiry form sits
+ * lower on the page rather than in the hero. Every other service page —
+ * including kitchen/bathroom renovations — is treated as a trade page, where
+ * the hero itself embeds the form (image, headline and form together, like
+ * the homepage) to capture higher-intent, lower-friction enquiries.
  */
 const PROJECT_PAGE_META_KEYS = new Set([
   "heritage-renovations-melbourne",
   "heritage-home-extensions-melbourne",
   "home-renovations-melbourne",
   "new-builds-melbourne",
-  "kitchen-renovations-melbourne",
-  "bathroom-renovations-melbourne",
 ]);
 
 export function createServicePage(config: ServicePageConfig) {

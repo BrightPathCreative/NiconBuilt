@@ -2,13 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/lib/navigation";
 import { images } from "@/lib/images";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import { Breadcrumbs } from "./Breadcrumbs";
+import { Hero } from "./Hero";
 import { JsonLd } from "./JsonLd";
 import { FaqSection } from "./FaqSection";
 import { QuoteCTA } from "./QuoteCTA";
 import { QuickEnquiry } from "./QuickEnquiry";
-import { ContactForm } from "./ContactForm";
 import type { BreadcrumbItem } from "@/lib/schema";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import type { FaqItem } from "@/lib/copy";
@@ -31,11 +30,14 @@ type Props = {
   children?: React.ReactNode;
   /**
    * Where the embedded quick-enquiry form sits on the page:
-   * - "top" (default): right after the hero — best for trade/maintenance
-   *   pages, where searches tend to be higher-intent and lower-consideration.
-   * - "bottom": after the gallery/"what's included" content — for bigger
-   *   project pages (heritage, kitchen/bathroom renos, new builds) where the
-   *   photo gallery should stay the dominant first impression.
+   * - "top" (default): embedded directly in the hero itself (one image,
+   *   headline and form together, like the homepage) — best for
+   *   trade/maintenance pages, where searches tend to be higher-intent and
+   *   lower-consideration. The full photo gallery still runs lower down.
+   * - "bottom": hero stays photo-gallery-first (headline + carousel, no
+   *   form), with the form appearing after the "what's included" content —
+   *   for bigger professional-service project pages (heritage, new builds,
+   *   home renovations/extensions) where the work should sell itself first.
    * - "none": skip the embedded form (falls back to the QuoteCTA band only).
    */
   enquiryFormPlacement?: "top" | "bottom" | "none";
@@ -63,7 +65,10 @@ export function ServicePageLayout({
         : [];
   // Reuse a different project photo than the hero for visual variety, falling back to the hero image if only one exists.
   const includedImage = slides.length > 1 ? slides[1] : slides[0];
-  const phone = siteConfig.phone;
+  const isFormHero = enquiryFormPlacement === "top";
+  const heroDescription = [subheadline, ...paragraphs.slice(0, 2)].filter(
+    (p): p is string => Boolean(p)
+  );
   return (
     <>
       <JsonLd
@@ -76,37 +81,39 @@ export function ServicePageLayout({
         <Breadcrumbs items={breadcrumbs} />
       </div>
 
-      <section className={`section ${styles.pageHero}`}>
-        <div className="container">
-          <div className={styles.heroGrid}>
-            <div>
-              <h1>{headline}</h1>
-              {subheadline ? <p className={styles.subheadline}>{subheadline}</p> : null}
-              {paragraphs.slice(0, 2).map((p, i) => (
-                <p key={i} className={styles.lead}>
-                  {p}
-                </p>
-              ))}
-            </div>
-            {slides.length ? (
-              <ServiceHeroCarousel slides={slides} label={`${headline} gallery`} />
-            ) : null}
-          </div>
-
-          {enquiryFormPlacement === "top" ? (
-            <div className={styles.heroForm}>
-              <p className="eyebrow">Quick enquiry</p>
-              <h2 className={styles.heroFormTitle}>Get a quick quote</h2>
-              <ContactForm compact showTitle={false} />
-              {phone ? (
-                <a href={phoneHref(phone)} className={`btn btn-outline ${styles.heroFormCall}`}>
-                  Or call {formatPhoneDisplay(phone)}
-                </a>
+      {isFormHero ? (
+        // Trade/maintenance pages: one hero image, headline and the
+        // quick-enquiry form together, same as the homepage — both visible
+        // without scrolling. The full multi-photo gallery still runs further
+        // down (marquee below), it's just not competing for space up top.
+        <Hero
+          title={headline}
+          description={heroDescription}
+          image={slides[0]?.src}
+          imageAlt={slides[0]?.alt || headline}
+          showForm
+          priority
+        />
+      ) : (
+        <section className={`section ${styles.pageHero}`}>
+          <div className="container">
+            <div className={styles.heroGrid}>
+              <div>
+                <h1>{headline}</h1>
+                {subheadline ? <p className={styles.subheadline}>{subheadline}</p> : null}
+                {paragraphs.slice(0, 2).map((p, i) => (
+                  <p key={i} className={styles.lead}>
+                    {p}
+                  </p>
+                ))}
+              </div>
+              {slides.length ? (
+                <ServiceHeroCarousel slides={slides} label={`${headline} gallery`} />
               ) : null}
             </div>
-          ) : null}
-        </div>
-      </section>
+          </div>
+        </section>
+      )}
 
       {slides.length > 1 ? (
         <ServiceMarqueeCarousel slides={slides} label={`${headline} project work`} />
