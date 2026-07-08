@@ -111,10 +111,6 @@ export function ServicePageLayout({
         </section>
       )}
 
-      {slides.length > 1 ? (
-        <ServiceMarqueeCarousel slides={slides} label={`${headline} project work`} />
-      ) : null}
-
       {paragraphs.length ? (
         <section className="section section--surface">
           <div className="container prose">
@@ -123,6 +119,10 @@ export function ServicePageLayout({
             ))}
           </div>
         </section>
+      ) : null}
+
+      {slides.length > 1 ? (
+        <ServiceMarqueeCarousel slides={slides} label={`${headline} project work`} />
       ) : null}
 
       {bullets.length ? (
