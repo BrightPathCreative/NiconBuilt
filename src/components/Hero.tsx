@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ContactForm } from "./ContactForm";
+import { GhlEmbedForm } from "./GhlEmbedForm";
 import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./Hero.module.css";
 
@@ -75,7 +75,7 @@ export function Hero({
 
         {showForm ? (
           <div className={styles.formWrap}>
-            <ContactForm compact />
+            <GhlEmbedForm compact />
             {phone ? (
               <div className={styles.formActions}>
                 <a href={phoneHref(phone)} className={`btn btn-outline ${styles.callBtn}`}>

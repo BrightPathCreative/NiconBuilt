@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { TrackingParamsCapture } from "@/components/TrackingParamsCapture";
 import { BackToTop } from "@/components/BackToTop";
 import { StickyCallBar } from "@/components/StickyCallBar";
 import { localBusinessSchema } from "@/lib/schema";
@@ -40,6 +41,7 @@ export default function RootLayout({
         <StickyCallBar />
         <JsonLd data={localBusinessSchema()} />
         <GoogleAnalytics />
+        <TrackingParamsCapture />
       </body>
     </html>
   );

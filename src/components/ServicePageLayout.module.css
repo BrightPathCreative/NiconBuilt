@@ -9,12 +9,6 @@
   align-items: center;
 }
 
-.lead {
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--color-text);
-}
-
 .subheadline {
   font-size: 17px;
   line-height: 1.55;

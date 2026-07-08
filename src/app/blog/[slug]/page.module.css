@@ -2,15 +2,6 @@
   max-width: 720px;
 }
 
-.date {
-  margin: 0 0 16px;
-  font-family: var(--font-mono), monospace;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--color-accent-label);
-}
-
 .heroImage {
   position: relative;
   width: 100%;

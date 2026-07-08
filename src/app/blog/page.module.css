@@ -42,15 +42,6 @@
   padding: 28px;
 }
 
-.date {
-  margin: 0 0 12px;
-  font-family: var(--font-mono), monospace;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: var(--color-accent-label);
-}
-
 .title {
   margin: 0 0 12px;
   font-size: 22px;

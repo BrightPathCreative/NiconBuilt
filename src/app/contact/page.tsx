@@ -1,6 +1,6 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
-import { ContactForm } from "@/components/ContactForm";
+import { GhlEmbedForm } from "@/components/GhlEmbedForm";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -73,7 +73,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <ContactForm />
+            <GhlEmbedForm />
           </div>
         </div>
       </section>

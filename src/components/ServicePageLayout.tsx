@@ -66,9 +66,10 @@ export function ServicePageLayout({
   // Reuse a different project photo than the hero for visual variety, falling back to the hero image if only one exists.
   const includedImage = slides.length > 1 ? slides[1] : slides[0];
   const isFormHero = enquiryFormPlacement === "top";
-  const heroDescription = [subheadline, ...paragraphs.slice(0, 2)].filter(
-    (p): p is string => Boolean(p)
-  );
+  // Hero carries the H1 and one short supporting line only — the fuller
+  // explanatory paragraphs get more room in the dedicated content section
+  // below instead of being squeezed into the hero column.
+  const heroDescription = subheadline ? [subheadline] : [];
   return (
     <>
       <JsonLd
@@ -101,11 +102,6 @@ export function ServicePageLayout({
               <div>
                 <h1>{headline}</h1>
                 {subheadline ? <p className={styles.subheadline}>{subheadline}</p> : null}
-                {paragraphs.slice(0, 2).map((p, i) => (
-                  <p key={i} className={styles.lead}>
-                    {p}
-                  </p>
-                ))}
               </div>
               {slides.length ? (
                 <ServiceHeroCarousel slides={slides} label={`${headline} gallery`} />
@@ -119,10 +115,10 @@ export function ServicePageLayout({
         <ServiceMarqueeCarousel slides={slides} label={`${headline} project work`} />
       ) : null}
 
-      {paragraphs.length > 2 ? (
+      {paragraphs.length ? (
         <section className="section section--surface">
           <div className="container prose">
-            {paragraphs.slice(2).map((p, i) => (
+            {paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
           </div>

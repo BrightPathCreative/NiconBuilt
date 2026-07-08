@@ -35,7 +35,6 @@ export function RecentArticles() {
                 </div>
               ) : null}
               <div className={styles.cardBody}>
-                <p className={styles.date}>{post.date}</p>
                 <h3 className={styles.title}>{post.title}</h3>
                 <p className={styles.excerpt}>{post.excerpt}</p>
                 <span className={styles.readMore}>Read article →</span>

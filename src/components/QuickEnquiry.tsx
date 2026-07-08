@@ -1,4 +1,4 @@
-import { ContactForm } from "./ContactForm";
+import { GhlEmbedForm } from "./GhlEmbedForm";
 import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./QuickEnquiry.module.css";
 
@@ -27,7 +27,7 @@ export function QuickEnquiry({
           ) : null}
         </div>
         <div className={styles.formWrap}>
-          <ContactForm compact showTitle={false} />
+          <GhlEmbedForm compact showTitle={false} />
         </div>
       </div>
     </section>

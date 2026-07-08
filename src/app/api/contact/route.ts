@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 import { siteConfig } from "@/lib/site";
 
+// Backs the native fallback <ContactForm /> component, which is not currently
+// rendered anywhere on the site (all forms now use the GHL-hosted embed via
+// <GhlEmbedForm />). Kept live as a rollback path — safe to remove once the
+// embed has proven reliable in production.
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();

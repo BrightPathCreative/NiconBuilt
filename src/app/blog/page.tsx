@@ -50,7 +50,6 @@ export default function BlogIndexPage() {
                   </div>
                 ) : null}
                 <div className={styles.cardBody}>
-                  <p className={styles.date}>{post.date}</p>
                   <h2 className={styles.title}>{post.title}</h2>
                   <p className={styles.excerpt}>{post.excerpt}</p>
                   <span className={styles.readMore}>Read article →</span>

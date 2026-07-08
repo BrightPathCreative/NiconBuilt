@@ -22,6 +22,16 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "CDB-U 62648",
   gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "",
   ghlWebhook: process.env.GHL_WEBHOOK_URL?.trim() || "",
+  ghlContactForm: {
+    id: process.env.NEXT_PUBLIC_GHL_CONTACT_FORM_ID?.trim() || "vvUEO6TWQDp00EySpLfv",
+    src:
+      process.env.NEXT_PUBLIC_GHL_CONTACT_FORM_SRC?.trim() ||
+      "https://links.brightpathcreative.com.au/widget/form/vvUEO6TWQDp00EySpLfv",
+    embedScriptSrc:
+      process.env.NEXT_PUBLIC_GHL_FORM_EMBED_SCRIPT_SRC?.trim() ||
+      "https://links.brightpathcreative.com.au/js/form_embed.js",
+    name: "Nicon Built Contact Us Form",
+  },
   stats: {
     years: "30+",
     rating: "5.0",

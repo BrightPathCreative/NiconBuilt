@@ -48,7 +48,6 @@ export default async function BlogPostPage({ params }: Props) {
 
       <article className="section">
         <div className={`container ${styles.article}`}>
-          <p className={styles.date}>{post.date}</p>
           <h1>{post.title}</h1>
           {post.image ? (
             <div className={styles.heroImage}>
