@@ -1,5 +1,5 @@
 import { CallButton } from "./CallButton";
-import { GhlEmbedForm } from "./GhlEmbedForm";
+import { ContactForm } from "./ContactForm";
 import styles from "./QuickEnquiry.module.css";
 
 type Props = {
@@ -21,7 +21,7 @@ export function QuickEnquiry({
           <CallButton prefix="Or call" className={`btn btn-outline ${styles.callBtn}`} />
         </div>
         <div className={styles.formWrap}>
-          <GhlEmbedForm compact showTitle={false} />
+          <ContactForm compact showTitle={false} />
         </div>
       </div>
     </section>

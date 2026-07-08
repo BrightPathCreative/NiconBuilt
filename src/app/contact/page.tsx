@@ -1,7 +1,7 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CallButton } from "@/components/CallButton";
 import { JsonLd } from "@/components/JsonLd";
-import { GhlEmbedForm } from "@/components/GhlEmbedForm";
+import { ContactForm } from "@/components/ContactForm";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
@@ -53,13 +53,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Full-width section (rather than squeezed into a side-by-side column) so the
-          embedded GHL form's iframe renders wide enough to trigger its own desktop
-          (2-column) breakpoint instead of falling back to its mobile single-column layout. */}
       <section className="section section--surface">
         <div className="container">
           <div className={styles.formWrap}>
-            <GhlEmbedForm />
+            <ContactForm />
           </div>
         </div>
       </section>

@@ -27,8 +27,6 @@
 }
 
 .formWrap {
-  /* Deliberately left at full container width (no max-width cap) — the embedded
-     GHL form only switches to its 2-column layout once its iframe renders at
-     least ~1025px wide, so this section needs to stay as wide as the page allows. */
-  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
 }

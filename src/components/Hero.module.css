@@ -36,13 +36,8 @@
   padding: 80px 0;
 }
 
-/* Side-by-side hero with form: the GHL iframe must stay above ~649px or GHL
-   switches to mobile mode and stacks every field. After card padding, a 720px
-   column yields ~696px inside the iframe — safely above the threshold. */
 .contentWithForm {
-  width: min(100% - 2rem, 1440px);
-  grid-template-columns: minmax(220px, 1fr) minmax(720px, 820px);
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
 }
 
 .text h1 {
@@ -86,12 +81,7 @@
 
 .formWrap {
   width: 100%;
-  min-width: 0;
   justify-self: end;
-}
-
-.contentWithForm .formWrap {
-  min-width: 724px;
 }
 
 .formActions {
@@ -107,19 +97,6 @@
   color: var(--color-primary);
 }
 
-@media (max-width: 1180px) {
-  .contentWithForm {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .contentWithForm .formWrap {
-    min-width: 0;
-    max-width: 760px;
-    margin-inline: auto;
-  }
-}
-
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
@@ -128,5 +105,7 @@
 
   .formWrap {
     justify-self: stretch;
+    max-width: 520px;
+    margin-inline: auto;
   }
 }

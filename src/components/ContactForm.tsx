@@ -1,13 +1,6 @@
 "use client";
 
-/**
- * Native fallback contact form — posts to /api/contact → GHL_WEBHOOK_URL.
- * Not currently rendered anywhere on the site; all contact touchpoints use
- * <GhlEmbedForm /> (the GHL-hosted "Nicon Built Contact Us Form" iframe) instead.
- * Kept as a quick rollback path if the GHL embed ever needs to be swapped out
- * (e.g. ad-blocker interference, GHL outage). Safe to delete once the embed
- * has been running reliably in production.
- */
+/** Site contact form — posts to /api/contact → GHL_WEBHOOK_URL. */
 
 import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CallButton } from "./CallButton";
-import { GhlEmbedForm } from "./GhlEmbedForm";
+import { ContactForm } from "./ContactForm";
 import styles from "./Hero.module.css";
 
 type Props = {
@@ -73,7 +73,7 @@ export function Hero({
 
         {showForm ? (
           <div className={styles.formWrap}>
-            <GhlEmbedForm compact />
+            <ContactForm compact />
             <div className={styles.formActions}>
               <CallButton className={`btn btn-outline ${styles.callBtn}`} />
             </div>
