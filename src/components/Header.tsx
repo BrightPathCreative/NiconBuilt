@@ -28,12 +28,6 @@ export function Header() {
         </Link>
 
         <div className={styles.headerActions}>
-          <CallButton
-            className={`${styles.callLink} ${styles.callLinkMobile}`}
-            prefix=""
-            showNumber
-            icon
-          />
           <button
             type="button"
             className={styles.menuToggle}
@@ -99,7 +93,7 @@ export function Header() {
           ))}
 
           <div className={styles.actions}>
-            <CallButton className={`btn btn-outline ${styles.callBtn}`} icon />
+            <CallButton className={`btn btn-outline ${styles.callBtn}`} icon label="Click to Call" />
             <Link href="/contact/" className="btn btn-accent" onClick={() => setMenuOpen(false)}>
               Get a free quote
             </Link>

@@ -5,6 +5,7 @@ type Props = {
   prefix?: string;
   showNumber?: boolean;
   icon?: boolean;
+  label?: string;
 };
 
 function PhoneIcon() {
@@ -21,10 +22,11 @@ export function CallButton({
   prefix = "Call",
   showNumber = true,
   icon = false,
+  label: explicitLabel,
 }: Props) {
   const phone = siteConfig.phone;
 
-  const label = phone
+  const label = explicitLabel ?? (phone
     ? showNumber
       ? prefix
         ? `${prefix} ${formatPhoneDisplay(phone)}`
@@ -32,7 +34,7 @@ export function CallButton({
       : prefix
     : prefix
       ? `${prefix} us`
-      : "Call us";
+      : "Call us");
 
   const href = phone ? phoneHref(phone) : "/contact/";
 
