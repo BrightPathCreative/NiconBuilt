@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/lib/navigation";
 import { images } from "@/lib/images";
+import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { JsonLd } from "./JsonLd";
 import { FaqSection } from "./FaqSection";
 import { QuoteCTA } from "./QuoteCTA";
 import { QuickEnquiry } from "./QuickEnquiry";
+import { ContactForm } from "./ContactForm";
 import type { BreadcrumbItem } from "@/lib/schema";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import type { FaqItem } from "@/lib/copy";
@@ -61,6 +63,7 @@ export function ServicePageLayout({
         : [];
   // Reuse a different project photo than the hero for visual variety, falling back to the hero image if only one exists.
   const includedImage = slides.length > 1 ? slides[1] : slides[0];
+  const phone = siteConfig.phone;
   return (
     <>
       <JsonLd
@@ -89,10 +92,21 @@ export function ServicePageLayout({
               <ServiceHeroCarousel slides={slides} label={`${headline} gallery`} />
             ) : null}
           </div>
+
+          {enquiryFormPlacement === "top" ? (
+            <div className={styles.heroForm}>
+              <p className="eyebrow">Quick enquiry</p>
+              <h2 className={styles.heroFormTitle}>Get a quick quote</h2>
+              <ContactForm compact showTitle={false} />
+              {phone ? (
+                <a href={phoneHref(phone)} className={`btn btn-outline ${styles.heroFormCall}`}>
+                  Or call {formatPhoneDisplay(phone)}
+                </a>
+              ) : null}
+            </div>
+          ) : null}
         </div>
       </section>
-
-      {enquiryFormPlacement === "top" ? <QuickEnquiry /> : null}
 
       {slides.length > 1 ? (
         <ServiceMarqueeCarousel slides={slides} label={`${headline} project work`} />

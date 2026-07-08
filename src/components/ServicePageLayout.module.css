@@ -9,6 +9,24 @@
   align-items: center;
 }
 
+.heroForm {
+  margin-top: 40px;
+  padding-top: 32px;
+  max-width: 460px;
+  border-top: 1px solid var(--color-border);
+}
+
+.heroFormTitle {
+  margin: 4px 0 16px;
+  font-size: 22px;
+}
+
+.heroFormCall {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
 .lead {
   font-size: 17px;
   line-height: 1.6;
