@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CallButton } from "./CallButton";
 import { GhlEmbedForm } from "./GhlEmbedForm";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./Hero.module.css";
 
 type Props = {
@@ -27,8 +27,6 @@ export function Hero({
   trustLine,
   priority = false,
 }: Props) {
-  const phone = siteConfig.phone;
-
   return (
     <section className={styles.hero}>
       <div className={styles.bg}>
@@ -64,25 +62,21 @@ export function Hero({
               <Link href="/contact/" className="btn btn-accent">
                 Get a free quote
               </Link>
-              {phone ? (
-                <a href={phoneHref(phone)} className="btn btn-outline">
-                  Call {formatPhoneDisplay(phone)}
-                </a>
-              ) : null}
+              <CallButton className={`btn btn-outline ${styles.callOnDark}`} />
             </div>
-          ) : null}
+          ) : (
+            <div className={styles.ctas}>
+              <CallButton className={`btn btn-outline ${styles.callOnDark}`} />
+            </div>
+          )}
         </div>
 
         {showForm ? (
           <div className={styles.formWrap}>
             <GhlEmbedForm compact />
-            {phone ? (
-              <div className={styles.formActions}>
-                <a href={phoneHref(phone)} className={`btn btn-outline ${styles.callBtn}`}>
-                  Call {formatPhoneDisplay(phone)}
-                </a>
-              </div>
-            ) : null}
+            <div className={styles.formActions}>
+              <CallButton className={`btn btn-outline ${styles.callBtn}`} />
+            </div>
           </div>
         ) : null}
       </div>

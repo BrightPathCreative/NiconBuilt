@@ -4,22 +4,20 @@
   margin-bottom: 8px;
 }
 
-.infoGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.ctas:empty {
+  display: none;
+}
+
+.areas {
   margin-top: 32px;
-}
-
-.details ul {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0 0;
-  line-height: 1.8;
-}
-
-.details a {
-  color: var(--color-primary);
 }
 
 .areas p {
@@ -33,10 +31,4 @@
      GHL form only switches to its 2-column layout once its iframe renders at
      least ~1025px wide, so this section needs to stay as wide as the page allows. */
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  .infoGrid {
-    grid-template-columns: 1fr;
-  }
 }

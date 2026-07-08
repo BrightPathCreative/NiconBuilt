@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CallButton } from "@/components/CallButton";
 import { homeServices, projectServices, footerNav, locationPages } from "@/lib/navigation";
 import { siteConfig } from "@/lib/site";
 import styles from "./Footer.module.css";
@@ -55,9 +56,12 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <Link href="/contact/" className={`btn btn-accent ${styles.cta}`}>
-            Get a free quote
-          </Link>
+          <div className={styles.ctaGroup}>
+            <Link href="/contact/" className={`btn btn-accent ${styles.cta}`}>
+              Get a free quote
+            </Link>
+            <CallButton className={`btn btn-outline ${styles.cta} ${styles.callCta}`} />
+          </div>
         </div>
 
         <div>

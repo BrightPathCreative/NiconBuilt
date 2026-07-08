@@ -95,9 +95,25 @@
   break-inside: avoid;
 }
 
-.cta {
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   margin-top: 20px;
+}
+
+.cta {
   width: fit-content;
+}
+
+.callCta {
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+.callCta:hover {
+  background: rgba(255, 255, 255, 0.08);
+  opacity: 1;
 }
 
 .legal {
@@ -199,6 +215,10 @@
   .logoBar {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .ctaGroup {
+    width: 100%;
   }
 
   .cta {

@@ -1,10 +1,10 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { CallButton } from "@/components/CallButton";
 import { JsonLd } from "@/components/JsonLd";
 import { GhlEmbedForm } from "@/components/GhlEmbedForm";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./page.module.css";
 
 export const metadata = buildMetadata({ ...pageMeta.contact, path: "/contact/" });
@@ -16,7 +16,6 @@ const breadcrumbs = [
 
 export default function ContactPage() {
   const copy = loadCopy("contact");
-  const phone = siteConfig.phone;
   const headlineContent = copy.sections.find((s) => s.title === "Headline")?.content ?? "";
   const introParagraphs = headlineContent
     .split("\n")
@@ -41,35 +40,15 @@ export default function ContactPage() {
             </p>
           ))}
 
-          <div className={styles.infoGrid}>
-            <div className={styles.details}>
-              <h2>Contact details</h2>
-              <ul>
-                {phone ? (
-                  <li>
-                    <strong>Phone:</strong>{" "}
-                    <a href={phoneHref(phone)}>{formatPhoneDisplay(phone)}</a>
-                  </li>
-                ) : null}
-                <li>
-                  <strong>Email:</strong>{" "}
-                  <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-                </li>
-                <li>
-                  <strong>Address:</strong> {siteConfig.address.full}
-                </li>
-                <li>
-                  <strong>Hours:</strong> Monday to Saturday, 7:00am to 7:00pm
-                </li>
-              </ul>
-            </div>
+          <div className={styles.ctas}>
+            <CallButton className="btn btn-outline" />
+          </div>
 
-            <div className={styles.areas}>
-              <h2>Service areas</h2>
-              {areasContent.split(/\n\n+/).map((p) => (
-                <p key={p.slice(0, 30)}>{p}</p>
-              ))}
-            </div>
+          <div className={styles.areas}>
+            <h2>Service areas</h2>
+            {areasContent.split(/\n\n+/).map((p) => (
+              <p key={p.slice(0, 30)}>{p}</p>
+            ))}
           </div>
         </div>
       </section>

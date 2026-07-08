@@ -63,10 +63,16 @@
   gap: 12px;
 }
 
-.ctas .btn-outline {
+.ctas .btn-outline,
+.callOnDark {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.4);
   color: #fff;
+}
+
+.ctas:empty,
+.formActions:empty {
+  display: none;
 }
 
 .formWrap {

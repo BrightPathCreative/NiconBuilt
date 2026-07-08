@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Hero } from "@/components/Hero";
+import { CallButton } from "@/components/CallButton";
 import { StatsStrip } from "@/components/StatsStrip";
 import { QuoteCTA } from "@/components/QuoteCTA";
 import { RecentArticles } from "@/components/RecentArticles";
@@ -12,7 +13,6 @@ import {
   formatReviewMeta,
 } from "@/lib/copy";
 import { images } from "@/lib/images";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./page.module.css";
 
 export const metadata = buildMetadata({
@@ -22,7 +22,6 @@ export const metadata = buildMetadata({
 
 export default function HomePage() {
   const copy = loadCopy("home");
-  const phone = siteConfig.phone;
   const heroParagraphs = copy.sections
     .find((s) => s.title === "Hero")
     ?.content.split("\n")
@@ -73,11 +72,7 @@ export default function HomePage() {
             <Link href="/contact/" className="btn btn-accent">
               Get a free quote
             </Link>
-            {phone ? (
-              <a href={phoneHref(phone)} className="btn btn-outline">
-                Call {formatPhoneDisplay(phone)}
-              </a>
-            ) : null}
+            <CallButton />
           </div>
         </div>
       </section>
@@ -124,6 +119,7 @@ export default function HomePage() {
             <Link href="/contact/" className="btn btn-accent">
               Request a quote
             </Link>
+            <CallButton />
             <Link href="/services/" className="btn btn-outline">
               Browse all services
             </Link>
@@ -157,11 +153,7 @@ export default function HomePage() {
             <Link href="/contact/" className="btn btn-accent">
               Get a free quote
             </Link>
-            {phone ? (
-              <a href={phoneHref(phone)} className="btn btn-outline">
-                Call {formatPhoneDisplay(phone)}
-              </a>
-            ) : null}
+            <CallButton />
           </div>
         </div>
       </section>

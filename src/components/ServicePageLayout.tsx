@@ -165,28 +165,14 @@ export function ServicePageLayout({
 }
 
 export function ServiceLinks({ currentSlug }: { currentSlug: string }) {
-  const others = services.filter((s) => s.slug !== currentSlug).slice(0, 3);
-
-  const cards = [
-    ...others.map((s) => ({
+  const cards = services
+    .filter((s) => s.slug !== currentSlug)
+    .map((s) => ({
       slug: s.slug,
       label: s.shortTitle,
       image: images[s.imageKey],
       imageAlt: s.imageAlt,
-    })),
-    {
-      slug: "/our-work/",
-      label: "Our Work",
-      image: images.gallery[0],
-      imageAlt: "Recent renovation project by Nicon Built",
-    },
-    {
-      slug: "/contact/",
-      label: "Contact",
-      image: images.nickPortrait,
-      imageAlt: "Nick from Nicon Built",
-    },
-  ];
+    }));
 
   return (
     <section className="section section--tone">

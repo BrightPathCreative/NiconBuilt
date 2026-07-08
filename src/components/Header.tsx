@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { CallButton } from "@/components/CallButton";
 import { headerNav, services } from "@/lib/navigation";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./Header.module.css";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const phone = siteConfig.phone;
 
   const closeServicesMenu = () => {
     setServicesOpen(false);
@@ -29,14 +28,12 @@ export function Header() {
         </Link>
 
         <div className={styles.headerActions}>
-          {phone ? (
-            <a href={phoneHref(phone)} className={`${styles.callLink} ${styles.callLinkMobile}`}>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68A2 2 0 0 1 22 16.92z" />
-              </svg>
-              <span className={styles.callLinkText}>{formatPhoneDisplay(phone)}</span>
-            </a>
-          ) : null}
+          <CallButton
+            className={`${styles.callLink} ${styles.callLinkMobile}`}
+            prefix=""
+            showNumber
+            icon
+          />
           <button
             type="button"
             className={styles.menuToggle}
@@ -102,14 +99,7 @@ export function Header() {
           ))}
 
           <div className={styles.actions}>
-            {phone ? (
-              <a href={phoneHref(phone)} className={styles.callLink}>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.36 1.6.68 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.74-1.74a2 2 0 0 1 2.11-.45c.74.32 1.53.55 2.34.68A2 2 0 0 1 22 16.92z" />
-                </svg>
-                {formatPhoneDisplay(phone)}
-              </a>
-            ) : null}
+            <CallButton className={`btn btn-outline ${styles.callBtn}`} icon />
             <Link href="/contact/" className="btn btn-accent" onClick={() => setMenuOpen(false)}>
               Get a free quote
             </Link>

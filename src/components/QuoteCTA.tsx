@@ -1,11 +1,10 @@
 import Link from "next/link";
+import { CallButton } from "@/components/CallButton";
 import { loadCopy } from "@/lib/copy";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
 import styles from "./QuoteCTA.module.css";
 
 export function QuoteCTA() {
   const copy = loadCopy("contact");
-  const phone = siteConfig.phone;
   const headlineContent = copy.sections.find((s) => s.title === "Headline")?.content ?? "";
   const introLines = headlineContent
     .split("\n")
@@ -24,11 +23,7 @@ export function QuoteCTA() {
           <Link href="/contact/" className="btn btn-accent">
             Get a free quote
           </Link>
-          {phone ? (
-            <a href={phoneHref(phone)} className="btn btn-outline">
-              Call {formatPhoneDisplay(phone)}
-            </a>
-          ) : null}
+          <CallButton />
         </div>
       </div>
     </section>

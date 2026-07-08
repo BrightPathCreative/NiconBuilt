@@ -186,6 +186,10 @@
   color: var(--color-primary);
 }
 
+.callBtn {
+  gap: 7px;
+}
+
 @media (max-width: 960px) {
   .callLinkMobile {
     display: flex;
