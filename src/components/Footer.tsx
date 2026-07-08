@@ -84,6 +84,16 @@ export function Footer() {
         <p className={styles.affiliations}>
           MBAV · AIB · HIA · Building Ethics Australia
         </p>
+        <p className={styles.credit}>
+          Website by{" "}
+          <a
+            href="https://brightpathcreative.com.au"
+            target="_blank"
+            rel="noopener"
+          >
+            Bright Path Creative
+          </a>
+        </p>
       </div>
     </footer>
   );

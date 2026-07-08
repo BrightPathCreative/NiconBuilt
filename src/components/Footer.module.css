@@ -129,6 +129,22 @@
   color: var(--color-footer-links);
 }
 
+.credit {
+  flex-basis: 100%;
+  color: var(--color-footer-links);
+  font-size: 12px;
+}
+
+.credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.credit a:hover {
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
