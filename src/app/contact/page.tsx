@@ -33,15 +33,15 @@ export default function ContactPage() {
       </div>
 
       <section className="section">
-        <div className={`container ${styles.grid}`}>
-          <div>
-            <h1>{copy.headline}</h1>
-            {introParagraphs.map((p) => (
-              <p key={p.slice(0, 30)} className={styles.lead}>
-                {p}
-              </p>
-            ))}
+        <div className="container">
+          <h1>{copy.headline}</h1>
+          {introParagraphs.map((p) => (
+            <p key={p.slice(0, 30)} className={styles.lead}>
+              {p}
+            </p>
+          ))}
 
+          <div className={styles.infoGrid}>
             <div className={styles.details}>
               <h2>Contact details</h2>
               <ul>
@@ -71,8 +71,15 @@ export default function ContactPage() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
 
-          <div>
+      {/* Full-width section (rather than squeezed into a side-by-side column) so the
+          embedded GHL form's iframe renders wide enough to trigger its own desktop
+          (2-column) breakpoint instead of falling back to its mobile single-column layout. */}
+      <section className="section section--surface">
+        <div className="container">
+          <div className={styles.formWrap}>
             <GhlEmbedForm />
           </div>
         </div>

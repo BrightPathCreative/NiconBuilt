@@ -1,19 +1,20 @@
-.grid {
+.lead {
+  font-size: 17px;
+  max-width: 65ch;
+  margin-bottom: 8px;
+}
+
+.infoGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: start;
-}
-
-.lead {
-  font-size: 17px;
-  margin-bottom: 32px;
+  margin-top: 32px;
 }
 
 .details ul {
   list-style: none;
   padding: 0;
-  margin: 16px 0 32px;
+  margin: 16px 0 0;
   line-height: 1.8;
 }
 
@@ -27,8 +28,15 @@
   line-height: 1.7;
 }
 
+.formWrap {
+  /* Deliberately left at full container width (no max-width cap) — the embedded
+     GHL form only switches to its 2-column layout once its iframe renders at
+     least ~1025px wide, so this section needs to stay as wide as the page allows. */
+  width: 100%;
+}
+
 @media (max-width: 768px) {
-  .grid {
+  .infoGrid {
     grid-template-columns: 1fr;
   }
 }
