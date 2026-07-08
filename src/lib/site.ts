@@ -5,13 +5,13 @@ export const siteConfig = {
   tagline: "Building Quality, Maintaining Excellence",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://niconbuilt.com.au",
   email: "nick@niconbuilt.com.au",
+  // Suburb-level only — the street address is private and must not appear anywhere on the site.
   address: {
-    street: "186 Dow Street",
     locality: "Port Melbourne",
     region: "VIC",
     postalCode: "3207",
     country: "AU",
-    full: "186 Dow Street, Port Melbourne VIC 3207",
+    full: "Port Melbourne, VIC 3207",
   },
   abn: "88 632 512 577",
   phone:

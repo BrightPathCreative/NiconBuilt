@@ -1,0 +1,25 @@
+/* Legal-document typography — the global marketing-scale h1/h2 sizes are far
+   too loud for policy text, so scale them down to document proportions. */
+.legal h1 {
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.legal h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.legal p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.updated {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}

@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
+import styles from "./page.module.css";
 
 export const metadata = buildMetadata({
   ...pageMeta["privacy-policy"],
@@ -24,14 +25,14 @@ export default function PrivacyPolicyPage() {
       </div>
 
       <section className="section">
-        <div className="container prose">
+        <div className={`container prose ${styles.legal}`}>
           <h1>Privacy Policy</h1>
-          <p>Last updated: July 2026</p>
+          <p className={styles.updated}>Last updated: July 2026</p>
 
           <h2>Who we are</h2>
           <p>
-            {siteConfig.legalName} (ABN {siteConfig.abn}) operates niconbuilt.com.au. Our
-            registered address is {siteConfig.address.full}. Contact: {siteConfig.email}.
+            {siteConfig.legalName} (ABN {siteConfig.abn}) operates niconbuilt.com.au. We are
+            based in Port Melbourne, Victoria. Contact: {siteConfig.email}.
           </p>
 
           <h2>Information we collect</h2>
@@ -71,8 +72,7 @@ export default function PrivacyPolicyPage() {
           <h2>Contact</h2>
           <p>
             For privacy enquiries, email{" "}
-            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> or write to{" "}
-            {siteConfig.address.full}.
+            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>.
           </p>
 
           <p>
