@@ -36,12 +36,12 @@
   padding: 80px 0;
 }
 
-/* Side-by-side hero with form: give the form column enough width that the
-   GHL iframe clears its ~649px mobile threshold (otherwise fields stack in
-   one column). Pair with the compact-form CSS in GHL custom CSS. */
+/* Side-by-side hero with form: the GHL iframe must stay above ~649px or GHL
+   switches to mobile mode and stacks every field. After card padding, a 720px
+   column yields ~696px inside the iframe — safely above the threshold. */
 .contentWithForm {
-  width: min(100% - 2rem, 1320px);
-  grid-template-columns: minmax(240px, 1fr) minmax(680px, 720px);
+  width: min(100% - 2rem, 1440px);
+  grid-template-columns: minmax(220px, 1fr) minmax(720px, 820px);
   gap: 40px;
 }
 
@@ -90,6 +90,10 @@
   justify-self: end;
 }
 
+.contentWithForm .formWrap {
+  min-width: 724px;
+}
+
 .formActions {
   display: flex;
   justify-content: center;
@@ -103,15 +107,15 @@
   color: var(--color-primary);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1180px) {
   .contentWithForm {
     grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  .formWrap {
-    justify-self: stretch;
-    max-width: 720px;
+  .contentWithForm .formWrap {
+    min-width: 0;
+    max-width: 760px;
     margin-inline: auto;
   }
 }

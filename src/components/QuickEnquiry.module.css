@@ -5,7 +5,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: minmax(240px, 1fr) minmax(680px, 720px);
+  grid-template-columns: minmax(220px, 1fr) minmax(720px, 820px);
   gap: 40px;
   align-items: center;
 }
@@ -28,17 +28,18 @@
 
 .formWrap {
   width: 100%;
-  min-width: 0;
+  min-width: 724px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1180px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
   .formWrap {
-    max-width: 720px;
+    min-width: 0;
+    max-width: 760px;
     margin-inline: auto;
   }
 }
