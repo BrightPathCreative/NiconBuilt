@@ -17,6 +17,6 @@
 - /contact/: Get a quote or speak to Nick directly
 
 ## Contact
-- Email: nick@niconbuilt.com.au
+- Enquiries: via the contact form at /contact/
 - Based in: Port Melbourne, VIC
 - Service area: Melbourne's inner south and bayside suburbs

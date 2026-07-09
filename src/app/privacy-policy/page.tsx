@@ -32,7 +32,8 @@ export default function PrivacyPolicyPage() {
           <h2>Who we are</h2>
           <p>
             {siteConfig.legalName} (ABN {siteConfig.abn}) operates niconbuilt.com.au. We are
-            based in Port Melbourne, Victoria. Contact: {siteConfig.email}.
+            based in Port Melbourne, Victoria. You can reach us via our{" "}
+            <Link href="/contact/">contact form</Link>.
           </p>
 
           <h2>Information we collect</h2>
@@ -66,17 +67,13 @@ export default function PrivacyPolicyPage() {
           <h2>Your rights</h2>
           <p>
             You may request access to, correction of, or deletion of your personal information by
-            contacting us at {siteConfig.email}.
+            contacting us through our <Link href="/contact/">contact form</Link>.
           </p>
 
           <h2>Contact</h2>
           <p>
-            For privacy enquiries, email{" "}
-            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>.
-          </p>
-
-          <p>
-            <Link href="/contact/">Contact us</Link>
+            For privacy enquiries, please reach out through our{" "}
+            <Link href="/contact/">contact form</Link>.
           </p>
         </div>
       </section>

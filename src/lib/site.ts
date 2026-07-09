@@ -4,7 +4,8 @@ export const siteConfig = {
   legalName: "Nicon Built Pty Ltd",
   tagline: "Building Quality, Maintaining Excellence",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://niconbuilt.com.au",
-  email: "nick@niconbuilt.com.au",
+  // Nick's email is private — it must not appear anywhere on the site.
+  // All enquiries go through the contact form.
   // Suburb-level only — the street address is private and must not appear anywhere on the site.
   address: {
     locality: "Port Melbourne",

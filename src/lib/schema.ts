@@ -10,7 +10,6 @@ export function localBusinessSchema() {
     "@id": siteConfig.url,
     url: siteConfig.url,
     ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
-    email: siteConfig.email,
     address: {
       "@type": "PostalAddress",
       addressLocality: siteConfig.address.locality,

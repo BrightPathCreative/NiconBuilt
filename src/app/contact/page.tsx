@@ -138,12 +138,6 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className={styles.infoCard}>
-              <h3 className={styles.cardTitle}>Email</h3>
-              <p className={styles.cardBody}>
-                <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-              </p>
-            </div>
           </aside>
         </div>
       </section>

@@ -41,7 +41,7 @@ export async function POST(request: Request) {
       }
     } else if (process.env.NODE_ENV === "production") {
       return NextResponse.json(
-        { error: "Form temporarily unavailable. Please email nick@niconbuilt.com.au" },
+        { error: "Form temporarily unavailable. Please try again later." },
         { status: 503 }
       );
     }
