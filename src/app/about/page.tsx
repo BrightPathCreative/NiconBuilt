@@ -76,32 +76,34 @@ export default function AboutPage() {
           />
           <div className={styles.heroOverlay} aria-hidden="true" />
         </div>
-        <div className={`container ${styles.heroContent}`}>
-          <p className="eyebrow eyebrow--dark">About Nicon Built</p>
-          <h1>{copy.headline}</h1>
-          {introParagraphs.map((p) => (
-            <p key={p.slice(0, 40)} className={styles.heroLead}>
-              {p}
-            </p>
-          ))}
-          <div className={styles.founderCard}>
+        <div className={`container ${styles.heroInner}`}>
+          <div className={styles.heroCopy}>
+            <p className="eyebrow eyebrow--dark">About Nicon Built</p>
+            <h1>{copy.headline}</h1>
+            {introParagraphs.map((p) => (
+              <p key={p.slice(0, 40)} className={styles.heroLead}>
+                {p}
+              </p>
+            ))}
+          </div>
+          <aside className={styles.founderCard} aria-label="About Nick Kafkalas">
             <div className={styles.founderPortrait}>
               <Image
                 src={images.nickPortrait}
                 alt="Nick Kafkalas, founder of Nicon Built, on site"
                 fill
-                sizes="120px"
+                sizes="80px"
                 className={styles.founderPortraitImage}
               />
             </div>
             <div>
               <p className={styles.founderLabel}>Founder-led from first quote to handover</p>
-              <h2 className={styles.founderName}>Nick Kafkalas</h2>
+              <p className={styles.founderName}>Nick Kafkalas</p>
               <p className={styles.founderMeta}>
                 Licensed builder. Every job managed personally.
               </p>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
 
