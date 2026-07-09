@@ -59,23 +59,6 @@ export default function HomePage() {
 
       <StatsStrip />
 
-      <section className="section section--tone">
-        <div className="container">
-          <Reveal>
-            <p className="eyebrow">Why homeowners choose us</p>
-          </Reveal>
-          <Reveal index={1}>
-            <h2>What our clients say</h2>
-          </Reveal>
-          <Reveal index={2}>
-            <ReviewsCarousel reviews={reviewSlides} />
-          </Reveal>
-          <Link href="/testimonials/" className={styles.viewAll}>
-            Read all reviews →
-          </Link>
-        </div>
-      </section>
-
       <section className="section">
         <div className="container">
           <div className={styles.sectionHead}>
@@ -122,6 +105,23 @@ export default function HomePage() {
               Browse all services
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="section section--tone">
+        <div className="container">
+          <Reveal>
+            <p className="eyebrow">Why homeowners choose us</p>
+          </Reveal>
+          <Reveal index={1}>
+            <h2>What our clients say</h2>
+          </Reveal>
+          <Reveal index={2}>
+            <ReviewsCarousel reviews={reviewSlides} />
+          </Reveal>
+          <Link href="/testimonials/" className={styles.viewAll}>
+            Read all reviews →
+          </Link>
         </div>
       </section>
 
