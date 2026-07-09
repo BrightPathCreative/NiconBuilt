@@ -11,6 +11,7 @@ import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { loadCopy, formatReviewMeta } from "@/lib/copy";
 import { homeServices, projectServices } from "@/lib/navigation";
 import { images } from "@/lib/images";
+import { getServiceCarouselSlides } from "@/lib/service-carousel";
 import styles from "./page.module.css";
 
 export const metadata = buildMetadata({
@@ -73,13 +74,14 @@ export default function HomePage() {
           <div className={styles.serviceGrid}>
             {tradeTiles.map((tile, i) => {
               const trade = homeServices[i];
+              const homepageSlide = getServiceCarouselSlides(trade.metaKey)[0];
               return (
                 <Reveal key={tile.title} index={i} className={styles.serviceCardWrap}>
                   <Link href={trade.slug} className={`card ${styles.serviceCard}`}>
                     <div className={styles.serviceImage}>
                       <Image
-                        src={images[trade.imageKey]}
-                        alt={trade.imageAlt}
+                        src={homepageSlide?.src ?? images[trade.imageKey]}
+                        alt={homepageSlide?.alt ?? trade.imageAlt}
                         fill
                         sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className={styles.serviceImg}

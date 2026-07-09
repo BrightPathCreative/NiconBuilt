@@ -50,7 +50,7 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     tileTitle: "Painting and Plastering",
     shortTitle: "Painting & Plastering",
     breadcrumbName: "Painting and Plastering Melbourne",
-    imageKey: "tradesMaintenance",
+    imageKey: "cleaning",
     imageAlt: "Painting and plastering in Melbourne by Nicon Built",
   },
   {
@@ -70,7 +70,7 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     tileTitle: "Plumbing",
     shortTitle: "Plumbing",
     breadcrumbName: "Plumbing Melbourne",
-    imageKey: "tradesMaintenance",
+    imageKey: "bathroomRenovations",
     imageAlt: "Plumbing services in Melbourne by Nicon Built",
   },
   {
@@ -80,7 +80,7 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     tileTitle: "Electrical",
     shortTitle: "Electrical",
     breadcrumbName: "Electrical Melbourne",
-    imageKey: "tradesMaintenance",
+    imageKey: "homeRenovations",
     imageAlt: "Electrical services in Melbourne by Nicon Built",
   },
   {
