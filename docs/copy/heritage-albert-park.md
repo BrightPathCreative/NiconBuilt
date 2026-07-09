@@ -1,6 +1,6 @@
 ---
 File: docs/copy/heritage-albert-park.md
-Status: DRAFT — new suburb-specific copy, pending client sign-off
+Status: LIVE — approved and published
 Page: Heritage Renovations Albert Park
 URL slug: /heritage-renovations-albert-park/
 Word count target: 350–450

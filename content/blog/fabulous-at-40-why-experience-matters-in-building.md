@@ -17,7 +17,7 @@ A first build can be a stressful time for clients and we understand, because it'
 
 ### 2. Always be transparent with issues that arise pre and post construction.
 
-As architects and builders, we want to be accountable to our clients every step of the way, informing them of anything that might affect the build as soon as it comes up. Over the past three decades, we've built a strong team of expert consultants and professionals who have the expertise and commitment to solve any challenges that arise, allowing us to keep our clients up to date with all progress so we deliver on our clients' visions.
+As licensed builders, we want to be accountable to our clients every step of the way, informing them of anything that might affect the build as soon as it comes up. Over the past three decades, we've built a strong network of expert consultants and trades who have the expertise and commitment to solve any challenges that arise, allowing us to keep our clients up to date with all progress so we deliver on our clients' visions.
 
 ### 3. Speak regularly with clients during the build process and address their concerns as they arise.
 
@@ -49,8 +49,8 @@ At Nicon Built, we treat our clients' investments like we would our own. From ou
 
 ### 10. Continually refine our business model and vision.
 
-With 30+ years' experience, we know how important it is to reflect on how we conduct ourselves. We have robust systems and processes to ensure our clients benefit from the way we do business. Our architectural building services are completed by our talented team of builders and designers who adopt our ethos of delivering beautiful homes on time and on budget.
+With 30+ years' experience, we know how important it is to reflect on how we conduct ourselves. We have robust systems and processes to ensure our clients benefit from the way we do business. Our building services are delivered by a talented team of trades and coordinators who adopt our ethos of delivering beautiful homes on time and on budget.
 
 We recognise the care, commitment and cost involved in creating exceptional homes, and it's our greatest pleasure building a new life for our clients.
 
-Ready to create an impressive architectural space to call your own? Contact us today to arrange a consultation.
+Ready to create an impressive home to call your own? Contact us today to arrange a consultation.

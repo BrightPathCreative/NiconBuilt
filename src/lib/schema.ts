@@ -21,8 +21,7 @@ export function localBusinessSchema() {
     },
     areaServed: siteConfig.serviceAreas,
     sameAs: [siteConfig.social.facebook, siteConfig.social.instagram],
-    description:
-      "Heritage renovation and custom building specialists, Melbourne.",
+    description: siteConfig.description,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: siteConfig.stats.rating,
@@ -95,6 +94,38 @@ export function reviewsPageSchema(reviews: ReviewSchemaInput[]) {
         reviewBody: review.quote,
       })),
     },
+  };
+}
+
+type ServiceSchemaInput = {
+  name: string;
+  description: string;
+  url: string;
+  image?: string;
+};
+
+export function serviceSchema({ name, description, url, image }: ServiceSchemaInput) {
+  const pageUrl = `${siteConfig.url}${url}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${pageUrl}#service`,
+    name,
+    description,
+    url: pageUrl,
+    ...(image ? { image: image.startsWith("http") ? image : `${siteConfig.url}${image}` } : {}),
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": siteConfig.url,
+      name: siteConfig.legalName,
+      url: siteConfig.url,
+    },
+    areaServed: siteConfig.serviceAreas.map((area) => ({
+      "@type": "Place",
+      name: area,
+    })),
+    serviceType: name,
   };
 }
 

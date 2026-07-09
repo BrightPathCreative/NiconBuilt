@@ -43,6 +43,8 @@ export function createServicePage(config: ServicePageConfig) {
           carouselSlides={getServiceCarouselSlides(config.metaKey)}
           faqs={copy.faqs}
           enquiryFormPlacement={enquiryFormPlacement}
+          serviceUrl={config.slug}
+          serviceDescription={meta.description}
         >
           <ServiceLinks currentSlug={config.slug} />
         </ServicePageLayout>

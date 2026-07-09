@@ -1,6 +1,6 @@
 ---
 File: docs/copy/heritage-armadale.md
-Status: DRAFT — new suburb-specific copy, pending client sign-off
+Status: LIVE — approved and published
 Page: Heritage Renovations Armadale
 URL slug: /heritage-renovations-armadale/
 Word count target: 350–450

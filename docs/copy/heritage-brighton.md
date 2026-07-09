@@ -1,6 +1,6 @@
 ---
 File: docs/copy/heritage-brighton.md
-Status: DRAFT — new suburb-specific copy, pending client sign-off
+Status: LIVE — approved and published
 Page: Heritage Renovations Brighton
 URL slug: /heritage-renovations-brighton/
 Word count target: 350–450

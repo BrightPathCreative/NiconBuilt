@@ -1,6 +1,6 @@
 ---
 File: docs/copy/heritage-elwood.md
-Status: DRAFT — new suburb-specific copy, pending client sign-off
+Status: LIVE — approved and published
 Page: Heritage Renovations Elwood
 URL slug: /heritage-renovations-elwood/
 Word count target: 350–450

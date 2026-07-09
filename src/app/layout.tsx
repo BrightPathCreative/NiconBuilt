@@ -15,11 +15,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Heritage Renovation & Custom Builder Melbourne | Nicon Built",
+    default: "Home Services & Renovation Builder Melbourne | Nicon Built",
     template: "%s | Nicon Built",
   },
-  description:
-    "Heritage renovation builder in Melbourne with 30+ years experience. Victorian, Edwardian and Federation homes, extensions, kitchens, bathrooms and maintenance.",
+  description: siteConfig.description,
   icons: {
     icon: "/favicon.png",
     apple: "/apple-icon.png",

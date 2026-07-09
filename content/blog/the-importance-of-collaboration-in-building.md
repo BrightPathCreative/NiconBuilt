@@ -7,15 +7,15 @@ image: /images/blog/the-importance-of-collaboration-in-building.webp
 imageAlt: Nicon Built team on site coordinating a build
 ---
 
-We've been offering architectural and building services for over 30 years now, and the learning never ends.
+We've been offering building and renovation services for over 30 years now, and the learning never ends.
 
-Our most important finding so far? Collaboration and building strong partnerships with clients and suppliers is essential to running a successful architectural building company.
+Our most important finding so far? Collaboration and building strong partnerships with clients, designers and trades is essential to running a successful building company.
 
 Nicon Built is dedicated to building beautiful homes and maintaining productive and positive relationships with every homeowner we work with. We've worked with all kinds of clients on a diverse range of projects. Here are our main takeaways.
 
 ## Communication is key
 
-As specialists in the design and build of architectural homes, dual occupancy residences, and heritage extensions, we know that creating impressive architectural spaces need not be a complex process. By listening to our clients and getting a full understanding of their goals, we address any concerns as soon as they come up, so our clients can take a step back from the process and entrust us with their vision.
+As specialists in renovations, extensions, dual occupancy residences, and heritage work, we know that creating impressive homes need not be a complex process. By listening to our clients and getting a full understanding of their goals, we address any concerns as soon as they come up, so our clients can take a step back from the process and entrust us with their vision.
 
 It's this refreshingly simple approach that allows us to produce a result that exceeds your expectations, time and time again.
 
@@ -23,13 +23,13 @@ It's this refreshingly simple approach that allows us to produce a result that e
 
 At Nicon Built, we offer several different services and design options depending on the client's taste, lifestyle, and budget. Which is why it's important that we gain a proper insight into the unique needs of each client so that we can tailor our approach to fulfil their individual vision.
 
-Architectural homes, heritage extensions, dual occupancy builds, and design and build projects are all part of what we do at Nicon Built, so once we have a clear idea of your desired result, we can get started on your building journey.
+Renovations, heritage extensions, dual occupancy builds, and custom new homes are all part of what we do at Nicon Built, so once we have a clear idea of your desired result, we can get started on your building journey.
 
 It's by sitting down with you and getting to know you personally that we can achieve these impressive results and ensure long-term client satisfaction.
 
 ## Our promise
 
-When you choose to partner with Nicon Built, you're not just undertaking a run-of-the-mill construction project. You're choosing a home design tailored to your dreams and methodically and expertly brought to life by Melbourne's most adept design and building team.
+When you choose to partner with Nicon Built, you're not just undertaking a run-of-the-mill construction project. You're choosing a home tailored to your brief and methodically brought to life by a licensed builder who coordinates every trade personally.
 
 Whether you have your own plans, or work with your architect or designer, we collaborate with you to deliver your dream home. How does this work? You provide us with a picture of what you want to achieve, and we do everything in our power to make that happen, with a level of expertise that is surpassed only by our passion.
 
@@ -47,6 +47,6 @@ We want to make the building process as simple as possible for you, and to ensur
 - Complete transparency at every step of the process
 - A team supported by Master Builders Victoria
 
-If you're looking for a supportive team of architectural builders with decades of experience in the industry, choose Nicon Built. We understand the value of transparency and communication each step of the way.
+If you're looking for a supportive licensed builder with decades of experience in the industry, choose Nicon Built. We understand the value of transparency and communication each step of the way.
 
 Get in touch today to get started on building your dream home.

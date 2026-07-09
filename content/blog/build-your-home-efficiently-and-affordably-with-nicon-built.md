@@ -7,13 +7,13 @@ image: /images/blog/build-your-home-efficiently-and-affordably-with-nicon-built.
 imageAlt: Open-plan kitchen and dining renovation with island bench by Nicon Built
 ---
 
-Do you want to build your own, customised home? As the leading home builders in Melbourne we know how important it is for you to have the flexibility to customise your home to suit your unique needs. Whether you are building your first home or want a new home for your family at a reasonable, competitive rate, we have a solution.
+Do you want to build your own, customised home? As a licensed Melbourne builder with 30+ years of experience, we know how important it is for you to have the flexibility to customise your home to suit your unique needs. Whether you are building your first home or want a new home for your family at a reasonable, competitive rate, we have a solution.
 
 ### How can you build your home efficiently?
 
 Building a home can be stressful but our 6-step process simplifies the process so that you can relax knowing everything is being taken care of.
 
-We know that it is important for you to trust the people that are building your home. It is a big investment and you need to feel comfortable with the people who have entrusted to build your dream home. Our team has over 25 years' experience in both the design and construction of houses, we know what we are doing, and we do it really well.
+We know that it is important for you to trust the people that are building your home. It is a big investment and you need to feel comfortable with the people who have entrusted to build your dream home. Nick and the Nicon Built team have over 30 years' experience in residential design and construction — we know what we are doing, and we do it really well.
 
 We work with clients on custom home projects across Melbourne, shaping the scope, buildability, and finish level around the site, the brief, and the available budget. Our focus is on delivering a practical solution that suits the way you want to live, while keeping the process clear from the start.
 

@@ -9,7 +9,7 @@ import { FaqSection } from "./FaqSection";
 import { QuoteCTA } from "./QuoteCTA";
 import { QuickEnquiry } from "./QuickEnquiry";
 import type { BreadcrumbItem } from "@/lib/schema";
-import { breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/schema";
 import type { FaqItem } from "@/lib/copy";
 import type { CarouselSlide } from "@/lib/service-carousel";
 import { ServiceHeroCarousel } from "./ServiceImageCarousel";
@@ -41,6 +41,10 @@ type Props = {
    * - "none": skip the embedded form (falls back to the QuoteCTA band only).
    */
   enquiryFormPlacement?: "top" | "bottom" | "none";
+  /** Service page path for JSON-LD (e.g. /plumbing-melbourne/). */
+  serviceUrl?: string;
+  /** Meta description used in Service schema. */
+  serviceDescription?: string;
 };
 
 export function ServicePageLayout({
@@ -56,6 +60,8 @@ export function ServicePageLayout({
   faqs = [],
   children,
   enquiryFormPlacement = "top",
+  serviceUrl,
+  serviceDescription,
 }: Props) {
   const slides =
     carouselSlides.length > 0
@@ -85,6 +91,16 @@ export function ServicePageLayout({
       <JsonLd
         data={[
           breadcrumbSchema(breadcrumbs),
+          ...(serviceUrl && serviceDescription
+            ? [
+                serviceSchema({
+                  name: headline,
+                  description: serviceDescription,
+                  url: serviceUrl,
+                  image: slides[0]?.src,
+                }),
+              ]
+            : []),
           ...(faqs.length ? [faqSchema(faqs)] : []),
         ]}
       />

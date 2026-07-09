@@ -1,6 +1,6 @@
 ---
 File: docs/copy/heritage-malvern.md
-Status: DRAFT — new suburb-specific copy, pending client sign-off
+Status: LIVE — approved and published
 Page: Heritage Renovations Malvern
 URL slug: /heritage-renovations-malvern/
 Word count target: 350–450

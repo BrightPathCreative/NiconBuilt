@@ -39,6 +39,9 @@ export const siteConfig = {
     reviewCount: 9,
     projects: "200+",
   },
+  /** Trades-first positioning — used in layout defaults, schema and OG fallbacks. */
+  description:
+    "Everyday trades, property maintenance, kitchen and bathroom renovations, home extensions and new builds across Melbourne's inner south. Licensed builder, personally managed by Nick Kafkalas since 1990.",
   social: {
     facebook: "https://www.facebook.com/niconbuilt",
     instagram: "https://www.instagram.com/nicon_built/",
