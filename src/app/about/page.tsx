@@ -64,75 +64,53 @@ export default function AboutPage() {
         <Breadcrumbs items={breadcrumbs} />
       </div>
 
-      <section className="section">
-        <div className="container">
-          <div className={styles.heroGrid}>
-            <div className={styles.heroCopy}>
-              <p className="eyebrow">About Nicon Built</p>
-              <h1>{copy.headline}</h1>
-              {introParagraphs.map((p) => (
-                <p key={p.slice(0, 40)} className={styles.intro}>
-                  {p}
-                </p>
-              ))}
-              <div className={styles.founderCard}>
-                <div className={styles.founderPortrait}>
-                  <Image
-                    src={images.nickPortrait}
-                    alt="Nick Kafkalas, founder of Nicon Built, on site"
-                    fill
-                    sizes="120px"
-                    className={styles.founderPortraitImage}
-                  />
-                </div>
-                <div>
-                  <p className={styles.founderLabel}>Founder-led from first quote to handover</p>
-                  <h2 className={styles.founderName}>Nick Kafkalas</h2>
-                  <p className={styles.founderMeta}>
-                    Licensed builder. Established Port Melbourne, 1990. Every job managed
-                    personally.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.heroImage}>
+      <section className={styles.heroSection}>
+        <div className={styles.heroMedia}>
+          <Image
+            src={images.gallery[6]}
+            alt="Modern home extension with pool, Brighton — completed by Nicon Built"
+            fill
+            priority
+            sizes="100vw"
+            className={styles.heroBgImage}
+          />
+          <div className={styles.heroOverlay} aria-hidden="true" />
+        </div>
+        <div className={`container ${styles.heroContent}`}>
+          <p className="eyebrow eyebrow--dark">About Nicon Built</p>
+          <h1>{copy.headline}</h1>
+          {introParagraphs.map((p) => (
+            <p key={p.slice(0, 40)} className={styles.heroLead}>
+              {p}
+            </p>
+          ))}
+          <div className={styles.founderCard}>
+            <div className={styles.founderPortrait}>
               <Image
-                src={images.gallery[6]}
-                alt="Modern home extension with pool, Brighton — completed by Nicon Built"
+                src={images.nickPortrait}
+                alt="Nick Kafkalas, founder of Nicon Built, on site"
                 fill
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className={styles.heroImageEl}
+                sizes="120px"
+                className={styles.founderPortraitImage}
               />
+            </div>
+            <div>
+              <p className={styles.founderLabel}>Founder-led from first quote to handover</p>
+              <h2 className={styles.founderName}>Nick Kafkalas</h2>
+              <p className={styles.founderMeta}>
+                Licensed builder. Every job managed personally.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={`section section--tone ${styles.storySection}`}>
-        <div className="container">
-          <div className={styles.storyGrid}>
-            <div className="prose">
-              <h2>Built on Experience. Driven by Quality.</h2>
-              {experienceParagraphs.map((p) => (
-                <p key={p.slice(0, 40)}>{p}</p>
-              ))}
-            </div>
-            <div className={styles.storyStats}>
-              <div>
-                <span className={styles.statValue}>30+</span>
-                <span className={styles.statLabel}>years on the tools</span>
-              </div>
-              <div>
-                <span className={styles.statValue}>1990</span>
-                <span className={styles.statLabel}>established in Port Melbourne</span>
-              </div>
-              <div>
-                <span className={styles.statValue}>200+</span>
-                <span className={styles.statLabel}>projects completed</span>
-              </div>
-            </div>
-          </div>
+      <section className="section section--tone">
+        <div className="container prose">
+          <h2>Built on Experience. Driven by Quality.</h2>
+          {experienceParagraphs.map((p) => (
+            <p key={p.slice(0, 40)}>{p}</p>
+          ))}
         </div>
       </section>
 
