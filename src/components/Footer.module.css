@@ -106,14 +106,16 @@
   width: fit-content;
 }
 
-.callCta {
-  border-color: rgba(255, 255, 255, 0.35);
-  color: #fff;
+.callLink {
+  width: fit-content;
+  color: var(--color-footer-links);
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.callCta:hover {
-  background: rgba(255, 255, 255, 0.08);
-  opacity: 1;
+.callLink:hover {
+  color: #fff;
 }
 
 .legal {
@@ -238,6 +240,11 @@
   }
 
   .cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .callLink {
     width: 100%;
     text-align: center;
   }

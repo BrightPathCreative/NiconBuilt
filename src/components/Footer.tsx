@@ -56,12 +56,6 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <div className={styles.ctaGroup}>
-            <Link href="/contact/" className={`btn btn-accent ${styles.cta}`}>
-              Get a free quote
-            </Link>
-            <CallButton className={`btn btn-outline ${styles.cta} ${styles.callCta}`} />
-          </div>
         </div>
 
         <div>
@@ -73,6 +67,12 @@ export function Footer() {
               </li>
             ))}
           </ul>
+          <div className={styles.ctaGroup}>
+            <Link href="/contact/" className={`btn btn-accent ${styles.cta}`}>
+              Get a free quote
+            </Link>
+            <CallButton className={styles.callLink} />
+          </div>
         </div>
       </div>
 

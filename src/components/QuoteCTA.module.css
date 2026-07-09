@@ -28,7 +28,9 @@
   justify-content: center;
 }
 
-.actions .btn-outline {
+/* Applied directly to the CallButton — a descendant selector on the global
+   .btn-outline class would get hashed by CSS modules and never match. */
+.callOnDark {
   border-color: rgba(255, 255, 255, 0.5);
   color: #fff;
   background: transparent;

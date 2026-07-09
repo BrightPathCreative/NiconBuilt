@@ -23,7 +23,7 @@ export function QuoteCTA() {
           <Link href="/contact/" className="btn btn-accent">
             Get a free quote
           </Link>
-          <CallButton />
+          <CallButton className={`btn btn-outline ${styles.callOnDark}`} />
         </div>
       </div>
     </section>
