@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CallButton } from "@/components/CallButton";
+import { HomeLink } from "@/components/HomeLink";
 import { homeServices, projectServices, footerNav, locationPages } from "@/lib/navigation";
 import { siteConfig } from "@/lib/site";
 import styles from "./Footer.module.css";
@@ -11,14 +12,14 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.brandCol}>
-          <Link href="/" className={styles.brandLink} aria-label="Nicon Built home">
+          <HomeLink className={styles.brandLink}>
             <span className={styles.logoText}>
               Nicon
               <br />
               Built
             </span>
             <span className={styles.logoBar} aria-hidden="true" />
-          </Link>
+          </HomeLink>
           <p className={styles.tagline}>{siteConfig.tagline}</p>
           <p className={styles.rating}>
             {siteConfig.stats.rating} ★ · Google Reviews

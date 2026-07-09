@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { CallButton } from "@/components/CallButton";
+import { HomeLink } from "@/components/HomeLink";
 import { headerNav, services } from "@/lib/navigation";
 import styles from "./Header.module.css";
 
@@ -18,14 +19,14 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
-        <Link href="/" className={styles.logo} aria-label="Nicon Built home">
+        <HomeLink className={styles.logo} onNavigate={() => setMenuOpen(false)}>
           <span className={styles.logoText}>
             Nicon
             <br />
             Built
           </span>
           <span className={styles.logoBar} aria-hidden="true" />
-        </Link>
+        </HomeLink>
 
         <div className={styles.headerActions}>
           <button

@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { TrackingParamsCapture } from "@/components/TrackingParamsCapture";
 import { BackToTop } from "@/components/BackToTop";
+import { ScrollToTopOnNavigate } from "@/components/ScrollToTopOnNavigate";
 import { StickyCallBar } from "@/components/StickyCallBar";
 import { localBusinessSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
@@ -35,6 +36,7 @@ export default function RootLayout({
           Skip to content
         </a>
         <Header />
+        <ScrollToTopOnNavigate />
         <main id="main-content">{children}</main>
         <Footer />
         <BackToTop />
