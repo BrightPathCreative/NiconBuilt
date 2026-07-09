@@ -17,7 +17,7 @@ export function createTradePage(trade: TradeService) {
           breadcrumbs={[
             { name: "Home", href: "/" },
             { name: "Services", href: "/services/" },
-            { name: "Trades and Maintenance", href: "/home-maintenance-melbourne/" },
+            { name: "Trades and Maintenance", href: "/property-maintenance-melbourne/" },
             { name: trade.breadcrumbName, href: trade.slug },
           ]}
           headline={trade.headline}

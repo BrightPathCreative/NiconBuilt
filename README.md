@@ -7,6 +7,20 @@ Status: DRAFT — awaiting client confirmation on the items flagged below
 
 Multi-page Next.js App Router site for niconbuilt.com.au. Content authority remains in `/docs/copy/` and `/reference/`.
 
+## Folder layout
+
+This repo lives inside the client workspace at `/Volumes/LaCieDrive/NiconBuilt/nicon-built/`. The parent `NiconBuilt/` folder holds shared assets (photos, fonts, branding zips) — **not** the git repo. All code changes happen here.
+
+| Path | Purpose |
+|---|---|
+| `src/` | App routes, components, lib |
+| `docs/copy/` | Page copy (loaded at build time) |
+| `content/blog/` | Blog post markdown |
+| `public/` | Static assets served at domain root (`llms.txt`, images, favicons) |
+| `reference/` | Archived approved copy and briefs (read-only reference) |
+
+**Canonical `llms.txt`:** `public/llms.txt` only. Do not add a duplicate at repo root.
+
 ## Quick start
 
 ```bash
@@ -30,11 +44,11 @@ See [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md) for the full go-live ch
 
 ## Implemented
 
-- 33 static pages (home, 7 services, about, contact, our work, testimonials, FAQ, 5 location pages, blog ×5, legal)
-- Concept 1b design tokens, header/footer, GHL contact form API route
-- JSON-LD (LocalBusiness, FAQPage, BreadcrumbList), sitemap.xml, robots.txt, llms.txt
+- 39 indexable pages (home, 15 services, about, contact, our work, testimonials, FAQ, 5 location pages, blog index + 10 posts, privacy)
+- Concept 1b design tokens, header/footer, native contact form → GHL webhook API route
+- JSON-LD (LocalBusiness, FAQPage, BreadcrumbList, Review on testimonials), sitemap.xml, robots.txt, `public/llms.txt`
 - ~80 redirects from old WordPress URLs via `src/lib/redirects.ts`
-- WebP images mapped from client photo library
+- WebP images from client photo library
 
 ## Still needed from client before go-live
 
@@ -99,44 +113,19 @@ Multi-page build confirmed. Content authority is `Nicon_Built_Copy_v7_Approved.m
 
 ## Placeholder Registry
 
-| Placeholder | Where used | Resolved value | Confirmed? |
-|---|---|---|---|
-| `[CRM NUMBER]` | Header, hero, footer, Contact page, FAQ page, schema, `.env.example` | — | ☐ (coming later per Sara) |
-| `[LICENCE NUMBER]` | About page credentials, footer | — checked the live site, not published there | ☐ |
-| `[EMAIL]` | Already populated | `nick@niconbuilt.com.au` | ✅ |
-| `[ADDRESS]` | Footer + schema | 186 Dow Street, Port Melbourne VIC 3207 | ✅ full public display confirmed |
-| `[ABN]` | Footer, schema | 88 632 512 577 | ✅ |
-| `[BUSINESS NAME]` | Throughout | Nicon Built / Nicon Built Pty Ltd | ✅ |
-| `[PROJECTS COMPLETED FIGURE]` | Homepage stats strip | 200+ | ✅ |
-| `[PRIORITY SUBURBS]` | Location pages | Brighton, Armadale, Malvern, Albert Park, Elwood | ✅ chosen by me, flagged for confirmation |
-| `[SURVIVING BLOG POSTS]` | Blog migration | — | ☐ (building for ~10 of 41) |
-| `[REVIEWS TO PUBLISH]` | Testimonials page | 8 of 9 (Johnny Andrianakis removed) | ✅ |
-| `[IMAGE: *]` | Every image slot in `content/image-manifest.md` | — | ☐ pending Drive folder review |
-| `[GHL WEBHOOK]` | Contact form | — | ☐ |
-| `[GA ID]` | Analytics | — | ☐ |
+| Placeholder | Where used | Status |
+|---|---|---|
+| `[CRM NUMBER]` | Header, footer, contact, FAQ, schema | Pending GHL lead-gen number |
+| `GHL_WEBHOOK_URL` | `/api/contact` | Pending GHL workflow setup |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4 | Pending |
+| VBA licence | Footer, schema | Default `CDB-U 62648` in code; env override optional |
+| ABN | Footer | `88 632 512 577` — live |
+| Email | — | **Not published** on site (form-only enquiries) |
+| Street address | — | **Not published** — suburb-level only (Port Melbourne, VIC 3207) |
+| Affiliation logos | Footer | Pending client assets |
 
-🚨 **LAUNCH BLOCKED — unresolved placeholders found. Resolve all before deploying.**
+## Privacy policy (contact data)
 
-## 🚨 Blockers — must resolve before build starts
-
-1. GHL webhook endpoint not yet set up — even a declared "stub" clears this for dev purposes, but real wiring is needed before launch.
-2. VBA licence number missing — confirmed via direct check that it isn't published anywhere on the current live site either, so it has to come from Nick directly, not from an existing source.
-3. Photography — Sara's Drive folder needs to actually be checked against `content/image-manifest.md` once Cursor has access, to confirm what's covered and what's still genuinely missing.
-
-## ⚠️ Warnings — fix before launch
-
-1. GHL lead-gen phone number pending (confirmed coming later).
-2. Which ~10 of the 41 existing blog posts survive — still undecided.
-3. Full 38-page 301 redirect mapping still needs to be built from the pattern rules (confirmed as a later-stage task, not a day-one blocker).
-4. Cookie policy — confirm whether it's actually needed; neither source document calls for one.
-5. Current PageSpeed score is 36/100 mobile, 47/100 desktop, with a 17.4s mobile LCP — this needs active performance work, not just a target on paper.
-6. The 5 chosen location suburbs (Brighton, Armadale, Malvern, Albert Park, Elwood) were my judgement call, not an explicit client instruction — worth a quick confirmation from Nick.
-
-## ✅ Clear
-
-1. Colour palette (Concept 1b) — defined as CSS variables.
-2. Business identity, ABN, address, email — all confirmed real and resolved for public display.
-3. Tech stack — Next.js App Router + TypeScript, satisfies the "custom-coded, not WordPress" requirement.
-4. Static testimonials (8, Johnny Andrianakis removed) — confirmed final.
-5. Kitchen Renovations and Bathroom Renovations pages — approved, no longer held back.
-6. Homepage "200+ Projects Completed" stat — confirmed final.
+- No public email address on the live site.
+- No street address on the live site — locality/suburb only.
+- All enquiries via `/contact/` form → GHL webhook.

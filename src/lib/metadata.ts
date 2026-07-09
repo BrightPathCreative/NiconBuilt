@@ -163,10 +163,3 @@ export const pageMeta: Record<string, { title: string; description: string }> =
       description: "Thank you for contacting Nicon Built.",
     },
   };
-
-export function locationMeta(suburb: string) {
-  return {
-    title: `Home Services in ${suburb} | Nicon Built Melbourne`,
-    description: `Home services, renovations and building in ${suburb}, Melbourne. 30+ years experience, VBA licensed builder. Get in touch with Nicon Built today.`,
-  };
-}

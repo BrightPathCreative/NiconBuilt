@@ -40,7 +40,7 @@ As a starting point, visit [Heritage Victoria](https://www.planning.vic.gov.au/p
 
 Our team is well versed in the restrictions applying to heritage extensions, navigating you smoothly through each stage. Thanks to our informed advice, your extension will sidestep any avoidable delays.
 
-Nicon Built's in-house architect works closely with you to ensure extension needs are met without violating heritage protection. Our friendly specialist design and build team deliver high quality service from concept to completion.
+Nick works closely with your heritage architect, or can recommend one he has worked with before, to ensure extension needs are met without violating heritage protection. Our specialist design and build team deliver high quality service from concept to completion.
 
 ### The heritage difference
 

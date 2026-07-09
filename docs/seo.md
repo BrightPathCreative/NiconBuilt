@@ -42,11 +42,15 @@ Contact title is 61 characters, 1 over the 60 target — acceptable in practice 
   "name": "Nicon Built Pty Ltd",
   "@id": "https://niconbuilt.com.au",
   "url": "https://niconbuilt.com.au",
-  "telephone": "[CRM NUMBER]",
-  "email": "nick@niconbuilt.com.au",
+  "telephone": "[CRM NUMBER — omit from schema until GHL number is issued]",
+  "logo": "https://niconbuilt.com.au/logo.svg",
+  "image": "https://niconbuilt.com.au/images/og-image.webp",
+  "sameAs": [
+    "https://www.facebook.com/niconbuilt",
+    "https://www.instagram.com/nicon_built/"
+  ],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "186 Dow Street",
     "addressLocality": "Port Melbourne",
     "addressRegion": "VIC",
     "postalCode": "3207",
@@ -67,9 +71,9 @@ Contact title is 61 characters, 1 over the 60 target — acceptable in practice 
 }
 ```
 
-Address in schema: confirmed for full public display in the footer as well (Sara has resolved this — no longer just a schema-only value).
+Address in schema: **suburb-level only** (Port Melbourne, VIC 3207). Street address and email are intentionally omitted from the live site — all enquiries go through the contact form.
 
-telephone: leave as [CRM NUMBER] until the GHL lead-gen number is issued. Never publish 0407699454 (Nick's personal mobile) — the technical brief is explicit that it's a placeholder only.
+telephone: leave out of schema until the GHL lead-gen number is issued. Never publish Nick's personal mobile.
 
 Note: reviewCount stays 9 (the real live Google Business Profile total) even though the Testimonials page itself only publishes 8 of them per Sara's decision — schema should reflect the actual external rating, not just the on-page count.
 

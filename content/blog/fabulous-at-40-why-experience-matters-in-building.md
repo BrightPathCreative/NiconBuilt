@@ -1,13 +1,13 @@
 ---
 title: Why Experience Matters in Building
-excerpt: After 40+ years in the industry, here are the rules we live by: from listening closely to clients to keeping every build on budget.
+excerpt: After 30+ years in the industry, here are the rules we live by: from listening closely to clients to keeping every build on budget.
 date: 2022-11-20
 published: true
 image: /images/blog/fabulous-at-40-why-experience-matters-in-building.webp
 imageAlt: Heritage staircase and modern kitchen renovation by Nicon Built
 ---
 
-*With 40+ years' building experience, we've seen everything!*
+*With 30+ years' building experience, we've seen everything!*
 
 It's true. After decades in the industry, we're hard pressed to find an architectural concept or heritage extension in Melbourne we can't deliver on, no matter the hurdles along the way. So we thought we'd share some of the rules we stand by after all these years.
 
@@ -17,7 +17,7 @@ A first build can be a stressful time for clients and we understand, because it'
 
 ### 2. Always be transparent with issues that arise pre and post construction.
 
-As architects and builders, we want to be accountable to our clients every step of the way, informing them of anything that might affect the build as soon as it comes up. Over the past four decades, we've built a strong team of expert consultants and professionals who have the expertise and commitment to solve any challenges that arise, allowing us to keep our clients up to date with all progress so we deliver on our clients' visions.
+As architects and builders, we want to be accountable to our clients every step of the way, informing them of anything that might affect the build as soon as it comes up. Over the past three decades, we've built a strong team of expert consultants and professionals who have the expertise and commitment to solve any challenges that arise, allowing us to keep our clients up to date with all progress so we deliver on our clients' visions.
 
 ### 3. Speak regularly with clients during the build process and address their concerns as they arise.
 
@@ -25,7 +25,7 @@ The easiest way to ensure satisfied clients, and to put their worries at ease, i
 
 ### 4. Listen and understand.
 
-Delivering to our clients' briefs is still the number one thing that gets us out of bed in the mornings, forty years into our business. And listening attentively is what makes this happen. As experts in the industry, once we understand what our clients want, we share helpful advice based on their vision to ensure best practice is followed to deliver their dream home.
+Delivering to our clients' briefs is still the number one thing that gets us out of bed in the mornings, more than three decades into our business. And listening attentively is what makes this happen. As experts in the industry, once we understand what our clients want, we share helpful advice based on their vision to ensure best practice is followed to deliver their dream home.
 
 ### 5. Maintain a high level of professionalism.
 
@@ -37,7 +37,7 @@ We know time is the most precious commodity, which is why we work swiftly and ef
 
 ### 7. Take our client's point of view.
 
-We hold a firm belief at Nicon Built: we build for our clients what we would build for ourselves, because after 40 years we've learned what works best. And we have the highest standards for our clients, who deserve our dedication and attention to detail.
+We hold a firm belief at Nicon Built: we build for our clients what we would build for ourselves, because after 30+ years we've learned what works best. And we have the highest standards for our clients, who deserve our dedication and attention to detail.
 
 ### 8. Write it down!
 
@@ -49,7 +49,7 @@ At Nicon Built, we treat our clients' investments like we would our own. From ou
 
 ### 10. Continually refine our business model and vision.
 
-With 40 years' experience, we know how important it is to reflect on how we conduct ourselves. We have robust systems and processes to ensure our clients benefit from the way we do business. Our architectural building services are completed by our talented team of builders and designers who adopt our ethos of delivering beautiful homes on time and on budget.
+With 30+ years' experience, we know how important it is to reflect on how we conduct ourselves. We have robust systems and processes to ensure our clients benefit from the way we do business. Our architectural building services are completed by our talented team of builders and designers who adopt our ethos of delivering beautiful homes on time and on budget.
 
 We recognise the care, commitment and cost involved in creating exceptional homes, and it's our greatest pleasure building a new life for our clients.
 

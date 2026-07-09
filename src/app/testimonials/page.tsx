@@ -3,7 +3,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { QuoteCTA } from "@/components/QuoteCTA";
 import { loadCopy, formatReviewMeta } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, reviewsPageSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 import styles from "./page.module.css";
 
@@ -25,10 +25,14 @@ function Stars() {
 export default function TestimonialsPage() {
   const copy = loadCopy("testimonials");
   const [featured, ...rest] = copy.reviews;
+  const structuredReviews = copy.reviews.map((review) => ({
+    author: review.author,
+    quote: review.quote,
+  }));
 
   return (
     <>
-      <JsonLd data={breadcrumbSchema(breadcrumbs)} />
+      <JsonLd data={[breadcrumbSchema(breadcrumbs), reviewsPageSchema(structuredReviews)]} />
       <div className="container">
         <Breadcrumbs items={breadcrumbs} />
       </div>

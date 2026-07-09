@@ -11,7 +11,7 @@ While designing for a small block can present a number of challenges, there's no
 
 There are several considerations for your build depending on the type of home you're working with — for example, whether it's single-storey or multi-storey, whether it's heritage-listed, and what your needs and wants are. Your block and neighbourhood will also tell us a great deal about what will be involved during the construction process.
 
-As architectural and home design experts with a combined 40 years of experience in the industry, we're ready to help you achieve your dream home or dual-occupancy property on a narrow block — a home that meets your budget, timeframe, and specifications, and brings you everything you need and want. Here's what we consider to make sure we achieve it for you.
+As architectural and home design experts with more than 30 years of experience in the industry, we're ready to help you achieve your dream home or dual-occupancy property on a narrow block — a home that meets your budget, timeframe, and specifications, and brings you everything you need and want. Here's what we consider to make sure we achieve it for you.
 
 ## Your local area
 

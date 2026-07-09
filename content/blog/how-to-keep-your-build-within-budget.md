@@ -9,7 +9,7 @@ imageAlt: Renovated bedroom with built-in study nook by Nicon Built
 
 If you're thinking of building or renovating, you've probably heard many a horror story — countless accounts of people who blew out their building budget during construction, or worse, were caught out by an untrustworthy builder or a sly building contract. The good news is this situation can be avoided.
 
-There are many ways to keep your build within budget, and when you're talking about such a big financial investment, this is essential. Using our decades of experience crafting custom dwellings and renovating heritage homes at Nicon Built Design + Build, we've put together a guide to help you avoid spending beyond your means while still building a beautiful home. Keep reading to learn more.
+There are many ways to keep your build within budget, and when you're talking about such a big financial investment, this is essential. Using our decades of experience crafting custom dwellings and renovating heritage homes at Nicon Built, we've put together a guide to help you avoid spending beyond your means while still building a beautiful home. Keep reading to learn more.
 
 ### Engage a builder early
 
@@ -21,7 +21,7 @@ The most important decision here is choosing a trustworthy, highly-skilled build
 
 ### Use a specialist
 
-With so many builders to choose from, you can narrow down your options by looking for someone with plenty of experience in projects similar to yours. A heritage renovation specialist, like Nicon Built Design + Build, will be able to advise you on which elements of your home can be updated or renovated, and which will need to remain due to heritage restrictions.
+With so many builders to choose from, you can narrow down your options by looking for someone with plenty of experience in projects similar to yours. A heritage renovation specialist, like Nicon Built, will be able to advise you on which elements of your home can be updated or renovated, and which will need to remain due to heritage restrictions.
 
 A general volume builder may not have this type of insight, or understand the specific costs associated with this kind of project. If you're planning a heritage renovation or another specific type of build, it's best to find someone with many years' experience in that field.
 
@@ -37,4 +37,4 @@ Take the time to be sure of what you want during the planning stages of your bui
 
 This can be avoided by making as many selections as possible before you sign the building contract. A trustworthy builder will usually encourage this, but a less careful one may not.
 
-Looking to work with a builder who can stick to your specific budget? Reach out to Nicon Built Design + Build today.
+Looking to work with a builder who can stick to your specific budget? Reach out to Nicon Built today.

@@ -1,6 +1,6 @@
 ---
 title: Build Your Home Efficiently and Affordably with Nicon Built
-excerpt: How Nicon Built's 6-step process and 25+ years of experience help you build a customised home efficiently, affordably and without the stress.
+excerpt: How Nicon Built's 6-step process and 30+ years of experience help you build a customised home efficiently, affordably and without the stress.
 date: 2020-01-16
 published: true
 image: /images/blog/build-your-home-efficiently-and-affordably-with-nicon-built.webp
@@ -15,7 +15,7 @@ Building a home can be stressful but our 6-step process simplifies the process s
 
 We know that it is important for you to trust the people that are building your home. It is a big investment and you need to feel comfortable with the people who have entrusted to build your dream home. Our team has over 25 years' experience in both the design and construction of houses, we know what we are doing, and we do it really well.
 
-We have a range of affordable house and land packages for you to choose from in some of the best locations in Melbourne. Our focus is on affordability and once you have chosen your design, our team will customise, change and advise you until you are satisfied with the design of your home.
+We work with clients on custom home projects across Melbourne, shaping the scope, buildability, and finish level around the site, the brief, and the available budget. Our focus is on delivering a practical solution that suits the way you want to live, while keeping the process clear from the start.
 
 Once the design has been decided on, we will start constructing the home with attention to every detail from the larger items to the smallest of details. Once we start building your new home, it will take between 8 to 10 months to complete which means you could have your home in next to no time. If you already own land, the building process will be even quicker.
 

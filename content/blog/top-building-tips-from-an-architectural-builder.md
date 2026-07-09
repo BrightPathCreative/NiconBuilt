@@ -9,7 +9,7 @@ imageAlt: New weatherboard-style home build at dusk by Nicon Built
 
 When you're designing and building a new home, it's easy to become overwhelmed by *everything* that needs to be done. It's a massive emotional and financial investment, and trying to be across every detail may result in the exact opposite.
 
-We know how exciting and nerve-wracking this process can be. But with over 40 years of building experience, and an in-house architect to offer the full design and build service under one roof, Nicon Built will steer you along the right path to arrive at your dream doorstep.
+We know how exciting and nerve-wracking this process can be. But with over 30 years of building experience, and a collaborative design-and-build approach that keeps builder and designer aligned from the start, Nicon Built will steer you along the right path to arrive at your dream doorstep.
 
 So, if you're thinking about building a new home, what better place to begin than with our top building tips?
 
@@ -35,7 +35,7 @@ It's always wise to check out the land you're going to build on with your archit
 
 What you can and can't build will depend on your block of land. A sloping block, for example, may present design challenges but also unique opportunities to stand out. Ask your architect and builder how they will optimise the space and quality of the land.
 
-When you choose Nicon Built, you'll not only engage our builders but our in-house architect too — so you'll know we'll always be on the same page.
+When you choose Nicon Built, you'll engage a builder who can coordinate closely with your designer, architect, and trades from the outset — so everyone stays on the same page.
 
 ### Natural light and warmth
 
@@ -47,6 +47,6 @@ If you don't want natural lighting and warmth in every room, however, think abou
 
 If you have a unique vision for your home, it's best to find a builder who has completed something similar. Builders of bespoke homes specialise in working with different materials and finishes, skilled in translating their client's dreams into something real — something they can live in.
 
-At Nicon Built, we have over 40 years of experience designing and building luxury architectural homes across Melbourne.
+At Nicon Built, we have over 30 years of experience delivering custom homes and major renovations across Melbourne.
 
 Ready to start your building journey? Get in touch with us today.

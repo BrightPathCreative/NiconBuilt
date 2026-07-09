@@ -1,5 +1,8 @@
-# Reference folder
+# Reference archive
 
-`Nicon_Landing_Wireframes_dc.html` — the original design prototype, kept here as the source of truth for layout/copy/behaviour. It contains three concepts side by side (1a, 1b, 1c). **Only build the `<article id="1b">` block** — 1a and 1c are unused alternates the client did not choose.
+Historical approved copy and briefs. **Do not edit** these files — they record what the client signed off at a point in time.
 
-`support.js` (from the original upload) is the runtime for the HTML prototype only and has intentionally **not** been copied in here — it is not part of the build deliverable and should not be ported into the Next.js site.
+The live site may differ (e.g. privacy: no public email or street address; slug changes such as `/property-maintenance-melbourne/`).
+
+Current working copy: `docs/copy/`  
+Current technical spec: `docs/seo.md`, `docs/sitemap.md`, `docs/brief.md`

@@ -16,7 +16,7 @@ Fill in the form and he'll be in touch. Every enquiry goes straight to Nick.
 ⚠️ Phone number gets added once the CRM (GHL) lead-gen number is confirmed.
 
 - Phone: <!-- PLACEHOLDER: [CRM NUMBER] -->
-- Email: nick@niconbuilt.com.au
+- Enquiries: via the contact form only (email is not published on the site)
 - Based in Port Melbourne, VIC
 - Monday to Saturday, 7:00am to 7:00pm
 

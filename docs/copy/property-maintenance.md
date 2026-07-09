@@ -2,7 +2,7 @@
 File: docs/copy/property-maintenance.md
 Status: DRAFT — verbatim from Nicon_Built_Copy_v8_Approved.md
 Page: Property Maintenance
-URL slug: /home-maintenance-melbourne/
+URL slug: /property-maintenance-melbourne/
 Word count target: N/A — fixed approved copy
 Last updated: 2026-07-05
 ---

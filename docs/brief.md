@@ -18,10 +18,10 @@ Status: DRAFT — awaiting client confirmation on the items still flagged below
 | Years Operating | 30+ years. Established Port Melbourne, 1990 |
 | Founder | Nick Kafkalas — every job run personally by him |
 | Service Area | Melbourne's inner south & bayside: Port Melbourne, Albert Park, Middle Park, South Melbourne, Elwood, St Kilda, Brighton, Hampton, Sandringham, Beaumaris, Armadale, Malvern, South Yarra, Williamstown, Moorabbin, Bentleigh, Caulfield, Elsternwick, Camberwell, Hawthorn, Kew |
-| Physical Address | 186 Dow Street, Port Melbourne VIC 3207 — confirmed for full public display (footer + schema), per Sara. |
-| Primary Phone | ⚠️ MISSING — pending the GHL lead-gen number, which you'll provide towards the end of the build. **Do not use `0407699454`** — that's Nick's personal mobile, used only as a placeholder example in the technical brief; it's explicitly meant to be replaced site-wide by the GHL number. |
-| VBA Licence Number | ⚠️ MISSING — checked the live niconbuilt.com.au site (Home, About, Guarantees, Contact pages) directly and it isn't published anywhere on the current site either. Needs to come from Nick directly — it's not something I can pull from an existing public source. |
-| Primary Email | `nick@niconbuilt.com.au` (confirmed, from the v7 Contact page). Hosted on Microsoft 365 — do not touch or migrate the email DNS/MX records during the domain switch. |
+| Physical Address | Port Melbourne, VIC 3207 — **suburb-level only on the live site**. Street address is private and must not appear in footer, schema, or copy. |
+| Primary Phone | Pending the GHL lead-gen number. **Do not use Nick's personal mobile** on the site. |
+| VBA Licence Number | `CDB-U 62648` — in code/footer via env or default. Confirm with Nick before go-live. |
+| Primary Email | `nick@niconbuilt.com.au` exists for business use but is **not published on the website**. All enquiries go through the contact form. Do not touch email DNS/MX during domain switch. |
 | Website URL | `niconbuilt.com.au` — **this is a migration of an existing site**, not a new domain |
 | Current Website | Existing WordPress 6.7.5 / Elementor Pro site, being replaced. 38 published pages need 301 redirects; 41 blog posts being reduced to 5–6 (not yet chosen — see `docs/sitemap.md`) |
 
@@ -53,7 +53,7 @@ Status: DRAFT — awaiting client confirmation on the items still flagged below
 1. ~~"200+ Projects Completed" stat~~ ✅ **Resolved — leave as "200+" (Sara confirmed).**
 2. **VBA licence number** — needed for About page + footer. Confirmed not published anywhere on the current live site either, so there's no existing source to pull it from; it has to come from Nick directly.
 3. **GHL lead-gen phone number** — confirmed coming later in the build.
-4. ~~Address display decision~~ ✅ **Resolved — full address (186 Dow Street, Port Melbourne VIC 3207) displays in full, per Sara.**
+4. ~~Address display decision~~ ✅ **Resolved — suburb-level only (Port Melbourne, VIC 3207). Street address and email are not published on the site.**
 5. **Blog posts** — still waiting to hear which of the existing posts survive; build for **~10 posts** as a working assumption (revised up from the technical brief's original 5–6 estimate, per Sara).
 6. **Location pages** — Sara has left the suburb selection to me. See `docs/sitemap.md` for the 5 chosen and the reasoning.
 7. **Photography** — Sara is supplying a Google Drive folder ("Images") directly to Cursor rather than through this pack: https://drive.google.com/drive/folders/1tC88MT4d7ThYa5It5OFBC90yoW8vnEG7 . Cursor should pull from there when building each page.

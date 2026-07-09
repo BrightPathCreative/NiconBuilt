@@ -19,7 +19,7 @@ Multi-page build confirmed. Structure below follows `Nicon_Built_Copy_v7_Approve
 | Kitchen Renovations | `/kitchen-renovations-melbourne/` | Med | ✅ Copy ready and client-approved (Sara has confirmed both new pages) |
 | Bathroom Renovations | `/bathroom-renovations-melbourne/` | Med | ✅ Copy ready and client-approved (Sara has confirmed both new pages) |
 | Home Renovations and Extensions | `/home-renovations-melbourne/` | High | ✅ Copy ready. Reuses the brief's "High-End Renovations" slug — page was renamed, slug kept for URL stability |
-| Trades and Maintenance | `/home-maintenance-melbourne/` | High | ✅ Copy ready. Reuses the brief's "General Maintenance" slug — page renamed, slug kept. Confirm you're happy keeping the old slug despite the name change, or want it updated to match |
+| Trades and Maintenance | `/property-maintenance-melbourne/` | High | ✅ Live. Legacy `/home-maintenance-melbourne/` 301s here |
 | New Builds | `/new-builds-melbourne/` | Low | ✅ Copy ready — matches brief. Explicitly "kept on the site but not the main focus" |
 | Our Work | `/our-work/` | Med | ⚠️ Copy ready, but needs real photos — currently has zero images to show |
 | Testimonials | `/testimonials/` | Med | ⚠️ Copy ready, but confirm which of the 9 reviews to publish (Callum flag — see `docs/brief.md`) |

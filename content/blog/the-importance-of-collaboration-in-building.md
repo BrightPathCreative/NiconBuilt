@@ -7,7 +7,7 @@ image: /images/blog/the-importance-of-collaboration-in-building.webp
 imageAlt: Nicon Built team on site coordinating a build
 ---
 
-We've been offering architectural and building services for over 40 years now, and the learning never ends.
+We've been offering architectural and building services for over 30 years now, and the learning never ends.
 
 Our most important finding so far? Collaboration and building strong partnerships with clients and suppliers is essential to running a successful architectural building company.
 
@@ -31,7 +31,7 @@ It's by sitting down with you and getting to know you personally that we can ach
 
 When you choose to partner with Nicon Built, you're not just undertaking a run-of-the-mill construction project. You're choosing a home design tailored to your dreams and methodically and expertly brought to life by Melbourne's most adept design and building team.
 
-Whether you have your own plans, or work with our in-house architectural design and build service, we collaborate with you to deliver your dream home. How does this work? You provide us with a picture of what you want to achieve, and we do everything in our power to make that happen, with a level of expertise that is surpassed only by our passion.
+Whether you have your own plans, or work with your architect or designer, we collaborate with you to deliver your dream home. How does this work? You provide us with a picture of what you want to achieve, and we do everything in our power to make that happen, with a level of expertise that is surpassed only by our passion.
 
 At Nicon Built, we bring our extensive knowledge of building applications to every build to create elegant, modern results for you to enjoy for years to come.
 

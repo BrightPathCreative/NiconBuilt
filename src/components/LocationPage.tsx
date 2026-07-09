@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { FaqSection } from "@/components/FaqSection";
@@ -11,14 +12,16 @@ import { images } from "@/lib/images";
 type Props = {
   suburb: string;
   slug: string;
+  /** docs/copy/{copySlug}.md — suburb-specific heritage copy */
+  copySlug: string;
 };
 
-export function LocationPage({ suburb, slug }: Props) {
-  const copy = loadCopy("property-maintenance");
+export function LocationPage({ suburb, slug, copySlug }: Props) {
+  const copy = loadCopy(copySlug);
   const breadcrumbs = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services/" },
-    { name: `Home Services ${suburb}`, href: slug },
+    { name: "Heritage Renovations", href: "/heritage-renovations-melbourne/" },
+    { name: suburb, href: slug },
   ];
 
   return (
@@ -32,16 +35,23 @@ export function LocationPage({ suburb, slug }: Props) {
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "48px", alignItems: "center" }}>
             <div>
-              <p className="eyebrow">Home Services · {suburb}</p>
-              <h1>Home Services in {suburb} | Nicon Built Melbourne</h1>
+              <p className="eyebrow">Heritage Renovations · {suburb}</p>
+              <h1>{copy.headline ?? `Heritage Renovations ${suburb}`}</h1>
               {copy.subheadline ? <p>{copy.subheadline}</p> : null}
-              {copy.paragraphs.slice(0, 3).map((p) => (
+              {copy.paragraphs.map((p) => (
                 <p key={p.slice(0, 40)}>{p}</p>
               ))}
+              <p>
+                Read more about our approach on the main{" "}
+                <Link href="/heritage-renovations-melbourne/">
+                  heritage renovations and restorations
+                </Link>{" "}
+                page.
+              </p>
             </div>
             <Image
-              src={images.tradesMaintenance}
-              alt={`Home services in ${suburb} by Nicon Built`}
+              src={images.heritageRenovations}
+              alt={`Heritage renovation in ${suburb} by Nicon Built`}
               width={640}
               height={420}
               style={{ borderRadius: "12px", width: "100%", height: "auto" }}
@@ -51,7 +61,7 @@ export function LocationPage({ suburb, slug }: Props) {
       </section>
 
       <FaqSection faqs={copy.faqs} />
-      <ServiceLinks currentSlug="/property-maintenance-melbourne/" />
+      <ServiceLinks currentSlug={slug} />
       <QuoteCTA />
     </>
   );

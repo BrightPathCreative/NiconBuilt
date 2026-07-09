@@ -1,22 +1,63 @@
-# Nicon Built — Heritage Renovation & Custom Builder Melbourne
-# niconbuilt.com.au
+# Nicon Built — Home Services & Renovation Builder Melbourne
+# https://niconbuilt.com.au
 
-> Nicon Built is a licensed Melbourne builder specialising in heritage home renovations, restorations, extensions, kitchen and bathroom renovations, general trades and maintenance, and new builds across Melbourne's inner southern and bayside suburbs. Founded by Nick Kafkalas in Port Melbourne in 1990, every project is run personally by him. VBA licensed, fully insured, 30+ years experience, 5.0 stars across 9 Google reviews.
+> Nicon Built is a licensed Melbourne builder specialising in everyday trades, property maintenance, heritage renovations, kitchen and bathroom renovations, home extensions, and new builds across Melbourne's inner south and bayside suburbs. Founded by Nick Kafkalas in Port Melbourne in 1990. Every project is run personally by Nick. VBA licence CDB-U 62648. ABN 88 632 512 577. 30+ years experience. 5.0 stars across 9 Google reviews.
 
-## Key Pages
-- /heritage-renovations-melbourne/: Heritage home renovation and restoration services
-- /heritage-home-extensions-melbourne/: Heritage-compliant home extensions
-- /kitchen-renovations-melbourne/: Kitchen renovations
-- /bathroom-renovations-melbourne/: Bathroom renovations
-- /home-renovations-melbourne/: Home renovations and extensions
-- /home-maintenance-melbourne/: Trades and maintenance (general trade coordination)
-- /new-builds-melbourne/: New builds and dual-occupancy projects
+## Core pages
+- /: Homepage — trades, renovations, testimonials, service areas
+- /services/: All building and renovation services
 - /about/: About Nick Kafkalas and Nicon Built
 - /our-work/: Completed project gallery
 - /testimonials/: Client reviews
-- /contact/: Get a quote or speak to Nick directly
+- /faq/: Frequently asked questions
+- /blog/: Articles and building advice
+- /contact/: Request a quote (contact form)
+- /privacy-policy/: Privacy policy
+
+## Trade & maintenance services
+- /plumbing-melbourne/
+- /electrical-melbourne/
+- /tiling-melbourne/
+- /painting-and-plastering-melbourne/
+- /carpentry-and-joinery-melbourne/
+- /property-maintenance-melbourne/
+- /pest-control-melbourne/
+- /cleaning-melbourne/
+- /roofing-melbourne/
+
+## Renovation & build services
+- /kitchen-renovations-melbourne/
+- /bathroom-renovations-melbourne/
+- /heritage-renovations-melbourne/
+- /heritage-home-extensions-melbourne/
+- /home-renovations-melbourne/
+- /new-builds-melbourne/
+
+## Location pages
+- /heritage-renovations-brighton/
+- /heritage-renovations-armadale/
+- /heritage-renovations-malvern/
+- /heritage-renovations-albert-park/
+- /heritage-renovations-elwood/
+
+## Business facts
+- Legal name: Nicon Built Pty Ltd
+- Founder: Nick Kafkalas, licensed builder
+- Founded: 1990
+- Based in: Port Melbourne, VIC 3207 (suburb only — street address is private)
+- ABN: 88 632 512 577
+- VBA licence: CDB-U 62648
+- Experience: 30+ years (since 1990)
+- Google rating: 5.0 from 9 reviews
+- Projects completed: 200+
+- Warranties: 365-day maintenance period; 7-year structural warranty
+
+## Service area
+Port Melbourne, Albert Park, Middle Park, South Melbourne, Elwood, St Kilda, Brighton, Hampton, Sandringham, Beaumaris, Armadale, Malvern, South Yarra, Williamstown, Moorabbin, Bentleigh, Caulfield, Elsternwick, Camberwell, Hawthorn, Kew
 
 ## Contact
-- Enquiries: via the contact form at /contact/
-- Based in: Port Melbourne, VIC
-- Service area: Melbourne's inner south and bayside suburbs
+- Enquiries: contact form at /contact/ (preferred — no public email on site)
+- Phone: published when GHL lead-gen number is issued
+
+## Redirects
+Legacy URLs from the old WordPress site (e.g. /home-maintenance-melbourne/) redirect to current pages via 301 rules in the Next.js app.
