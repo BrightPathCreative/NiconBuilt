@@ -13,6 +13,7 @@
 
 .bgImage {
   object-fit: cover;
+  animation: heroBgIn 1.1s var(--ease-out) both;
 }
 
 .overlay {
@@ -43,6 +44,8 @@
 .text h1 {
   color: #fff;
   margin-bottom: 20px;
+  animation: heroUpIn 0.7s var(--ease-out) both;
+  animation-delay: 150ms;
 }
 
 .description {
@@ -51,6 +54,8 @@
   color: rgba(255, 255, 255, 0.88);
   max-width: 520px;
   margin-bottom: 24px;
+  animation: heroUpIn 0.7s var(--ease-out) both;
+  animation-delay: 250ms;
 }
 
 .trust {
@@ -65,6 +70,39 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  animation: heroUpIn 0.7s var(--ease-out) both;
+  animation-delay: 350ms;
+}
+
+@keyframes heroBgIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heroUpIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bgImage,
+  .eyebrow,
+  .text h1,
+  .description,
+  .ctas,
+  .formWrap {
+    animation: none;
+  }
 }
 
 .ctas .btn-outline,
@@ -78,9 +116,16 @@
   display: none;
 }
 
+.eyebrow {
+  animation: heroUpIn 0.7s var(--ease-out) both;
+  animation-delay: 60ms;
+}
+
 .formWrap {
   width: 100%;
   justify-self: end;
+  animation: heroUpIn 0.8s var(--ease-out) both;
+  animation-delay: 450ms;
 }
 
 @media (max-width: 900px) {

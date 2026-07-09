@@ -1,6 +1,6 @@
 ---
 title: The Importance of Collaboration in Building
-excerpt: Why collaboration between architect, designer and builder — and clear communication with clients — delivers better building outcomes.
+excerpt: Why collaboration between architect, designer and builder, and clear communication with clients, delivers better building outcomes.
 date: 2023-02-02
 published: true
 image: /images/blog/the-importance-of-collaboration-in-building.webp

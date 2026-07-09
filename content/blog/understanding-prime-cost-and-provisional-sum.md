@@ -4,7 +4,7 @@ excerpt: A plain-English guide to prime cost and provisional sum items in your b
 date: 2022-02-24
 published: true
 image: /images/blog/understanding-prime-cost-and-provisional-sum.webp
-imageAlt: Open-plan kitchen and dining extension with gable window — Nicon Built
+imageAlt: Open-plan kitchen and dining extension with gable window by Nicon Built
 ---
 
 Before embarking on your next home build, it's important to be aware of the terms that will define your project. When it comes to prime cost and provisional sum, too many people aren't aware of the impact these figures can have on their project and budget.

@@ -1,10 +1,10 @@
 ---
 title: How to Design for a Narrow Block
-excerpt: How to make the most of a narrow inner-Melbourne block — from local knowledge to natural light and vertical space.
+excerpt: How to make the most of a narrow inner-Melbourne block, from local knowledge to natural light and vertical space.
 date: 2023-02-12
 published: true
 image: /images/blog/how-to-design-for-a-narrow-block.webp
-imageAlt: Modern narrow-block home facade at dusk — Nicon Built
+imageAlt: Modern narrow-block home facade at dusk by Nicon Built
 ---
 
 While designing for a small block can present a number of challenges, there's no reason why you can't go ahead and create and build your dream home. When you work with Nicon Built, we assess the best options for maximising the available space to your advantage — whether you intend on building a new home on your block, or expanding your current home.

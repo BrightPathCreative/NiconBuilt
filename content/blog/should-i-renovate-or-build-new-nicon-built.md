@@ -4,7 +4,7 @@ excerpt: Practical guidance on choosing between renovating your existing home an
 date: 2023-03-12
 published: true
 image: /images/blog/should-i-renovate-or-build-new-nicon-built.webp
-imageAlt: Modern rear extension with pool and glass fencing — Nicon Built
+imageAlt: Modern rear extension with pool and glass fencing by Nicon Built
 ---
 
 It's one of the most common questions we hear: should I renovate or build new? The answer depends on your block, your home's condition, council controls, and what you're trying to achieve.

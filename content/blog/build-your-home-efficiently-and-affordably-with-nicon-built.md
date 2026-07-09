@@ -4,7 +4,7 @@ excerpt: How Nicon Built's 6-step process and 25+ years of experience help you b
 date: 2020-01-16
 published: true
 image: /images/blog/build-your-home-efficiently-and-affordably-with-nicon-built.webp
-imageAlt: Open-plan kitchen and dining renovation with island bench — Nicon Built
+imageAlt: Open-plan kitchen and dining renovation with island bench by Nicon Built
 ---
 
 Do you want to build your own, customised home? As the leading home builders in Melbourne we know how important it is for you to have the flexibility to customise your home to suit your unique needs. Whether you are building your first home or want a new home for your family at a reasonable, competitive rate, we have a solution.

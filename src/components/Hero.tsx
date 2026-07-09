@@ -45,7 +45,7 @@ export function Hero({
 
       <div className={`container ${styles.content} ${showForm ? styles.contentWithForm : ""}`}>
         <div className={styles.text}>
-          <p className="eyebrow eyebrow--dark">{eyebrow}</p>
+          <p className={`eyebrow eyebrow--dark ${styles.eyebrow}`}>{eyebrow}</p>
           <h1>{title}</h1>
           {description
             ? (Array.isArray(description) ? description : [description]).map((paragraph) => (

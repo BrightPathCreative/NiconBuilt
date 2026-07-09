@@ -4,7 +4,7 @@ excerpt: Five practical tips for anyone designing and building a new home, from 
 date: 2022-07-22
 published: true
 image: /images/blog/top-building-tips-from-an-architectural-builder.webp
-imageAlt: New weatherboard-style home build at dusk — Nicon Built
+imageAlt: New weatherboard-style home build at dusk by Nicon Built
 ---
 
 When you're designing and building a new home, it's easy to become overwhelmed by *everything* that needs to be done. It's a massive emotional and financial investment, and trying to be across every detail may result in the exact opposite.
