@@ -1,13 +1,61 @@
 .heroGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 48px;
   align-items: center;
+}
+
+.heroCopy {
+  display: grid;
+  gap: 24px;
 }
 
 .intro {
   font-size: 18px;
   line-height: 1.6;
+  color: var(--color-text-muted-alt);
+}
+
+.founderCard {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 20px;
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  max-width: 560px;
+}
+
+.founderPortrait {
+  position: relative;
+  width: 96px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.founderPortraitImage {
+  object-fit: cover;
+}
+
+.founderLabel {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.founderName {
+  margin: 0 0 6px;
+  font-size: clamp(22px, 3vw, 28px);
+}
+
+.founderMeta {
+  margin: 0;
   color: var(--color-text-muted-alt);
 }
 
@@ -23,70 +71,227 @@
   object-fit: cover;
 }
 
-.sectionGrid {
+.storySection {
+  overflow: hidden;
+}
+
+.storyGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   gap: 48px;
   align-items: center;
 }
 
-.sectionImage,
-.sectionImagePortrait {
+.storyStats {
+  display: grid;
+  gap: 20px;
+}
+
+.storyStats > div {
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.statValue {
+  display: block;
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.statLabel {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.workImage,
+.audienceImage {
   position: relative;
   width: 100%;
+  min-height: 440px;
   border-radius: var(--radius-card);
   overflow: hidden;
 }
 
-.sectionImage {
-  aspect-ratio: 4 / 3;
+.workStack {
+  display: grid;
+  gap: 24px;
 }
 
-.sectionImagePortrait {
-  aspect-ratio: 3 / 4;
-  max-width: 420px;
+.relationshipCard {
+  padding: 28px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
 }
 
-.sectionImageEl {
+.relationshipCard h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.relationshipCard p:last-child {
+  margin-bottom: 0;
+}
+
+.bandSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.bandMedia {
+  position: absolute;
+  inset: 0;
+}
+
+.bandImage {
   object-fit: cover;
 }
 
+.bandOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(15, 14, 12, 0.88) 0%, rgba(15, 14, 12, 0.72) 45%, rgba(15, 14, 12, 0.55) 100%),
+    linear-gradient(180deg, rgba(15, 14, 12, 0.2) 0%, rgba(15, 14, 12, 0.55) 100%);
+}
+
+.bandContent {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 32px;
+  color: var(--color-surface-white);
+}
+
+.bandIntro {
+  max-width: 740px;
+}
+
+.bandIntro h2 {
+  color: var(--color-surface-white);
+}
+
+.bandIntro p {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.processCard {
+  padding: 24px;
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(4px);
+}
+
+.processCard h3 {
+  margin: 0 0 12px;
+  color: var(--color-surface-white);
+}
+
+.processCard p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.processIndex {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.audienceGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 24px;
+}
+
+.promisePanel,
+.credentialsPanel {
+  padding: 32px;
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+
+.promisePanel h2,
+.credentialsPanel h2 {
+  margin-top: 0;
+}
+
 .promiseList {
-  margin-top: 24px;
+  margin-top: 18px;
   padding-left: 20px;
   font-size: 16px;
   line-height: 1.8;
 }
 
 .credentials {
-  margin-top: 24px;
+  margin-top: 18px;
   padding-left: 20px;
   line-height: 1.8;
 }
 
-.serviceLinks {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 12px;
-  margin-top: 24px;
-}
-
-.serviceLinks a {
-  text-decoration: none;
-  font-weight: 600;
-  padding: 16px 20px;
-  background: var(--color-surface-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
+.sectionImageEl {
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
   .heroGrid,
-  .sectionGrid {
+  .storyGrid,
+  .workGrid,
+  .audienceGrid,
+  .trustGrid,
+  .processGrid {
     grid-template-columns: 1fr;
   }
 
-  .sectionImagePortrait {
-    max-width: 280px;
+  .founderCard {
+    grid-template-columns: 72px 1fr;
+    gap: 14px;
+  }
+
+  .founderPortrait {
+    width: 72px;
+  }
+
+  .workImage,
+  .audienceImage {
+    min-height: 320px;
+  }
+
+  .promisePanel,
+  .credentialsPanel,
+  .relationshipCard,
+  .processCard {
+    padding: 24px;
   }
 }

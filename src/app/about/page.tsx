@@ -16,39 +16,6 @@ const breadcrumbs = [
   { name: "About", href: "/about/" },
 ];
 
-const sectionTitles = [
-  "Built on Experience. Driven by Quality.",
-  "How We Work",
-  "A Business Built on Relationships",
-  "Our Process",
-  "Who We Work With",
-];
-
-/** One relevant image per About section — Nick's portrait sits here (not in the hero) alongside "How We Work". */
-const sectionMedia: Record<string, { src: string; alt: string; portrait?: boolean }> = {
-  "Built on Experience. Driven by Quality.": {
-    src: images.heritageRenovations,
-    alt: "Heritage home renovation completed by Nicon Built, reflecting decades of craftsmanship",
-  },
-  "How We Work": {
-    src: images.nickPortrait,
-    alt: "Nick Kafkalas, founder of Nicon Built, on site",
-    portrait: true,
-  },
-  "A Business Built on Relationships": {
-    src: images.gallery[0],
-    alt: "Heritage weatherboard cottage renovation completed for a returning Nicon Built client",
-  },
-  "Our Process": {
-    src: images.gallery[4],
-    alt: "Two-storey extension underway, managed start to finish by Nicon Built",
-  },
-  "Who We Work With": {
-    src: images.gallery[10],
-    alt: "Victorian terrace verandah restoration, South Melbourne — completed by Nicon Built",
-  },
-};
-
 export default function AboutPage() {
   const copy = loadCopy("about");
   const promiseBlock = getSectionParagraphs(copy, "Our Promise").join("\n");
@@ -60,6 +27,35 @@ export default function AboutPage() {
     .map((l) => l.replace(/^-\s*/, ""));
 
   const introParagraphs = getSectionParagraphs(copy, "Headline").slice(1);
+  const experienceParagraphs = getSectionParagraphs(copy, "Built on Experience. Driven by Quality.");
+  const workParagraphs = getSectionParagraphs(copy, "How We Work");
+  const relationshipsParagraphs = getSectionParagraphs(copy, "A Business Built on Relationships");
+  const processParagraphs = getSectionParagraphs(copy, "Our Process");
+  const audienceParagraphs = getSectionParagraphs(copy, "Who We Work With");
+  const credentialItems = getSectionParagraphs(copy, "Credentials")
+    .join("\n")
+    .split("\n")
+    .filter((l) => l.startsWith("- "))
+    .map((l) => l.replace(/^-\s*/, ""));
+
+  const processSteps = [
+    {
+      title: "Start with a proper conversation",
+      body: processParagraphs[0],
+    },
+    {
+      title: "Assess the site before quoting",
+      body: processParagraphs[1],
+    },
+    {
+      title: "Communicate before changes happen",
+      body: processParagraphs[2],
+    },
+    {
+      title: "Solve issues without losing momentum",
+      body: `${processParagraphs[3]} ${processParagraphs[4] ?? ""}`.trim(),
+    },
+  ];
 
   return (
     <>
@@ -71,13 +67,33 @@ export default function AboutPage() {
       <section className="section">
         <div className="container">
           <div className={styles.heroGrid}>
-            <div>
+            <div className={styles.heroCopy}>
+              <p className="eyebrow">About Nicon Built</p>
               <h1>{copy.headline}</h1>
               {introParagraphs.map((p) => (
                 <p key={p.slice(0, 40)} className={styles.intro}>
                   {p}
                 </p>
               ))}
+              <div className={styles.founderCard}>
+                <div className={styles.founderPortrait}>
+                  <Image
+                    src={images.nickPortrait}
+                    alt="Nick Kafkalas, founder of Nicon Built, on site"
+                    fill
+                    sizes="120px"
+                    className={styles.founderPortraitImage}
+                  />
+                </div>
+                <div>
+                  <p className={styles.founderLabel}>Founder-led from first quote to handover</p>
+                  <h2 className={styles.founderName}>Nick Kafkalas</h2>
+                  <p className={styles.founderMeta}>
+                    Licensed builder. Established Port Melbourne, 1990. Every job managed
+                    personally.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className={styles.heroImage}>
               <Image
@@ -93,71 +109,28 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {sectionTitles.map((title, index) => {
-        const paragraphs = getSectionParagraphs(copy, title);
-        if (!paragraphs.length) return null;
-        const media = sectionMedia[title];
-        const imageFirst = index % 2 === 0;
-        return (
-          <section
-            key={title}
-            className={`section ${index === 0 ? "section--tone" : ""}`}
-          >
-            <div className="container">
-              <div className={media ? styles.sectionGrid : undefined}>
-                {media && imageFirst ? (
-                  <div className={media.portrait ? styles.sectionImagePortrait : styles.sectionImage}>
-                    <Image
-                      src={media.src}
-                      alt={media.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className={styles.sectionImageEl}
-                    />
-                  </div>
-                ) : null}
-                <div className="prose">
-                  <h2>{title}</h2>
-                  {paragraphs.map((p) => (
-                    <p key={p.slice(0, 40)}>{p}</p>
-                  ))}
-                </div>
-                {media && !imageFirst ? (
-                  <div className={media.portrait ? styles.sectionImagePortrait : styles.sectionImage}>
-                    <Image
-                      src={media.src}
-                      alt={media.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className={styles.sectionImageEl}
-                    />
-                  </div>
-                ) : null}
-              </div>
-            </div>
-          </section>
-        );
-      })}
-
-      <section className="section section--surface">
+      <section className={`section section--tone ${styles.storySection}`}>
         <div className="container">
-          <div className={styles.sectionGrid}>
-            <div className={styles.sectionImage}>
-              <Image
-                src={images.gallery[9]}
-                alt="Indoor-outdoor entertaining space, St Kilda — completed by Nicon Built"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className={styles.sectionImageEl}
-              />
+          <div className={styles.storyGrid}>
+            <div className="prose">
+              <h2>Built on Experience. Driven by Quality.</h2>
+              {experienceParagraphs.map((p) => (
+                <p key={p.slice(0, 40)}>{p}</p>
+              ))}
             </div>
-            <div>
-              <h2>Our Promise</h2>
-              <ul className={styles.promiseList}>
-                {promiseItems.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+            <div className={styles.storyStats}>
+              <div>
+                <span className={styles.statValue}>30+</span>
+                <span className={styles.statLabel}>years on the tools</span>
+              </div>
+              <div>
+                <span className={styles.statValue}>1990</span>
+                <span className={styles.statLabel}>established in Port Melbourne</span>
+              </div>
+              <div>
+                <span className={styles.statValue}>200+</span>
+                <span className={styles.statLabel}>projects completed</span>
+              </div>
             </div>
           </div>
         </div>
@@ -165,22 +138,115 @@ export default function AboutPage() {
 
       <section className="section">
         <div className="container">
-          <h2>Credentials</h2>
-          <ul className={styles.credentials}>
-            {getSectionParagraphs(copy, "Credentials")
-              .join("\n")
-              .split("\n")
-              .filter((l) => l.startsWith("- "))
-              .map((l) => l.replace(/^-\s*/, ""))
-              .map((item) => (
-                <li key={item}>
-                  {item}
-                  {item.includes("VBA Licensed") && siteConfig.vbaLicence
-                    ? ` — ${siteConfig.vbaLicence}`
-                    : ""}
-                </li>
+          <div className={styles.workGrid}>
+            <div className={styles.workImage}>
+              <Image
+                src={images.gallery[0]}
+                alt="Heritage weatherboard cottage renovation completed for a returning Nicon Built client"
+                fill
+                sizes="(max-width: 768px) 100vw, 45vw"
+                className={styles.sectionImageEl}
+              />
+            </div>
+            <div className={styles.workStack}>
+              <div className="prose">
+                <h2>How We Work</h2>
+                {workParagraphs.map((p) => (
+                  <p key={p.slice(0, 40)}>{p}</p>
+                ))}
+              </div>
+              <div className={styles.relationshipCard}>
+                <h3>A Business Built on Relationships</h3>
+                {relationshipsParagraphs.map((p) => (
+                  <p key={p.slice(0, 40)}>{p}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`section ${styles.bandSection}`}>
+        <div className={styles.bandMedia}>
+          <Image
+            src={images.gallery[4]}
+            alt="Two-storey extension underway, managed start to finish by Nicon Built"
+            fill
+            sizes="100vw"
+            className={styles.bandImage}
+          />
+          <div className={styles.bandOverlay} aria-hidden="true" />
+        </div>
+        <div className={`container ${styles.bandContent}`}>
+          <div className={styles.bandIntro}>
+            <p className="eyebrow eyebrow--dark">Our process</p>
+            <h2>Clear from the first conversation. Solid through the handover.</h2>
+            <p>
+              The process matters almost as much as the workmanship. This is how jobs stay
+              organised, honest, and predictable.
+            </p>
+          </div>
+          <div className={styles.processGrid}>
+            {processSteps.map((step, index) => (
+              <div key={step.title} className={styles.processCard}>
+                <span className={styles.processIndex}>0{index + 1}</span>
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className={styles.audienceGrid}>
+            <div className="prose">
+              <h2>Who We Work With</h2>
+              {audienceParagraphs.map((p) => (
+                <p key={p.slice(0, 40)}>{p}</p>
               ))}
-          </ul>
+            </div>
+            <div className={styles.audienceImage}>
+              <Image
+                src={images.gallery[10]}
+                alt="Victorian terrace verandah restoration, South Melbourne — completed by Nicon Built"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className={styles.sectionImageEl}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--surface">
+        <div className="container">
+          <div className={styles.trustGrid}>
+            <div className={styles.promisePanel}>
+              <p className="eyebrow">Our promise</p>
+              <h2>What you can count on</h2>
+              <ul className={styles.promiseList}>
+                {promiseItems.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className={styles.credentialsPanel}>
+              <p className="eyebrow">Credentials</p>
+              <h2>Licensed, insured, and accountable</h2>
+              <ul className={styles.credentials}>
+                {credentialItems.map((item) => (
+                  <li key={item}>
+                    {item}
+                    {item.includes("VBA Licensed") && siteConfig.vbaLicence
+                      ? ` — ${siteConfig.vbaLicence}`
+                      : ""}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
