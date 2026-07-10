@@ -36,20 +36,75 @@
   text-underline-offset: 2px;
 }
 
-/* Keeps the GHL iframe from wrapping/overflowing oddly in the layout */
 .frameWrap {
   position: relative;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .frame {
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
+  width: 100%;
+  border: none;
   border-radius: 8px;
-  background: transparent !important;
+  background: transparent;
   display: block;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.frameVisible {
+  opacity: 1;
+}
+
+.loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 8px 4px;
+  pointer-events: none;
+}
+
+.loadingBar,
+.loadingBarShort {
+  display: block;
+  height: 44px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--color-tone-band) 0%,
+    var(--color-surface) 50%,
+    var(--color-tone-band) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
+}
+
+.loadingBarShort {
+  width: 42%;
+  height: 40px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame,
+  .loadingBar,
+  .loadingBarShort {
+    animation: none;
+    transition: none;
+  }
+
+  .frameVisible {
+    opacity: 1;
+  }
 }

@@ -32,8 +32,8 @@ export const siteConfig = {
       process.env.NEXT_PUBLIC_GHL_FORM_EMBED_SCRIPT_SRC?.trim() ||
       "https://links.brightpathcreative.com.au/js/form_embed.js",
     name: "Nicon Built Contact Us Form",
-    /** Must match data-height from the GHL embed snippet */
-    height: 533,
+    /** Starting height — form_embed.js / postMessage may grow this after load */
+    height: 1100,
   },
   stats: {
     years: "30+",
