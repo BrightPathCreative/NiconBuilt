@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CallButton } from "@/components/CallButton";
-import { ContactForm } from "@/components/ContactForm";
+import { GhlEmbedForm } from "@/components/GhlEmbedForm";
 import { JsonLd } from "@/components/JsonLd";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
@@ -88,7 +88,7 @@ export default function ContactPage() {
       <section className={`section section--surface ${styles.contactSection}`}>
         <div className={`container ${styles.grid}`}>
           <div className={styles.formCol}>
-            <ContactForm
+            <GhlEmbedForm
               title="Request a Free Quote"
               subtitle={
                 <>

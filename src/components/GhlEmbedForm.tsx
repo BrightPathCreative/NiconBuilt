@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import Script from "next/script";
 import { useRouter } from "next/navigation";
 import { siteConfig } from "@/lib/site";
@@ -25,6 +25,8 @@ type Props = {
   compact?: boolean;
   showTitle?: boolean;
   title?: string;
+  /** Optional line under the title (e.g. privacy note). */
+  subtitle?: ReactNode;
   className?: string;
   /**
    * Path to send visitors to after a detected submission (fires after GA4 event).
@@ -74,11 +76,12 @@ function extractSubmittedFormId(data: unknown): string | null | undefined {
 export function GhlEmbedForm({
   formId = siteConfig.ghlContactForm.id,
   src = siteConfig.ghlContactForm.src,
-  height = 625,
+  height = siteConfig.ghlContactForm.height,
   formName = siteConfig.ghlContactForm.name,
   compact = false,
   showTitle = true,
   title = "Get in Touch",
+  subtitle,
   className,
   redirectOnSubmit = "/thank-you/",
 }: Props) {
@@ -139,7 +142,8 @@ export function GhlEmbedForm({
         id="ghl-form-embed-script"
       />
       {showTitle ? <h2 className={styles.title}>{title}</h2> : null}
-      <div className={styles.frameWrap} style={{ minHeight: height }}>
+      {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
+      <div className={styles.frameWrap} style={{ height }}>
         <iframe
           src={iframeSrc}
           className={styles.frame}

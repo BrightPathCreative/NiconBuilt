@@ -23,14 +23,33 @@
   margin-bottom: 14px;
 }
 
+.subtitle {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  margin: -8px 0 16px;
+}
+
+.subtitle a {
+  color: var(--color-accent-label);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Keeps the GHL iframe from wrapping/overflowing oddly in the layout */
 .frameWrap {
   position: relative;
   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .frame {
-  width: 100%;
-  border: none;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
   border-radius: 8px;
+  background: transparent !important;
   display: block;
 }
