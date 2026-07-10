@@ -18,6 +18,7 @@ type Props = {
   title?: string;
   /** Short reassurance line rendered under the title (e.g. privacy note). */
   subtitle?: React.ReactNode;
+  className?: string;
 };
 
 export function ContactForm({
@@ -25,6 +26,7 @@ export function ContactForm({
   showTitle = true,
   title = "Get in Touch",
   subtitle,
+  className,
 }: Props) {
   const router = useRouter();
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
@@ -69,7 +71,7 @@ export function ContactForm({
 
   return (
     <form
-      className={`${styles.form} ${compact ? styles.compact : ""}`}
+      className={`${styles.form} ${compact ? styles.compact : ""} ${className ?? ""}`}
       onSubmit={handleSubmit}
       noValidate
     >

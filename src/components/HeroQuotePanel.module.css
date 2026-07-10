@@ -1,0 +1,133 @@
+.panel {
+  background: var(--color-surface-white);
+  border: 1px solid var(--color-border-alt);
+  border-radius: 20px;
+  padding: 28px 26px 24px;
+  box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.45);
+  width: 100%;
+}
+
+.title {
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  color: var(--color-primary);
+  margin: 0 0 8px;
+}
+
+.lead {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.benefits {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--color-primary);
+}
+
+.check {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent-label);
+  background: color-mix(in oklab, var(--color-accent) 18%, white);
+}
+
+.toggle {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 14px 22px;
+  border: none;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.toggle:hover {
+  background: var(--color-secondary);
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.chevron {
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.formSlot {
+  margin-top: 18px;
+  padding-top: 4px;
+  border-top: 1px solid var(--color-border);
+  animation: formIn 0.3s var(--ease-out) both;
+}
+
+.formSlotOpen {
+  display: block;
+}
+
+/* Flatten nested form chrome so it sits inside this panel */
+.embeddedForm {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 16px 0 0 !important;
+}
+
+@keyframes formIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle,
+  .chevron,
+  .formSlot {
+    transition: none;
+    animation: none;
+  }
+}
