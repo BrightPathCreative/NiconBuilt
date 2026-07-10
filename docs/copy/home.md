@@ -37,32 +37,32 @@ Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, 
 2. **Bathroom Renovations** — Waterproofing before tiling. Plumbing before fixtures. Every trade in the right sequence, held to the right standard. Nick manages the whole job.
    Sub: Full bathroom renovations · Ensuite upgrades · Waterproofing · Tiling and fixtures · Period home bathrooms
 
-3. **Carpentry and Joinery** — Decking, doors, cabinetry, custom shelving, pergolas, and period joinery. Built to last and finished properly.
-   Sub: Decking and pergolas · Doors and frames · Custom cabinetry · Skirting and architraves · Period joinery
-
-4. **Painting and Plastering** — The finish depends on what's underneath it. We repair the plaster properly first, then paint. Interior and exterior, across Melbourne's inner south.
-   Sub: Interior and exterior painting · Plaster repairs · Cornice work · Heritage plasterwork · Full replasters
-
-5. **Tiling** — Kitchens, bathrooms, laundries, alfresco areas. Every tile laid properly, every joint consistent, waterproofed where required.
-   Sub: Kitchen tiling · Bathroom tiling · Outdoor and alfresco · Feature walls · Period tile matching
-
-6. **Plumbing** — New installations, hot water systems, repairs, and plumbing coordination across renovation projects. Carried out by licensed plumbers, coordinated by Nicon Built.
-   Sub: Kitchen and bathroom plumbing · Hot water systems · Tap and fixture installation · Pipe repairs · Drainage
-
-7. **Electrical** — Lighting, power points, switchboard upgrades, and electrical coordination within renovations. Carried out by licensed electricians, coordinated by Nicon Built.
-   Sub: Lighting installation · Power points · Switchboard upgrades · Outdoor electrical · Renovation coordination
-
-8. **Property Maintenance** — Whatever needs doing around the home, we coordinate every trade so you don't have to. One call, one team, everything managed.
+3. **Property Maintenance** — Whatever needs doing around the home, we coordinate every trade so you don't have to. One call, one team, everything managed.
    Sub: General repairs · Trade coordination · Planned maintenance · Emergency repairs · End-to-end management
 
-9. **Pest Control** — Inspections and treatments for termites, rodents, and general pests. Carried out by licensed pest technicians, coordinated by Nicon Built.
+4. **Carpentry and Joinery** — Decking, doors, cabinetry, custom shelving, pergolas, and period joinery. Built to last and finished properly.
+   Sub: Decking and pergolas · Doors and frames · Custom cabinetry · Skirting and architraves · Period joinery
+
+5. **Painting and Plastering** — The finish depends on what's underneath it. We repair the plaster properly first, then paint. Interior and exterior, across Melbourne's inner south.
+   Sub: Interior and exterior painting · Plaster repairs · Cornice work · Heritage plasterwork · Full replasters
+
+6. **Tiling** — Kitchens, bathrooms, laundries, alfresco areas. Every tile laid properly, every joint consistent, waterproofed where required.
+   Sub: Kitchen tiling · Bathroom tiling · Outdoor and alfresco · Feature walls · Period tile matching
+
+7. **Plumbing** — New installations, hot water systems, repairs, and plumbing coordination across renovation projects. Carried out by licensed plumbers, coordinated by Nicon Built.
+   Sub: Kitchen and bathroom plumbing · Hot water systems · Tap and fixture installation · Pipe repairs · Drainage
+
+8. **Roofing** — Leaks, damaged tiles, worn flashings, and gutter issues. Prompt attention before roof problems cause damage inside the home.
+   Sub: Roof leak repairs · Tile and metal roofing · Flashing and valley repairs · Heritage roof restoration · Gutter coordination
+
+9. **Electrical** — Lighting, power points, switchboard upgrades, and electrical coordination within renovations. Carried out by licensed electricians, coordinated by Nicon Built.
+   Sub: Lighting installation · Power points · Switchboard upgrades · Outdoor electrical · Renovation coordination
+
+10. **Pest Control** — Inspections and treatments for termites, rodents, and general pests. Carried out by licensed pest technicians, coordinated by Nicon Built.
    Sub: Termite inspections · General pest treatments · Rodent control · Pre-purchase inspections · Follow-up monitoring
 
-10. **Cleaning** — End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The job isn't finished until the home is ready to live in.
+11. **Cleaning** — End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The job isn't finished until the home is ready to live in.
    Sub: End-of-job cleaning · Bond and end-of-lease cleans · Regular scheduled cleaning · Post-construction cleans
-
-11. **Roofing** — Leaks, damaged tiles, worn flashings, and gutter issues. Prompt attention before roof problems cause damage inside the home.
-   Sub: Roof leak repairs · Tile and metal roofing · Flashing and valley repairs · Heritage roof restoration · Gutter coordination
 
 12. **Heritage Renovations and Restorations** — Victorian, Edwardian, and Federation homes restored properly, with period materials and 30 years of heritage experience.
    Sub: Victorian restorations · Edwardian renovation · Federation conservation · Heritage overlay compliance · Period material matching
