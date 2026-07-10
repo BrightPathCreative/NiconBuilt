@@ -1,0 +1,105 @@
+old_path,new_path,status,rule,notes
+/,/,SAME,exact-slug,Exists on new site
+/about/,/about/,SAME,exact-slug,Exists on new site
+/blog/,/blog/,SAME,exact-slug,Exists on new site
+/contact/,/contact/,SAME,exact-slug,Exists on new site
+/privacy-policy/,/privacy-policy/,SAME,exact-slug,Exists on new site
+/services/,/services/,SAME,exact-slug,Exists on new site
+/testimonials/,/testimonials/,SAME,exact-slug,Exists on new site
+/work/,/our-work/,ALREADY_COVERED,pattern:work,
+/team/,/about/,ALREADY_COVERED,pattern:team,
+/guarantees/,/about/,ALREADY_COVERED,pattern:guarantees,
+/videos/,/our-work/,REVIEW,semantic,Video showcase page; /our-work/ closest. Confirm or send to /
+/custom-home-builders-thank-you/,/thank-you/,REDIRECT,semantic,Old TYP page
+/category/blog/,/blog/,ALREADY_COVERED,pattern:archive,
+/category/uncategorized/,/blog/,ALREADY_COVERED,pattern:archive,
+/tag/blog/,/blog/,ALREADY_COVERED,pattern:archive,
+/tag/custom-homes/,/blog/,ALREADY_COVERED,pattern:archive,
+/tag/heritage-renovation/,/blog/,ALREADY_COVERED,pattern:archive,
+/tag/renovation/,/blog/,ALREADY_COVERED,pattern:archive,
+/tag/smart-homes/,/blog/,ALREADY_COVERED,pattern:archive,
+/theplus_testimonial/,/testimonials/,ALREADY_COVERED,pattern:testimonial-cpt,
+/theplus_testimonial/costas/,/testimonials/,ALREADY_COVERED,pattern:testimonial-cpt,
+/theplus_testimonial/tony-4/,/testimonials/,ALREADY_COVERED,pattern:testimonial-cpt,
+/theplus_testimonial/tony-and-mary/,/testimonials/,ALREADY_COVERED,pattern:testimonial-cpt,
+/theplus_testimonial/vicki/,/testimonials/,ALREADY_COVERED,pattern:testimonial-cpt,
+/custom-home-builders-bayside-city/,/home-renovations-melbourne/,ALREADY_COVERED,pattern:custom-home-builders,
+/design-build-bayside-city/,/new-builds-melbourne/,ALREADY_COVERED,pattern:design-build,
+/heritage-home-builders-bayside-city/,/heritage-renovations-melbourne/,ALREADY_COVERED,pattern:heritage-home-builders,
+/custom-home-builders-city-of-boroondara/,/home-renovations-melbourne/,ALREADY_COVERED,pattern:custom-home-builders,
+/design-build-city-of-boroondara/,/new-builds-melbourne/,ALREADY_COVERED,pattern:design-build,
+/heritage-home-builders-city-of-boroondara/,/heritage-renovations-melbourne/,ALREADY_COVERED,pattern:heritage-home-builders,
+/custom-home-builders-city-of-glen-eira/,/home-renovations-melbourne/,ALREADY_COVERED,pattern:custom-home-builders,
+/design-build-city-of-glen-eira/,/new-builds-melbourne/,ALREADY_COVERED,pattern:design-build,
+/heritage-home-builders-city-of-glen-eira/,/heritage-renovations-melbourne/,ALREADY_COVERED,pattern:heritage-home-builders,
+/custom-home-builders-city-of-port-phillip/,/home-renovations-melbourne/,ALREADY_COVERED,pattern:custom-home-builders,
+/design-build-city-of-port-phillip/,/new-builds-melbourne/,ALREADY_COVERED,pattern:design-build,
+/heritage-home-builders-city-of-port-phillip/,/heritage-renovations-melbourne/,ALREADY_COVERED,pattern:heritage-home-builders,
+/custom-home-builders-city-of-stonnington/,/home-renovations-melbourne/,ALREADY_COVERED,pattern:custom-home-builders,
+/design-build-city-of-stonnington/,/new-builds-melbourne/,ALREADY_COVERED,pattern:design-build,
+/heritage-home-builders-city-of-stonnington/,/heritage-renovations-melbourne/,ALREADY_COVERED,pattern:heritage-home-builders,
+/custom-homes-builders-city-of-stonnington/,/home-renovations-melbourne/,REDIRECT,pattern:custom-home-builders,Slug variant (homes vs home) - add explicit rule
+/builders-albert-park/,/heritage-renovations-albert-park/,REDIRECT,pattern:builders-suburb->heritage-loc,Old 301; map source direct to final (no chain)
+/builders-elwood/,/heritage-renovations-elwood/,REDIRECT,pattern:builders-suburb->heritage-loc,Old 301; map source direct to final (no chain)
+/builders-malvern/,/heritage-renovations-malvern/,REDIRECT,pattern:builders-suburb->heritage-loc,Old 301; map source direct to final (no chain)
+/builders-newport/,/home-renovations-melbourne/,REDIRECT,pattern:builders-suburb->fallback,Old 301; map source direct to final (no chain)
+/builders-seddon/,/home-renovations-melbourne/,REDIRECT,pattern:builders-suburb->fallback,Old 301; map source direct to final (no chain)
+/builders-south-melbourne/,/home-renovations-melbourne/,REDIRECT,pattern:builders-suburb->fallback,Old 301; map source direct to final (no chain)
+/builders-south-yarra/,/home-renovations-melbourne/,REDIRECT,pattern:builders-suburb->fallback,Old 301; map source direct to final (no chain)
+/builders-spotswood/,/home-renovations-melbourne/,REDIRECT,pattern:builders-suburb->fallback,Old 301; map source direct to final (no chain)
+/builders-st-kilda-west/,/home-renovations-melbourne/,REDIRECT,pattern:builders-suburb->fallback,Old 301; map source direct to final (no chain)
+/builders-williamstown/,/home-renovations-melbourne/,REDIRECT,pattern:builders-suburb->fallback,Old 301; map source direct to final (no chain)
+/home-builders-armdale/,/heritage-renovations-armadale/,REDIRECT,pattern:home-builders-suburb->heritage-loc,"Old URL has typo ""armdale"" - keep typo in rule source"
+/home-builders-bentleigh/,/home-renovations-melbourne/,REDIRECT,pattern:home-builders-suburb->fallback,Old 301; no heritage page for suburb
+/home-builders-brighton/,/heritage-renovations-brighton/,REDIRECT,pattern:home-builders-suburb->heritage-loc,Old 301; heritage location page exists
+/home-builders-hampton/,/home-renovations-melbourne/,REDIRECT,pattern:home-builders-suburb->fallback,Old 301; no heritage page for suburb
+/home-builders-moorabbin/,/home-renovations-melbourne/,REDIRECT,pattern:home-builders-suburb->fallback,Old 301; no heritage page for suburb
+/home-builders-toorak/,/home-renovations-melbourne/,REDIRECT,pattern:home-builders-suburb->fallback,Old 301; no heritage page for suburb
+/home-builders-sandringham/,/home-renovations-melbourne/,REDIRECT,pattern:home-builders-suburb->fallback,Live 200 page; no heritage page for suburb
+/multi-unit-builders-altona-north/,/new-builds-melbourne/,ALREADY_COVERED,pattern:multi-unit-townhouse,Old 301; map direct to final
+/multi-unit-builders-newport/,/new-builds-melbourne/,ALREADY_COVERED,pattern:multi-unit-townhouse,Old 301; map direct to final
+/multi-unit-builders-south-melbourne/,/new-builds-melbourne/,ALREADY_COVERED,pattern:multi-unit-townhouse,Old 301; map direct to final
+/townhouse-builders-altona-north/,/new-builds-melbourne/,ALREADY_COVERED,pattern:multi-unit-townhouse,Old 301; map direct to final
+/townhouse-builders-williamstown/,/new-builds-melbourne/,ALREADY_COVERED,pattern:multi-unit-townhouse,Old 301; map direct to final
+/project-showcase-yarraville/,/our-work/,REDIRECT,semantic,Project showcase content; alt: /blog/ if kept as post
+/renovation-inspirations-before-and-after-success-project-port-melbourne/,/our-work/,REDIRECT,semantic,Project showcase content; alt: /blog/ if kept as post
+/3-heritage-home-styles-youll-see-around-melbourne/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/3-ways-to-invite-the-outside-into-your-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/5-benefits-to-design-and-build/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/5-elements-of-a-modern-bathroom-design/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/5-reasons-why-you-should-rebuild-your-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/5-things-to-keep-in-mind-when-designing-your-dream-kitchen/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/5-ways-an-extension-can-add-value-to-your-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/6-tips-for-downsizers-empty-nesters/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/7-essential-elements-every-luxury-home-needs/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/architectural-design-qa-with-nicon-built-architect-john-caporaso/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/architectural-home-design-whats-trending-in-2022/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/build-your-home-efficiently-and-affordably-with-nicon-built/,/blog/build-your-home-efficiently-and-affordably-with-nicon-built/,REDIRECT,blog-kept,Kept per Nick blog list
+/building-your-first-home-with-a-pool/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/conversions-you-need-for-a-warmer-winter-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/creating-the-ultimate-open-plan-living-space/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/fabulous-at-40-why-experience-matters-in-building/,/blog/fabulous-at-40-why-experience-matters-in-building/,REDIRECT,blog-kept,Kept per Nick blog list
+/how-to-choose-a-builder/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/how-to-create-a-timeless-duplex-design/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/how-to-design-for-a-narrow-block/,/blog/how-to-design-for-a-narrow-block/,REDIRECT,blog-kept,Kept per Nick blog list
+/how-to-downsize-with-the-future-in-mind/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/how-to-ensure-your-project-is-delivered-on-time/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/how-to-keep-your-build-within-budget/,/blog/how-to-keep-your-build-within-budget/,REDIRECT,blog-kept,Kept per Nick blog list
+/how-to-maximise-space-in-your-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/how-to-set-a-realistic-building-budget/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/innovative-design-trends-transforming-homes-in-2024/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/is-design-build-the-right-choice-for-your-new-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/keeping-ahead-of-the-curve-future-proofing-your-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/maximising-the-aspects-of-your-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/multi-unit-development-finance-explained/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/outdoor-living-that-feels-like-a-vacation/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/should-i-renovate-or-build-new-nicon-built/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/the-future-of-smart-homes-integrating-technology-into-your-build/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/the-importance-of-collaboration-in-building/,/blog/the-importance-of-collaboration-in-building/,REDIRECT,blog-kept,Kept per Nick blog list
+/the-keys-to-a-successful-modern-heritage-extension/,/blog/the-keys-to-a-successful-modern-heritage-extension/,REDIRECT,blog-kept,Kept per Nick blog list
+/the-pros-and-cons-of-installing-skylights/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/the-ultimate-guide-to-designing-your-architectural-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/understanding-prime-cost-and-provisional-sum/,/blog/understanding-prime-cost-and-provisional-sum/,REDIRECT,blog-kept,Kept per Nick blog list
+/what-permits-do-you-need-to-extend-a-home/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/what-to-consider-before-undertaking-a-heritage-renovation-in-melbourne/,/blog/,REDIRECT,blog-removed,Removed per Nick blog list; sent to /blog/ hub to preserve topical relevance
+/top-building-tips-from-an-architectural-builder￼/,/blog/top-building-tips-from-an-architectural-builder/,REDIRECT,blog-kept,Kept per Nick blog list | WARNING: old URL contains invisible U+FFFC char - rule must match encoded form %EF%BF%BC

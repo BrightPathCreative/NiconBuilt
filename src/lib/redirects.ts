@@ -1,5 +1,8 @@
-/** Server-side HTTP 301 redirects — Vercel/next.config, not client JS */
+/** Server-side HTTP 301 redirects — Vercel/next.config, not client JS.
+ * Source of truth for mapping decisions: docs/redirects-map.csv
+ */
 import { locationPages } from "./navigation";
+
 export const redirects: {
   source: string;
   destination: string;
@@ -10,6 +13,8 @@ export const redirects: {
   { source: "/work/:path*", destination: "/our-work/", permanent: true },
   { source: "/portfolio-items", destination: "/our-work/", permanent: true },
   { source: "/portfolio-items/:path*", destination: "/our-work/", permanent: true },
+  { source: "/videos", destination: "/our-work/", permanent: true },
+  { source: "/project-showcase-yarraville", destination: "/our-work/", permanent: true },
 
   // Guarantees & team → about
   { source: "/guarantees", destination: "/about/", permanent: true },
@@ -29,8 +34,13 @@ export const redirects: {
   // Unbounce landing pages
   { source: "/unbounce-pages/:path*", destination: "/", permanent: true },
 
-  // Old WP /services/ → new Services Overview (Option A from plan)
-  // New site has Services Overview at /services/ — same slug, no redirect needed for /services/
+  // WP archives / taxonomies / testimonial CPT
+  { source: "/category", destination: "/blog/", permanent: true },
+  { source: "/category/:path*", destination: "/blog/", permanent: true },
+  { source: "/tag", destination: "/blog/", permanent: true },
+  { source: "/tag/:path*", destination: "/blog/", permanent: true },
+  { source: "/theplus_testimonial", destination: "/testimonials/", permanent: true },
+  { source: "/theplus_testimonial/:path*", destination: "/testimonials/", permanent: true },
 
   // Suburb builder pages → location or service pages
   ...generateBuilderRedirects(),
@@ -47,7 +57,7 @@ export const redirects: {
   // Design-build pages → new builds
   ...generateDesignBuildRedirects(),
 
-  // Old blog posts at root → /blog/ or homepage
+  // Old blog posts at root → /blog/{slug}/ or /blog/
   ...generateBlogRedirects(),
 
   // v8 service slug consolidation
@@ -95,6 +105,7 @@ function locationDestination(suburb: string): string {
   const suburbMap: Record<string, string> = {
     brighton: "/heritage-renovations-brighton/",
     armadale: "/heritage-renovations-armadale/",
+    armdale: "/heritage-renovations-armadale/", // old WP typo
     malvern: "/heritage-renovations-malvern/",
     "albert-park": "/heritage-renovations-albert-park/",
     elwood: "/heritage-renovations-elwood/",
@@ -108,6 +119,9 @@ function locationDestination(suburb: string): string {
     spotswood: "/home-renovations-melbourne/",
     seddon: "/home-renovations-melbourne/",
     williamstown: "/home-renovations-melbourne/",
+    "south-melbourne": "/home-renovations-melbourne/",
+    "st-kilda": "/home-renovations-melbourne/",
+    "st-kilda-west": "/home-renovations-melbourne/",
   };
   return suburbMap[suburb] ?? "/home-renovations-melbourne/";
 }
@@ -117,6 +131,7 @@ function generateBuilderRedirects() {
     "elwood",
     "brighton",
     "armadale",
+    "armdale", // typo in old WP URL — keep as source
     "malvern",
     "albert-park",
     "south-yarra",
@@ -129,7 +144,9 @@ function generateBuilderRedirects() {
     "spotswood",
     "seddon",
     "williamstown",
+    "south-melbourne",
     "st-kilda",
+    "st-kilda-west",
     "middle-park",
     "sandringham",
     "beaumaris",
@@ -167,6 +184,10 @@ function generateMultiUnitRedirects() {
     "sandringham",
     "st-kilda",
     "port-melbourne",
+    "altona-north",
+    "newport",
+    "south-melbourne",
+    "williamstown",
   ];
   return suburbs.flatMap((suburb) => [
     {
@@ -205,6 +226,7 @@ function generateHeritageCityRedirects() {
     "heritage-home-builders-bayside-city",
     "heritage-home-builders-city-of-glen-eira",
     "heritage-home-builders-city-of-boroondara",
+    "heritage-home-builders-city-of-stonnington",
   ];
   return cities.map((slug) => ({
     source: `/${slug}`,
@@ -218,6 +240,8 @@ function generateDesignBuildRedirects() {
     "design-build-bayside-city",
     "design-build-city-of-stonnington",
     "design-build-city-of-port-phillip",
+    "design-build-city-of-glen-eira",
+    "design-build-city-of-boroondara",
   ];
   return cities.map((slug) => ({
     source: `/${slug}`,
@@ -226,21 +250,53 @@ function generateDesignBuildRedirects() {
   }));
 }
 
-/** Blog posts not migrated redirect to homepage; kept posts use /blog/slug */
+/** Kept posts → /blog/{slug}/; removed posts → /blog/ hub (not homepage). */
 function generateBlogRedirects() {
   const keptSlugs = [
+    "build-your-home-efficiently-and-affordably-with-nicon-built",
+    "fabulous-at-40-why-experience-matters-in-building",
+    "how-to-design-for-a-narrow-block",
+    "how-to-keep-your-build-within-budget",
     "renovation-inspirations-before-and-after-success-project-port-melbourne",
     "should-i-renovate-or-build-new-nicon-built",
-    "fabulous-at-40-why-experience-matters-in-building",
     "the-importance-of-collaboration-in-building",
-    "how-to-design-for-a-narrow-block",
+    "the-keys-to-a-successful-modern-heritage-extension",
+    "top-building-tips-from-an-architectural-builder",
+    "understanding-prime-cost-and-provisional-sum",
   ];
 
   const removedRootSlugs = [
-    "the-future-of-smart-homes-integrating-technology-into-your-build",
-    "innovative-design-trends-transforming-homes-in-2024",
-    "keeping-ahead-of-the-curve-future-proofing-your-home",
+    "3-heritage-home-styles-youll-see-around-melbourne",
     "3-ways-to-invite-the-outside-into-your-home",
+    "5-benefits-to-design-and-build",
+    "5-elements-of-a-modern-bathroom-design",
+    "5-reasons-why-you-should-rebuild-your-home",
+    "5-things-to-keep-in-mind-when-designing-your-dream-kitchen",
+    "5-ways-an-extension-can-add-value-to-your-home",
+    "6-tips-for-downsizers-empty-nesters",
+    "7-essential-elements-every-luxury-home-needs",
+    "architectural-design-qa-with-nicon-built-architect-john-caporaso",
+    "architectural-home-design-whats-trending-in-2022",
+    "building-your-first-home-with-a-pool",
+    "conversions-you-need-for-a-warmer-winter-home",
+    "creating-the-ultimate-open-plan-living-space",
+    "how-to-choose-a-builder",
+    "how-to-create-a-timeless-duplex-design",
+    "how-to-downsize-with-the-future-in-mind",
+    "how-to-ensure-your-project-is-delivered-on-time",
+    "how-to-maximise-space-in-your-home",
+    "how-to-set-a-realistic-building-budget",
+    "innovative-design-trends-transforming-homes-in-2024",
+    "is-design-build-the-right-choice-for-your-new-home",
+    "keeping-ahead-of-the-curve-future-proofing-your-home",
+    "maximising-the-aspects-of-your-home",
+    "multi-unit-development-finance-explained",
+    "outdoor-living-that-feels-like-a-vacation",
+    "the-future-of-smart-homes-integrating-technology-into-your-build",
+    "the-pros-and-cons-of-installing-skylights",
+    "the-ultimate-guide-to-designing-your-architectural-home",
+    "what-permits-do-you-need-to-extend-a-home",
+    "what-to-consider-before-undertaking-a-heritage-renovation-in-melbourne",
   ];
 
   const rules: { source: string; destination: string; permanent: boolean }[] = [];
@@ -253,10 +309,17 @@ function generateBlogRedirects() {
     });
   }
 
+  // Old WP URL for this post included an invisible U+FFFC object-replacement char.
+  rules.push({
+    source: "/top-building-tips-from-an-architectural-builder%EF%BF%BC",
+    destination: "/blog/top-building-tips-from-an-architectural-builder/",
+    permanent: true,
+  });
+
   for (const slug of removedRootSlugs) {
     rules.push({
       source: `/${slug}`,
-      destination: "/",
+      destination: "/blog/",
       permanent: true,
     });
   }

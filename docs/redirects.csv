@@ -1,26 +1,30 @@
-# 301 Redirect reference — generated from WordPress sitemap + pattern rules
+# 301 Redirect reference — see redirects-map.csv for the full old→new inventory
 # Implemented in src/lib/redirects.ts (next.config.ts on Vercel)
-# Test with Screaming Frog before DNS cutover
+# Test with Screaming Frog List Mode on the Vercel preview URL before DNS cutover
 
 old_path,new_path,rule
 /work/,/our-work/,portfolio rename
+/videos/,/our-work/,content merge
+/project-showcase-yarraville/,/our-work/,project showcase
 /portfolio-items/,/our-work/,portfolio rename
 /guarantees/,/about/,content merge
 /team/,/about/,content merge
 /build-areas/,/home-renovations-melbourne/,hub redirect
 /builders-[suburb]/,/heritage-renovations-[suburb]/ or /home-renovations-melbourne/,suburb map
 /home-builders-[suburb]/,/heritage-renovations-[suburb]/ or /home-renovations-melbourne/,suburb map
+/home-builders-armdale/,/heritage-renovations-armadale/,typo source kept
 /multi-unit-builders-[suburb]/,/new-builds-melbourne/,service redirect
 /townhouse-builders-[suburb]/,/new-builds-melbourne/,service redirect
 /custom-home-builders-*,/home-renovations-melbourne/,city page
+/custom-homes-builders-*,/home-renovations-melbourne/,slug variant
 /heritage-home-builders-*,/heritage-renovations-melbourne/,city page
 /design-build-*,/new-builds-melbourne/,city page
 /unbounce-pages/*,/,removed landing pages
 /custom-home-builders-thank-you/,/thank-you/,form redirect
-/[removed-blog-slug]/,/,blog removal
+/category/*,/blog/,archive
+/tag/*,/blog/,archive
+/theplus_testimonial/*,/testimonials/,testimonial CPT
 /[kept-blog-slug]/,/blog/[slug]/,blog migration
+/[removed-blog-slug]/,/blog/,blog removal to hub
 
-# /services/ — Option A: new Services Overview lives at /services/ (same slug as old WP page)
-# No redirect needed — old and new URLs match
-
-# Direct matches (no redirect): /, /about/, /contact/, /testimonials/, /privacy-policy/
+# Direct matches (no redirect): /, /about/, /contact/, /testimonials/, /privacy-policy/, /services/, /blog/
