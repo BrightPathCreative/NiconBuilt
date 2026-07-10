@@ -41,6 +41,22 @@
   grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
 }
 
+.contentWithGhl {
+  align-items: start;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.contentWithGhl .text {
+  position: sticky;
+  top: 24px;
+}
+
+.heroWithGhl {
+  min-height: 0;
+  align-items: stretch;
+}
+
 .text h1 {
   color: #fff;
   margin-bottom: 20px;
@@ -128,6 +144,11 @@
   animation-delay: 450ms;
 }
 
+.formWrapGhl {
+  max-width: 440px;
+  justify-self: end;
+}
+
 @media (max-width: 900px) {
   .content {
     grid-template-columns: 1fr;
@@ -138,5 +159,19 @@
     justify-self: stretch;
     max-width: 520px;
     margin-inline: auto;
+  }
+
+  .text {
+    position: sticky;
+    top: 24px;
+  }
+
+  .formWrapGhl {
+    max-width: 440px;
+  }
+
+  .contentWithGhl {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }

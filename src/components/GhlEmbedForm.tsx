@@ -23,6 +23,8 @@ type Props = {
   height?: number;
   formName?: string;
   compact?: boolean;
+  /** Tighter layout for the home hero column. */
+  variant?: "default" | "hero";
   showTitle?: boolean;
   title?: string;
   /** Optional line under the title (e.g. privacy note). */
@@ -128,6 +130,7 @@ export function GhlEmbedForm({
   height = siteConfig.ghlContactForm.height,
   formName = siteConfig.ghlContactForm.name,
   compact = false,
+  variant = "default",
   showTitle = true,
   title = "Get in Touch",
   subtitle,
@@ -189,7 +192,9 @@ export function GhlEmbedForm({
   }, [formId, formName, redirectOnSubmit, router]);
 
   return (
-    <div className={`${styles.card} ${compact ? styles.compact : ""} ${className ?? ""}`}>
+    <div
+      className={`${styles.card} ${compact ? styles.compact : ""} ${variant === "hero" ? styles.hero : ""} ${className ?? ""}`}
+    >
       <Script
         src={siteConfig.ghlContactForm.embedScriptSrc}
         strategy="afterInteractive"

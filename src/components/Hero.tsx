@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CallButton } from "./CallButton";
 import { ContactForm } from "./ContactForm";
+import { GhlEmbedForm } from "./GhlEmbedForm";
 import styles from "./Hero.module.css";
 
 type Props = {
@@ -11,6 +12,8 @@ type Props = {
   image?: string;
   imageAlt?: string;
   showForm?: boolean;
+  /** Native compact form (default) or GHL iframe — home preview uses ghl. */
+  formVariant?: "native" | "ghl";
   showTrust?: boolean;
   trustLine?: string;
   priority?: boolean;
@@ -23,12 +26,13 @@ export function Hero({
   image,
   imageAlt = "Home services and renovations Melbourne by Nicon Built",
   showForm = false,
+  formVariant = "native",
   showTrust = false,
   trustLine,
   priority = false,
 }: Props) {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${showForm && formVariant === "ghl" ? styles.heroWithGhl : ""}`}>
       <div className={styles.bg}>
         {image ? (
           <Image
@@ -43,7 +47,11 @@ export function Hero({
         <div className={styles.overlay} aria-hidden="true" />
       </div>
 
-      <div className={`container ${styles.content} ${showForm ? styles.contentWithForm : ""}`}>
+      <div
+        className={`container ${styles.content} ${showForm ? styles.contentWithForm : ""} ${
+          showForm && formVariant === "ghl" ? styles.contentWithGhl : ""
+        }`}
+      >
         <div className={styles.text}>
           <p className={`eyebrow eyebrow--dark ${styles.eyebrow}`}>{eyebrow}</p>
           <h1>{title}</h1>
@@ -68,8 +76,16 @@ export function Hero({
         </div>
 
         {showForm ? (
-          <div className={styles.formWrap}>
-            <ContactForm compact />
+          <div className={`${styles.formWrap} ${formVariant === "ghl" ? styles.formWrapGhl : ""}`}>
+            {formVariant === "ghl" ? (
+              <GhlEmbedForm
+                compact
+                variant="hero"
+                title="Get a free quote"
+              />
+            ) : (
+              <ContactForm compact />
+            )}
           </div>
         ) : null}
       </div>

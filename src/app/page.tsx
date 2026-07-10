@@ -55,6 +55,7 @@ export default function HomePage() {
         image={images.homeHero}
         imageAlt="Home services and renovations in Melbourne by Nicon Built"
         showForm
+        formVariant="ghl"
         priority
       />
 

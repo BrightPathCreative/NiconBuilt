@@ -10,6 +10,20 @@
   padding: 16px 12px;
 }
 
+.hero {
+  padding: 14px 12px 8px;
+  box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.45);
+}
+
+.hero .title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.hero .frameWrap {
+  max-width: none;
+}
+
 .title {
   font-family: var(--font-archivo), sans-serif;
   font-weight: 700;
