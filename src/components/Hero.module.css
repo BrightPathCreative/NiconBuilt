@@ -161,9 +161,8 @@
     margin-inline: auto;
   }
 
-  .text {
-    position: sticky;
-    top: 24px;
+  .contentWithGhl .text {
+    position: static;
   }
 
   .formWrapGhl {
