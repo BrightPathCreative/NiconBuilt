@@ -70,8 +70,8 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     tileTitle: "Plumbing",
     shortTitle: "Plumbing",
     breadcrumbName: "Plumbing Melbourne",
-    imageKey: "bathroomRenovations",
-    imageAlt: "Plumbing services in Melbourne by Nicon Built",
+    imageKey: "plumbing",
+    imageAlt: "Plumber installing bathroom vanity plumbing — Nicon Built",
   },
   {
     copySlug: "electrical",
@@ -80,8 +80,8 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     tileTitle: "Electrical",
     shortTitle: "Electrical",
     breadcrumbName: "Electrical Melbourne",
-    imageKey: "homeRenovations",
-    imageAlt: "Electrical services in Melbourne by Nicon Built",
+    imageKey: "electrical",
+    imageAlt: "Electrician working on a kitchen switchboard — Nicon Built",
   },
   {
     copySlug: "property-maintenance",
@@ -90,8 +90,8 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     tileTitle: "Property Maintenance",
     shortTitle: "Property Maintenance",
     breadcrumbName: "Property Maintenance Melbourne",
-    imageKey: "tradesMaintenance",
-    imageAlt: "Property maintenance in Melbourne by Nicon Built",
+    imageKey: "propertyMaintenance",
+    imageAlt: "Property maintenance landscaping at a Melbourne heritage home — Nicon Built",
   },
   {
     copySlug: "pest-control",

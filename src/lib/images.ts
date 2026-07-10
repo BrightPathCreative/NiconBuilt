@@ -12,6 +12,9 @@ export const images = {
   cleaning: "/images/cleaning-page-01.webp",
   roofing: "/images/roofing-page-01.webp",
   newBuilds: "/images/new-builds-page-01.webp",
+  plumbing: "/images/plumbing-page-01.webp",
+  electrical: "/images/electrical-page-01.webp",
+  propertyMaintenance: "/images/property-maintenance-page-01.webp",
   serviceAreaMap: "/images/service-area-map.webp",
   ogImage: "/images/og-image.webp",
   gallery: Array.from({ length: 12 }, (_, i) =>
@@ -31,4 +34,7 @@ export type ServiceImageKey = keyof Pick<
   | "cleaning"
   | "roofing"
   | "newBuilds"
+  | "plumbing"
+  | "electrical"
+  | "propertyMaintenance"
 >;

@@ -45,6 +45,12 @@ const IMAGE_MAP = {
     "nicon-built-heritage-cottage-facade-gabled-roof-restored-melbourne.jpg",
   "new-builds-page-01":
     "nicon-built-modern-two-storey-new-home-white-render-landscaped.jpg",
+  "plumbing-page-01":
+    "nicon-built-plumber-bathroom-vanity-installation-melbourne.png",
+  "electrical-page-01":
+    "nicon-built-electrician-switchboard-kitchen-melbourne.png",
+  "property-maintenance-page-01":
+    "nicon-built-property-maintenance-landscaping-hedge-weatherboard-melbourne.png",
   "service-area-map":
     "nicon-built-service-area-map-melbourne-inner-south-bayside.png",
 };
