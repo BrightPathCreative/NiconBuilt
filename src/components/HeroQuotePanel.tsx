@@ -12,8 +12,8 @@ type Props = {
 
 const BENEFITS = [
   "Free, no-obligation quote",
-  "Nick usually responds the same day",
-  `VBA licensed · Fully insured · ${siteConfig.stats.years} years experience`,
+  "Covering all your home service and maintenance needs",
+  `VBA licensed - Fully insured - ${siteConfig.stats.years} years experience`,
 ] as const;
 
 export function HeroQuotePanel({ formVariant = "native" }: Props) {
