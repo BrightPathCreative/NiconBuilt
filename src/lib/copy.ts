@@ -251,7 +251,20 @@ export function loadCopy(slug: string): ParsedCopy {
   if (areasSection) serviceAreas = areasSection.content.trim();
 
   const tilesSection = sections.find((s) => s.title.startsWith("Service tiles"));
-  const serviceTiles = tilesSection ? parseServiceTiles(tilesSection.content) : [];
+  let serviceTiles = tilesSection ? parseServiceTiles(tilesSection.content) : [];
+
+  // Service tile lists must stay under the Service tiles heading. If another ## section
+  // was inserted before the numbered list, recover tiles from the following sections.
+  if (!serviceTiles.length && tilesSection) {
+    const tilesIndex = sections.findIndex((s) => s.title.startsWith("Service tiles"));
+    for (let i = tilesIndex + 1; i < sections.length; i++) {
+      const candidate = parseServiceTiles(sections[i].content);
+      if (candidate.length) {
+        serviceTiles = candidate;
+        break;
+      }
+    }
+  }
 
   const reviewsSection =
     sections.find((s) => s.title.startsWith("Top 3 Google reviews")) ||

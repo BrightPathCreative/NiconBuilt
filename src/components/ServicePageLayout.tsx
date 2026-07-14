@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { services } from "@/lib/navigation";
+import { getRelatedServicePages } from "@/lib/service-page-config";
 import { images } from "@/lib/images";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Hero } from "./Hero";
@@ -250,14 +250,12 @@ function buildStoryRows(paragraphs: string[], pool: CarouselSlide[]): StoryRow[]
 }
 
 export function ServiceLinks({ currentSlug }: { currentSlug: string }) {
-  const cards = services
-    .filter((s) => s.slug !== currentSlug)
-    .map((s) => ({
-      slug: s.slug,
-      label: s.shortTitle,
-      image: images[s.imageKey],
-      imageAlt: s.imageAlt,
-    }));
+  const cards = getRelatedServicePages(currentSlug).map((s) => ({
+    slug: s.slug,
+    label: s.shortTitle,
+    image: images[s.imageKey],
+    imageAlt: s.imageAlt,
+  }));
 
   return (
     <section className="section section--tone">

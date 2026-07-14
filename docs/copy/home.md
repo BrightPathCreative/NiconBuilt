@@ -31,9 +31,6 @@ Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, 
 
 ## Service tiles (18 — each links to its own page)
 
-## Emergency make safe
-Storm damage, burst pipes, or an insurance claim? We respond promptly to emergency make-safe calls across Melbourne's inner south. Secure the site, document for insurers, and coordinate the rebuild.
-
 1. **Kitchen Renovations** — A kitchen renovation done properly needs a licensed builder coordinating every trade, in the right order. That's exactly what we do.
    Sub: Full kitchen renovations · Layout reconfigurations · Structural alterations · Period home kitchens
 
@@ -87,6 +84,9 @@ Storm damage, burst pipes, or an insurance claim? We respond promptly to emergen
 
 18. **New Builds** — Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. The person who quotes the job runs the build.
    Sub: Architect-designed homes · Dual-occupancy builds · Design and build · Boutique builder packages
+
+## Emergency make safe
+Storm damage, burst pipes, or an insurance claim? We respond promptly to emergency make-safe calls across Melbourne's inner south. Secure the site, document for insurers, and coordinate the rebuild.
 
 ## Top 3 Google reviews (homepage)
 

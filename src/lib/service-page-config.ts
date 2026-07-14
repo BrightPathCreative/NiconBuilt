@@ -203,3 +203,8 @@ export function getServicePage(metaKey: string): ServicePageConfig {
   if (!page) throw new Error(`Unknown service page: ${metaKey}`);
   return page;
 }
+
+/** All service pages except the current one — used by "Explore our other services". */
+export function getRelatedServicePages(excludeSlug?: string): ServicePageConfig[] {
+  return SERVICE_PAGES.filter((page) => page.slug !== excludeSlug);
+}
