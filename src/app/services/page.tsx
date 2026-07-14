@@ -54,6 +54,37 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      <section className="section section--tone">
+        <div className="container">
+          <div className={styles.grid}>
+            {SERVICE_PAGES.map((service, i) => {
+              const paragraphs = getSectionParagraphs(copy, service.tileTitle);
+              const imageKey = serviceImageKeys[i];
+
+              return (
+                <Link key={service.slug} href={service.slug} className={`card ${styles.card}`}>
+                  <div className={styles.imageWrap}>
+                    <Image
+                      src={images[imageKey]}
+                      alt={`${service.tileTitle} Melbourne by Nicon Built`}
+                      width={400}
+                      height={180}
+                    />
+                  </div>
+                  <div className={styles.body}>
+                    <h2>{service.tileTitle}</h2>
+                    {paragraphs.map((p) => (
+                      <p key={p.slice(0, 40)}>{p}</p>
+                    ))}
+                    <span className={styles.link}>Learn more →</span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {emergencyParagraphs.length > 0 ? (
         <section className="section">
           <div className="container">
@@ -90,37 +121,6 @@ export default function ServicesPage() {
           </div>
         </section>
       ) : null}
-
-      <section className="section section--tone">
-        <div className="container">
-          <div className={styles.grid}>
-            {SERVICE_PAGES.map((service, i) => {
-              const paragraphs = getSectionParagraphs(copy, service.tileTitle);
-              const imageKey = serviceImageKeys[i];
-
-              return (
-                <Link key={service.slug} href={service.slug} className={`card ${styles.card}`}>
-                  <div className={styles.imageWrap}>
-                    <Image
-                      src={images[imageKey]}
-                      alt={`${service.tileTitle} Melbourne by Nicon Built`}
-                      width={400}
-                      height={180}
-                    />
-                  </div>
-                  <div className={styles.body}>
-                    <h2>{service.tileTitle}</h2>
-                    {paragraphs.map((p) => (
-                      <p key={p.slice(0, 40)}>{p}</p>
-                    ))}
-                    <span className={styles.link}>Learn more →</span>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       <QuoteCTA />
     </>
