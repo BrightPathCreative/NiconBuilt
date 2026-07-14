@@ -111,8 +111,8 @@ export default function ServicesPage() {
               </div>
               <div className={styles.emergencyImage}>
                 <Image
-                  src={images.propertyMaintenance}
-                  alt="Emergency make-safe and insurance work in Melbourne by Nicon Built"
+                  src={images.emergencyMakeSafe}
+                  alt="Nicon Built tradesperson carrying out exterior repair work at a Melbourne weatherboard home"
                   fill
                   sizes="(max-width: 900px) 100vw, 40vw"
                 />

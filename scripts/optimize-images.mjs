@@ -57,6 +57,8 @@ const IMAGE_MAP = {
     "nicon-built-modern-townhouse-development-multi-unit-melbourne.jpg",
   "concreting-and-paving-page-01":
     "nicon-built-open-plan-living-floating-staircase-polished-concrete.jpg",
+  "emergency-make-safe":
+    "nicon-built-builder-painting-pergola-on-site-construction.jpg",
   "service-area-map":
     "nicon-built-service-area-map-melbourne-inner-south-bayside.png",
 };

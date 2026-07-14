@@ -16,6 +16,7 @@ export const images = {
   plumbing: "/images/plumbing-page-01.webp",
   electrical: "/images/electrical-page-01.webp",
   propertyMaintenance: "/images/property-maintenance-page-01.webp",
+  emergencyMakeSafe: "/images/emergency-make-safe.webp",
   renderingAndSolidPlastering: "/images/rendering-and-solid-plastering-page-01.webp",
   brickworkAndBlockLaying: "/images/brickwork-and-block-laying-page-01.webp",
   concretingAndPaving: "/images/concreting-and-paving-page-01.webp",
