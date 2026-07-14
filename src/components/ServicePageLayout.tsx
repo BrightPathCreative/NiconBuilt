@@ -264,7 +264,7 @@ export function ServiceLinks({ currentSlug }: { currentSlug: string }) {
         <h2>Explore our other services</h2>
         <div className={styles.relatedGrid}>
           {cards.map((c) => (
-            <Link key={c.slug} href={c.slug} className={`card ${styles.relatedCard}`}>
+            <Link key={c.slug} href={c.slug} prefetch={false} className={`card ${styles.relatedCard}`}>
               <div className={styles.relatedImage}>
                 <Image
                   src={c.image}
