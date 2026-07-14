@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { CallButton } from "./CallButton";
-import { ContactForm } from "./ContactForm";
+import { GhlEmbedForm } from "./GhlEmbedForm";
 import { siteConfig } from "@/lib/site";
 import styles from "./QuickEnquiry.module.css";
 
@@ -32,13 +32,13 @@ function CheckIcon() {
 
 export function QuickEnquiry({
   heading = "Get a free quote",
-  body = "Tell Nick about your project. He'll come back to you with straight answers, not sales talk.",
+  body = "Tell us about your project. We'll come back to you with straight answers, not sales talk.",
   image,
   imageAlt = "",
 }: Props) {
   const trustPoints = [
     "Free, no-obligation quote",
-    "Nick usually gets back to you the same day",
+    "We usually get back to you the same day",
     `VBA licensed & fully insured · ${siteConfig.stats.years} years experience`,
   ];
 
@@ -74,10 +74,10 @@ export function QuickEnquiry({
               </li>
             ))}
           </ul>
-          <CallButton prefix="Or call" className={`btn btn-outline ${styles.callBtn}`} />
+          <CallButton prefix="Or click to call" className={`btn btn-outline ${styles.callBtn}`} />
         </div>
         <div className={styles.formWrap}>
-          <ContactForm compact showTitle={false} />
+          <GhlEmbedForm compact showTitle={false} />
         </div>
       </div>
     </section>

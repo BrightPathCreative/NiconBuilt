@@ -11,7 +11,7 @@ import styles from "./StickyCallBar.module.css";
 export function StickyCallBar() {
   return (
     <div className={styles.bar} role="region" aria-label="Quick contact">
-      <CallButton className={styles.call} icon />
+      <CallButton className={styles.call} icon label="Click to call" />
       <Link href="/contact/" className={styles.quote}>
         Get a Free Quote
       </Link>

@@ -11,7 +11,7 @@ export type ServicePageConfig = {
   imageAlt: string;
 };
 
-/** All 15 service pages — order matches home.md service tiles */
+/** All 18 service pages — order matches home.md service tiles */
 export const SERVICE_PAGES: ServicePageConfig[] = [
   {
     copySlug: "kitchen-renovations",
@@ -64,14 +64,24 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     imageAlt: "Painting and plastering in Melbourne by Nicon Built",
   },
   {
-    copySlug: "tiling",
-    metaKey: "tiling-melbourne",
-    slug: "/tiling-melbourne/",
-    tileTitle: "Tiling",
-    shortTitle: "Tiling",
-    breadcrumbName: "Tiling Melbourne",
+    copySlug: "rendering-and-solid-plastering",
+    metaKey: "rendering-and-solid-plastering-melbourne",
+    slug: "/rendering-and-solid-plastering-melbourne/",
+    tileTitle: "Rendering and Solid Plastering",
+    shortTitle: "Rendering & Plastering",
+    breadcrumbName: "Rendering and Solid Plastering Melbourne",
+    imageKey: "renderingAndSolidPlastering",
+    imageAlt: "External render finish on a Melbourne home by Nicon Built",
+  },
+  {
+    copySlug: "tiling-and-caulking",
+    metaKey: "tiling-and-caulking-melbourne",
+    slug: "/tiling-and-caulking-melbourne/",
+    tileTitle: "Tiling and Caulking",
+    shortTitle: "Tiling & Caulking",
+    breadcrumbName: "Tiling and Caulking Melbourne",
     imageKey: "bathroomRenovations",
-    imageAlt: "Tiling work in Melbourne by Nicon Built",
+    imageAlt: "Tiling and caulking work in Melbourne by Nicon Built",
   },
   {
     copySlug: "plumbing",
@@ -92,6 +102,26 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
     breadcrumbName: "Roofing Melbourne",
     imageKey: "roofing",
     imageAlt: "Roofing repairs and maintenance in Melbourne by Nicon Built",
+  },
+  {
+    copySlug: "brickwork-and-block-laying",
+    metaKey: "brickwork-and-block-laying-melbourne",
+    slug: "/brickwork-and-block-laying-melbourne/",
+    tileTitle: "Brickwork and Block Laying",
+    shortTitle: "Brickwork & Block Laying",
+    breadcrumbName: "Brickwork and Block Laying Melbourne",
+    imageKey: "brickworkAndBlockLaying",
+    imageAlt: "Brick and block work on a Melbourne home by Nicon Built",
+  },
+  {
+    copySlug: "concreting-and-paving",
+    metaKey: "concreting-and-paving-melbourne",
+    slug: "/concreting-and-paving-melbourne/",
+    tileTitle: "Concreting and Paving",
+    shortTitle: "Concreting & Paving",
+    breadcrumbName: "Concreting and Paving Melbourne",
+    imageKey: "concretingAndPaving",
+    imageAlt: "Concrete and paving work at a Melbourne home by Nicon Built",
   },
   {
     copySlug: "electrical",
@@ -165,8 +195,8 @@ export const SERVICE_PAGES: ServicePageConfig[] = [
   },
 ];
 
-export const HOME_SERVICES = SERVICE_PAGES.slice(0, 11);
-export const PROJECT_SERVICES = SERVICE_PAGES.slice(11);
+export const HOME_SERVICES = SERVICE_PAGES.slice(0, 14);
+export const PROJECT_SERVICES = SERVICE_PAGES.slice(14);
 
 export function getServicePage(metaKey: string): ServicePageConfig {
   const page = SERVICE_PAGES.find((p) => p.metaKey === metaKey);

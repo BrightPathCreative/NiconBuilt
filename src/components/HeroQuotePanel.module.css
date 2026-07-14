@@ -70,13 +70,16 @@
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: var(--shadow-glow-primary);
   transition:
     background var(--duration-fast) var(--ease-out),
-    transform var(--duration-fast) var(--ease-out);
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
 }
 
 .toggle:hover {
   background: var(--color-secondary);
+  box-shadow: var(--shadow-glow-primary-hover);
 }
 
 .toggle:focus-visible {

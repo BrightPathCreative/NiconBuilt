@@ -11,4 +11,4 @@ It's one of the most common questions we hear: should I renovate or build new? T
 
 Renovating often makes sense when you have a solid structure, heritage value, or a location you don't want to leave. Building new may suit blocks with poor existing structures or when dual-occupancy potential is the goal.
 
-Nick can assess your property and give you straight advice — no sales pitch, just what's practical for your situation.
+Nicon Built can assess your property and give you straight advice — no sales pitch, just what's practical for your situation.

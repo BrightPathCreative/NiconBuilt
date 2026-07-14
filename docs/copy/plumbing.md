@@ -38,6 +38,6 @@ Within a renovation, getting the plumbing sequence right matters as much as the 
 
 **Can you replace a hot water system?** Yes. We handle hot water system replacement across Melbourne's inner south, including gas and electric systems.
 
-**Is all plumbing work licensed?** All plumbing work is carried out by licensed plumbers. Nick coordinates the trade as the registered builder responsible for the overall project.
+**Is all plumbing work licensed?** All plumbing work is carried out by licensed plumbers. Nicon Built coordinates the trade as the registered builder responsible for the overall project.
 
 **What areas do you cover?** Melbourne's inner south and bayside suburbs, including Port Melbourne, Albert Park, Brighton, Armadale, Malvern, South Yarra, Caulfield, Elsternwick, Camberwell, Hawthorn, Kew, and surrounding areas.

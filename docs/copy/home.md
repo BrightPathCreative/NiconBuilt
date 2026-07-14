@@ -17,7 +17,7 @@ Building Quality, Maintaining Excellence
 
 One reliable Melbourne team for the everyday trades around the home.
 
-Plumbing, electrical, tiling, painting, carpentry, roofing, pest control, and cleaning. Kitchen and bathroom renovations. Extensions and new builds. Whatever your home needs, Nick Kafkalas and his team handle it properly, start to finish. VBA licensed. Fully insured. Based in Port Melbourne since 1990.
+Plumbing, electrical, tiling, painting, carpentry, roofing, pest control, and cleaning. Kitchen and bathroom renovations. Extensions and new builds. Whatever your home needs, the Nicon Built team handles it properly, start to finish. VBA licensed. Fully insured. Based in Port Melbourne since 1990.
 
 *5.0 Stars | 9 Google Reviews | 30+ Years Experience | VBA Licensed Builder*
 
@@ -25,20 +25,23 @@ Plumbing, electrical, tiling, painting, carpentry, roofing, pest control, and cl
 30+ Years Experience — 5.0 ⭐ Google Rating — 200+ Projects Completed — Fully Insured
 
 ## About snapshot
-Nick Kafkalas has been building and coordinating trades across Melbourne's inner south since 1990. Before starting Nicon Built, he worked on some of Melbourne's largest construction projects. The Bolte Bridge. The Burnley Tunnel. The State Library. That kind of experience shapes how you approach every job, no matter the size.
+Nicon Built has been building and coordinating trades across Melbourne's inner south since 1990. Before the business started, our founder worked on some of Melbourne's largest construction projects. The Bolte Bridge. The Burnley Tunnel. The State Library. That kind of experience shapes how we approach every job, no matter the size.
 
-Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, you deal with Nick and his team directly. One call. One point of contact. Everything managed properly from the first conversation to the final clean-up.
+Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, you deal with the Nicon Built team directly. One call. One point of contact. Everything managed properly from the first conversation to the final clean-up.
 
-## Service tiles (15 — each links to its own page)
+## Service tiles (18 — each links to its own page)
+
+## Emergency make safe
+Storm damage, burst pipes, or an insurance claim? We respond promptly to emergency make-safe calls across Melbourne's inner south. Secure the site, document for insurers, and coordinate the rebuild.
 
 1. **Kitchen Renovations** — A kitchen renovation done properly needs a licensed builder coordinating every trade, in the right order. That's exactly what we do.
    Sub: Full kitchen renovations · Layout reconfigurations · Structural alterations · Period home kitchens
 
-2. **Bathroom Renovations** — Waterproofing before tiling. Plumbing before fixtures. Every trade in the right sequence, held to the right standard. Nick manages the whole job.
+2. **Bathroom Renovations** — Waterproofing before tiling. Plumbing before fixtures. Every trade in the right sequence, held to the right standard. Nicon Built manages the whole job.
    Sub: Full bathroom renovations · Ensuite upgrades · Waterproofing · Tiling and fixtures · Period home bathrooms
 
 3. **Property Maintenance** — Whatever needs doing around the home, we coordinate every trade so you don't have to. One call, one team, everything managed.
-   Sub: General repairs · Trade coordination · Planned maintenance · Emergency repairs · End-to-end management
+   Sub: General repairs · Trade coordination · Planned maintenance · Emergency make-safe · Insurance claim work
 
 4. **Carpentry and Joinery** — Decking, doors, cabinetry, custom shelving, pergolas, and period joinery. Built to last and finished properly.
    Sub: Decking and pergolas · Doors and frames · Custom cabinetry · Skirting and architraves · Period joinery
@@ -46,34 +49,43 @@ Whether it's a leaking tap, a full kitchen renovation, or a heritage extension, 
 5. **Painting and Plastering** — The finish depends on what's underneath it. We repair the plaster properly first, then paint. Interior and exterior, across Melbourne's inner south.
    Sub: Interior and exterior painting · Plaster repairs · Cornice work · Heritage plasterwork · Full replasters
 
-6. **Tiling** — Kitchens, bathrooms, laundries, alfresco areas. Every tile laid properly, every joint consistent, waterproofed where required.
-   Sub: Kitchen tiling · Bathroom tiling · Outdoor and alfresco · Feature walls · Period tile matching
+6. **Rendering and Solid Plastering** — External acrylic render and solid plaster finishing, done properly before paint goes on. Heritage homes and new builds across Melbourne's inner south.
+   Sub: External acrylic rendering · Solid plastering · Render repairs · Heritage plasterwork · Substrate preparation
 
-7. **Plumbing** — New installations, hot water systems, repairs, and plumbing coordination across renovation projects. Carried out by licensed plumbers, coordinated by Nicon Built.
+7. **Tiling and Caulking** — Kitchens, bathrooms, laundries, alfresco areas. Every tile laid properly, every seal watertight, waterproofed where required.
+   Sub: Kitchen tiling · Bathroom tiling · Caulking and sealing · Outdoor and alfresco · Period tile matching
+
+8. **Plumbing** — New installations, hot water systems, repairs, and plumbing coordination across renovation projects. Carried out by licensed plumbers, coordinated by Nicon Built.
    Sub: Kitchen and bathroom plumbing · Hot water systems · Tap and fixture installation · Pipe repairs · Drainage
 
-8. **Roofing** — Leaks, damaged tiles, worn flashings, and gutter issues. Prompt attention before roof problems cause damage inside the home.
+9. **Roofing** — Leaks, damaged tiles, worn flashings, and gutter issues. Prompt attention before roof problems cause damage inside the home.
    Sub: Roof leak repairs · Tile and metal roofing · Flashing and valley repairs · Heritage roof restoration · Gutter coordination
 
-9. **Electrical** — Lighting, power points, switchboard upgrades, and electrical coordination within renovations. Carried out by licensed electricians, coordinated by Nicon Built.
+10. **Brickwork and Block Laying** — New walls, repairs and repointing. Heritage brickwork matched properly, coordinated by a licensed builder.
+   Sub: New brick and block walls · Mortar repointing · Heritage brick matching · Chimney and facade repairs · Extension brickwork
+
+11. **Concreting and Paving** — Driveways, paths, polished concrete and outdoor paving. Laid properly with the right falls, finishes and drainage.
+   Sub: Concrete driveways and paths · Exposed aggregate · Paver and bluestone paving · Polished concrete · Pool surrounds
+
+12. **Electrical** — Lighting, power points, switchboard upgrades, and electrical coordination within renovations. Carried out by licensed electricians, coordinated by Nicon Built.
    Sub: Lighting installation · Power points · Switchboard upgrades · Outdoor electrical · Renovation coordination
 
-10. **Pest Control** — Inspections and treatments for termites, rodents, and general pests. Carried out by licensed pest technicians, coordinated by Nicon Built.
+13. **Pest Control** — Inspections and treatments for termites, rodents, and general pests. Carried out by licensed pest technicians, coordinated by Nicon Built.
    Sub: Termite inspections · General pest treatments · Rodent control · Pre-purchase inspections · Follow-up monitoring
 
-11. **Cleaning** — End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The job isn't finished until the home is ready to live in.
+14. **Cleaning** — End-of-job cleans after renovations, bond cleans between tenancies, and regular scheduled cleaning. The job isn't finished until the home is ready to live in.
    Sub: End-of-job cleaning · Bond and end-of-lease cleans · Regular scheduled cleaning · Post-construction cleans
 
-12. **Heritage Renovations and Restorations** — Victorian, Edwardian, and Federation homes restored properly, with period materials and 30 years of heritage experience.
+15. **Heritage Renovations and Restorations** — Victorian, Edwardian, and Federation homes restored properly, with period materials and 30 years of heritage experience.
    Sub: Victorian restorations · Edwardian renovation · Federation conservation · Heritage overlay compliance · Period material matching
 
-13. **Heritage Home Extensions** — Extending a period home the right way. Heritage overlay compliant, period materials, new work that looks like it was always there.
+16. **Heritage Home Extensions** — Extending a period home the right way. Heritage overlay compliant, period materials, new work that looks like it was always there.
    Sub: Period-accurate additions · Heritage compliant design · Council permit management · Material matching
 
-14. **Home Renovations and Extensions** — Plans approved, permits sorted. One builder manages every trade, every stage, and every detail through to handover.
+17. **Home Renovations and Extensions** — Plans approved, permits sorted. One builder manages every trade, every stage, and every detail through to handover.
    Sub: Home extensions · Room additions · Open-plan conversions · Structural alterations · Dual-occupancy additions
 
-15. **New Builds** — Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. The person who quotes the job runs the build.
+18. **New Builds** — Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. The person who quotes the job runs the build.
    Sub: Architect-designed homes · Dual-occupancy builds · Design and build · Boutique builder packages
 
 ## Top 3 Google reviews (homepage)

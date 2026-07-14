@@ -5,7 +5,7 @@ import { QuoteCTA } from "@/components/QuoteCTA";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
+import { siteConfig, phoneHref, callCtaLabel } from "@/lib/site";
 
 export const metadata = buildMetadata({ ...pageMeta.faq, path: "/faq/" });
 
@@ -35,8 +35,7 @@ export default function FaqPage() {
                 Can&apos;t find what you&apos;re after?{" "}
                 {phone ? (
                   <>
-                    Call{" "}
-                    <a href={phoneHref(phone)}>{formatPhoneDisplay(phone)}</a>
+                    <a href={phoneHref(phone)}>{callCtaLabel}</a>
                   </>
                 ) : (
                   "Get in touch"

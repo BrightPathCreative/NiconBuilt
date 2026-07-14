@@ -72,7 +72,7 @@ export function Footer() {
             <Link href="/contact/" className={`btn btn-accent ${styles.cta}`}>
               Get a free quote
             </Link>
-            <CallButton className={styles.callLink} />
+            <CallButton className={styles.callLink} label="Click to call" />
           </div>
         </div>
       </div>

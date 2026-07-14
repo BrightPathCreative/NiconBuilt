@@ -103,9 +103,9 @@ export default function ContactPage() {
             <div className={styles.callBlock}>
               <h2 className={styles.sideHeading}>Prefer to Call?</h2>
               <p className={styles.sideBody}>
-                Speak to Nick directly. He&apos;s on-site most days but always calls back.
+                Speak to the Nicon Built team directly. We&apos;re on-site most days but always call back.
               </p>
-              <CallButton className={`btn btn-accent ${styles.callBtn}`} icon />
+              <CallButton className={`btn btn-accent ${styles.callBtn}`} icon label="Click to call" />
             </div>
 
             <div className={styles.infoCard}>

@@ -11,8 +11,6 @@ type Props = {
   image?: string;
   imageAlt?: string;
   showForm?: boolean;
-  /** Native compact form (default) or GHL iframe — home uses ghl. */
-  formVariant?: "native" | "ghl";
   showTrust?: boolean;
   trustLine?: string;
   priority?: boolean;
@@ -25,7 +23,6 @@ export function Hero({
   image,
   imageAlt = "Home services and renovations Melbourne by Nicon Built",
   showForm = false,
-  formVariant = "native",
   showTrust = false,
   trustLine,
   priority = false,
@@ -72,7 +69,7 @@ export function Hero({
 
         {showForm ? (
           <div className={styles.formWrap}>
-            <HeroQuotePanel formVariant={formVariant} />
+            <HeroQuotePanel />
           </div>
         ) : null}
       </div>

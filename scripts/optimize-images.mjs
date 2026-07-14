@@ -51,6 +51,12 @@ const IMAGE_MAP = {
     "nicon-built-electrician-switchboard-kitchen-melbourne.png",
   "property-maintenance-page-01":
     "nicon-built-property-maintenance-landscaping-hedge-weatherboard-melbourne.png",
+  "rendering-and-solid-plastering-page-01":
+    "nicon-built-contemporary-two-storey-home-white-render-charcoal.webp",
+  "brickwork-and-block-laying-page-01":
+    "nicon-built-modern-townhouse-development-multi-unit-melbourne.jpg",
+  "concreting-and-paving-page-01":
+    "nicon-built-open-plan-living-floating-staircase-polished-concrete.jpg",
   "service-area-map":
     "nicon-built-service-area-map-melbourne-inner-south-bayside.png",
 };

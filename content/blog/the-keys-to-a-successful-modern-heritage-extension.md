@@ -11,7 +11,7 @@ Extending heritage homes requires careful planning, and a team of experts dedica
 
 Nicon Built understands the delicate practice of extending heritage homes. With heritage laws often focusing primarily on the front exterior façade, an innovative yet harmonious vision for a seamless extension can create stunning results.
 
-Expert advice is key to successfully fusing architectural preservation with modern customisation. At Nicon Built we coordinate planning, design, and construction from one point of contact. Nick works with your architect or designer — or can recommend one he has worked with before — which makes revitalising your heritage home more straightforward and helps ensure the crucial elements of a successful modern heritage extension are considered from the start.
+Expert advice is key to successfully fusing architectural preservation with modern customisation. At Nicon Built we coordinate planning, design, and construction from one point of contact. Nicon Built works with your architect or designer — or can recommend one we've worked with before — which makes revitalising your heritage home more straightforward and helps ensure the crucial elements of a successful modern heritage extension are considered from the start.
 
 ### Balancing preservation and practicality
 
@@ -40,7 +40,7 @@ As a starting point, visit [Heritage Victoria](https://www.planning.vic.gov.au/p
 
 Our team is well versed in the restrictions applying to heritage extensions, navigating you smoothly through each stage. Thanks to our informed advice, your extension will sidestep any avoidable delays.
 
-Nick works closely with your heritage architect, or can recommend one he has worked with before, to ensure extension needs are met without violating heritage protection. Our licensed builder-led team delivers high quality service from concept to completion.
+Nicon Built works closely with your heritage architect, or can recommend one we've worked with before, to ensure extension needs are met without violating heritage protection. Our licensed builder-led team delivers high quality service from concept to completion.
 
 ### The heritage difference
 

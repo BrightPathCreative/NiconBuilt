@@ -57,3 +57,81 @@
   font-weight: 600;
   color: var(--color-primary);
 }
+
+.emergencyCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 0;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+
+.emergencyBody {
+  padding: 32px;
+}
+
+.emergencyBody h2 {
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  margin-bottom: 16px;
+}
+
+.emergencyBody p {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-bottom: 14px;
+}
+
+.emergencyList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px 20px;
+  margin: 8px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.emergencyList li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 15px;
+  color: var(--color-text-muted);
+}
+
+.emergencyList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.emergencyActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.emergencyImage {
+  position: relative;
+  min-height: 280px;
+}
+
+@media (max-width: 900px) {
+  .emergencyCard {
+    grid-template-columns: 1fr;
+  }
+
+  .emergencyImage {
+    min-height: 220px;
+    order: -1;
+  }
+
+  .emergencyBody {
+    padding: 24px;
+  }
+}

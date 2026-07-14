@@ -13,7 +13,7 @@ Last updated: 2026-07-05
 Our Work Across Melbourne's Inner South
 
 ## Intro
-Have a look through our completed projects. Kitchen and bathroom renovations, carpentry and trade work, home extensions, heritage restorations, and new builds right across Melbourne's inner south and bayside suburbs. Every project here was run personally by Nick.
+Have a look through our completed projects. Kitchen and bathroom renovations, carpentry and trade work, home extensions, heritage restorations, and new builds right across Melbourne's inner south and bayside suburbs. Every project here was run by the Nicon Built team.
 
 ## Mid-gallery review
 5★ Renee Moore, hockingstuart Yarraville (5 years ago): "Over the years hockingstuart Yarraville has sold many newly built homes although none quite compare to the quality, attention to detail and finishes by Nicon Built. Having homes built like 116a The Avenue, Spotswood truly made our jobs as real estate agents easy."

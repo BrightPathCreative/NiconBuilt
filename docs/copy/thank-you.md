@@ -13,7 +13,7 @@ Required per the Technical Developer Brief: fires after every contact-form submi
 Thanks — we've got your enquiry
 
 ## Body
-Your message has been sent to Nick. He'll be in touch shortly, usually the same day, to discuss your project and next steps.
+Your message has been sent to the Nicon Built team. We'll be in touch shortly, usually the same day, to discuss your project and next steps.
 
 In the meantime, feel free to look through our recent work.
 

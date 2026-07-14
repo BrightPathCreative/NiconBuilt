@@ -38,6 +38,6 @@ Within a renovation, electrical sequencing matters. Rough-in before the walls go
 
 **Can you add power points or lighting to an existing home?** Yes. Adding power points, upgrading lighting, or running new circuits in an existing home is work we handle regularly across Melbourne's inner south.
 
-**Is all electrical work licensed?** All electrical work is carried out by licensed electricians. Nick coordinates the trade as the registered builder responsible for the overall project.
+**Is all electrical work licensed?** All electrical work is carried out by licensed electricians. Nicon Built coordinates the trade as the registered builder responsible for the overall project.
 
 **Can you upgrade an older switchboard?** Yes. Switchboard upgrades are a common job, particularly in Melbourne's older homes where the existing board isn't suitable for modern electrical loads.

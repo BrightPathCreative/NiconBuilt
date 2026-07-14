@@ -1,14 +1,9 @@
 "use client";
 
 import { useId, useState } from "react";
-import { ContactForm } from "./ContactForm";
 import { GhlEmbedForm } from "./GhlEmbedForm";
 import { siteConfig } from "@/lib/site";
 import styles from "./HeroQuotePanel.module.css";
-
-type Props = {
-  formVariant?: "native" | "ghl";
-};
 
 const BENEFITS = [
   "Free, no-obligation quote",
@@ -16,7 +11,7 @@ const BENEFITS = [
   `VBA licensed - Fully insured - ${siteConfig.stats.years} years experience`,
 ] as const;
 
-export function HeroQuotePanel({ formVariant = "native" }: Props) {
+export function HeroQuotePanel() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const panelId = useId();
@@ -32,7 +27,7 @@ export function HeroQuotePanel({ formVariant = "native" }: Props) {
   return (
     <div className={styles.panel}>
       <h2 className={styles.title}>Get a free quote</h2>
-      <p className={styles.lead}>Tell Nick about your project. No obligation.</p>
+      <p className={styles.lead}>Tell us about your project. No obligation.</p>
 
       <ul className={styles.benefits}>
         {BENEFITS.map((item) => (
@@ -85,16 +80,12 @@ export function HeroQuotePanel({ formVariant = "native" }: Props) {
         hidden={!open}
       >
         {mounted ? (
-          formVariant === "ghl" ? (
-            <GhlEmbedForm
-              compact
-              variant="hero"
-              showTitle={false}
-              className={styles.embeddedForm}
-            />
-          ) : (
-            <ContactForm compact showTitle={false} className={styles.embeddedForm} />
-          )
+          <GhlEmbedForm
+            compact
+            variant="hero"
+            showTitle={false}
+            className={styles.embeddedForm}
+          />
         ) : null}
       </div>
     </div>

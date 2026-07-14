@@ -12,7 +12,7 @@ export function QuoteCTA() {
     .filter(Boolean)
     .slice(1);
   const heading = copy.headline?.split("|")[0].trim() ?? "Get a free quote";
-  const body = introLines[0] ?? "No obligation. Nick usually gets back to you the same day.";
+  const body = introLines[0] ?? "No obligation. We usually get back to you the same day.";
 
   return (
     <section className={styles.cta} aria-labelledby="quote-cta-heading">

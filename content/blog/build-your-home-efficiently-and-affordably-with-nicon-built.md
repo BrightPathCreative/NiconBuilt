@@ -13,7 +13,7 @@ Do you want to build your own, customised home? As a licensed Melbourne builder 
 
 Building a home can be stressful but our 6-step process simplifies the process so that you can relax knowing everything is being taken care of.
 
-We know that it is important for you to trust the people that are building your home. It is a big investment and you need to feel comfortable with the people who have entrusted to build your dream home. Nick and the Nicon Built team have over 30 years' experience in residential design and construction — we know what we are doing, and we do it really well.
+We know that it is important for you to trust the people that are building your home. It is a big investment and you need to feel comfortable with the people who have entrusted to build your dream home. The Nicon Built team has over 30 years' experience in residential design and construction — we know what we are doing, and we do it really well.
 
 We work with clients on custom home projects across Melbourne, shaping the scope, buildability, and finish level around the site, the brief, and the available budget. Our focus is on delivering a practical solution that suits the way you want to live, while keeping the process clear from the start.
 

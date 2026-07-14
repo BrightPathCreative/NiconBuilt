@@ -8,7 +8,7 @@ import { RecentArticles } from "@/components/RecentArticles";
 import { Reveal } from "@/components/Reveal";
 import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
-import { loadCopy, formatReviewMeta } from "@/lib/copy";
+import { loadCopy, formatReviewMeta, getSectionParagraphs } from "@/lib/copy";
 import { homeServices, projectServices } from "@/lib/navigation";
 import { images } from "@/lib/images";
 import { getServiceCarouselSlides } from "@/lib/service-carousel";
@@ -37,6 +37,7 @@ export default function HomePage() {
   // first `homeServices.length` tiles are everyday trades, remainder are the big builds.
   const tradeTiles = copy.serviceTiles.slice(0, homeServices.length);
   const featuredTiles = copy.serviceTiles.slice(homeServices.length);
+  const emergencyNote = getSectionParagraphs(copy, "Emergency make safe")[0];
 
   const reviewSlides = copy.reviews.map((review) => ({
     stars: formatReviewMeta(review.meta),
@@ -55,7 +56,6 @@ export default function HomePage() {
         image={images.homeHero}
         imageAlt="Home services and renovations in Melbourne by Nicon Built"
         showForm
-        formVariant="ghl"
         priority
       />
 
@@ -99,14 +99,21 @@ export default function HomePage() {
               );
             })}
           </div>
+          {emergencyNote ? (
+            <aside className={styles.emergencyNote}>
+              <p>
+                <strong>Emergency make safe &amp; insurance work.</strong> {emergencyNote}
+              </p>
+              <Link href="/property-maintenance-melbourne/" className={styles.emergencyLink}>
+                Property maintenance →
+              </Link>
+            </aside>
+          ) : null}
           <div className={styles.inlineCta}>
             <Link href="/contact/" className="btn btn-accent">
               Request a quote
             </Link>
             <CallButton />
-            <Link href="/services/" className="btn btn-outline">
-              Browse all services
-            </Link>
           </div>
         </div>
       </section>
@@ -143,7 +150,7 @@ export default function HomePage() {
             <Reveal index={1} className={styles.portrait}>
               <Image
                 src={images.nickPortrait}
-                alt="Nick Kafkalas, founder of Nicon Built"
+                alt="Nicon Built team on site in Melbourne"
                 width={400}
                 height={500}
               />

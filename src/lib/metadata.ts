@@ -46,7 +46,7 @@ export const pageMeta: Record<string, { title: string; description: string }> =
     home: {
       title: "Home Services & Renovation Builder Melbourne | Nicon Built",
       description:
-        "Everyday trades, kitchen and bathroom renovations, extensions and new builds across Melbourne's inner south. One reliable team, managed personally by Nick Kafkalas since 1990.",
+        "Everyday trades, kitchen and bathroom renovations, extensions and new builds across Melbourne's inner south. One reliable team, serving Melbourne's inner south since 1990.",
     },
     about: {
       title: "About Nicon Built | Melbourne Home Services & Renovation Builder | Nicon Built",
@@ -56,7 +56,7 @@ export const pageMeta: Record<string, { title: string; description: string }> =
     services: {
       title: "Home Services and Renovation Builder Melbourne | Nicon Built",
       description:
-        "Plumbing, electrical, tiling, painting, carpentry, kitchen and bathroom renovations, property maintenance, heritage work and new builds. Every job run personally by Nick Kafkalas.",
+        "Plumbing, electrical, tiling, painting, rendering, brickwork, concreting, carpentry, kitchen and bathroom renovations, property maintenance, heritage work and new builds. Every job run by the Nicon Built team.",
     },
     "kitchen-renovations-melbourne": {
       title:
@@ -79,10 +79,15 @@ export const pageMeta: Record<string, { title: string; description: string }> =
       description:
         "Interior and exterior painting with plaster repairs done properly first. Period homes and newer builds across Melbourne's inner south.",
     },
-    "tiling-melbourne": {
-      title: "Tiling Melbourne | Kitchens, Bathrooms and Outdoor | Nicon Built",
+    "rendering-and-solid-plastering-melbourne": {
+      title: "Rendering and Solid Plastering Melbourne | Nicon Built",
       description:
-        "Kitchen, bathroom, laundry and outdoor tiling across Melbourne's inner south. Waterproofed where required, every joint consistent.",
+        "External acrylic render, solid plaster and interior wall finishing across Melbourne's inner south. Heritage homes and new builds, fully coordinated by a licensed builder.",
+    },
+    "tiling-and-caulking-melbourne": {
+      title: "Tiling & Caulking Melbourne | Inner South | Nicon Built",
+      description:
+        "Kitchen, bathroom and outdoor tiling plus professional caulking and silicone sealing across Melbourne's inner south and bayside. Waterproofed where required.",
     },
     "plumbing-melbourne": {
       title: "Plumbing Melbourne | Residential Plumbing | Nicon Built",
@@ -114,6 +119,16 @@ export const pageMeta: Record<string, { title: string; description: string }> =
       description:
         "Roof repairs and maintenance across Melbourne's inner south. Tile and metal roofs, heritage homes, leak investigation and gutter coordination.",
     },
+    "brickwork-and-block-laying-melbourne": {
+      title: "Brickwork and Block Laying Melbourne | Nicon Built",
+      description:
+        "Brick and block laying, repairs and repointing across Melbourne's inner south. Heritage brickwork, new walls and extensions, coordinated by a licensed builder.",
+    },
+    "concreting-and-paving-melbourne": {
+      title: "Concreting and Paving Melbourne | Nicon Built",
+      description:
+        "Driveways, paths, polished concrete and paving across Melbourne's inner south. New pours, repairs and outdoor hardscaping, fully managed by Nicon Built.",
+    },
     "heritage-renovations-melbourne": {
       title: "Heritage Renovation and Restoration Melbourne | Nicon Built",
       description:
@@ -127,12 +142,12 @@ export const pageMeta: Record<string, { title: string; description: string }> =
     "home-renovations-melbourne": {
       title: "Home Renovations & Extensions Melbourne | Nicon Built",
       description:
-        "Home renovations and extensions across Melbourne's inner south. Plans and permits sorted? Nick Kafkalas runs the build from start to finish, no handoffs.",
+        "Home renovations and extensions across Melbourne's inner south. Plans and permits sorted? Nicon Built runs the build from start to finish, no handoffs.",
     },
     "new-builds-melbourne": {
       title: "Custom Home Builder Melbourne | New Builds & Dual Occupancy | Nicon Built",
       description:
-        "Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. Architect-designed or design-and-build, run personally by Nick Kafkalas.",
+        "Custom homes and dual-occupancy builds across Melbourne's inner south since 1990. Architect-designed or design-and-build, managed by Nicon Built from start to finish.",
     },
     "our-work": {
       title: "Our Work | Home Services & Renovations Melbourne | Nicon Built",
@@ -142,12 +157,12 @@ export const pageMeta: Record<string, { title: string; description: string }> =
     testimonials: {
       title: "Client Reviews | Nicon Built Melbourne",
       description:
-        "Read what Nicon Built clients say about working with Nick Kafkalas: 5.0 stars and 9 Google reviews across 30+ years of building across Melbourne's inner south.",
+        "Read what Nicon Built clients say: 5.0 stars and 9 Google reviews across 30+ years of building across Melbourne's inner south.",
     },
     contact: {
       title: "Contact Nicon Built | Melbourne Home Services & Renovation Builder | Nicon Built",
       description:
-        "Get in touch with Nicon Built today. Nick usually replies the same day, serving Melbourne's inner south and bayside suburbs since 1990.",
+        "Get in touch with Nicon Built today. We usually reply the same day, serving Melbourne's inner south and bayside suburbs since 1990.",
     },
     faq: {
       title: "Frequently Asked Questions | Nicon Built Melbourne",

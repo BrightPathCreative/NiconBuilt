@@ -22,7 +22,6 @@ export const siteConfig = {
   vbaLicence:
     process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "CDB-U 62648",
   gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "",
-  ghlWebhook: process.env.GHL_WEBHOOK_URL?.trim() || "",
   ghlContactForm: {
     id: process.env.NEXT_PUBLIC_GHL_CONTACT_FORM_ID?.trim() || "vvUEO6TWQDp00EySpLfv",
     src:
@@ -43,7 +42,7 @@ export const siteConfig = {
   },
   /** Trades-first positioning — used in layout defaults, schema and OG fallbacks. */
   description:
-    "Everyday trades, property maintenance, kitchen and bathroom renovations, home extensions and new builds across Melbourne's inner south. Licensed builder, personally managed by Nick Kafkalas since 1990.",
+    "Everyday trades, property maintenance, kitchen and bathroom renovations, home extensions and new builds across Melbourne's inner south. Licensed builder, serving Melbourne's inner south since 1990.",
   social: {
     facebook: "https://www.facebook.com/niconbuilt",
     instagram: "https://www.instagram.com/nicon_built/",
@@ -84,5 +83,8 @@ export function formatPhoneDisplay(phone: string): string {
 
 export function phoneHref(phone: string): string {
   const digits = phone.replace(/\D/g, "");
-  return digits ? `tel:${digits.startsWith("0") ? digits : `0${digits}`}` : "#contact";
+  return digits ? `tel:${digits.startsWith("0") ? digits : `0${digits}`}` : "/contact/";
 }
+
+/** Default click-to-call label — number is never shown in the UI. */
+export const callCtaLabel = "Click to call";

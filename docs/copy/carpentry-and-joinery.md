@@ -39,6 +39,6 @@ In Melbourne's period homes, carpentry requires more care. Victorian and Edwardi
 
 **Can you build decking and outdoor structures?** Yes. Decking, pergolas, and outdoor entertaining structures are a regular part of what we do across Melbourne's inner south. Every job is built to last and finished properly.
 
-**Can carpentry be coordinated as part of a larger renovation?** Yes. Most carpentry work runs alongside other trades as part of a kitchen, bathroom, or extension project. Nick coordinates the sequencing so carpentry happens at the right stage and nothing holds up the rest of the job.
+**Can carpentry be coordinated as part of a larger renovation?** Yes. Most carpentry work runs alongside other trades as part of a kitchen, bathroom, or extension project. Nicon Built coordinates the sequencing so carpentry happens at the right stage and nothing holds up the rest of the job.
 
 **What areas do you cover?** Melbourne's inner south and bayside suburbs, including Port Melbourne, Albert Park, Brighton, Armadale, Malvern, South Yarra, Caulfield, Elsternwick, Camberwell, Hawthorn, Kew, and surrounding areas.

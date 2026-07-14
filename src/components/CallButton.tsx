@@ -1,8 +1,10 @@
-import { siteConfig, phoneHref, formatPhoneDisplay } from "@/lib/site";
+import { siteConfig, phoneHref, formatPhoneDisplay, callCtaLabel } from "@/lib/site";
 
 type Props = {
   className?: string;
+  /** Optional prefix text — number is never appended to the label. */
   prefix?: string;
+  /** Only set true if you explicitly need the number visible (not used on the live site). */
   showNumber?: boolean;
   icon?: boolean;
   label?: string;
@@ -16,11 +18,11 @@ function PhoneIcon() {
   );
 }
 
-/** Click-to-call CTA. Uses tel: when NEXT_PUBLIC_PRIMARY_PHONE is set; otherwise links to /contact/. */
+/** Click-to-call CTA. Dials NEXT_PUBLIC_PRIMARY_PHONE (GHL tracking number) via tel:; otherwise links to /contact/. */
 export function CallButton({
   className = "btn btn-outline",
-  prefix = "Call",
-  showNumber = true,
+  prefix,
+  showNumber = false,
   icon = false,
   label: explicitLabel,
 }: Props) {
@@ -31,10 +33,8 @@ export function CallButton({
       ? prefix
         ? `${prefix} ${formatPhoneDisplay(phone)}`
         : formatPhoneDisplay(phone)
-      : prefix
-    : prefix
-      ? `${prefix} us`
-      : "Call us");
+      : prefix ?? callCtaLabel
+    : prefix ?? "Call us");
 
   const href = phone ? phoneHref(phone) : "/contact/";
 

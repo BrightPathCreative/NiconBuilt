@@ -23,24 +23,27 @@ We take that off your hands entirely.
 
 Brief us on what needs doing. The coordination is on us. Scheduling, sequencing, access, quality. Painters, tilers, plumbers, plasterers, electricians, bricklayers, roofers, whatever the job calls for. All from a network of trusted tradespeople we've been working with for years. People who show up on time and do the work properly.
 
-This isn't a handyman service. Nick is a VBA licensed builder, which means he can take on work that requires a building permit. Minor structural repairs, certain alterations. That's not something a general handyman is legally qualified to do. And beyond the licensing, there's 30 years of industry relationships behind every job. Nick knows who's good and who's not.
+This isn't a handyman service. Nicon Built is a VBA licensed builder, which means we can take on work that requires a building permit. Minor structural repairs, certain alterations. That's not something a general handyman is legally qualified to do. And beyond the licensing, there's 30 years of industry relationships behind every job. We know who's good and who's not.
 
 No job is too small. A single bathroom retile, a plaster repair, an interior repaint. Done properly, same as everything else.
+
+When urgent work is needed — storm damage, burst pipes, or an insurance claim — we respond promptly. Emergency make-safe attendance, temporary securing, and full documentation for insurers and adjusters. One licensed builder managing the whole process.
 
 ## What's included
 
 - General repairs and maintenance throughout the home
-- Full trade coordination, painting, tiling, plumbing, electrical and more
+- Full trade coordination, painting, tiling and caulking, plumbing, electrical and more
 - Planned maintenance scheduling
 - Emergency repair response
+- Emergency make-safe and insurance claim work
 - Minor structural repairs requiring a building permit
 - End-to-end management, no separate calls to individual trades
 
 ## FAQs
 
-**What kinds of maintenance work do you handle?** Painting, tiling, plumbing maintenance, electrical repairs, brickwork, plastering, carpentry, roofing, pest control, cleaning, caulking, and general repairs throughout the home. As a licensed builder, Nick can also take on work requiring a building permit, including minor structural repairs that a handyman isn't qualified to do.
+**What kinds of maintenance work do you handle?** Painting, tiling and caulking, plumbing maintenance, electrical repairs, brickwork, plastering, carpentry, roofing, pest control, cleaning, and general repairs throughout the home. As a licensed builder, Nicon Built can also take on work requiring a building permit, including minor structural repairs that a handyman isn't qualified to do.
 
-**What's the difference between you and a handyman?** Licensing, network, and quality control. Nick is a VBA licensed builder with public liability insurance, which means he can manage permit-required work. He has a 30-year sub-trade network, so the right qualified trade does each job. And every trade is held to his standard throughout.
+**What's the difference between you and a handyman?** Licensing, network, and quality control. Nicon Built is a VBA licensed builder with public liability insurance, which means we can manage permit-required work. We have a 30-year sub-trade network, so the right qualified trade does each job. And every trade is held to our standard throughout.
 
 **Do I need to manage the trades myself?** No. That's the whole point. You brief us once at the start. We handle the rest. Scheduling, access, quality checks, handover. No separate calls to individual tradies.
 

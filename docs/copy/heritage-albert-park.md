@@ -11,14 +11,14 @@ SEO targets: heritage renovations Albert Park, Victorian terrace renovation Albe
 
 ## Headline
 Heritage Renovations Albert Park
-Victorian terraces in one of Melbourne's most protected streetscapes. VBA licensed builder, every project managed personally by Nick since 1990.
+Victorian terraces in one of Melbourne's most protected streetscapes. VBA licensed builder, every project managed by Nicon Built since 1990.
 
 ## Page copy
 Albert Park holds some of the most intact Victorian streetscapes in Melbourne, terrace rows and boom-era facades around St Vincent Gardens that look much as they did in the 1880s. That is no accident: heritage controls here are among the strictest in the inner south, and the City of Port Phillip expects work on these homes to be done properly or not at all.
 
-For a builder, Albert Park terraces are demanding jobs. Blocks are narrow, access is often through a rear laneway or not at all, party walls are shared, and the original fabric, bluestone footings, lime mortar, ornate render and iron lacework, needs to be understood before it is touched. Nick has worked on Melbourne's period homes for 30 years, and this is exactly the kind of job where that experience shows: in how the trades are sequenced, how materials get to site, and how the surprises inside a 140-year-old wall get handled without blowing out the budget.
+For a builder, Albert Park terraces are demanding jobs. Blocks are narrow, access is often through a rear laneway or not at all, party walls are shared, and the original fabric, bluestone footings, lime mortar, ornate render and iron lacework, needs to be understood before it is touched. Nicon Built has worked on Melbourne's period homes for 30 years, and this is exactly the kind of job where that experience shows: in how the trades are sequenced, how materials get to site, and how the surprises inside a 140-year-old wall get handled without blowing out the budget.
 
-Nicon Built is based in Port Melbourne, a few minutes away, which matters more than it sounds: Nick is on site regularly, not managing your job from across town. Heritage overlay documentation is reviewed before quoting, and planning permits through the City of Port Phillip are managed from start to finish.
+Nicon Built is based in Port Melbourne, a few minutes away, which matters more than it sounds: We're on site regularly, not managing your job from across town. Heritage overlay documentation is reviewed before quoting, and planning permits through the City of Port Phillip are managed from start to finish.
 
 Albert Park heritage projects typically range from internal restorations starting around $100,000 through to full heritage extensions in the $1M to $1.5M range, with period-specific materials sourced through a specialist supplier network built over three decades.
 

@@ -17,7 +17,7 @@
 ## Trade & maintenance services
 - /plumbing-melbourne/
 - /electrical-melbourne/
-- /tiling-melbourne/
+- /tiling-and-caulking-melbourne/ — Tiling and caulking: kitchens, bathrooms, laundries, outdoor areas, silicone sealing and re-caulking
 - /painting-and-plastering-melbourne/
 - /carpentry-and-joinery-melbourne/
 - /property-maintenance-melbourne/

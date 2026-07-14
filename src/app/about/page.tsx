@@ -100,7 +100,7 @@ export default function AboutPage() {
               <p className={styles.founderLabel}>Founder-led from first quote to handover</p>
               <p className={styles.founderName}>Nick Kafkalas</p>
               <p className={styles.founderMeta}>
-                Licensed builder. Every job managed personally.
+                Founder of Nicon Built. Licensed builder. Every job managed personally since 1990.
               </p>
             </div>
           </aside>

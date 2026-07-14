@@ -36,6 +36,18 @@
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --duration-fast: 150ms;
   --duration-base: 500ms;
+  --shadow-glow-accent:
+    0 4px 16px color-mix(in oklab, var(--color-accent) 42%, transparent),
+    0 0 32px color-mix(in oklab, var(--color-accent) 28%, transparent);
+  --shadow-glow-accent-hover:
+    0 4px 20px color-mix(in oklab, var(--color-accent) 52%, transparent),
+    0 0 40px color-mix(in oklab, var(--color-accent) 36%, transparent);
+  --shadow-glow-primary:
+    0 4px 16px color-mix(in oklab, var(--color-accent) 24%, transparent),
+    0 0 32px color-mix(in oklab, var(--color-accent) 16%, transparent);
+  --shadow-glow-primary-hover:
+    0 4px 20px color-mix(in oklab, var(--color-accent) 32%, transparent),
+    0 0 40px color-mix(in oklab, var(--color-accent) 22%, transparent);
 }
 
 *,
@@ -165,7 +177,9 @@ img {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: opacity var(--duration-fast) var(--ease-out);
+  transition:
+    opacity var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
 }
 
 .btn:hover {
@@ -175,11 +189,21 @@ img {
 .btn-primary {
   background: var(--color-primary);
   color: #fff;
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.btn-primary:hover {
+  box-shadow: var(--shadow-glow-primary-hover);
 }
 
 .btn-accent {
   background: var(--color-accent);
   color: var(--color-primary);
+  box-shadow: var(--shadow-glow-accent);
+}
+
+.btn-accent:hover {
+  box-shadow: var(--shadow-glow-accent-hover);
 }
 
 .btn-outline {

@@ -75,10 +75,12 @@ export const redirects: {
   { source: "/minor-structural-repairs-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
   { source: "/fixture-replacements-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
   { source: "/fixture-replacements-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
-  { source: "/caulking-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
-  { source: "/caulking-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
-  { source: "/brickwork-repairs-melbourne", destination: "/property-maintenance-melbourne/", permanent: true },
-  { source: "/brickwork-repairs-melbourne/", destination: "/property-maintenance-melbourne/", permanent: true },
+  { source: "/tiling-melbourne", destination: "/tiling-and-caulking-melbourne/", permanent: true },
+  { source: "/tiling-melbourne/", destination: "/tiling-and-caulking-melbourne/", permanent: true },
+  { source: "/caulking-melbourne", destination: "/tiling-and-caulking-melbourne/", permanent: true },
+  { source: "/caulking-melbourne/", destination: "/tiling-and-caulking-melbourne/", permanent: true },
+  { source: "/brickwork-repairs-melbourne", destination: "/brickwork-and-block-laying-melbourne/", permanent: true },
+  { source: "/brickwork-repairs-melbourne/", destination: "/brickwork-and-block-laying-melbourne/", permanent: true },
 ];
 
 function suburbSlugFromPath(pathname: string): string | null {

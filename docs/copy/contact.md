@@ -9,8 +9,8 @@ Last updated: 2026-07-05
 
 ## Headline
 Get in Touch | Nicon Built Melbourne
-No obligation. Nick usually gets back to you the same day.
-Fill in the form and he'll be in touch. Every enquiry goes straight to Nick.
+No obligation. We usually get back to you the same day.
+Fill in the form and we'll be in touch. Every enquiry goes straight to the Nicon Built team.
 
 ## Contact details
 ⚠️ Phone number gets added once the CRM (GHL) lead-gen number is confirmed.

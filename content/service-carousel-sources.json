@@ -112,7 +112,33 @@
         "alt": "Victorian terrace entry with restored exterior paint — Nicon Built"
       }
     ],
-    "tiling-melbourne": [
+    "rendering-and-solid-plastering-melbourne": [
+      {
+        "file": "nicon-built-contemporary-two-storey-home-white-render-charcoal.webp",
+        "alt": "Contemporary home with white acrylic render and charcoal accents — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-townhouse-white-render-charcoal-cladding-dusk.png",
+        "alt": "Townhouse exterior with white render finish at dusk — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-two-storey-new-home-white-render-landscaped.jpg",
+        "alt": "Two-storey new home with white render facade — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-living-floating-staircase-polished-concrete.jpg",
+        "alt": "Interior with smooth solid plaster walls and polished concrete — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-dining-vaulted-ceiling-globe-pendants-timber.jpg",
+        "alt": "Heritage dining room with restored plaster ceiling — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-bedroom-vj-panelling-gold-mirror.jpg",
+        "alt": "Heritage bedroom with VJ panelling and plaster finishes — Nicon Built"
+      }
+    ],
+    "tiling-and-caulking-melbourne": [
       {
         "file": "nicon-built-modern-bathroom-marble-tiles-freestanding-bath-timber-vanity.jpg",
         "alt": "Marble bathroom tiling — Nicon Built"
@@ -288,6 +314,58 @@
       {
         "file": "nicon-built-heritage-weatherboard-cottage-white-picket-fence-melbourne.jpg",
         "alt": "Weatherboard cottage with restored roof — Nicon Built"
+      }
+    ],
+    "brickwork-and-block-laying-melbourne": [
+      {
+        "file": "nicon-built-modern-townhouse-development-multi-unit-melbourne.jpg",
+        "alt": "New brick and render townhouse development — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-extension-pool-glass-fence-rear-elevation.jpg",
+        "alt": "Grey brick extension with pool and outdoor paving — Nicon Built"
+      },
+      {
+        "file": "nicon-built-red-brick-heritage-home-arched-entry-manicured-lawn.jpg",
+        "alt": "Red brick heritage home facade — Nicon Built"
+      },
+      {
+        "file": "nicon-built-covered-alfresco-dining-brick-pillars-pool-garden.webp",
+        "alt": "Brick pillar alfresco structure by the pool — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-brick-home-courtyard-bluestone-paving-bifold-doors.jpg",
+        "alt": "Heritage brick home with courtyard brickwork — Nicon Built"
+      },
+      {
+        "file": "nicon-built-living-room-fireplace-artwork-brick-courtyard-view.webp",
+        "alt": "Brick fireplace and courtyard wall detail — Nicon Built"
+      }
+    ],
+    "concreting-and-paving-melbourne": [
+      {
+        "file": "nicon-built-open-plan-living-floating-staircase-polished-concrete.jpg",
+        "alt": "Polished concrete floor in open-plan living — Nicon Built"
+      },
+      {
+        "file": "nicon-built-heritage-brick-home-courtyard-bluestone-paving-bifold-doors.jpg",
+        "alt": "Bluestone courtyard paving with bi-fold doors — Nicon Built"
+      },
+      {
+        "file": "nicon-built-victorian-terrace-verandah-checkerboard-tiles-entry.jpg",
+        "alt": "Checkerboard tiled terrace entry paving — Nicon Built"
+      },
+      {
+        "file": "nicon-built-modern-extension-pool-glass-fence-rear-elevation.jpg",
+        "alt": "Pool surround paving and concrete coping — Nicon Built"
+      },
+      {
+        "file": "nicon-built-luxury-home-pool-timber-deck-floor-to-ceiling-glass.jpg",
+        "alt": "Pool area with paved and decked outdoor entertaining — Nicon Built"
+      },
+      {
+        "file": "nicon-built-open-plan-kitchen-dining-living-timber-deck-outdoor.jpg",
+        "alt": "Outdoor deck and paved entertaining area — Nicon Built"
       }
     ],
     "heritage-renovations-melbourne": [
@@ -490,7 +568,7 @@
         "alt": "Galley kitchen plumbing relocation — Nicon Built"
       }
     ],
-    "tiling-melbourne": [
+    "tiling-and-caulking-melbourne": [
       {
         "file": "nicon-built-modern-bathroom-marble-tiles-freestanding-bath-timber-vanity.jpg",
         "alt": "Marble bathroom tiling — Nicon Built"

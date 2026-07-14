@@ -40,4 +40,4 @@ In Melbourne's older homes this matters more than most. Federation ceilings, orn
 
 **Do you do single rooms or just full houses?** Both. A single room repaint is fine. A full interior and exterior is fine too. We take on jobs of all sizes and handle every one to the same standard.
 
-**How long does interior painting typically take?** A single room is typically one to two days. A full interior repaint depends on the size of the home and the condition of the walls. Nick provides a realistic timeline and clear quote before any work starts.
+**How long does interior painting typically take?** A single room is typically one to two days. A full interior repaint depends on the size of the home and the condition of the walls. Nicon Built provides a realistic timeline and clear quote before any work starts.

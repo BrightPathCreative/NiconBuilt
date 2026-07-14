@@ -9,21 +9,21 @@ Last updated: 2026-07-05
 
 SEO targets: heritage renovation builder Melbourne, Victorian home renovation Melbourne
 
-⚠️ Image: Heritage renovation. Period home exterior or restoration detail — to be supplied by Nick.
+⚠️ Image: Heritage renovation. Period home exterior or restoration detail — to be supplied by Nicon Built.
 
 ## Headline
 Heritage Renovations Melbourne
 
-30 years of heritage building experience across Melbourne's inner south. Every project managed personally. VBA licensed, fully insured, Port Melbourne.
+30 years of heritage building experience across Melbourne's inner south. Every project managed by Nicon Built. VBA licensed, fully insured, Port Melbourne.
 
 ## Page copy
 Heritage renovation is a different animal. It's not just an old house that needs updating.
 
 Victorian, Edwardian, and Federation homes were built with materials you simply can't buy anymore. Lime mortars, clinker brickwork, original hardwood flooring, decorative plasterwork, period joinery. All of it needs someone who actually knows how to work with it. Not someone who'll substitute modern materials and hope for the best. The wrong call here doesn't just look wrong. It can fail your heritage overlay requirements, cause structural issues, and create damage that can't properly be undone.
 
-Nick has been working on Melbourne's period homes for 30 years. He reads the heritage overlay documentation before anyone touches a tool. He walks the property with you and flags the challenges early, especially the spots where what's drawn and what's actually there don't quite line up yet. Heritage homes throw up surprises. He's seen most of them, and he knows how to deal with them without the job blowing out.
+Nicon Built has been working on Melbourne's period homes for 30 years. We read the heritage overlay documentation before anyone touches a tool. We walk the property with you and flag the challenges early, especially the spots where what's drawn and what's actually there don't quite line up yet. Heritage homes throw up surprises. We've seen most of them, and we know how to deal with them without the job blowing out.
 
-What that looks like in practice: one person runs the whole job. Materials are sourced through a specialist supplier network built over three decades, including period-specific materials that aren't available through standard channels. Council heritage permit requirements are handled from start to finish. Jobs range from internal Victorian restorations from around $100,000, all the way up to full heritage extensions in the $1M to $1.5M range.
+What that looks like in practice: one team runs the whole job. Materials are sourced through a specialist supplier network built over three decades, including period-specific materials that aren't available through standard channels. Council heritage permit requirements are handled from start to finish. Jobs range from internal Victorian restorations from around $100,000, all the way up to full heritage extensions in the $1M to $1.5M range.
 
 Most of our heritage work is in Armadale, Malvern, Albert Park, Brighton, Elwood, and South Yarra. These suburbs have the highest density of period housing in Melbourne and the most specific council requirements to go with them.
 

@@ -14,8 +14,10 @@ About Nicon Built
 
 Reliable trades. Proper renovations. One team you can actually count on.
 
+Nick Kafkalas founded Nicon Built in Port Melbourne in 1990, and still personally runs every job today. What began as one builder coordinating trades across Melbourne's inner south has grown into a trusted team — but the approach hasn't changed: one call, one point of contact, everything managed properly from first conversation to final handover.
+
 ## Built on Experience. Driven by Quality.
-Founded in Port Melbourne, Nicon Built was established after decades of experience delivering some of Melbourne's largest and most recognised construction projects, including the Bolte Bridge, Burnley Tunnel, State Library redevelopment, and Melbourne Museum.
+Founded in Port Melbourne, Nicon Built was established by Nick Kafkalas after decades of experience delivering some of Melbourne's largest and most recognised construction projects, including the Bolte Bridge, Burnley Tunnel, State Library redevelopment, and Melbourne Museum.
 
 Working on projects of this scale built a strong foundation in precision, planning, and quality workmanship. These are the principles that continue to guide every project we deliver today.
 
@@ -23,11 +25,11 @@ Working on projects of this scale built a strong foundation in precision, planni
 With more than 30 years of industry experience, our approach is simple: understand your goals, communicate clearly, and deliver quality workmanship from start to finish.
 Whether you're after a plumber, a full kitchen renovation, or a major extension, we coordinate every trade required to complete the project efficiently and to the highest standard.
 Already working with an architect or designer? We're happy to collaborate. If not, we can recommend trusted professionals we've worked with over many years.
-From your initial consultation through to project completion, you'll deal directly with the team managing your project. We believe clear communication, regular updates, and hands-on project management are the key to achieving outstanding results.
+From your initial consultation through to project completion, you'll deal directly with Nick and the team managing your project. We believe clear communication, regular updates, and hands-on project management are the key to achieving outstanding results.
 
 ## A Business Built on Relationships
 Most of our work comes from referrals and repeat clients, a reflection of the trust we've built through quality workmanship and reliable service. Homeowners, architects, property managers, and commercial clients continue to recommend Nicon Built because we deliver on our commitments.
-As a family-owned and operated business, we're committed to providing personalised service, attention to detail, and lasting relationships with every client. Every project is completed with the same focus on craftsmanship, professionalism, and care, regardless of its size or complexity.
+As a family-owned and operated business led by Nick, we're committed to providing personalised service, attention to detail, and lasting relationships with every client. Every project is completed with the same focus on craftsmanship, professionalism, and care, regardless of its size or complexity.
 
 ## Our Process
 Every project starts with a conversation. Contact us by phone or through our enquiry form, and we'll respond promptly to discuss your requirements.

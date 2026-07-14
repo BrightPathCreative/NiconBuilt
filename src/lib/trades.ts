@@ -17,7 +17,7 @@ const sharedAreas =
   "Port Melbourne, Albert Park, Middle Park, South Melbourne, Elwood, Brighton, Hampton, Sandringham, Armadale, Malvern, South Yarra, Williamstown, Moorabbin, Bentleigh, Caulfield, Elsternwick, Camberwell, Hawthorn, Kew, and surrounding suburbs.";
 
 const sharedIntro =
-  "You brief Nick once. He coordinates the right trade from a network built over 30 years, manages scheduling and quality, and makes sure the work is done properly. No chasing individual tradies.";
+  "You brief us once. Nicon Built coordinates the right trade from a network built over 30 years, manages scheduling and quality, and makes sure the work is done properly. No chasing individual tradies.";
 
 export const tradeServices: TradeService[] = [
   {
@@ -49,7 +49,7 @@ export const tradeServices: TradeService[] = [
       {
         question: "Can painting be combined with other trade work?",
         answer:
-          "Absolutely. Painting is often part of a larger maintenance or renovation scope. Nick sequences all trades in the right order so you're not repainting before plastering is finished, for example.",
+          "Absolutely. Painting is often part of a larger maintenance or renovation scope. Nicon Built sequences all trades in the right order so you're not repainting before plastering is finished, for example.",
       },
       {
         question: "What areas do you cover?",
@@ -86,7 +86,7 @@ export const tradeServices: TradeService[] = [
       {
         question: "Can you work on period homes?",
         answer:
-          "Yes. Nick has 30+ years working inside Melbourne's Victorian, Edwardian, and Federation housing stock and understands the quirks of older wall constructions.",
+          "Yes. Nicon Built has 30+ years working inside Melbourne's Victorian, Edwardian, and Federation housing stock and understands the quirks of older wall constructions.",
       },
       {
         question: "What areas do you cover?",
@@ -95,17 +95,17 @@ export const tradeServices: TradeService[] = [
     ],
   },
   {
-    title: "Tiling Melbourne",
-    shortTitle: "Tiling",
-    slug: "/tiling-melbourne/",
-    metaKey: "tiling-melbourne",
-    breadcrumbName: "Tiling Melbourne",
-    headline: "Tiling Melbourne | Bathrooms, Kitchens & Floors | Nicon Built",
-    subheadline: "Wall and floor tiling, fully coordinated in the right sequence.",
+    title: "Tiling and Caulking Melbourne",
+    shortTitle: "Tiling & Caulking",
+    slug: "/tiling-and-caulking-melbourne/",
+    metaKey: "tiling-and-caulking-melbourne",
+    breadcrumbName: "Tiling and Caulking Melbourne",
+    headline: "Tiling and Caulking Melbourne | Bathrooms, Kitchens & Floors | Nicon Built",
+    subheadline: "Wall and floor tiling plus professional caulking and sealing, fully coordinated in the right sequence.",
     paragraphs: [
-      "Tiling done in the wrong order — or on surfaces that aren't properly prepared — causes problems that take years to show. Waterproofing before wall tiles. Substrate prep before floor tiles. The sequence matters.",
+      "Tiling done in the wrong order — or on surfaces that aren't properly prepared — causes problems that take years to show. Waterproofing before wall tiles. Substrate prep before floor tiles. Fresh silicone where wet areas meet fixtures. The sequence matters.",
       sharedIntro,
-      "From a single bathroom retile through to kitchen splashbacks and floor tiling, every job is sequenced and quality-checked.",
+      "From a single bathroom retile through to kitchen splashbacks, floor tiling, and re-caulking showers and benchtops, every job is sequenced and quality-checked.",
     ],
     bullets: [
       "Bathroom wall and floor tiling",
@@ -113,17 +113,24 @@ export const tradeServices: TradeService[] = [
       "Waterproofing coordination before tiling",
       "Tile removal and substrate preparation",
       "Ensuite and laundry tiling",
+      "Bathroom and kitchen caulking and sealing",
+      "Window and door frame re-caulking",
     ],
     faqs: [
       {
         question: "Do you handle bathroom retiling only?",
         answer:
-          "Yes. A single bathroom retile is a common job. Nick manages waterproofing, tiling, and any plumbing or fixture work in the correct sequence.",
+          "Yes. A single bathroom retile is a common job. Nicon Built manages waterproofing, tiling, caulking, and any plumbing or fixture work in the correct sequence.",
+      },
+      {
+        question: "Is caulking a standalone job?",
+        answer:
+          "Yes. Re-caulking a shower, bath, or kitchen benchtop is a common standalone maintenance job. No minimum size.",
       },
       {
         question: "Do I need to arrange waterproofing separately?",
         answer:
-          "No. Nick coordinates waterproofing as part of the job where required, ensuring it's completed to building code standards before tiles go on.",
+          "No. Nicon Built coordinates waterproofing as part of the job where required, ensuring it's completed to building code standards before tiles go on.",
       },
       {
         question: "What areas do you cover?",
@@ -142,7 +149,7 @@ export const tradeServices: TradeService[] = [
     paragraphs: [
       "Leaking taps, slow drains, fixture upgrades, or plumbing that needs attention before other trades can start — plumbing maintenance needs someone who understands how it fits into the bigger picture.",
       sharedIntro,
-      "Nick coordinates licensed plumbers from a trusted network and sequences their work with tiling, painting, and structural trades as needed.",
+      "Nicon Built coordinates licensed plumbers from a trusted network and sequences their work with tiling, painting, and structural trades as needed.",
     ],
     bullets: [
       "Tap and fixture replacements",
@@ -155,7 +162,7 @@ export const tradeServices: TradeService[] = [
       {
         question: "Is this for emergency plumbing?",
         answer:
-          "For urgent issues, call Nick directly. He can assess the situation and coordinate the right licensed plumber from his network promptly.",
+          "For urgent issues, call us directly. We can assess the situation and coordinate the right licensed plumber from our network promptly.",
       },
       {
         question: "Can plumbing be part of a larger renovation?",
@@ -179,7 +186,7 @@ export const tradeServices: TradeService[] = [
     paragraphs: [
       "Cracked mortar, damaged bricks, rising damp, or sections that need to be matched to original clinker or period brickwork — brick repairs in Melbourne's older homes need specialist knowledge.",
       sharedIntro,
-      "Nick sources period-matched materials through a specialist supplier network built across 30 years of heritage work in Melbourne.",
+      "Nicon Built sources period-matched materials through a specialist supplier network built across 30 years of heritage work in Melbourne.",
     ],
     bullets: [
       "Mortar repointing and brick replacement",
@@ -192,12 +199,12 @@ export const tradeServices: TradeService[] = [
       {
         question: "Can you match heritage brickwork?",
         answer:
-          "Yes. Through a specialist supplier network, Nick sources lime mortars and period-matched brickwork materials that complement original construction.",
+          "Yes. Through a specialist supplier network, Nicon Built sources lime mortars and period-matched brickwork materials that complement original construction.",
       },
       {
         question: "Do brick repairs require a building permit?",
         answer:
-          "Some structural brick repairs do. As a VBA licensed builder, Nick can manage permit-required work that a handyman isn't qualified to undertake.",
+          "Some structural brick repairs do. As a VBA licensed builder, Nicon Built can manage permit-required work that a handyman isn't qualified to undertake.",
       },
       {
         question: "What areas do you cover?",
@@ -253,7 +260,7 @@ export const tradeServices: TradeService[] = [
     paragraphs: [
       "New tapware, toilets, vanities, or kitchen fixtures — replacing fixtures often involves plumbing, tiling, and sometimes electrical work that needs to happen in the right order.",
       sharedIntro,
-      "Nick coordinates every trade required so your fixture upgrade is completed efficiently without you managing multiple contractors.",
+      "Nicon Built coordinates every trade required so your fixture upgrade is completed efficiently without you managing multiple contractors.",
     ],
     bullets: [
       "Tapware and showerhead replacements",
@@ -266,12 +273,12 @@ export const tradeServices: TradeService[] = [
       {
         question: "Can I supply my own fixtures?",
         answer:
-          "Yes. Supply your own fixtures or ask Nick for guidance. Either way, installation and coordination are managed for you.",
+          "Yes. Supply your own fixtures or ask us for guidance. Either way, installation and coordination are managed for you.",
       },
       {
         question: "Is this different from a full bathroom renovation?",
         answer:
-          "Yes. Fixture replacements are targeted upgrades — new tapware, a toilet, or a vanity — without a full bathroom strip-out. Nick also manages full bathroom renovations if that's what you need.",
+          "Yes. Fixture replacements are targeted upgrades — new tapware, a toilet, or a vanity — without a full bathroom strip-out. Nicon Built also manages full bathroom renovations if that's what you need.",
       },
       {
         question: "What areas do you cover?",
@@ -290,7 +297,7 @@ export const tradeServices: TradeService[] = [
     paragraphs: [
       "Some repairs go beyond what a handyman is legally qualified to undertake. Minor structural work, certain alterations, and repairs requiring a building permit need a licensed builder.",
       sharedIntro,
-      "Nick is a VBA licensed builder with public liability insurance, able to manage permit-required work and coordinate structural trades properly.",
+      "Nicon Built is a VBA licensed builder with public liability insurance, able to manage permit-required work and coordinate structural trades properly.",
     ],
     bullets: [
       "Minor structural repairs and alterations",
@@ -303,12 +310,12 @@ export const tradeServices: TradeService[] = [
       {
         question: "What's the difference between this and a handyman?",
         answer:
-          "Licensing and legal scope. Nick is a VBA licensed builder who can manage permit-required structural work that a general handyman isn't qualified to undertake.",
+          "Licensing and legal scope. Nicon Built is a VBA licensed builder who can manage permit-required structural work that a general handyman isn't qualified to undertake.",
       },
       {
         question: "Do minor structural repairs need a permit?",
         answer:
-          "Some do. Nick assesses each job and manages permits where required, so the work is done legally and to standard.",
+          "Some do. Nicon Built assesses each job and manages permits where required, so the work is done legally and to standard.",
       },
       {
         question: "What areas do you cover?",
@@ -345,7 +352,7 @@ export const tradeServices: TradeService[] = [
       {
         question: "How quickly can you respond?",
         answer:
-          "For straightforward jobs, Nick usually gets back with a quote and timeline within a day or two. Call or send a message via the Contact page.",
+          "For straightforward jobs, we usually get back with a quote and timeline within a day or two. Call or send a message via the Contact page.",
       },
       {
         question: "What areas do you cover?",
