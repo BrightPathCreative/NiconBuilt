@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CallButton } from "@/components/CallButton";
-import { GhlEmbedForm } from "@/components/GhlEmbedForm";
 import { JsonLd } from "@/components/JsonLd";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
@@ -10,6 +10,10 @@ import { breadcrumbSchema } from "@/lib/schema";
 import { images } from "@/lib/images";
 import { siteConfig } from "@/lib/site";
 import styles from "./page.module.css";
+
+const GhlEmbedForm = dynamic(() =>
+  import("@/components/GhlEmbedForm").then((mod) => mod.GhlEmbedForm)
+);
 
 export const metadata = buildMetadata({ ...pageMeta.contact, path: "/contact/" });
 
@@ -56,7 +60,6 @@ export default function ContactPage() {
   return (
     <>
       <JsonLd data={breadcrumbSchema(breadcrumbs)} />
-      <link rel="preload" as="image" href={heroImage} />
 
       <div className="container">
         <Breadcrumbs items={breadcrumbs} />
@@ -69,7 +72,7 @@ export default function ContactPage() {
             alt="Renovated weatherboard home in Melbourne by Nicon Built"
             fill
             priority
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 1200px"
             className={styles.pageHeadImage}
           />
           <div className={styles.pageHeadOverlay} aria-hidden="true" />

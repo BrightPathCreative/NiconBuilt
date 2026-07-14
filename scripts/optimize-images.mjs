@@ -99,8 +99,15 @@ async function main() {
     const maxWidth = slot.includes("portrait") ? 800 : slot.includes("map") ? 1200 : 1920;
     await optimizeImage(src, path.join(OUT_DIR, `${slot}.webp`), {
       width: maxWidth,
-      quality: slot === "home-hero-bg" ? 78 : 82,
+      quality: slot === "home-hero-bg" ? 70 : 82,
     });
+    if (slot === "home-hero-bg") {
+      await optimizeImage(src, path.join(OUT_DIR, "home-hero-bg-mobile.webp"), {
+        width: 828,
+        quality: 68,
+      });
+      console.log("✓ home-hero-bg-mobile.webp");
+    }
     console.log(`✓ ${slot}.webp`);
   }
 

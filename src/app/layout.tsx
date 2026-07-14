@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
-import { TrackingParamsCapture } from "@/components/TrackingParamsCapture";
-import { BackToTop } from "@/components/BackToTop";
 import { ScrollToTopOnNavigate } from "@/components/ScrollToTopOnNavigate";
 import { StickyCallBar } from "@/components/StickyCallBar";
 import { localBusinessSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 import { fontVariables } from "@/lib/fonts";
 import "./globals.css";
+
+const BackToTop = dynamic(() =>
+  import("@/components/BackToTop").then((mod) => mod.BackToTop)
+);
+
+const TrackingParamsCapture = dynamic(() =>
+  import("@/components/TrackingParamsCapture").then((mod) => mod.TrackingParamsCapture)
+);
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

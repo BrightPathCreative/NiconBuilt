@@ -1,6 +1,7 @@
 /** Public image paths mapped to manifest slots */
 export const images = {
   homeHero: "/images/home-hero-bg.webp",
+  homeHeroMobile: "/images/home-hero-bg-mobile.webp",
   nickPortrait: "/images/about-nick-portrait.webp",
   heritageRenovations: "/images/heritage-renovations-page-01.webp",
   heritageExtensions: "/images/heritage-extensions-page-01.webp",

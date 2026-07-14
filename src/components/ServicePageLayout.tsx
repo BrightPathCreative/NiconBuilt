@@ -7,14 +7,21 @@ import { Hero } from "./Hero";
 import { JsonLd } from "./JsonLd";
 import { FaqSection } from "./FaqSection";
 import { QuoteCTA } from "./QuoteCTA";
-import { QuickEnquiry } from "./QuickEnquiry";
+import dynamic from "next/dynamic";
 import type { BreadcrumbItem } from "@/lib/schema";
 import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/schema";
 import type { FaqItem } from "@/lib/copy";
 import type { CarouselSlide } from "@/lib/service-carousel";
-import { ServiceHeroCarousel } from "./ServiceImageCarousel";
 import { ServiceMarqueeCarousel } from "./ServiceMarquee";
 import styles from "./ServicePageLayout.module.css";
+
+const QuickEnquiry = dynamic(() =>
+  import("./QuickEnquiry").then((mod) => mod.QuickEnquiry)
+);
+
+const ServiceHeroCarousel = dynamic(() =>
+  import("./ServiceImageCarousel").then((mod) => mod.ServiceHeroCarousel)
+);
 
 type Props = {
   breadcrumbs: BreadcrumbItem[];

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CallButton } from "./CallButton";
 import { HeroQuotePanel } from "./HeroQuotePanel";
+import { images } from "@/lib/images";
 import styles from "./Hero.module.css";
 
 type Props = {
@@ -31,14 +32,22 @@ export function Hero({
     <section className={styles.hero}>
       <div className={styles.bg}>
         {image ? (
-          <Image
-            src={image}
-            alt={imageAlt}
-            fill
-            priority={priority}
-            sizes="100vw"
-            className={styles.bgImage}
-          />
+          <picture className={styles.bgPicture}>
+            <source
+              media="(max-width: 768px)"
+              srcSet={images.homeHeroMobile}
+              type="image/webp"
+            />
+            <Image
+              src={image}
+              alt={imageAlt}
+              fill
+              priority={priority}
+              quality={72}
+              sizes="100vw"
+              className={styles.bgImage}
+            />
+          </picture>
         ) : null}
         <div className={styles.overlay} aria-hidden="true" />
       </div>

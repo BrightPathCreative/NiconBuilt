@@ -11,9 +11,14 @@
   background: var(--color-primary);
 }
 
+.bgPicture {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
 .bgImage {
   object-fit: cover;
-  animation: heroBgIn 1.1s var(--ease-out) both;
 }
 
 .overlay {
@@ -75,15 +80,6 @@
   animation-delay: 350ms;
 }
 
-@keyframes heroBgIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes heroUpIn {
   from {
     opacity: 0;
@@ -96,7 +92,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bgImage,
   .eyebrow,
   .text h1,
   .description,

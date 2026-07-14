@@ -1,18 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Hero } from "@/components/Hero";
 import { CallButton } from "@/components/CallButton";
 import { StatsStrip } from "@/components/StatsStrip";
 import { QuoteCTA } from "@/components/QuoteCTA";
 import { RecentArticles } from "@/components/RecentArticles";
-import { Reveal } from "@/components/Reveal";
-import { ReviewsCarousel } from "@/components/ReviewsCarousel";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { loadCopy, formatReviewMeta, getSectionParagraphs } from "@/lib/copy";
 import { homeServices, projectServices } from "@/lib/navigation";
 import { images } from "@/lib/images";
 import { getServiceCarouselSlides } from "@/lib/service-carousel";
 import styles from "./page.module.css";
+
+const Reveal = dynamic(() =>
+  import("@/components/Reveal").then((mod) => mod.Reveal)
+);
+
+const ReviewsCarousel = dynamic(() =>
+  import("@/components/ReviewsCarousel").then((mod) => mod.ReviewsCarousel)
+);
 
 export const metadata = buildMetadata({
   ...pageMeta.home,
@@ -47,7 +54,13 @@ export default function HomePage() {
 
   return (
     <>
-      <link rel="preload" as="image" href={images.homeHero} />
+      <link
+        rel="preload"
+        as="image"
+        href={images.homeHeroMobile}
+        media="(max-width: 768px)"
+        type="image/webp"
+      />
 
       <Hero
         eyebrow="Building Quality, Maintaining Excellence"
