@@ -119,24 +119,26 @@
   overflow: hidden;
 }
 
-.workStack {
-  display: grid;
-  gap: 24px;
+.relationshipsSection {
+  background: var(--color-primary);
 }
 
-.relationshipCard {
-  padding: 28px;
-  background: var(--color-surface-2);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
+.relationshipsInner {
+  max-width: 72ch;
 }
 
-.relationshipCard h3 {
+.relationshipsInner h2 {
+  color: #fff;
   margin-top: 0;
-  margin-bottom: 14px;
 }
 
-.relationshipCard p:last-child {
+.relationshipsInner p {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.relationshipsInner p:last-child {
   margin-bottom: 0;
 }
 
@@ -298,7 +300,6 @@
 
   .promisePanel,
   .credentialsPanel,
-  .relationshipCard,
   .processCard {
     padding: 24px;
   }

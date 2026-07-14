@@ -128,21 +128,22 @@ export default function AboutPage() {
                 className={styles.sectionImageEl}
               />
             </div>
-            <div className={styles.workStack}>
-              <div className="prose">
-                <h2>How We Work</h2>
-                {workParagraphs.map((p) => (
-                  <p key={p.slice(0, 40)}>{p}</p>
-                ))}
-              </div>
-              <div className={styles.relationshipCard}>
-                <h3>A Business Built on Relationships</h3>
-                {relationshipsParagraphs.map((p) => (
-                  <p key={p.slice(0, 40)}>{p}</p>
-                ))}
-              </div>
+            <div className="prose">
+              <h2>How We Work</h2>
+              {workParagraphs.map((p) => (
+                <p key={p.slice(0, 40)}>{p}</p>
+              ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className={`section ${styles.relationshipsSection}`}>
+        <div className={`container ${styles.relationshipsInner}`}>
+          <h2>A Business Built on Relationships</h2>
+          {relationshipsParagraphs.map((p) => (
+            <p key={p.slice(0, 40)}>{p}</p>
+          ))}
         </div>
       </section>
 
