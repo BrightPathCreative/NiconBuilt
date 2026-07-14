@@ -72,9 +72,20 @@ export const siteConfig = {
   ],
 } as const;
 
+export function normalizePhoneDigits(phone: string): string {
+  const digits = phone.replace(/\D/g, "");
+  if (!digits) return "";
+  // +61 4XX XXX XXX → 04XX XXX XXX
+  if (digits.startsWith("61") && digits.length === 11) {
+    return `0${digits.slice(2)}`;
+  }
+  if (digits.startsWith("0")) return digits;
+  return `0${digits}`;
+}
+
 export function formatPhoneDisplay(phone: string): string {
   if (!phone) return "Call for a quote";
-  const digits = phone.replace(/\D/g, "");
+  const digits = normalizePhoneDigits(phone);
   if (digits.length === 10 && digits.startsWith("04")) {
     return `${digits.slice(0, 4)} ${digits.slice(4, 7)} ${digits.slice(7)}`;
   }
@@ -82,8 +93,8 @@ export function formatPhoneDisplay(phone: string): string {
 }
 
 export function phoneHref(phone: string): string {
-  const digits = phone.replace(/\D/g, "");
-  return digits ? `tel:${digits.startsWith("0") ? digits : `0${digits}`}` : "/contact/";
+  const normalized = normalizePhoneDigits(phone);
+  return normalized ? `tel:${normalized}` : "/contact/";
 }
 
 /** Default click-to-call label — number is never shown in the UI. */
