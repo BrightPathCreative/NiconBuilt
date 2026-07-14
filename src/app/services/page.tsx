@@ -112,7 +112,7 @@ export default function ServicesPage() {
               <div className={styles.emergencyImage}>
                 <Image
                   src={images.emergencyMakeSafe}
-                  alt="Nicon Built tradesperson carrying out exterior repair work at a Melbourne weatherboard home"
+                  alt="Nicon Built team repairing storm-damaged timber fencing at a Melbourne weatherboard home"
                   fill
                   sizes="(max-width: 900px) 100vw, 40vw"
                 />

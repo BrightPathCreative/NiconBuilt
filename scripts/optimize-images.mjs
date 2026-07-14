@@ -12,6 +12,7 @@ const ASSETS_DIR = path.resolve(
   process.cwd(),
   "../05 Assets & Branding/Images"
 );
+const GENERATED_SOURCES_DIR = path.resolve(process.cwd(), "content/image-sources");
 const LOGO_DIR = path.resolve(
   process.cwd(),
   "../05 Assets & Branding/Logo & Branding information"
@@ -58,7 +59,7 @@ const IMAGE_MAP = {
   "concreting-and-paving-page-01":
     "nicon-built-open-plan-living-floating-staircase-polished-concrete.jpg",
   "emergency-make-safe":
-    "nicon-built-builder-painting-pergola-on-site-construction.jpg",
+    "emergency-make-safe.png",
   "service-area-map":
     "nicon-built-service-area-map-melbourne-inner-south-bayside.png",
 };
@@ -93,7 +94,9 @@ async function main() {
   fs.mkdirSync(path.join(process.cwd(), "public"), { recursive: true });
 
   for (const [slot, filename] of Object.entries(IMAGE_MAP)) {
-    const src = path.join(ASSETS_DIR, filename);
+    const src = slot === "emergency-make-safe"
+      ? path.join(GENERATED_SOURCES_DIR, filename)
+      : path.join(ASSETS_DIR, filename);
     if (!fs.existsSync(src)) {
       console.warn(`Missing source for ${slot}: ${filename}`);
       continue;
