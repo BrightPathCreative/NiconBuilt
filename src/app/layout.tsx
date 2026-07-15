@@ -22,7 +22,7 @@ const TrackingParamsCapture = dynamic(() =>
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Home Services & Renovation Builder Melbourne | Nicon Built",
+    default: "Melbourne Home Services | Trades & Maintenance | Nicon Built",
     template: "%s | Nicon Built",
   },
   description: siteConfig.description,

@@ -39,4 +39,5 @@ export const footerNav = [
   { label: "About", href: "/about/" },
   { label: "Contact", href: "/contact/" },
   { label: "Privacy Policy", href: "/privacy-policy/" },
+  { label: "Cookie Policy", href: "/cookie-policy/" },
 ] as const;

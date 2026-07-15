@@ -65,4 +65,4 @@ No code changes needed when swapping or adding posts — only edit or add files 
 
 ## Current slots
 
-The repo ships with **10 published posts**, each with a hero/thumbnail image in place.
+The site ships with **10 published posts** — this is the final set. Each post has a hero/thumbnail image in place. Old WordPress blog URLs redirect to these posts or to `/blog/` (see `src/lib/redirects.ts`).

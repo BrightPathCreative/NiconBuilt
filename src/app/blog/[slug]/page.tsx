@@ -25,6 +25,8 @@ export async function generateMetadata({ params }: Props) {
     title: `${post.title} | Nicon Built Blog`,
     description: post.excerpt,
     path: `/blog/${post.slug}/`,
+    ogImage: post.image,
+    ogImageAlt: post.imageAlt ?? post.title,
   });
 }
 

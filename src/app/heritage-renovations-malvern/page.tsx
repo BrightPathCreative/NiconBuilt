@@ -8,6 +8,8 @@ export const metadata = buildMetadata({
   description:
     "Heritage renovations and extensions for Malvern's Edwardian and Federation homes. Stonnington heritage permits managed, VBA licensed builder since 1990.",
   path: "/heritage-renovations-malvern/",
+  ogImage: "/images/heritage-renovations-page-01.webp",
+  ogImageAlt: "Heritage renovations in Malvern by Nicon Built",
 });
 
 export default function Page() {

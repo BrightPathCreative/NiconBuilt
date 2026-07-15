@@ -8,6 +8,8 @@ export const metadata = buildMetadata({
   description:
     "Heritage renovations for Armadale's Victorian terraces and Edwardian villas. Stonnington heritage permits managed end to end, VBA licensed builder since 1990.",
   path: "/heritage-renovations-armadale/",
+  ogImage: "/images/heritage-renovations-page-01.webp",
+  ogImageAlt: "Heritage renovations in Armadale by Nicon Built",
 });
 
 export default function Page() {

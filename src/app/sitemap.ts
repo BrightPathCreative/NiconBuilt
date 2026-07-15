@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "contact/",
     "faq/",
     "privacy-policy/",
+    "cookie-policy/",
   ];
 
   const entries: MetadataRoute.Sitemap = [

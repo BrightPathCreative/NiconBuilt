@@ -27,7 +27,12 @@ export function createServicePage(config: ServicePageConfig) {
   const enquiryFormPlacement = PROJECT_PAGE_META_KEYS.has(config.metaKey) ? "bottom" : "top";
 
   return {
-    metadata: buildMetadata({ ...meta, path: config.slug }),
+    metadata: buildMetadata({
+      ...meta,
+      path: config.slug,
+      ogImage: meta.ogImage,
+      ogImageAlt: meta.ogImageAlt,
+    }),
     Page: function ServicePage() {
       return (
         <ServicePageLayout

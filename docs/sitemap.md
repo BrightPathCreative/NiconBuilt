@@ -26,10 +26,11 @@ Multi-page build confirmed. Structure below follows `Nicon_Built_Copy_v7_Approve
 | Contact | `/contact/` | High | ⚠️ Copy ready, phone number pending GHL |
 | FAQ | `/faq/` | Med | ✅ Copy ready. New slug — not in the original brief's URL table, confirm |
 | Location pages | `/heritage-renovations-[suburb]/` | Med | ✅ 5 priority suburbs chosen (left to my judgement, per Sara) — see the reasoning below |
-| Blog (~10 posts, down from 41) | `/blog/[post-slug]/` | Low | ⚠️ Still waiting to hear which posts survive — build for ~10 as a working assumption (revised up from the technical brief's original 5–6 estimate) |
-| Privacy Policy | `/privacy-policy/` | Low | ❌ Legal copy not drafted |
-| Thank You | `/thank-you/` | — | ❌ Not drafted. `noindex`, excluded from sitemap, fires on form submit per the GHL integration |
-| 404 | `/404/` | — | ⚠️ Draft copy offered previously, not yet client-approved |
+| Blog (10 posts — final) | `/blog/[post-slug]/` | Low | ✅ 10 posts published; 31 old WP posts redirect to `/blog/` hub |
+| Privacy Policy | `/privacy-policy/` | Low | ✅ Draft ready — client / legal sign-off |
+| Cookie Policy | `/cookie-policy/` | Low | ✅ Draft ready — client / legal sign-off |
+| Thank You | `/thank-you/` | — | ⚠️ Draft copy ready. `noindex`, excluded from sitemap, fires on form submit |
+| 404 | `/404/` | — | ✅ Draft copy ready — awaiting client sign-off |
 
 ## 2. Location Pages — the 5 chosen
 
@@ -86,5 +87,6 @@ Sitemap: https://niconbuilt.com.au/sitemap.xml
 
 ## 8. Legal Pages
 
-- Privacy Policy — required (GHL form data collection). ❌ not drafted — BPC has a standard template per the brief; use that rather than writing from scratch
-- No Cookie Policy called for in either source document — GA4 + GHL forms are the only data collection mentioned; confirm whether a cookie banner/policy is needed at all, or if GA4's own consent mode covers it
+- Privacy Policy — ✅ drafted at `/privacy-policy/` — client / legal sign-off required before go-live
+- Cookie Policy — ✅ drafted at `/cookie-policy/` — covers GA4 + GHL form cookies; no consent banner currently
+- Confirm with Nick whether a cookie consent banner is needed once GA4 goes live (Australian Privacy Act / APP guidelines)

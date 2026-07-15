@@ -8,6 +8,8 @@ export const metadata = buildMetadata({
   description:
     "Heritage renovations for Elwood's Edwardian homes, Californian bungalows and interwar classics. Port Phillip permits managed, VBA licensed builder since 1990.",
   path: "/heritage-renovations-elwood/",
+  ogImage: "/images/heritage-renovations-page-01.webp",
+  ogImageAlt: "Heritage renovations in Elwood by Nicon Built",
 });
 
 export default function Page() {

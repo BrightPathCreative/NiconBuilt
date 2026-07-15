@@ -12,6 +12,8 @@ export const metadata = buildMetadata({
   description:
     "Practical building and renovation advice from Nicon Built — 30+ years experience across Melbourne's inner south.",
   path: "/blog/",
+  ogImage: "/images/home-renovations-page-01.webp",
+  ogImageAlt: "Building and renovation insights from Nicon Built, Melbourne",
 });
 
 const breadcrumbs = [

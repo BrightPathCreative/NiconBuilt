@@ -42,7 +42,7 @@ export const siteConfig = {
   },
   /** Trades-first positioning — used in layout defaults, schema and OG fallbacks. */
   description:
-    "Everyday trades, property maintenance, kitchen and bathroom renovations, home extensions and new builds across Melbourne's inner south. Licensed builder, serving Melbourne's inner south since 1990.",
+    "Plumbing, electrical, painting, tiling, carpentry, roofing, pest control and property maintenance across Melbourne's inner south. One licensed Nicon Built team, start to finish.",
   social: {
     facebook: "https://www.facebook.com/niconbuilt",
     instagram: "https://www.instagram.com/nicon_built/",
