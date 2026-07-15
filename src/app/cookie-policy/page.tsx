@@ -35,7 +35,7 @@ export default function CookiePolicyPage() {
             features such as embedded forms.
           </p>
           <p>
-            Similar technologies ù such as local storage and session storage ù work in a comparable
+            Similar technologies, such as local storage and session storage, work in a comparable
             way. This policy covers cookies and those related technologies where they affect your
             privacy.
           </p>
@@ -48,8 +48,8 @@ export default function CookiePolicyPage() {
 
           <h3>Strictly necessary / functional</h3>
           <p>
-            Our website uses session storage (not a cookie) to remember marketing attribution data
-            ù such as UTM parameters or ad click identifiers ù for the duration of your browser
+            Our website uses session storage (not a cookie) to remember marketing attribution data,
+            such as UTM parameters or ad click identifiers, for the duration of your browser
             session. This helps us understand which campaigns lead to enquiries when you submit
             our contact form. The data is cleared when you close your browser.
           </p>
@@ -64,7 +64,7 @@ export default function CookiePolicyPage() {
             When Google Analytics 4 (GA4) is enabled on this site, Google sets cookies to collect
             aggregated, anonymous usage statistics. Typical cookies include <code>_ga</code>,{" "}
             <code>_ga_*</code>, and <code>_gid</code>. These help us understand how visitors use
-            the site ù for example, which pages are most visited and whether traffic comes from
+            the site, for example which pages are most visited and whether traffic comes from
             search or ads.
           </p>
           <p>
@@ -77,7 +77,7 @@ export default function CookiePolicyPage() {
           <p>Some cookies are set by third parties whose services appear on our pages:</p>
           <ul>
             <li>
-              <strong>Google Analytics</strong> ù website usage statistics. See{" "}
+              <strong>Google Analytics</strong> - website usage statistics. See{" "}
               <a
                 href="https://policies.google.com/privacy"
                 target="_blank"
@@ -88,7 +88,7 @@ export default function CookiePolicyPage() {
               .
             </li>
             <li>
-              <strong>Contact form provider</strong> ó form embed and enquiry processing.
+              <strong>Contact form provider</strong> - form embed and enquiry processing.
             </li>
           </ul>
           <p>We recommend reviewing these providers&apos; policies for full details.</p>
@@ -102,7 +102,7 @@ export default function CookiePolicyPage() {
             <li>block all cookies entirely</li>
           </ul>
           <p>
-            Blocking all cookies may affect how some parts of the website work ù particularly the
+            Blocking all cookies may affect how some parts of the website work, particularly the
             embedded contact form.
           </p>
           <p>
