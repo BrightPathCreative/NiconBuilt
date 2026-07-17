@@ -10,7 +10,7 @@ Last updated: 2026-07-04
 Required per the Technical Developer Brief: fires after every contact-form submission (GHL webhook), `noindex, nofollow`, excluded from the sitemap.
 
 ## Headline
-Thanks — we've got your enquiry
+Thanks, we've got your enquiry
 
 ## Body
 Your message has been sent to the Nicon Built team. We'll be in touch shortly, usually the same day, to discuss your project and next steps.
