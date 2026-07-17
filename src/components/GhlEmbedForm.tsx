@@ -138,15 +138,20 @@ export function GhlEmbedForm({
   redirectOnSubmit = "/thank-you/",
 }: Props) {
   const router = useRouter();
-  const [iframeSrc, setIframeSrc] = useState<string | null>(null);
+  // Start the iframe immediately with the base src (no null wait). Tracking
+  // params are merged in an effect — only reloads when UTMs/click-ids exist.
+  const [iframeSrc, setIframeSrc] = useState(src);
   const [frameHeight, setFrameHeight] = useState(height);
   const [loaded, setLoaded] = useState(false);
   const hasFired = useRef(false);
   const iframeId = `inline-${formId}`;
 
   useEffect(() => {
-    setIframeSrc(buildIframeSrc(src));
-    setLoaded(false);
+    const next = buildIframeSrc(src);
+    setIframeSrc((prev) => {
+      if (prev !== next) setLoaded(false);
+      return next;
+    });
     setFrameHeight(height);
   }, [src, height]);
 
@@ -211,27 +216,26 @@ export function GhlEmbedForm({
             <span className={styles.loadingBarShort} />
           </div>
         ) : null}
-        {iframeSrc ? (
-          <iframe
-            src={iframeSrc}
-            className={`${styles.frame} ${loaded ? styles.frameVisible : ""}`}
-            style={{ height: frameHeight }}
-            id={iframeId}
-            data-layout='{"id":"INLINE"}'
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name={formName}
-            data-height={String(frameHeight)}
-            data-layout-iframe-id={iframeId}
-            data-form-id={formId}
-            title={formName}
-            onLoad={() => setLoaded(true)}
-          />
-        ) : null}
+        <iframe
+          src={iframeSrc}
+          className={`${styles.frame} ${loaded ? styles.frameVisible : ""}`}
+          style={{ height: frameHeight }}
+          id={iframeId}
+          data-layout='{"id":"INLINE"}'
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name={formName}
+          data-height={String(frameHeight)}
+          data-layout-iframe-id={iframeId}
+          data-form-id={formId}
+          title={formName}
+          loading="eager"
+          onLoad={() => setLoaded(true)}
+        />
       </div>
     </div>
   );

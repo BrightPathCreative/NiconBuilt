@@ -32,11 +32,29 @@ export const metadata: Metadata = {
   },
 };
 
+const ghlOrigin = (() => {
+  try {
+    return new URL(siteConfig.ghlContactForm.src).origin;
+  } catch {
+    return "https://links.brightpathcreative.com.au";
+  }
+})();
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-AU" className={fontVariables}>
+      <head>
+        <link rel="preconnect" href={ghlOrigin} crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href={ghlOrigin} />
+        <link
+          rel="preload"
+          href={siteConfig.ghlContactForm.embedScriptSrc}
+          as="script"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <a href="#main-content" className="skip-link">
           Skip to content

@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { GhlEmbedForm } from "./GhlEmbedForm";
 import { siteConfig } from "@/lib/site";
 import styles from "./HeroQuotePanel.module.css";
@@ -15,6 +15,29 @@ export function HeroQuotePanel() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const panelId = useId();
+
+  // Warm the GHL iframe in the background so "Start my free quote" feels instant.
+  // Avoid the HTML `hidden` attribute while preloading — browsers defer iframes inside it.
+  useEffect(() => {
+    let cancelled = false;
+    const warm = () => {
+      if (!cancelled) setMounted(true);
+    };
+
+    if (typeof window.requestIdleCallback === "function") {
+      const id = window.requestIdleCallback(warm, { timeout: 1500 });
+      return () => {
+        cancelled = true;
+        window.cancelIdleCallback(id);
+      };
+    }
+
+    const timer = window.setTimeout(warm, 600);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
+  }, []);
 
   function toggle() {
     setOpen((value) => {
@@ -76,8 +99,9 @@ export function HeroQuotePanel() {
 
       <div
         id={panelId}
-        className={`${styles.formSlot} ${open ? styles.formSlotOpen : ""}`}
-        hidden={!open}
+        className={`${styles.formSlot} ${open ? styles.formSlotOpen : styles.formSlotPreload}`}
+        aria-hidden={!open}
+        {...(!open ? { inert: true } : {})}
       >
         {mounted ? (
           <GhlEmbedForm
