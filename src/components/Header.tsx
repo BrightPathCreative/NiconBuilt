@@ -201,7 +201,7 @@ export function Header() {
           ))}
 
           <div className={styles.actions}>
-            <CallButton className={`btn btn-outline ${styles.callBtn}`} icon label="Click to call" />
+            <CallButton className={`btn btn-outline ${styles.callBtn}`} icon label="Click to call" align="end" />
             <Link href="/contact/" className="btn btn-accent" onClick={closeNav}>
               Get a free quote
             </Link>

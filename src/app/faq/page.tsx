@@ -1,11 +1,12 @@
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { CallButton } from "@/components/CallButton";
 import { JsonLd } from "@/components/JsonLd";
 import { FaqSection } from "@/components/FaqSection";
 import { QuoteCTA } from "@/components/QuoteCTA";
 import { loadCopy } from "@/lib/copy";
 import { buildMetadata, pageMeta } from "@/lib/metadata";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
-import { siteConfig, phoneHref, callCtaLabel } from "@/lib/site";
+import { siteConfig, callCtaLabel } from "@/lib/site";
 
 export const metadata = buildMetadata({ ...pageMeta.faq, path: "/faq/" });
 
@@ -33,13 +34,7 @@ export default function FaqPage() {
             {intro.includes("[CRM NUMBER]") ? (
               <>
                 Can&apos;t find what you&apos;re after?{" "}
-                {phone ? (
-                  <>
-                    <a href={phoneHref(phone)}>{callCtaLabel}</a>
-                  </>
-                ) : (
-                  "Get in touch"
-                )}{" "}
+                {phone ? <CallButton className="" label={callCtaLabel} /> : "Get in touch"}{" "}
                 or send us a message on the Contact page.
               </>
             ) : (

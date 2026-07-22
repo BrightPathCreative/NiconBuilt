@@ -97,5 +97,5 @@ export function phoneHref(phone: string): string {
   return normalized ? `tel:${normalized}` : "/contact/";
 }
 
-/** Default click-to-call label — number is never shown in the UI. */
+/** Default click-to-call label. On desktop, CallButton reveals the number in a popover. */
 export const callCtaLabel = "Click to call";

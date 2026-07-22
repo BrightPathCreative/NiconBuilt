@@ -17,9 +17,19 @@
     gap: 10px;
   }
 
-  .call,
+  .callSlot,
   .quote {
     flex: 1;
+    display: flex;
+  }
+
+  .callSlot > * {
+    flex: 1;
+    width: 100%;
+  }
+
+  .call,
+  .quote {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +44,7 @@
   }
 
   .call {
+    width: 100%;
     background: var(--color-primary);
     color: #fff;
     box-shadow: var(--shadow-glow-primary);
