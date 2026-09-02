@@ -4,6 +4,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import {
+  GoogleTagManager,
+  GoogleTagManagerNoScript,
+} from "@/components/GoogleTagManager";
 import { ScrollToTopOnNavigate } from "@/components/ScrollToTopOnNavigate";
 import { StickyCallBar } from "@/components/StickyCallBar";
 import { localBusinessSchema } from "@/lib/schema";
@@ -56,6 +60,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleTagManagerNoScript />
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
@@ -66,6 +71,7 @@ export default function RootLayout({
         <BackToTop />
         <StickyCallBar />
         <JsonLd data={localBusinessSchema()} />
+        <GoogleTagManager />
         <GoogleAnalytics />
         <TrackingParamsCapture />
       </body>

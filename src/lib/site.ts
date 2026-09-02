@@ -22,6 +22,7 @@ export const siteConfig = {
   vbaLicence:
     process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "CDB-U 62648",
   gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "",
+  gtmId: process.env.NEXT_PUBLIC_GTM_ID?.trim() || "",
   ghlContactForm: {
     id: process.env.NEXT_PUBLIC_GHL_CONTACT_FORM_ID?.trim() || "vvUEO6TWQDp00EySpLfv",
     src:
