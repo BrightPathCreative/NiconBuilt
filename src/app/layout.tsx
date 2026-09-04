@@ -1,27 +1,28 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import {
   GoogleTagManager,
   GoogleTagManagerNoScript,
 } from "@/components/GoogleTagManager";
-import { ScrollToTopOnNavigate } from "@/components/ScrollToTopOnNavigate";
-import { StickyCallBar } from "@/components/StickyCallBar";
 import { localBusinessSchema } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
 import { fontVariables } from "@/lib/fonts";
 import "./globals.css";
 
-const BackToTop = dynamic(() =>
-  import("@/components/BackToTop").then((mod) => mod.BackToTop)
-);
-
-const TrackingParamsCapture = dynamic(() =>
-  import("@/components/TrackingParamsCapture").then((mod) => mod.TrackingParamsCapture)
-);
+/**
+ * Document shell only — fonts, analytics and the site-wide schema.
+ *
+ * Page chrome deliberately lives one level down, in the route-group layouts:
+ * - `(site)/layout.tsx` — the public website: header nav, footer, sticky call bar.
+ * - `(ads)/layout.tsx` — Google Ads landing pages: no nav, no footer link soup,
+ *   nothing on the page that isn't a conversion path.
+ *
+ * Keeping both out of here is what lets a paid landing page render without the
+ * site's exit links while still sharing one GTM container, one GA property and
+ * one attribution capture, so leads from ads report alongside everything else.
+ */
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -35,6 +36,10 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
 };
+
+const TrackingParamsCapture = dynamic(() =>
+  import("@/components/TrackingParamsCapture").then((mod) => mod.TrackingParamsCapture)
+);
 
 const ghlOrigin = (() => {
   try {
@@ -61,15 +66,7 @@ export default function RootLayout({
       </head>
       <body>
         <GoogleTagManagerNoScript />
-        <a href="#main-content" className="skip-link">
-          Skip to content
-        </a>
-        <Header />
-        <ScrollToTopOnNavigate />
-        <main id="main-content">{children}</main>
-        <Footer />
-        <BackToTop />
-        <StickyCallBar />
+        {children}
         <JsonLd data={localBusinessSchema()} />
         <GoogleTagManager />
         <GoogleAnalytics />

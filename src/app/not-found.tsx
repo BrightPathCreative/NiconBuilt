@@ -1,32 +1,25 @@
-import Link from "next/link";
-import { loadCopy, getSectionParagraphs } from "@/lib/copy";
+import { Header } from "@/components/Header";
+import { StickyCallBar } from "@/components/StickyCallBar";
+import { NotFoundContent } from "@/components/NotFoundContent";
 
+/**
+ * 404 for URLs that match no route segment at all — routes inside a route group
+ * use that group's own `not-found.tsx` instead.
+ *
+ * Next.js embeds this boundary's rendered tree in the payload of every
+ * prerendered page, so it carries the header (a client component, ~free to
+ * serialise) and the copy's own recovery links, but not the site footer: the
+ * footer's five link columns cost roughly 9 kB of payload on every page across
+ * the site for markup almost nobody sees.
+ */
 export default function NotFound() {
-  const copy = loadCopy("404");
-  const body = getSectionParagraphs(copy, "Body");
-  const primaryLink = getSectionParagraphs(copy, "Primary link")[0] ?? "Back to home → /";
-  const secondaryLink = getSectionParagraphs(copy, "Secondary link")[0] ?? "Contact us → /contact/";
-  const [primaryLabel, primaryHref = "/"] = primaryLink.split("→").map((part) => part.trim());
-  const [secondaryLabel, secondaryHref = "/contact/"] = secondaryLink
-    .split("→")
-    .map((part) => part.trim());
-
   return (
-    <section className="section">
-      <div className="container" style={{ maxWidth: "640px", textAlign: "center" }}>
-        <h1>{copy.headline}</h1>
-        {body.map((p) => (
-          <p key={p.slice(0, 30)}>{p}</p>
-        ))}
-        <div style={{ display: "flex", gap: "12px", justifyContent: "center", marginTop: "32px" }}>
-          <Link href={primaryHref} className="btn btn-primary">
-            {primaryLabel}
-          </Link>
-          <Link href={secondaryHref} className="btn btn-outline">
-            {secondaryLabel}
-          </Link>
-        </div>
-      </div>
-    </section>
+    <>
+      <Header />
+      <main id="main-content">
+        <NotFoundContent />
+      </main>
+      <StickyCallBar />
+    </>
   );
 }

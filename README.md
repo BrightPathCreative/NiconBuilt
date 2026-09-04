@@ -14,6 +14,8 @@ This repo lives inside the client workspace at `/Volumes/LaCieDrive/NiconBuilt/n
 | Path | Purpose |
 |---|---|
 | `src/` | App routes, components, lib |
+| `src/app/(site)/` | The public website — header nav, footer, sticky call bar |
+| `src/app/(ads)/lp/` | Google Ads landing pages — no nav, form in the hero, `noindex` |
 | `docs/copy/` | Page copy (loaded at build time) |
 | `content/blog/` | Blog post markdown |
 | `public/` | Static assets served at domain root (`llms.txt`, images, favicons) |
@@ -40,7 +42,7 @@ npx vercel --prod         # deploy to Vercel (bright-path-creative/nicon-built)
 
 **Production preview:** https://nicon-built-7rfb08zo9-bright-path-creative.vercel.app
 
-See [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md) for the full go-live checklist, [docs/DEPLOY.md](docs/DEPLOY.md) for DNS cutover, and [docs/redirects.csv](docs/redirects.csv) for 301 redirect reference.
+See [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md) for the full go-live checklist, [docs/DEPLOY.md](docs/DEPLOY.md) for DNS cutover, [docs/redirects.csv](docs/redirects.csv) for 301 redirect reference, and [docs/google-ads-landing-pages.md](docs/google-ads-landing-pages.md) for the paid landing pages.
 
 ## Implemented
 
@@ -49,6 +51,7 @@ See [docs/LAUNCH_CHECKLIST.md](docs/LAUNCH_CHECKLIST.md) for the full go-live ch
 - JSON-LD (LocalBusiness, FAQPage, BreadcrumbList, Review on testimonials), sitemap.xml, robots.txt, `public/llms.txt`
 - ~80 redirects from old WordPress URLs via `src/lib/redirects.ts`
 - WebP images from client photo library
+- Google Ads landing pages at `/lp/` — `noindex`, kept out of `sitemap.xml`, see [docs/google-ads-landing-pages.md](docs/google-ads-landing-pages.md)
 
 ## Still needed from client before go-live
 
