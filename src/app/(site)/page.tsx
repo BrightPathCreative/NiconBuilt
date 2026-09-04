@@ -67,6 +67,7 @@ export default function HomePage() {
         title={copy.headline ?? ""}
         description={heroParagraphs}
         image={images.homeHero}
+        mobileImage={images.homeHeroMobile}
         imageAlt="Home services and renovations in Melbourne by Nicon Built"
         showForm
         priority
