@@ -1,5 +1,4 @@
 import { CallButton } from "@/components/CallButton";
-import { siteConfig } from "@/lib/site";
 import styles from "./landing.module.css";
 
 /** Anchor target for every "get a quote" action on a landing page. */
@@ -8,12 +7,16 @@ export const QUOTE_ANCHOR = "quote";
 /**
  * Chrome for Google Ads landing pages.
  *
- * The site header and footer are deliberately absent. A visitor who arrived on
- * a paid click has exactly two useful next actions — fill in the form or call —
- * and every nav link, service tile and footer column is a third option that
- * costs money. What stays is the brand mark, the phone number, and the legal
- * disclosures Google Ads expects to find: who you are, and a reachable privacy
- * policy.
+ * There is no nav and no footer at all — client's call. A visitor who arrived
+ * on a paid click has exactly two useful next actions, fill in the form or
+ * call, and anything else on the page is a third option that costs money. What
+ * remains is the brand mark and those two actions, repeated where they're
+ * needed.
+ *
+ * Note that this leaves no privacy policy link on the page. Google Ads expects
+ * one on a page collecting personal data, and so does the Privacy Act — if ads
+ * are ever disapproved for it, the fix is a small-print line in the closing CTA
+ * band or under the form, not a footer.
  */
 
 export function LandingHeader() {
@@ -30,44 +33,17 @@ export function LandingHeader() {
           <span className={styles.brandBar} aria-hidden="true" />
         </div>
 
+        {/* Both CTAs, no nav. The quote button is hidden on small phones —
+            the fixed bottom bar already carries call and quote there, and
+            three elements don't fit across a 360px header without cramping. */}
         <div className={styles.headerMeta}>
-          <p className={styles.headerTrust}>
-            VBA Licensed Builder · {siteConfig.stats.years} Years · Fully Insured
-          </p>
-          <CallButton className="btn btn-primary" icon align="end" />
+          <CallButton className="btn btn-outline" icon align="end" />
+          <a href={`#${QUOTE_ANCHOR}`} className={`btn btn-accent ${styles.headerQuote}`}>
+            Get a free quote
+          </a>
         </div>
       </div>
     </header>
-  );
-}
-
-export function LandingFooter() {
-  const licence = siteConfig.vbaLicence;
-
-  return (
-    <footer className={styles.footer}>
-      <div className={`container ${styles.footerInner}`}>
-        <p>
-          © {new Date().getFullYear()} {siteConfig.legalName}. ABN {siteConfig.abn}.
-          {licence ? ` VBA Licence ${licence}.` : " VBA licensed builder."}{" "}
-          {siteConfig.address.full}.
-        </p>
-        {/* The only outbound links on the page. Google Ads requires the privacy
-            policy to be reachable; opening it in a new tab keeps the lead here. */}
-        <ul className={styles.footerLinks}>
-          <li>
-            <a href="/privacy-policy/" target="_blank" rel="noopener">
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a href="/cookie-policy/" target="_blank" rel="noopener">
-              Cookie Policy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
   );
 }
 

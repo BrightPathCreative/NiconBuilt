@@ -15,10 +15,16 @@ exactly as they are and keep ranking.
 
 ## What makes them different from the service pages
 
-- **No navigation.** No header menu, no footer link columns, no "explore our
-  other services" grid. The only links on the page are the privacy and cookie
-  policies (opened in a new tab). Every other element is either the quote form,
-  the phone number, or proof that supports them.
+- **No navigation, and no footer at all.** The header is the logo plus the two
+  CTAs — click-to-call and "Get a free quote" — and nothing else. There is no
+  footer element and no outbound link anywhere on the page. Every element is
+  either the quote form, the phone number, or proof that supports them.
+
+  One consequence to be aware of: there is no privacy policy link on these
+  pages. Google Ads expects one on a page collecting personal data, and the
+  Privacy Act applies to the form regardless. If ads are ever disapproved on
+  this basis, add a small-print line (ABN, VBA licence, privacy policy link)
+  inside the closing CTA band or directly under the form — not a footer.
 - **Form in the hero, already open.** The site's own heroes hide the form behind
   a "Start my free quote" toggle. On a paid click that's a step too many, so the
   form renders expanded, above the fold on desktop and immediately below the
@@ -74,7 +80,7 @@ No separate setup — landing pages inherit the site's:
 different chrome:
 
 - `(site)/` — the public website: header nav, footer, sticky call bar.
-- `(ads)/` — landing pages: minimal header, legal footer, no nav.
+- `(ads)/` — landing pages: logo-and-CTAs header, no footer, no nav.
 
 `src/app/layout.tsx` is now a document shell only — fonts, GTM, GA, attribution
 capture and the site-wide schema. Anything visual belongs in a group layout.
