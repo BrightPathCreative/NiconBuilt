@@ -16,15 +16,16 @@ exactly as they are and keep ranking.
 ## What makes them different from the service pages
 
 - **No navigation, and no footer at all.** The header is the logo plus the two
-  CTAs — click-to-call and "Get a free quote" — and nothing else. There is no
-  footer element and no outbound link anywhere on the page. Every element is
-  either the quote form, the phone number, or proof that supports them.
+  CTAs — click-to-call and "Get a free quote" — and nothing else. Every element
+  on the page is either the quote form, the phone number, or proof that supports
+  them.
 
-  One consequence to be aware of: there is no privacy policy link on these
-  pages. Google Ads expects one on a page collecting personal data, and the
-  Privacy Act applies to the form regardless. If ads are ever disapproved on
-  this basis, add a small-print line (ABN, VBA licence, privacy policy link)
-  inside the closing CTA band or directly under the form — not a footer.
+  The one exception is a line of small print at the bottom of the closing CTA
+  band: entity name, ABN, VBA licence and a privacy policy link (new tab). It is
+  the only outbound link on the page, and it is there because Google Ads expects
+  a reachable privacy policy on a page collecting personal data and the Privacy
+  Act applies to the form regardless. Don't remove it, and don't grow it back
+  into a footer.
 - **Form in the hero, already open.** The site's own heroes hide the form behind
   a "Start my free quote" toggle. On a paid click that's a step too many, so the
   form renders expanded, above the fold on desktop and immediately below the

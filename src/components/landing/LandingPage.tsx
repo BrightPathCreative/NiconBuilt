@@ -237,6 +237,16 @@ export function LandingPage({ page }: { page: ResolvedLandingPage }) {
             </a>
             <CallButton className={`btn btn-outline ${styles.onDark}`} />
           </div>
+          {/* Not a footer — the client asked for none. This is the legal minimum
+              a page collecting personal data needs: who is collecting it, and a
+              reachable privacy policy. New tab, so it doesn't cost the lead. */}
+          <p className={styles.legal}>
+            {siteConfig.legalName} · ABN {siteConfig.abn}
+            {siteConfig.vbaLicence ? ` · VBA Licence ${siteConfig.vbaLicence}` : ""} ·{" "}
+            <a href="/privacy-policy/" target="_blank" rel="noopener">
+              Privacy Policy
+            </a>
+          </p>
         </div>
       </section>
     </>

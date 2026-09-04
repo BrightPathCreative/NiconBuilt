@@ -496,6 +496,23 @@
   justify-content: center;
 }
 
+.legal {
+  margin: 32px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.legal a {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal a:hover {
+  color: #fff;
+}
+
 /* ---------- Mobile sticky bar ---------- */
 
 .callBar {
