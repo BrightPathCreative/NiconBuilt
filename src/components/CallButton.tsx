@@ -8,6 +8,7 @@ import {
   normalizePhoneDigits,
   callCtaLabel,
 } from "@/lib/site";
+import { useForwardingNumber } from "@/lib/call-conversion";
 import styles from "./CallButton.module.css";
 
 type Props = {
@@ -42,6 +43,8 @@ function isDesktopPointer(): boolean {
  * - Desktop: reveals the number in a popover so the user can tap-to-call or copy,
  *   instead of immediately triggering the OS tel: handler (Windows app picker, etc.).
  * - Falls back to /contact/ when no phone is configured.
+ * - On the Google Ads landing pages, swaps to Google's forwarding number for
+ *   the session when the visitor came from an ad (see lib/call-conversion.ts).
  */
 export function CallButton({
   className = "btn btn-outline",
@@ -52,13 +55,15 @@ export function CallButton({
   align = "center",
 }: Props) {
   const phone = siteConfig.phone;
+  const forwarding = useForwardingNumber();
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const rootRef = useRef<HTMLSpanElement>(null);
   const panelId = useId();
 
-  const display = phone ? formatPhoneDisplay(phone) : "";
-  const href = phone ? phoneHref(phone) : "/contact/";
+  const display = forwarding?.display ?? (phone ? formatPhoneDisplay(phone) : "");
+  const href = forwarding?.href ?? (phone ? phoneHref(phone) : "/contact/");
+  const copyValue = forwarding?.digits ?? (normalizePhoneDigits(phone) || display);
 
   const label =
     explicitLabel ??
@@ -107,9 +112,8 @@ export function CallButton({
 
   async function copyNumber() {
     if (!phone) return;
-    const value = normalizePhoneDigits(phone) || display;
     try {
-      await navigator.clipboard.writeText(value);
+      await navigator.clipboard.writeText(copyValue);
       setCopied(true);
     } catch {
       // Clipboard can fail without permission — number is still clickable above.

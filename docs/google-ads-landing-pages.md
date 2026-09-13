@@ -62,8 +62,23 @@ No separate setup — landing pages inherit the site's:
   `generate_lead` GA4 event, then redirects to `/thank-you/`. Build the Google
   Ads conversion off the `ghl_form_submit` dataLayer event in GTM; segment by
   `page` to split landing page leads from the rest of the site.
-- **Calls.** Click-to-call uses the same `CallButton` as the site. Call
-  conversions still need to be set up in Google Ads separately if they're wanted.
+- **Calls.** The landing pages load the Google Ads tag (`AW-10848081933`,
+  `GoogleAdsCallTracking`) and register the "calls from website" conversion
+  (`dowwCP3xvvUcEI2w4rQo`) against `0485 019 454`. When a visitor arrives from an
+  ad, Google hands a session forwarding number to `lib/call-conversion.ts` via
+  `phone_conversion_callback`, and every `CallButton` on the page swaps its
+  `tel:` href, popover number and copy-to-clipboard value to it. Nothing is
+  swapped for organic or direct visitors. The IDs live in `siteConfig.googleAds`
+  with env overrides.
+
+  Because this is done in code with a callback, **do not also add a "Calls from
+  website" tag for these pages in GTM** — it would try to swap the number a
+  second time. Form-submission conversions are a separate matter and can live
+  in GTM as before.
+
+  Note the number Google forwards to, `0485 019 454`, is itself a GHL tracking
+  number that forwards to Nick — so an ad call takes two forwarding hops. That
+  works, but if GHL call reporting ever looks off for ad traffic, that's why.
 
 ## Adding another landing page
 

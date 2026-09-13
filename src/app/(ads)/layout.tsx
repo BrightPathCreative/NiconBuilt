@@ -1,4 +1,5 @@
 import { LandingHeader, LandingCallBar } from "@/components/landing/LandingChrome";
+import { GoogleAdsCallTracking } from "@/components/landing/GoogleAdsCallTracking";
 
 /**
  * Chrome for Google Ads landing pages under /lp/.
@@ -17,6 +18,7 @@ export default function AdsLayout({
       <LandingHeader />
       <main id="main-content">{children}</main>
       <LandingCallBar />
+      <GoogleAdsCallTracking />
     </>
   );
 }

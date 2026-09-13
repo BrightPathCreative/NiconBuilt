@@ -23,6 +23,18 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "CDB-U 62648",
   gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "",
   gtmId: process.env.NEXT_PUBLIC_GTM_ID?.trim() || "",
+  /**
+   * Google Ads. The account tag and "calls from website" conversion label are
+   * public identifiers (they ship in page HTML), so they default to the real
+   * values rather than empty — a push deploys working call tracking without a
+   * separate Vercel env step. Only loaded on the /lp/ landing pages.
+   */
+  googleAds: {
+    id: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || "AW-10848081933",
+    callConversionLabel:
+      process.env.NEXT_PUBLIC_GOOGLE_ADS_CALL_CONVERSION_LABEL?.trim() ||
+      "dowwCP3xvvUcEI2w4rQo",
+  },
   ghlContactForm: {
     id: process.env.NEXT_PUBLIC_GHL_CONTACT_FORM_ID?.trim() || "vvUEO6TWQDp00EySpLfv",
     src:
