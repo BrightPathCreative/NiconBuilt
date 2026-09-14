@@ -21,13 +21,17 @@ export const siteConfig = {
     "",
   vbaLicence:
     process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "CDB-U 62648",
-  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "",
+  /**
+   * GA4 property — this is "the Google tag" in Google's current sense: one
+   * gtag.js on every page, with Ads conversions (see googleAds) hung off it.
+   * Public identifier, so it defaults to the live value rather than empty.
+   */
+  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "G-FVRTZ4Q11T",
   gtmId: process.env.NEXT_PUBLIC_GTM_ID?.trim() || "",
   /**
-   * Google Ads. The account tag and "calls from website" conversion label are
-   * public identifiers (they ship in page HTML), so they default to the real
-   * values rather than empty — a push deploys working call tracking without a
-   * separate Vercel env step. Only loaded on the /lp/ landing pages.
+   * Google Ads. The "calls from website" conversion is registered on the /lp/
+   * landing pages only, against the site-wide Google tag above. Public
+   * identifiers, so they default to the live values rather than empty.
    */
   googleAds: {
     id: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || "AW-10848081933",

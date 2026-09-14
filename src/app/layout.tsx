@@ -66,10 +66,14 @@ export default function RootLayout({
       </head>
       <body>
         <GoogleTagManagerNoScript />
+        {/* The Google tag first, ahead of {children}: pages that add their own
+            gtag() calls (the landing pages' call conversion) then queue behind
+            gtag('js') and gtag('config') in the dataLayer, the order Google
+            prescribes. */}
+        <GoogleAnalytics />
         {children}
         <JsonLd data={localBusinessSchema()} />
         <GoogleTagManager />
-        <GoogleAnalytics />
         <TrackingParamsCapture />
       </body>
     </html>
