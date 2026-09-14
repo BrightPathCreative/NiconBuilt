@@ -80,6 +80,13 @@ function extractResizeHeight(data: unknown): number | null {
   if (typeof data === "number" && data > 100 && data < 5000) return Math.ceil(data);
 
   if (typeof data === "string") {
+    // form_embed.js is an iframe-resizer host; the child posts
+    // "[iFrameSizer]<iframeId>:<height>:<width>:<type>" on every size change.
+    if (data.startsWith("[iFrameSizer]")) {
+      const parts = data.slice("[iFrameSizer]".length).split(":");
+      return extractResizeHeight(parts[1]);
+    }
+
     const asNumber = Number(data);
     if (Number.isFinite(asNumber) && asNumber > 100 && asNumber < 5000) {
       return Math.ceil(asNumber);
@@ -207,7 +214,9 @@ export function GhlEmbedForm({
       />
       {showTitle ? <h2 className={styles.title}>{title}</h2> : null}
       {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
-      <div className={styles.frameWrap} style={{ minHeight: frameHeight }}>
+      {/* Reserve space for the skeleton only until the iframe loads — after that the
+          iframe's own (GHL-resized) height drives the wrapper, so no empty gap below. */}
+      <div className={styles.frameWrap} style={loaded ? undefined : { minHeight: frameHeight }}>
         {!loaded ? (
           <div className={styles.loading} aria-hidden="true">
             <span className={styles.loadingBar} />
