@@ -5,19 +5,17 @@ import { formatPhoneDisplay, siteConfig } from "@/lib/site";
 /**
  * Google Ads "calls from website" conversion, for the /lp/ pages only.
  *
- * Hangs off the site-wide Google tag (GoogleAnalytics in the root layout,
- * which renders ahead of this), exactly as Google's install screen has it:
- * the tag once per account, then this config on the page with the number.
+ * The contractor's snippet is a gtag() call, so it needs gtag.js on the page.
+ * The site doesn't otherwise load gtag.js (GA4 is fired from GTM, and loading
+ * it directly as well doubled pageviews), so this loads it for the Ads account
+ * on these two pages only. If a site-wide Google tag is ever switched back on
+ * (siteConfig.gaId), it hangs off that instead and skips its own loader.
  *
  * Google's default is to find the number as text in the page and replace it
  * with a forwarding number, but our buttons say "Click to call" and keep the
  * number in a `tel:` href — so this uses `phone_conversion_callback` and hands
  * the forwarding number to lib/call-conversion.ts, where every CallButton
  * picks it up.
- *
- * If the site-wide tag were ever switched off (gaId cleared), this would load
- * gtag.js itself so the conversion still works rather than silently queueing
- * commands nothing processes.
  */
 export function GoogleAdsCallTracking() {
   const { id, callConversionLabel } = siteConfig.googleAds;

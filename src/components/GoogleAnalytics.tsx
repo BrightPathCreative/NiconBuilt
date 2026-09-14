@@ -2,9 +2,9 @@ import Script from "next/script";
 import { siteConfig } from "@/lib/site";
 
 /**
- * The Google tag (gtag.js) for the GA4 property — on every page. Also the tag
- * the Google Ads conversions on the landing pages hang off, so it must load
- * before any page-level gtag() call (see the root layout).
+ * GA4 via gtag.js. Renders nothing unless NEXT_PUBLIC_GA_MEASUREMENT_ID is set,
+ * and it deliberately isn't: GA4 is fired from the GTM container, and having
+ * both doubled every pageview. See siteConfig.gaId.
  */
 export function GoogleAnalytics() {
   const gaId = siteConfig.gaId;

@@ -22,16 +22,17 @@ export const siteConfig = {
   vbaLicence:
     process.env.NEXT_PUBLIC_VBA_LICENCE_NUMBER?.trim() || "CDB-U 62648",
   /**
-   * GA4 property — this is "the Google tag" in Google's current sense: one
-   * gtag.js on every page, with Ads conversions (see googleAds) hung off it.
-   * Public identifier, so it defaults to the live value rather than empty.
+   * GA4 via gtag.js — deliberately empty. GA4 (G-FVRTZ4Q11T) is fired from the
+   * GTM container instead; loading it here as well doubled every pageview.
+   * Setting this would put gtag.js back on every page — don't, unless GA4 is
+   * first removed from GTM.
    */
-  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "G-FVRTZ4Q11T",
+  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "",
   gtmId: process.env.NEXT_PUBLIC_GTM_ID?.trim() || "",
   /**
    * Google Ads. The "calls from website" conversion is registered on the /lp/
-   * landing pages only, against the site-wide Google tag above. Public
-   * identifiers, so they default to the live values rather than empty.
+   * landing pages only — the one place gtag.js loads, for the Ads account.
+   * Public identifiers, so they default to the live values rather than empty.
    */
   googleAds: {
     id: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || "AW-10848081933",

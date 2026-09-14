@@ -66,10 +66,10 @@ export default function RootLayout({
       </head>
       <body>
         <GoogleTagManagerNoScript />
-        {/* The Google tag first, ahead of {children}: pages that add their own
-            gtag() calls (the landing pages' call conversion) then queue behind
-            gtag('js') and gtag('config') in the dataLayer, the order Google
-            prescribes. */}
+        {/* Renders nothing while gaId is empty — GA4 is fired from GTM. Kept
+            here, ahead of {children}, so that if it is ever switched back on
+            its gtag('js') and gtag('config') queue ahead of any page-level
+            gtag() call (the landing pages' call conversion). */}
         <GoogleAnalytics />
         {children}
         <JsonLd data={localBusinessSchema()} />

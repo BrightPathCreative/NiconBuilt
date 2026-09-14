@@ -62,19 +62,15 @@ No separate setup — landing pages inherit the site's:
   `generate_lead` GA4 event, then redirects to `/thank-you/`. Build the Google
   Ads conversion off the `ghl_form_submit` dataLayer event in GTM; segment by
   `page` to split landing page leads from the rest of the site.
-- **The Google tag.** GA4 property `G-FVRTZ4Q11T` loads on every page
-  (`GoogleAnalytics`, first thing in `<body>`). It is the one gtag.js on the
-  site, and the Ads conversions below hang off it — Google's "install once per
-  account" model. It is linked to Ads account `AW-10848081933` on Google's
-  side.
-
-  **Watch for double-counting.** GTM (`GTM-PXZNDGBW`) is also on every page.
-  If the GTM container has its own GA4 configuration tag for `G-FVRTZ4Q11T`,
-  every pageview fires twice. The GA4 tag should live in one place — it is now
-  in code, so it should not also be in GTM.
+- **GA4.** Property `G-FVRTZ4Q11T` is fired from the GTM container
+  (`GTM-PXZNDGBW`), not from code. `GoogleAnalytics` exists but renders nothing
+  because `NEXT_PUBLIC_GA_MEASUREMENT_ID` is empty — it was briefly set, which
+  loaded GA4 from both places and doubled every pageview. Leave it empty
+  unless GA4 is first removed from GTM.
 - **Calls.** The landing pages register the "calls from website" conversion
   (`AW-10848081933/dowwCP3xvvUcEI2w4rQo`, `GoogleAdsCallTracking`) against
-  `0485 019 454`, on the Google tag above. When a visitor arrives from an ad,
+  `0485 019 454`. The snippet is a `gtag()` call, so those two pages — and
+  only those two — load gtag.js for the Ads account. When a visitor arrives from an ad,
   Google hands a session forwarding number to `lib/call-conversion.ts` via
   `phone_conversion_callback`, and every `CallButton` on the page swaps its
   `tel:` href, popover number and copy-to-clipboard value to it. Nothing is
@@ -108,6 +104,5 @@ different chrome:
 - `(site)/` — the public website: header nav, footer, sticky call bar.
 - `(ads)/` — landing pages: logo-and-CTAs header, no footer, no nav.
 
-`src/app/layout.tsx` is now a document shell only — fonts, the Google tag, GTM,
-attribution capture and the site-wide schema. Anything visual belongs in a
-group layout.
+`src/app/layout.tsx` is now a document shell only — fonts, GTM, attribution
+capture and the site-wide schema. Anything visual belongs in a group layout.
