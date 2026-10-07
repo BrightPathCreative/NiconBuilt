@@ -1,11 +1,9 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
 import {
   siteConfig,
   phoneHref,
   formatPhoneDisplay,
-  normalizePhoneDigits,
   callCtaLabel,
 } from "@/lib/site";
 import { useForwardingNumber } from "@/lib/call-conversion";
@@ -13,14 +11,12 @@ import styles from "./CallButton.module.css";
 
 type Props = {
   className?: string;
-  /** Optional prefix text — number is never appended to the label. */
+  /** Optional prefix text — the number follows it in the desktop label. */
   prefix?: string;
-  /** Only set true if you explicitly need the number visible in the button label. */
+  /** Set true to show the number on touch devices too, not just desktop. */
   showNumber?: boolean;
   icon?: boolean;
   label?: string;
-  /** Popover alignment when revealed on desktop. */
-  align?: "center" | "end";
 };
 
 function PhoneIcon() {
@@ -31,20 +27,19 @@ function PhoneIcon() {
   );
 }
 
-/** True for mouse/trackpad desktops — these get the OS “pick an app for tel:” dialog. */
-function isDesktopPointer(): boolean {
-  if (typeof window === "undefined") return false;
-  return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-}
-
 /**
- * Click-to-call CTA.
- * - Mobile / touch: dials via tel: (opens the phone app).
- * - Desktop: reveals the number in a popover so the user can tap-to-call or copy,
- *   instead of immediately triggering the OS tel: handler (Windows app picker, etc.).
+ * Click-to-call CTA. One tel: link, one click, everywhere.
+ * - Mobile / touch: label reads "Click to call" and dials via tel:.
+ * - Desktop: label shows the number itself, so visitors whose computer has no
+ *   calling app can still read and dial it. Swapped in CSS rather than JS so
+ *   there is no hydration mismatch and no flash of the wrong label.
  * - Falls back to /contact/ when no phone is configured.
  * - On the Google Ads landing pages, swaps to Google's forwarding number for
  *   the session when the visitor came from an ad (see lib/call-conversion.ts).
+ *
+ * Desktop used to open a popover revealing the number, which cost Google Ads a
+ * call conversion: the conversion fires on the tel: click, so the first click
+ * recorded nothing and only a second click inside the popover counted.
  */
 export function CallButton({
   className = "btn btn-outline",
@@ -52,73 +47,22 @@ export function CallButton({
   showNumber = false,
   icon = false,
   label: explicitLabel,
-  align = "center",
 }: Props) {
   const phone = siteConfig.phone;
   const forwarding = useForwardingNumber();
-  const [open, setOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
-  const rootRef = useRef<HTMLSpanElement>(null);
-  const panelId = useId();
 
   const display = forwarding?.display ?? (phone ? formatPhoneDisplay(phone) : "");
   const href = forwarding?.href ?? (phone ? phoneHref(phone) : "/contact/");
-  const copyValue = forwarding?.digits ?? (normalizePhoneDigits(phone) || display);
+
+  const numberLabel = prefix ? `${prefix} ${display}` : display;
 
   const label =
     explicitLabel ??
     (phone
       ? showNumber
-        ? prefix
-          ? `${prefix} ${display}`
-          : display
+        ? numberLabel
         : (prefix ?? callCtaLabel)
       : (prefix ?? "Call us"));
-
-  useEffect(() => {
-    if (!open) return;
-
-    function onPointerDown(event: PointerEvent) {
-      if (rootRef.current && !rootRef.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    }
-
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
-    }
-
-    document.addEventListener("pointerdown", onPointerDown);
-    document.addEventListener("keydown", onKeyDown);
-    return () => {
-      document.removeEventListener("pointerdown", onPointerDown);
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [open]);
-
-  useEffect(() => {
-    if (!copied) return;
-    const timer = window.setTimeout(() => setCopied(false), 1600);
-    return () => window.clearTimeout(timer);
-  }, [copied]);
-
-  function handleClick(event: React.MouseEvent<HTMLAnchorElement>) {
-    if (!phone) return;
-    // Phones / tablets: let the tel: link open the dialer.
-    if (!isDesktopPointer()) return;
-    event.preventDefault();
-    setOpen((value) => !value);
-  }
-
-  async function copyNumber() {
-    if (!phone) return;
-    try {
-      await navigator.clipboard.writeText(copyValue);
-      setCopied(true);
-    } catch {
-      // Clipboard can fail without permission — number is still clickable above.
-    }
-  }
 
   const linkStyle = icon
     ? ({ display: "inline-flex", alignItems: "center", gap: "7px" } as const)
@@ -133,42 +77,22 @@ export function CallButton({
     );
   }
 
-  return (
-    <span
-      ref={rootRef}
-      className={styles.wrap}
-      data-align={align}
-      data-open={open || undefined}
-    >
-      <a
-        href={href}
-        className={className}
-        style={linkStyle}
-        onClick={handleClick}
-        aria-expanded={open}
-        aria-controls={open ? panelId : undefined}
-        aria-haspopup="dialog"
-      >
-        {icon ? <PhoneIcon /> : null}
-        {label}
-      </a>
+  // Identical labels (showNumber) need only one node.
+  const sameLabel = label === numberLabel;
 
-      {open ? (
-        <div
-          id={panelId}
-          className={styles.panel}
-          role="dialog"
-          aria-label="Phone number"
-        >
-          <p className={styles.hint}>Call us on</p>
-          <a href={href} className={styles.number}>
-            {display}
-          </a>
-          <button type="button" className={styles.copy} onClick={copyNumber}>
-            {copied ? "Copied" : "Copy number"}
-          </button>
-        </div>
-      ) : null}
+  return (
+    <span className={styles.wrap}>
+      <a href={href} className={className} style={linkStyle}>
+        {icon ? <PhoneIcon /> : null}
+        {sameLabel ? (
+          label
+        ) : (
+          <>
+            <span className={styles.labelTouch}>{label}</span>
+            <span className={styles.labelDesktop}>{numberLabel}</span>
+          </>
+        )}
+      </a>
     </span>
   );
 }

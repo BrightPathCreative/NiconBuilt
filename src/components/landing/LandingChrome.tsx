@@ -37,7 +37,7 @@ export function LandingHeader() {
             the fixed bottom bar already carries call and quote there, and
             three elements don't fit across a 360px header without cramping. */}
         <div className={styles.headerMeta}>
-          <CallButton className="btn btn-outline" icon align="end" />
+          <CallButton className="btn btn-outline" icon />
           <a href={`#${QUOTE_ANCHOR}`} className={`btn btn-accent ${styles.headerQuote}`}>
             Get a free quote
           </a>

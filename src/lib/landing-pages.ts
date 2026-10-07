@@ -128,8 +128,11 @@ const LANDING_PAGES: LandingPageConfig[] = [
     heroImage: images.heritageRenovations,
     heroImageAlt: "Heritage home restoration in Melbourne by Nicon Built",
     headline: "Structural Remedial & Restoration in Melbourne",
+    // Leads with the converting ad-group term — "load bearing wall removal
+    // melbourne" is the keyword that produces enquiries, so it sits above the
+    // fold rather than in a bullet on the second screen.
     subheadline:
-      "Victorian, Edwardian and Federation homes restored properly. Permit-required structural work, heritage overlays and period materials, all managed end to end by a VBA licensed builder.",
+      "Load-bearing wall removal & structural repairs, plus full restoration of Victorian, Edwardian and Federation homes. Permits, heritage overlays and period materials managed end to end by a VBA licensed builder.",
     heroBenefits: [
       "Free, no-obligation assessment",
       "Permit-required structural work a handyman can't legally do",
