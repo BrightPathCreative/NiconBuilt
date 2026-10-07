@@ -53,6 +53,12 @@ export type LandingPageConfig = {
   subheadline: string;
   /** Short proof lines beside the hero form. */
   heroBenefits: string[];
+  /**
+   * FAQ questions to drop from this landing page only — for answers that have
+   * been promoted above the fold, so the page doesn't say the same thing twice.
+   * Matched against the approved copy; the organic page keeps the full set.
+   */
+  promotedFaqs?: string[];
   /** Lead-in above the body copy. */
   approachTitle: string;
   bulletsTitle: string;
@@ -87,9 +93,13 @@ const LANDING_PAGES: LandingPageConfig[] = [
       "One call, one team, everything managed. Painters, tilers, plumbers, plasterers, electricians — coordinated by a VBA licensed builder. No job is too small.",
     heroBenefits: [
       "Free, no-obligation quote",
+      "No minimum job size. We take on jobs of all sizes and handle every one of them properly.",
       "One point of contact — we coordinate every trade",
       "VBA licensed builder · Fully insured · 30+ years",
     ],
+    // Moved above the fold into heroBenefits, so it doesn't also sit collapsed
+    // in the accordion. Wording is the approved copy's, unchanged.
+    promotedFaqs: ["Is there a minimum job size?"],
     approachTitle: "Why hand it to one team",
     bulletsTitle: "What we take care of",
     bullets: [],
@@ -196,7 +206,9 @@ export function getLandingPage(key: string): ResolvedLandingPage {
     leadParagraph,
     paragraphs,
     resolvedBullets: config.bullets.length ? config.bullets : copy.bullets,
-    faqs: copy.faqs,
+    faqs: config.promotedFaqs?.length
+      ? copy.faqs.filter((faq) => !config.promotedFaqs?.includes(faq.question))
+      : copy.faqs,
     // Keep the order the config asks for, and silently drop any author that has
     // since been edited out of the approved reviews rather than rendering a gap.
     reviews: config.reviewAuthors
