@@ -1,44 +1,43 @@
 # Nicon Built — Home Services & Renovation Builder Melbourne
-# https://niconbuilt.com.au
 
 > Nicon Built is a licensed Melbourne builder specialising in everyday trades, property maintenance, heritage renovations, kitchen and bathroom renovations, home extensions, and new builds across Melbourne's inner south and bayside suburbs. Founded by Nick Kafkalas in Port Melbourne in 1990. Every project is run personally by Nick. VBA licence CDB-U 62648. ABN 88 632 512 577. 30+ years experience. 5.0 stars across 9 Google reviews.
 
 ## Core pages
-- /: Homepage — trades, renovations, testimonials, service areas
-- /services/: All building and renovation services
-- /about/: About Nick Kafkalas and Nicon Built
-- /our-work/: Completed project gallery
-- /testimonials/: Client reviews
-- /faq/: Frequently asked questions
-- /blog/: Articles and building advice
-- /contact/: Request a quote (contact form)
-- /privacy-policy/: Privacy policy
+- [Homepage](https://www.niconbuilt.com.au/): trades, renovations, testimonials, service areas
+- [All building and renovation services](https://www.niconbuilt.com.au/services/)
+- [About Nick Kafkalas and Nicon Built](https://www.niconbuilt.com.au/about/)
+- [Completed project gallery](https://www.niconbuilt.com.au/our-work/)
+- [Client reviews](https://www.niconbuilt.com.au/testimonials/)
+- [Frequently asked questions](https://www.niconbuilt.com.au/faq/)
+- [Articles and building advice](https://www.niconbuilt.com.au/blog/)
+- [Request a quote (contact form)](https://www.niconbuilt.com.au/contact/)
+- [Privacy policy](https://www.niconbuilt.com.au/privacy-policy/)
 
 ## Trade & maintenance services
-- /plumbing-melbourne/
-- /electrical-melbourne/
-- /tiling-and-caulking-melbourne/ — Tiling and caulking: kitchens, bathrooms, laundries, outdoor areas, silicone sealing and re-caulking
-- /painting-and-plastering-melbourne/
-- /carpentry-and-joinery-melbourne/
-- /property-maintenance-melbourne/
-- /pest-control-melbourne/
-- /cleaning-melbourne/
-- /roofing-melbourne/
+- [Plumbing](https://www.niconbuilt.com.au/plumbing-melbourne/)
+- [Electrical](https://www.niconbuilt.com.au/electrical-melbourne/)
+- [Tiling and Caulking](https://www.niconbuilt.com.au/tiling-and-caulking-melbourne/): kitchens, bathrooms, laundries, outdoor areas, silicone sealing and re-caulking
+- [Painting and Plastering](https://www.niconbuilt.com.au/painting-and-plastering-melbourne/)
+- [Carpentry and Joinery](https://www.niconbuilt.com.au/carpentry-and-joinery-melbourne/)
+- [Property Maintenance](https://www.niconbuilt.com.au/property-maintenance-melbourne/)
+- [Pest Control](https://www.niconbuilt.com.au/pest-control-melbourne/)
+- [Cleaning](https://www.niconbuilt.com.au/cleaning-melbourne/)
+- [Roofing](https://www.niconbuilt.com.au/roofing-melbourne/)
 
 ## Renovation & build services
-- /kitchen-renovations-melbourne/
-- /bathroom-renovations-melbourne/
-- /heritage-renovations-melbourne/
-- /heritage-home-extensions-melbourne/
-- /home-renovations-melbourne/
-- /new-builds-melbourne/
+- [Kitchen Renovations](https://www.niconbuilt.com.au/kitchen-renovations-melbourne/)
+- [Bathroom Renovations](https://www.niconbuilt.com.au/bathroom-renovations-melbourne/)
+- [Heritage Renovations](https://www.niconbuilt.com.au/heritage-renovations-melbourne/)
+- [Heritage Home Extensions](https://www.niconbuilt.com.au/heritage-home-extensions-melbourne/)
+- [Home Renovations](https://www.niconbuilt.com.au/home-renovations-melbourne/)
+- [New Builds](https://www.niconbuilt.com.au/new-builds-melbourne/)
 
 ## Location pages
-- /heritage-renovations-brighton/
-- /heritage-renovations-armadale/
-- /heritage-renovations-malvern/
-- /heritage-renovations-albert-park/
-- /heritage-renovations-elwood/
+- [Heritage Renovations Brighton](https://www.niconbuilt.com.au/heritage-renovations-brighton/)
+- [Heritage Renovations Armadale](https://www.niconbuilt.com.au/heritage-renovations-armadale/)
+- [Heritage Renovations Malvern](https://www.niconbuilt.com.au/heritage-renovations-malvern/)
+- [Heritage Renovations Albert Park](https://www.niconbuilt.com.au/heritage-renovations-albert-park/)
+- [Heritage Renovations Elwood](https://www.niconbuilt.com.au/heritage-renovations-elwood/)
 
 ## Business facts
 - Legal name: Nicon Built Pty Ltd
