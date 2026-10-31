@@ -55,14 +55,11 @@ export default function RootLayout({
   return (
     <html lang="en-AU" className={fontVariables}>
       <head>
-        <link rel="preconnect" href={ghlOrigin} crossOrigin="anonymous" />
+        {/* No crossOrigin: the form iframe and embed script are plain (non-CORS)
+            requests, so a CORS preconnect would never be reused. The embed script
+            itself is preloaded by GhlEmbedForm, only on pages that render a form. */}
+        <link rel="preconnect" href={ghlOrigin} />
         <link rel="dns-prefetch" href={ghlOrigin} />
-        <link
-          rel="preload"
-          href={siteConfig.ghlContactForm.embedScriptSrc}
-          as="script"
-          crossOrigin="anonymous"
-        />
       </head>
       <body>
         <GoogleTagManagerNoScript />

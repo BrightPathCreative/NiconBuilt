@@ -12,7 +12,8 @@ type Props = {
   /**
    * Optional portrait-cropped variant served below 768px. Only pass this when a
    * mobile crop of `image` actually exists — without it the responsive `<Image>`
-   * below picks the right size for the viewport on its own.
+   * below picks the right size for the viewport on its own. Note `priority` only
+   * preloads `image` (with no media query), so phones download both files.
    */
   mobileImage?: string;
   imageAlt?: string;

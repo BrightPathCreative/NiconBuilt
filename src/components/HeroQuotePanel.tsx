@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useState } from "react";
+import { useId, useState } from "react";
 import { GhlEmbedForm } from "./GhlEmbedForm";
 import { siteConfig } from "@/lib/site";
 import styles from "./HeroQuotePanel.module.css";
@@ -16,28 +16,13 @@ export function HeroQuotePanel() {
   const [mounted, setMounted] = useState(false);
   const panelId = useId();
 
-  // Warm the GHL iframe in the background so "Start my free quote" feels instant.
+  // Only load the GHL iframe once the visitor shows intent (hover, focus or tap on
+  // the toggle). The form pulls in Cloudflare Turnstile — ~4 MB that used to load
+  // on every homepage visit and compete with the hero image on mobile.
   // Avoid the HTML `hidden` attribute while preloading — browsers defer iframes inside it.
-  useEffect(() => {
-    let cancelled = false;
-    const warm = () => {
-      if (!cancelled) setMounted(true);
-    };
-
-    if (typeof window.requestIdleCallback === "function") {
-      const id = window.requestIdleCallback(warm, { timeout: 1500 });
-      return () => {
-        cancelled = true;
-        window.cancelIdleCallback(id);
-      };
-    }
-
-    const timer = window.setTimeout(warm, 600);
-    return () => {
-      cancelled = true;
-      window.clearTimeout(timer);
-    };
-  }, []);
+  function warm() {
+    setMounted(true);
+  }
 
   function toggle() {
     setOpen((value) => {
@@ -76,6 +61,9 @@ export function HeroQuotePanel() {
         className={styles.toggle}
         aria-expanded={open}
         aria-controls={panelId}
+        onPointerEnter={warm}
+        onPointerDown={warm}
+        onFocus={warm}
         onClick={toggle}
       >
         <span>{open ? "Hide quote form" : "Start my free quote"}</span>

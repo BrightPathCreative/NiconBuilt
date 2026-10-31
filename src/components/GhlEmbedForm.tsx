@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { preload } from "react-dom";
 import Script from "next/script";
 import { useRouter } from "next/navigation";
 import { siteConfig } from "@/lib/site";
@@ -144,6 +145,9 @@ export function GhlEmbedForm({
   className,
   redirectOnSubmit = "/thank-you/",
 }: Props) {
+  // Hoisted into <head> when the form is server-rendered (contact, landing pages),
+  // so the embed script starts downloading before hydration.
+  preload(siteConfig.ghlContactForm.embedScriptSrc, { as: "script" });
   const router = useRouter();
   // Start the iframe immediately with the base src (no null wait). Tracking
   // params are merged in an effect — only reloads when UTMs/click-ids exist.

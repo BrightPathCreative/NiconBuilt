@@ -54,20 +54,11 @@ export default function HomePage() {
 
   return (
     <>
-      <link
-        rel="preload"
-        as="image"
-        href={images.homeHeroMobile}
-        media="(max-width: 768px)"
-        type="image/webp"
-      />
-
       <Hero
         eyebrow="Building Quality, Maintaining Excellence"
         title={copy.headline ?? ""}
         description={heroParagraphs}
         image={images.homeHero}
-        mobileImage={images.homeHeroMobile}
         imageAlt="Home services and renovations in Melbourne by Nicon Built"
         showForm
         priority
