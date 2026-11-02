@@ -5,6 +5,11 @@
   max-width: 100%;
 }
 
+/* Fill the wrapper when a parent stretches it (full-width CTA rows on mobile). */
+.wrap > a {
+  flex: 1 1 auto;
+}
+
 /* Touch gets "Click to call"; desktop gets the number itself — one tel: link
    either way. Swapped in CSS so the server and client markup stay identical. */
 .labelDesktop {

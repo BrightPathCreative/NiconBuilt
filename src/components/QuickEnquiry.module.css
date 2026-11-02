@@ -89,6 +89,13 @@
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  /* CallButton wraps its link in a span, so stretch that wrapper too. */
+  .intro > :has(> .callBtn) {
+    display: flex;
+  }
+}
+
 .formWrap {
   width: 100%;
 }

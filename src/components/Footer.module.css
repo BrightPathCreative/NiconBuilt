@@ -216,9 +216,21 @@
 }
 
 @media (max-width: 560px) {
+  /* Two columns on phones: the long lists span the full width and split into
+     two columns themselves; the short ones sit side by side. */
   .grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+  }
+
+  .wideCol {
+    grid-column: 1 / -1;
+  }
+
+  .linksSplit,
+  .areaLinks {
+    column-count: 2;
+    column-gap: 20px;
   }
 
   .brandCol {

@@ -140,6 +140,12 @@
   gap: 12px;
 }
 
+@media (max-width: 600px) {
+  .heroCtas > * {
+    flex: 1 1 auto;
+  }
+}
+
 .onDark {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.4);

@@ -4,6 +4,9 @@
 }
 
 .slide {
+  /* Reset the browser's default blockquote margin (40px each side), which
+     squeezed the card to ~280px on phones. */
+  margin: 0;
   padding: 48px 56px;
   text-align: center;
   animation: slideFadeIn 0.4s var(--ease-out) both;

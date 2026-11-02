@@ -194,6 +194,12 @@
     padding-inline: 24px;
   }
 
+  @media (max-width: 600px) {
+    .marqueeCard {
+      width: 100%;
+    }
+  }
+
   .marqueeFadeLeft,
   .marqueeFadeRight {
     display: none;

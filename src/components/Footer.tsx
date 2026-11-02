@@ -26,7 +26,7 @@ export function Footer() {
           </p>
         </div>
 
-        <div>
+        <div className={styles.wideCol}>
           <h2 className={styles.colTitle}>Home Services</h2>
           <ul className={`${styles.links} ${styles.linksSplit}`}>
             {homeServices.map((s) => (
@@ -59,9 +59,9 @@ export function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className={styles.wideCol}>
           <h2 className={styles.colTitle}>Service areas</h2>
-          <ul className={styles.links}>
+          <ul className={`${styles.links} ${styles.areaLinks}`}>
             {locationPages.map((loc) => (
               <li key={loc.slug}>
                 <Link href={loc.slug}>{loc.suburb}</Link>

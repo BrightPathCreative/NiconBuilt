@@ -112,6 +112,12 @@
   display: none;
 }
 
+@media (max-width: 600px) {
+  .ctas > * {
+    flex: 1 1 auto;
+  }
+}
+
 .eyebrow {
   animation: heroUpIn 0.7s var(--ease-out) both;
   animation-delay: 60ms;

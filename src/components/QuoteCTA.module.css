@@ -28,6 +28,12 @@
   justify-content: center;
 }
 
+@media (max-width: 600px) {
+  .actions > * {
+    flex: 1 1 auto;
+  }
+}
+
 /* Applied directly to the CallButton — a descendant selector on the global
    .btn-outline class would get hashed by CSS modules and never match. */
 .callOnDark {
